@@ -1,0 +1,3 @@
+nircmd	save screenshots easily
+jpeg2pdf kann ich benutzen, um ein jpeg in pdf umzuwandeln, das Abscheiden erfolgt mit briss
+briss 0.9 pdf cromp soll ich mit batch-Datei ausführen

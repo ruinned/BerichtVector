@@ -1,0 +1,55 @@
+\selectlanguage{ngerman}
+\maketitle
+
+% Die Farbe der Identitätsleiste wird auf Grau umgestellt, damit nicht alle Seiten
+% farbig gedruckt werden müssen
+\ifTUDdesign
+	\ifOnlyColorFront	% ggf. nachfolgende Balken andere Farbe zuweisen
+		\makeatletter 	% benötigt, um die @-Befehle auszuführen
+    \renewcommand{\@TUD@largerulecolor}{\color{tud9c}}% am besten gleiche Farbe wie in der ersten Zeile und die Zahl durch die 0 ersetzen, dann hat das Grau die richtige Intensität
+		\makeatother		
+	\fi	
+\fi
+
+
+\pagenumbering{roman}	% Bis zum Hauptteil werden römische Seitenzahlen verwendet
+
+% =================================================================================
+% Spezielle Seiten für studentische Arbeiten
+% =================================================================================
+\cleardoublepage
+\input{common/SADA_Aufgabenstellung.tex}
+
+\cleardoublepage
+\input{common/SADA_Erklaerung.tex}
+
+\clearpage
+\input{common/SADA_Abstract.tex}
+% =================================================================================
+
+% =================================================================================
+% Inhaltsverzeichnis
+% =================================================================================
+\cleardoublepage	% Auf einer leeren rechten Seite beginnen
+\phantomsection		% Diese und die nächste Zeile dient dazu, für das Inhalts-
+					% verzeichnis einen Eintrag in das pdf-Inhaltsverzeichnis,
+					% aber nicht in das normale Verzeichnis zu erzeugen.
+\pdfbookmark[0]{\contentsname}{pdf:toc}	
+\tableofcontents	% Inhaltsverzeichnis einfügen
+\clearpage	% Sonst kommt nichts mehr auf die Seite
+% =================================================================================
+
+
+% =================================================================================
+% Symbole und Abkürzungen
+% =================================================================================
+% Nach dem Inhaltsverzeichnis kommt ein Verzeichnis der häufig verwendeten
+% Symbole und Abkürzungen. Dazu kann man das Paket 'nomencl' verwenden, oder man
+% erstellt es von Hand.
+\input{inc/Symbole.tex}
+\cleardoublepage
+
+% =================================================================================
+% Hauptteil
+% =================================================================================
+\pagenumbering{arabic}	% Hauptteil bekommt arabische Seitenzahlen

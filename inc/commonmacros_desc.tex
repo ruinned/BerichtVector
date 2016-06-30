@@ -1,0 +1,254 @@
+\chapter{Befehle in commonmacros.tex}
+\label{cha:commonmacros}
+Hier sind im Folgenden kurz die in \texttt{commonmacros.tex} definierten Befehle aufgelistet.
+%
+\section*{Einheiten}
+Die folgenden Befehle funktionieren im Mathe-und Textmodus (\dah es wird im Textmodus automatisch für den Befehl in den Mathemodus umgeschaltet):
+\begin{itemize}
+	\item Einheit (Aufrechte Schrift im Mathemodus)\\ \verb|\unit{\frac{N}{m}}| $\rightarrow$ \unit{\frac{N}{m}}
+	\item Zahl mit Einheit\\(Setzt "`kleines"' Leerzeichen zwischen Zahl und Einheit, Zahl und Einheit automatisch im Mathemodus, Einheit in aufrechter Schrift)\\ \verb|\valunit{34,3}{cm}| $\rightarrow$ \valunit{34,3}{cm}
+	\item (Das aufrechte $\mu$ gibt es mit dem Befehl \verb|\upmu| aus dem Paket upgreek)\\ \verb|\valunit{4}{\upmu m}| $\rightarrow$ \valunit{4}{\upmu m}
+\end{itemize}
+
+\noindent Besondere Einheiten
+\begin{itemize}
+	\item Gradzeichen (Funktioniert im Text- und Mathemodus)\\ \verb|\degree| $\rightarrow$ \degree
+	\item Grad Celsius (Funktioniert im Text- und Mathemodus)\\ \verb|\degC| $\rightarrow$ \degC
+\end{itemize}
+
+
+\section*{Vektoren und Matrizen}
+\begin{itemize}
+	\item Vektor\\ \verb|\ve{x}| $\rightarrow$ \ve{x}
+	\item Matrix\\ \verb|\ma{A}| $\rightarrow$ \ma{A}
+	\item Vektor Sonderzeichen\\ \verb|\ves{\lambda}| $\rightarrow$ \ves{\lambda}
+	\item Matrix Sonderzeichen\\ \verb|\mas{\Lambda}| $\rightarrow$ \mas{\Lambda}
+\end{itemize}
+Wichtig: Mathematische Akkzente müssen dabei geklammert werden!
+\begin{itemize}
+	\item \verb|$\dot{\ve{x}}$| $\rightarrow$  $\dot{\ve{x}}$
+	\item \verb|$\dot{\tilde{\ve{x}}}$| $\rightarrow$ $\dot{\tilde{\ve{x}}}$
+\end{itemize}
+\verb|\ve{}| und \verb|\ma{}| \bzw \verb|\ves{}| und \verb|\mas{}| machen jeweils genau das gleiche. Die Unterscheidung dient nur zur besseren Lesbarkeit.
+
+\begin{itemize}
+	\item Transponiert-Zeichen (aufrechtes T)\\ \verb|$\ma{A}^\transp$| $\rightarrow$ $\ma{A}^\transp$
+\end{itemize}
+
+
+\section*{Funktionen und Abkürzungen}
+
+\begin{itemize}
+	\item Unterstreichen\\ \verb|$\ul{x}$| $\rightarrow$ $\ul{x}$
+	\item Innenprodukt\\ \verb|$\inprod{f}{g}$| $\rightarrow$ $\inprod{f}{g}$
+	\item Exponentialschreibweise\\ \verb|$45\E{-2}$| $\rightarrow$ $45\E{-2}$
+	\item e-Funktion\\ \verb|$\eexp{t}$| $\rightarrow$ $\eexp{t}$
+	\item Rang\\ \verb|$\rang{\ma{A}}$| $\rightarrow$ $\rang{\ma{A}}$
+	\item Imaginäre Einheit (aufrechtes j)\\ \verb|$5+\iu 2$| $\rightarrow$ $5+\iu 2$
+	\item "`Von-Bis-Punkte"' mit Kommas und schönen Abständen\\ \verb|$1 \todots n$| $\rightarrow$ $1 \todots n$
+	\item i abgeleitet\\ \verb|$\doti$| $\rightarrow$ $\doti$
+	\item Aufrechte Schrift (Abkürzung für \verb|\mathrm{}|) \\ \verb|$\mrm{abc}$| $\rightarrow$ $\mrm{abc}$
+	\item Normaler Text in Formel (Abkürzung für \verb|\textnormal{}|)\\ \verb|$\tn{ab für}$| $\rightarrow$ $\tn{ab für}$
+	\item Geklammerte Gruppe mit Subscript\\ \verb|$\grpsb{\frac{1}{2}}{x}$| $\rightarrow$ $\grpsb{\frac{1}{2}}{x}$
+	\item Geklammerte Gruppe mit aufrechtem Subscript\\ \verb|$\grprsb{\frac{1}{2}}{x}$| $\rightarrow$ $\grprsb{\frac{1}{2}}{x}$
+	%\item \\ \verb|| $\rightarrow$
+%	\item \\ \verb|| $\rightarrow$
+\end{itemize}
+
+
+
+\section*{Ableitungen und Integrale}
+
+\begin{itemize}
+	\item Normale Ableitung\\ \verb|$\normd{f}{x}$| $\rightarrow$ $\normd{f}{x}$
+	\item Materielle Ableitung\\ \verb|$\matd{f}{x}$| $\rightarrow$ $\matd{f}{x}$
+	\item Partielle Ableitung\\ \verb|$\partiald{f}{x}$| $\rightarrow$ $\partiald{f}{x}$
+	\item Beispiel höhere Ableitung\\ \verb|$\normd{^2 f}{x^2} \qquad \partiald{^2 f}{x \partial y}$| $\rightarrow$ $\normd{^2 f}{x^2} \qquad \partiald{^2 f}{x \partial y}$
+	\item Normale Ableitung an\\ \verb|$\normdat{f}{x}{x=0}$| $\rightarrow$ $\normdat{f}{x}{x=0}$
+	\item Materielle Ableitung an\\ \verb|$\matdat{f}{x}{x=0}$| $\rightarrow$ $\matdat{f}{x}{x=0}$
+	\item Partielle Ableitung an\\ \verb|$\partialdat{f}{x}{x=0}$| $\rightarrow$ $\partialdat{f}{x}{x=0}$
+	\item Aufrechtes "`d"' für Integral\\ \verb|$\ud$| $\rightarrow$ $\ud$
+	\item Beispiel für Integral\\ \verb|$\int f(x) \ud x$| $\rightarrow$ $\int f(x) \ud x$
+\end{itemize}
+
+
+\section*{Transformationen}
+
+\begin{itemize}
+	\item \verb|$\Laplace{x}$| $\rightarrow$ $\Laplace{x}$
+	\item \verb|$\InvLaplace{X}$| $\rightarrow$ $\InvLaplace{X}$
+	\item \verb|$x \trans X$| $\rightarrow$ $x \trans X$
+	\item \verb|$X \invtrans x$| $\rightarrow$ $X \invtrans x$
+	\item \verb|$\FT{x}$| $\rightarrow$ $\FT{x}$
+	\item \verb|$\FTabs{x}$| $\rightarrow$ $\FTabs{x}$
+	\item \verb|$\IFT{x}$| $\rightarrow$ $\IFT{x}$
+	\item \verb|$\DFT{x}$| $\rightarrow$ $\DFT{x}$
+	\item \verb|$\DFTabs{x}$| $\rightarrow$ $\DFTabs{x}$
+\end{itemize}
+
+
+
+\section*{Matlab/Simulink}
+
+\begin{itemize}
+	\item \verb|\mlfct{abc}| $\rightarrow$ \mlfct{abc}
+	\item \verb|\mlvar{abc}| $\rightarrow$ \mlvar{abc}
+\end{itemize}
+
+
+
+\section*{Verweise}
+
+Verweise auf verschiedene Objekte mit passendem Text ("`Abbildung X"', "`Tabelle X"'). Dabei ist dann immer der komplette Text ein Hyperlink, und nicht nur die Zahl.
+\begin{itemize}
+	\item Abbildung\\ \verb|\figref{label}|
+	\item Tabelle\\ \verb|\tabref{label}|
+	\item Gleichung\\ \verb|\equref{label}|
+	\item Definition\\ \verb|\defref{label}|
+	\item Kapitel\\ \verb|\charef{label}|
+	\item Abschnitt\\ \verb|\secref{label}|
+	\item Listing\\ \verb|\lstref{label}|
+	\item Seite\\ \verb|\pagerefh{label}|
+\end{itemize}
+
+\ZT auch auf Varioref basierend ("`Abbildung 23 auf dieser Seite"', "`Abbildung 23 auf Seite 45"')
+\begin{itemize}
+	\item Abbildung\\ \verb|\figvref{label}|
+	\item Tabelle\\ \verb|\tabvref{label}|
+	\item Gleichung\\ \verb|\equvref{label}|
+\end{itemize}
+
+
+\section*{Abkürzungen}
+Abkürzungen mit Punkt "`dazwischen"' (wird mit kleinen Abständen gesetzt)\\
+\verb|\dah| $\rightarrow$ \dah, \verb|\Dah| $\rightarrow$ \Dah, \verb|\iA| $\rightarrow$ \iA, \verb|\IA| $\rightarrow$ \IA, \verb|\ua| $\rightarrow$ \ua, \verb|\Ua| $\rightarrow$ \Ua, \verb|\uU| $\rightarrow$ \uU, \verb|\UU| $\rightarrow$ \UU, \verb|\zB| $\rightarrow$ \zB, \verb|\ZB| $\rightarrow$ \ZB, \verb|\zT| $\rightarrow$ \zT, \verb|\ZT| $\rightarrow$ \ZT
+
+\vspace{1ex}
+\noindent Abkürzungen mit Punkt, bei denen der Punkt nicht als Satzende interpretiert wird:\\
+\verb|\bspw| $\rightarrow$ \bspw, \verb|\Bspw| $\rightarrow$ \Bspw, \verb|\bzw| $\rightarrow$ \bzw, \verb|\Bzw| $\rightarrow$ \Bzw,  \verb|\bzgl| $\rightarrow$ \bzgl, \verb|\ca| $\rightarrow$ \ca, \verb|\evtl| $\rightarrow$ \evtl, \verb|\ggf| $\rightarrow$ \ggf, \verb|\Ggf| $\rightarrow$ \Ggf, \verb|\usw| $\rightarrow$ \usw, \verb|\vgl| $\rightarrow$ \vgl, \verb|\Vgl| $\rightarrow$ \Vgl
+
+\section*{Mathe-Umgebungen}
+
+\begin{itemize}
+	\item \verb|theorem|\\
+		"`Satz"', selber Zähler wie \verb|lemma| (Lemma)
+	\item \verb|lemma|\\
+		"`Lemma"', selber Zähler wie \verb|theorem| (Satz)
+	\item \verb|definition|\\
+		"`Definition"', eigener Zähler
+	\item \verb|example|\\
+		"`Beispiel"', eigener Zähler, größerer linker Rand
+\end{itemize}
+
+\begin{verbatimtab}
+\begin{theorem}
+	Beispiel für Theorem
+\end{theorem}
+\end{verbatimtab}
+\begin{theorem}
+	Beispiel für Theorem
+\end{theorem}
+
+\begin{verbatimtab}
+\begin{lemma}
+	Beispiel für Lemma
+\end{lemma}
+\end{verbatimtab}
+\begin{lemma}
+	Beispiel für Lemma
+\end{lemma}
+
+\begin{verbatimtab}
+\begin{definition}
+	Beispiel für Definition
+\end{definition}
+\end{verbatimtab}
+\begin{definition}
+	Beispiel für Definition
+\end{definition}
+
+\begin{verbatimtab}
+\begin{example}
+	Beispiel für Beispiel
+\end{example}
+\end{verbatimtab}
+\begin{example}
+	Beispiel für Beispiel
+\end{example}
+
+\begin{verbatimtab}
+\begin{example}[Test]
+	Beispiel für Beispiel mit "`Namen"'
+\end{example}
+\end{verbatimtab}
+\begin{example}[Test]
+	Beispiel für Beispiel mit "`Namen"'
+\end{example}
+
+
+\section*{Listingdefintionen}
+
+\begin{itemize}
+	\item \verb|Matlab_colored|
+	\item \verb|Matlab_colored_smallfont|
+\end{itemize}
+
+\noindent Verwendung:
+\begin{verbatimtab}
+\begin{lstlisting}[style=Matlab_colored, %
+			caption = {Beispiellisting, style=Matlab\_colored}, %
+			label={lst:Listing1}]
+	[...]
+\end{lstlisting}
+\end{verbatimtab}
+
+\begin{lstlisting}[style=Matlab_colored, caption = {Beispiellisting, style=Matlab\_colored}, label={lst:Listing1}]
+function [] = animierePunkt(inY, inX)
+
+temp = length(inY);
+
+%% [...]
+
+%% -------------------------------------------------------------
+for i=1:temp
+    if i>1
+        delete(p(i-1));
+    end
+    p(i) = plot(inX(i),inY(i),'Marker','o','MarkerSize',10);
+    pause(0.025);
+end
+hold off;
+\end{lstlisting}
+
+\begin{verbatimtab}
+\begin{lstlisting}[style=Matlab_colored_smallfont, %
+			caption = {Beispiellisting, style=Matlab\_colored\_smallfont}, %
+			label={lst:Listing2}]
+	[...]
+\end{lstlisting}
+\end{verbatimtab}
+
+\begin{lstlisting}[style=Matlab_colored_smallfont, caption = {Beispiellisting, style=Matlab\_colored\_smallfont}, label={lst:Listing2}]
+function [] = animierePunkt(inY, inX)
+
+temp = length(inY);
+
+%% [...]
+
+%% ---------------------------------------------------------------------
+for i=1:temp
+    if i>1
+        delete(p(i-1));
+    end
+    p(i) = plot(inX(i),inY(i),'Marker','o','MarkerSize',10);
+    pause(0.025);
+end
+hold off;
+\end{lstlisting}
+
+\section*{Sonstiges}
+Latex gibt beim Umwandeln \zT Fehler aus, wenn Zeichen aus dem textcomp-Paket verwendet werden, da diese nicht in den TU-Schriften vorhanden sind. Mit \verb|\textcompstdfont{}| wird die Schriftart für den Text im Argument explizit umgeschaltet, und so der Fehler vermieden:
+\begin{itemize}
+	\item \verb|\textcompstdfont{\textuparrow}| $\rightarrow$ \textcompstdfont{\textuparrow}
+\end{itemize}
+

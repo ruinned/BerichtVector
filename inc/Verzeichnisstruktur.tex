@@ -1,0 +1,99 @@
+%
+\chapter{Verzeichnisstruktur und vordefinierte Befehle der IAT-Vorlage}\label{cha:Verzeichnisstruktur}
+
+
+Es handelt sich bei diesem \LaTeX-Dokument um ein für studentische Arbeiten am Institut für Automatisierungstechnik vorbereitetes Dokument auf Basis der Klasse \verb|tudreport|. Es ist keine neue, abgeleitete Klasse definiert!
+
+Die Klasse \verb|tudreport| ist aus der Standard-Klasse \verb|scrreprt| abgeleitet
+und stellt nur wenige neue Befehle zur Verfügung; weitere Funktionen können bei
+Bedarf durch Zusatzpakete eingebunden oder selbst definiert werden. Die Klasse
+ist daher auch so aufgebaut, dass sie mit möglichst vielen Paketen zusammen
+arbeitet. Im Wesentlichen wird das Layout angepasst, wie es in \cite{Richtlinien}
+festgelegt ist und sich für solche Arbeiten bewährt hat, \zB:
+\begin{itemize}
+\item Es wird doppelseitig auf DIN-A4-Papier geschrieben. In die zu erstellende
+  PDF-Version werden Bookmarks und Hyperlinks (nicht farbig!) integriert.
+\item Der Abstand der Zeilen beträgt das 1,25-fache des Standard-Abstands von
+  \LaTeX. Da technische Arbeiten viele Formeln und Bilder enthalten, werden
+  Absätze durch einen zusätzlichen vertikalen Zwischenraum statt durch einen
+  Einzug getrennt.
+\item Kapitel beginnen immer auf einer neuen Seite.
+\item Die Titelseite hat ein festes Layout mit dem Logo der TU~Darmstadt.
+\end{itemize}
+%
+%
+\section{Verzeichnisse}
+\begin{itemize}
+	\item \verb|bib|\\Hier wird standardmäßig die Datei \verb|literature.bib| mit den Bibtex-Einträgen erwartet.
+	\item \verb|common|\\Allgemeinere Dateien, in die Teile der Definitionen ausgelagert sind, damit die Hauptdatei nicht überfrachtet wird.
+	\item \verb|images|\\Vorgesehen für Bilder
+	\item \verb|inc|\\Vorgesehen für tex-Dateien mit eigentlichem Inhalt
+\end{itemize}
+
+
+\section{Inhalt Verzeichnis \texttt{common}}
+Damit das Hauptdokument nicht überfrachtet wird, sind die folgenden längeren "`Abschnitte"' in die angegebenen Dateien im Unterverzeichnis \verb|common| ausgelagert:
+\begin{itemize}
+    \item \verb|commonmacros.tex| \\
+		Enthält eine Reihe nützlicher selbst definierter Befehle, Mathe- und Beispielumgebungen sowie
+        die Formate \verb|Matlab_colored_smallfont| und \verb|Matlab_colored| zur formatierten Darstellung von Matlab-Code (siehe \charef{cha:commonmacros} für eine Übersicht).
+%
+	\item \verb|includes.tex| \\
+		Beinhaltet alle \verb|\usepackage|-Befehle
+	\item \verb|preface.tex| \\
+		Generiert die ersten Seiten der Arbeit (Aufgabenstellung, Erklärung, Inhaltsverzeichnis, \etc und nimmt weitere Einstellungen vor)
+	\item \verb|SADA_Abstract.tex| \\
+		Kurzfassung der Arbeit in deutscher und englischer Sprache.
+  \item \verb|SADA_Aufgabenstellung.tex| \\
+		Aufgabenstellung bei einer studentischen Arbeit. Achtung: für den FB16 muss für das offizielle Exemplar die im Original unterschriebene Aufgabenstellung an dieser Stelle mit gebunden werden.
+	\item \verb|SADA_Erklaerung.tex| \\
+		Erklärung zu studentischen Arbeiten. (Je nach Fachbereich und Art der Arbeit muss \ggf etwas angepasst werden.)
+	\item \verb|setup.tex| \\
+        Nimmt generelle Einstellungen vor. Diese sollten nur von kundigen Benutzern geändert werden.
+	\item Logos \\
+        Außerdem sind im Verzeichnis \texttt{common} noch die Logo-Grafiken im eps- und pdf-Format abgelegt.
+\end{itemize}
+
+\section{Angaben über die Arbeit}
+Es sind im Hauptdokument die Befehle
+\begin{verbatimtab}
+	\newcommand{\SADATyp}{Diplomarbeit}
+    \newcommand{\SADATitel}{Titel der Arbeit}
+    \newcommand{\SADAStadt}{Darmstadt}
+    \newcommand{\SADAAutor}{Martin Mustermann}
+    \newcommand{\SADABetreuer}{Dipl.-Ing. Rudi Ratlos,}
+    \newcommand{\SADABetreuerII}{Dipl.-Ing. Hans Hilflos}
+    \newcommand{\SADABetreuerIII}{}
+    \newcommand{\SADABegin}{01. Januar 2000}
+    \newcommand{\SADAAbgabe}{01. Juli 2000}
+    \newcommand{\SADASeminar}{01. August 2000}
+\end{verbatimtab}
+sinnvoll zu setzen.
+
+Der Fachbereich 16 (Maschinenbau) schreibt je nachdem, ob es sich um eine Studien- oder Diplomarbeit handelt, unterschiedliche Angaben auf der "`Erklärungsseite"' vor. Es ist im Hauptdokument eine der drei Zeilen
+\begin{verbatimtab}
+	\def\SADAVarianteErklaerung{ETIT}
+	%\def\SADAVarianteErklaerung{MBDA}
+	%\def\SADAVarianteErklaerung{MBSA}
+\end{verbatimtab}
+einzukommentieren. (\verb|ETIT|: "`Normal"', \verb|MBDA|: Fachbereich 16, Diplomarbeit, \verb|MBSA|: Fachbereich 16, Studienarbeit.)
+
+Je nach Fachgebiet ist der Schalter
+\begin{verbatimtab}
+    \rtmtrue	% rtm
+    %\rtmfalse	% rtp
+\end{verbatimtab}
+einzukommentieren.
+
+\section{"`Entwurfsmodus"'}
+Damit man nicht gezwungen ist, das tuddesign-Paket und die TU-Schriftarten auf jedem Rechner zu installieren, um mit dem Dokument zu arbeiten, ist es vorgesehen, auch die Klasse \verb|scrreprt| behelfsweise als Basis zu verwenden. Dazu ist Folgendes zu beachten:
+
+Je nachdem, welche Klasse als Basis ausgewählt ist, muss der Schalter
+\begin{verbatimtab}
+	\TUDdesigntrue    % TUD-Design
+	%\TUDdesignfalse  % Für Rechner ohne installierte TUDdesign-Pakete
+\end{verbatimtab}
+passend gesetzt werden. Dadurch wird erreicht, dass das Dokument auch mit \verb|scrreprt| fehlerfrei umgewandelt wird und die Seitenränder grob stimmen, so dass man einen Eindruck vom späteren Layout bekommt.
+
+
+

@@ -1,0 +1,287 @@
+\chapter{Drehmomentbildung beim Dieselmotor und deren Zusammenhang mit dem Motorwirkungsgrad}\label{cha:Momententstehung}
+%
+Die durch die Zündung des Gas-Luft-Gemisches in einem Zylinder entstehende Ausdehnungkraft verrichtet Arbeit an einem Kolben, die durch eine Pleuelstange auf die Kurbelwelle übertragen und in ein Drehmoment dort umgewadelt wird. So wird die oszillierende bzw. translatorische Bewegung des Kolbens in eine Drehbewegung an der Kurbelwelle umgesetzt. 
+
+Im Folgenden sollen nach ~\cite{Zahn} und ~\cite{Beidl} die wichtigsten Gleichungen eingeführt werden, die zur Entstehung des Motordrehmoments beitragen.
+%
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.6]{./Bilder/Kurbeltrieb.jpg}
+\caption{Kinematik des Kurbeltriebs; Entnommen aus ~\cite{Zahn}}
+\label{fig:Treibwerk}
+\end{figure}
+%
+\section{Relevante Gleichungen für die Beschrebung des Motordrehmomentes}\label{sec:GleichDreh}
+\begin{description}
+%
+\item[Kolbenweg $s_k(\phi)$:] \ \\
+%
+Aus den geometrischen Verhältnissen ergibt sich:
+%
+\begin{equation}
+  \label{eq:kolbenweg1}
+	s_K(\phi) = r_{KW}+l_P-(l_Pcos\phi+r_{KW}cos\beta).
+\end{equation}
+%
+mit $r_{KW}\sin\beta=l_P\cos\phi$ und $\lambda_P=r_{KW}/l_P$ (Pleuelstangenverhältnis) folgt:
+%
+\begin{equation}
+\begin{split}
+  \label{eq:kolbenweg2}
+	& \sin\beta=\lambda_p\sin\phi \quad und \quad \cos\beta=\sqrt{1-\lambda_p^2\sin^2\phi} \\
+	& s_K(\phi)=r_{KW}\left[1-\cos\phi+\frac{1}{\lambda_p}\left(1-\sqrt{1-\lambda_p^2\sin^2\phi}\right)\right].
+	\end{split}
+\end{equation}
+%
+Dabei sind $r_{KW}$ der Kurwelradius, $l_P$ die Pleuellänge und $\beta$ der Pleuelstangen-Schenkelwinkel. 
+
+Für das Volumen gilt:
+%
+\begin{equation}
+  \label{eq:zylVolumen}
+	V_k(\phi)=V_C+A_K\cdot s_K(\phi).
+\end{equation}
+%
+und dessen Änderung über dem Kurbelwinkel folt zu 
+%
+\begin{equation}
+  \label{eq:dzylVolumen}
+	\frac{dV_k(\phi)}{d\phi}=A_K\frac{ds_K(\phi)}{d\phi}=A_K\cdot g(\phi),
+\end{equation}
+%
+mit 
+%
+\begin{equation}
+  \label{eq:verhaelt1}
+	g(\phi)=\frac{ds_K(\phi)}{d\phi}=\left[\sin\phi+\frac{\lambda_p}{2}\frac{\sin2\phi}{\sqrt{1-\lambda_p^2\sin^2\phi}}\right].
+\end{equation}
+%
+Dabei sind $V_C$ bzw. $A_K$ jeweils das Kompressionsvolumen bzw. die wirksame Kolbenoberfläche. 
+
+In \ref{eq:verhaelt1} wird die Kenngröße $g(\phi)=\frac{ds_K(\phi)}{d\phi}$ eingeführt, die in den Kapiteln \ref{sec:Wirk} bzw. \ref{sec:AuswirkMom} weger ihrer Wichtigkeit bei der Drehmomentbildung bzw. Wirkungsgradsbestimmeung näher untersucht wird.
+
+\item[Kolbengeschwindigkeit $c_K(\phi)$:]
+%
+\begin{equation}
+  \label{eq:kolbGesch}
+	c_K(\phi)=\frac{ds_k}{dt}=\frac{ds_k(\phi)}{d\phi}\frac{d\phi}{dt}=r_{KW}\omega_{Mot}\left(\sin\phi+\frac{\lambda_P}{2}\frac{\sin2\phi}{\sqrt{1-\lambda_P^2\sin^2\phi}}\right).
+\end{equation}
+%
+\item[Kolbenbeschleunigung $a_K(\phi)$:]
+%
+\begin{equation}
+  \label{eq:kolbBesch}
+	a_K(\phi)=\frac{d^2s_k}{dt^2}=\frac{dc_k(\phi)}{d\phi}\frac{d\phi}{dt}=r_{KW}\omega_{Mot}^2\left(\cos\phi+\lambda_P\frac{1-2\sin^2\phi+\lambda_P^2\sin^4\phi}{\sqrt{1-\lambda_P^2\sin^2\phi}}\right).
+\end{equation}
+\end{description}
+
+\section{Motordrehmoment}
+%
+Die im Kurbeltrieb wirkenden Kräfte bzw. Kraftkomponenten sind in Bild ~\ref{fig:KrafteTreibwerk} dargestellt.
+%
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.5]{./Bilder/KraefteKurbeltrieb.jpg}
+\caption{Im Hubkolbentriebwerk wirkende Kräfte; Entnommen aus ~\cite{Zahn}}
+\label{fig:KrafteTreibwerk}
+\end{figure}
+%
+Das vom Triebwerk an der Kurbelwelle hervorgerufene Drehmoment $M_Z$ wird von der Tangentialkraft $F_T$ erzeugt
+%
+\begin{equation}
+  \label{eq:Moment}
+	M_Z=F_T(\phi)\cdot r_{KW}.
+\end{equation}
+%
+Die Tangentialkraft $F_T(\phi)$ läßt sich über vektorgeometrische Beziehungen aus der am Kolben wirkenden Kraft $F_K(\phi)$ berechnen. Die Kolbenkraft $F_K(\phi)$ wird hierzu in die Kolbengleitbahn-Normalkraft $F_N$ und die Pleuelstangenkraft $F_S$ zerlegt. Letztere ergibt sich unter Berücksichtigung von ~\ref{eq:kolbenweg2} zu
+%
+\begin{equation}
+  \label{eq:Pleuelkraft}
+	F_S=\frac{F_K(\phi)}{\cos\beta}=\frac{F_K(\phi)}{\sqrt{1-\lambda_p^2\sin^2\phi}}.
+\end{equation}
+%
+Die Pleuelstangenkraft $F_S$ teilt sich am Kurbelzapfen wiederum in die Radialkraft $F_R$ und die gesuchte Tangentialkraft $F_T$ auf. Aus Bild ~\ref{fig:KrafteTreibwerk} läßt sich für die Tangentialkraft $F_T$ ablesen
+%
+\begin{equation}
+  \label{eq:Tangentialkraft1}
+	\begin{split}
+	& F_T(\phi)=F_S(\phi)\sin(\phi+\beta)\\
+	& F_T(\phi)=F_K(\phi)\frac{\sin(\phi+\beta)}{\cos\beta}.
+	\end{split}
+\end{equation}
+%
+Mit
+%
+\begin{center}
+	$\sin(\phi+\beta)=\sin\phi\cos\beta+\cos\phi\sin\beta$ \quad und \quad $\sin\phi\cos\phi=\frac{1}{2}\sin2\phi$
+\end{center}
+%
+folgt für die Tangentialkraft
+%
+\begin{equation}
+  \label{eq:Tangentialkraft2}
+	F_T(\phi)=F_K(\phi)\left[\sin\phi+\frac{\lambda_p}{2}\frac{\sin2\phi}{\sqrt{1-\lambda_p^2\sin^2\phi}}\right]=F_K(\phi)\cdot g(\phi).
+\end{equation}
+%
+Die am Kolben angreifende Kraft $F_K$ setzt sich zum einen aus der durch die Verbrennung hervorgerufenen Gaskraft $F_G$ und zum anderen aus der Trägheitskraft $F_{M,osz}$ der oszillatorisch bewegten Teile des Triebwerkes zusammen
+%
+\begin{equation}
+  \label{eq:Kolbenkraft}
+	F_K(\phi)=F_G+F_{M,osz},
+\end{equation}
+%
+wobei für $F_{M,osz}$ gilt
+%
+\begin{equation}
+  \label{eq:oszMassenkraft}
+	F_{M,osz}=-m_{osz}a_K.
+\end{equation}
+%
+Nach einigen Umrechnungen ergibt sich das vom Zylinder abgegebene Drehmoment zu
+%
+\begin{equation}
+  \label{eq:DrehmomentZyl}
+	\begin{split}
+	& M_Z=r_{KW}\left[A_K'(p_Z(\phi)-p_U)-a_K(m_K+m_{P,osz})\right]\left[sin\phi+\frac{\lambda_p}{2}\frac{\sin2\phi}{\sqrt{1-\lambda_p^2\sin^2\phi}}\right]\\
+	& M_Z=P(\phi)\cdot g(\phi)	
+	\end{split}
+\end{equation}
+%
+mit
+%
+\begin{equation}
+  \label{eq:Hilfsfun}
+	P(\phi)=r_{KW}\left[A_K'(p_Z(\phi)-p_U)-a_K(m_K+m_{P,osz})\right],
+\end{equation}
+%
+wobei sich $g(\phi)$ auf die in \ref{eq:verhaelt1} eingeführte Kenngröße bezieht.
+
+Das vom gesamten Motor abgegebene Drehmoment ergibt sich dementsprechend zu
+%
+\begin{equation}
+  \label{eq:DrehmomentKomplett}
+	M_{Mot}=\sum_{i=1}^{z}M_{Z,i}-M_R.
+\end{equation}
+%
+Hierbei stellt $M_R$ das Motorreibmoment, $A_K'$ die Projektionsfläche der Kolbenbodenoberfläche in Zylinderrichtung, $p_Z(\phi)$ den nach der Zündung des Gas-Luft-Gemisches entstehenden Gasdruck, $p_U$ den Umgebungsdruck, $r_{KW}$ den in ~\ref{eq:kolbenweg2} eingeführten Kurwelradius und $a_K(\phi)$ die Kolbenbeschleunigung nach ~\ref{eq:kolbBesch} dar. Die oszillierende Masse besteht aus der Kolbenmasse $m_K$ (Kolben, Kolbenringe, Kolbenbolzen) und dem oszillierenden Anteil der Pleuelmasse $m_{P,osz}$.
+
+Für genauere Informationen über die entsprechende Herleitung der oben eingeführten Gleichung wird auf ~\cite{Zahn} verwiesen.
+%
+\section{Wirkungsgrad beim Dieselverbrennungsmotor}\label{sec:Wirk}
+%
+Nach ~\cite{Beidl} gilt für die gesamte Wirkungsgradkette am Verbrennungsmotor folgende Beziehung:
+%
+\begin{equation}
+  \label{eq:WirkKette}
+	\begin{split}
+	& \eta_e=\eta_B\cdot \eta_{th}\cdot \eta_{\nu}\cdot \eta_{LW}\cdot \eta_m  \\
+	& \eta_e=\eta_B\cdot \eta_i\cdot \eta_m \\
+	& \eta_e=\frac{W_{BV}}{W_B}\cdot \frac{W_{th}}{W_{BV}}\cdot \frac{W_{iHD}}{W_{th}}\cdot \frac{W_i}{W_{iHD}}\cdot \frac{W_e}{W_i}=\frac{W_e}{W_B}
+	\end{split}
+\end{equation}
+%
+mit
+%
+\begin{enumerate}
+	\item[] $\eta_{e}=\frac{W_e}{W_B}$ (Effektiver Wirkungsgrad)
+	\item[] $\eta_B=\frac{W_{BV}}{W_B}$ (Brennstoffumsetzungsgrad)
+  \item[] $\eta_{th}=\frac{W_{th}}{W_{BV}}$ (thermischer Wirkungsgrad)
+  \item[] $\eta_{\nu}=\frac{W_{iHD}}{W_{th}}$ (Verbrennungsgüte)
+	\item[] $\eta_{LW}=\frac{W_i}{W_{iHD}}$ (Ladungswechselverluste)
+	\item[] $\eta_{m}=\frac{W_e}{W_i}$ (mechanische Verluste)
+	\item[] $\eta_{i}=\frac{W_i}{W_{BV}}$ (Indizierter- oder Innenwirkungsgrad).
+\end{enumerate}
+%
+Dabei steht $W_{BV}$ für den Arbeitsinhalt des verbrannten Brennstoffs, $W_B$ für den Arbeitsinhalt des eingespritzten Brennstoffs, $W_{th}$ für die Arbeit aus dem Gleichraumprozess, $W_{iHD}$ für die am Kolben indizierte Arbeit der Hochdruckschleife, $W_i$ für die gesamte am Kolben indizierte Arbeit und $W_e$ für die Nutzarbeit an der Kupplung.
+
+Im Rahmen dieser Arbeit wird hinsichtlich der Drehmomentoptimierung mehr Wert auf den Wirkungsgrad $\eta_A$ gelegt, der aus dem Produkt zwischen Innenwirkungsgrad $\eta_{i}$ und Brennstoffumsetzungsgrad $\eta_B$ definiert ist
+%
+\begin{equation}
+  \label{eq:WirkBozz}
+		\eta_A=\eta_{i}\cdot \eta_B=\frac{W_i}{W_B}.
+\end{equation}
+%
+\subsection{Wechselwirkung zwischen dem Motorwirkungsgrad und dem Durchnittsdrehmoment}
+%
+Zur Beschreibung des Motorwirkungsgrads und Durchnittsmoments werden manche mathematische Zusammenhänge benötigt, die im Folgenden näher erläutert werden.
+
+In \ref{eq:Tangentialkraft2} bzw. \ref{eq:DrehmomentKomplett} kommt folgende einheitslose Kenngröße $g(\phi)$ vor
+%
+\begin{equation}
+  \label{eq:verhaelt}
+		g(\phi)=\frac{ds_k}{d\phi}=sin\phi+\frac{\lambda_p}{2}\frac{\sin2\phi}{\sqrt{1-\lambda_p^2\sin^2\phi}},
+\end{equation}
+%
+mit deren Hilfe das Durchnittsdrehmoment $M_{Z,durch}$ über ein Arbeitsspiel, d.h. $\phi\in[0,720]$ mit $[\phi]= ^\circ$KW, berechnet wird
+%
+\begin{equation}
+  \label{eq:DurchMom}
+	\begin{split}
+		& M_{Z,durch}=\frac{1}{720}\int_0^{720^\circ KW}F_K(\phi)g(\phi)d\phi=\int_0^{720^\circ KW}F_K(\phi)ds_K(\phi)\cos\alpha\\
+		& M_{Z,durch}=\frac{1}{720}\int_0^{720^\circ KW}\vec{F_K}(\phi)\cdot \vec{ds_K}(\phi)\\
+		& \textnormal{mit} \qquad \frac{ds_K}{d\phi}=g(\phi).
+	\end{split}
+\end{equation}
+%
+In \ref{eq:DurchMom} steht $s_K$ für den Kolbenweg, der im Unterkapitel \ref{sec:GleichDreh} bereits eingeführt wurde.
+
+Nach ~\cite{Beidl} lautet die Definition der am Kolben indizierten Arbeit $W_i$
+%
+\begin{equation}
+  \label{eq:indArbeit}
+		W_i=\int_0^{720^\circ KW}\vec{F_K}(\phi)\cdot \vec{ds_K}(\phi)
+\end{equation}
+%
+Man kann an den Gleichungen \ref{eq:DurchMom} bzw. \ref{eq:indArbeit} erkennen, dass es zwischen dem Durchnittsdrehmoment $M_{mot,durch}$ und der indizierten Arbeit $W_i$ folgenden Zusammenhang gibt
+%
+\begin{equation}
+  \label{eq:zusMomIndArb}
+			M_{Z,durch}=\frac{1}{720}\int_0^{720^\circ KW}\vec{F_K}(\phi)\cdot \vec{ds_K}(\phi)=\frac{1}{720}W_i.
+\end{equation}
+%
+Betrachtet man außerdem den in Gleichung \ref{eq:WirkBozz} definierten Wirkungsgrad $\eta_A$, kann man feststellen, dass er direkt proportional zu der am Kolben indizierten Arbeit $W_i$ ist. Es gilt also
+%
+\begin{equation}
+  \label{eq:MomPropWirk}
+		M_{Z,durch} \quad \propto \quad \eta_A.
+\end{equation}
+%
+Aus obiger Analyse lässt sich folgender Rückschluss ziehen:
+%
+\begin{center}
+	\textit{Eine Verbesserung der am Kolben indizierten Arbeit $W_i$ führt nicht nur zu einer Verbesserung des Motordrehmoments $M_{mot}$, sondern auch zu einer Erhöhung des Motorwirkungsgrads $\eta_A$.}
+\end{center}
+%
+Der Zusammenhang zwischen Durchnittsdrehmoment $M_{Z,durch}$ und Motorwirkungsgrad $\eta_A$, der in durch Gleichung \ref{eq:zusMomIndArb} ausgedrückt wird, kann nach ~\cite{Beidl2} bestätigt werden, wobei dort folgende Beziehung angegeben wird 
+%
+\begin{equation}
+  \label{eq:zusMomIndArbBeidl}
+		M_d=\eta_e\cdot \dot{m}_{Br}\cdot H_U \cdot \frac{1}{2\pi n_{mot}}.
+\end{equation}
+%
+Dabei stellen $\eta_e$ den effektiven Wirkungsgrad, der wie in Gleichung \ref{eq:WirkKette} zu erkennen ist, indirekt von der im Zylinder indizierten Arbeit abhängt, $\dot{m}_{Br}$ die je Arbeitsspiel eingespritzte Brennstoffmasse, $H_U$ den unteren Heizwert vom Dieselkraftstoff und $n_{mot}$ offensichtlich die Motordrehzahl dar.
+
+In der vorliegenden Arbeit wurde die oben beschriebene Tatsache ausgenutzt, sodass nur die Drehmomentbildung am Motor optimiert wird, denn dadurch wird gleichzeitig der Motorwirkungsgrad verbessert.
+%
+\section{Auswirkung des Druckverlaufs auf die Drehmomentbildung}\label{sec:AuswirkMom}
+%
+Bei der Drehmomentbildung spielt die in Gleichung \ref{eq:dzylVolumen} eingeführte Funktion $g(\phi)$ eine entscheidende Rolle.
+Diese Kenngröße ist zwar zeitlich veränderlich, ihr Verlauf lässt sich jedoch nur über konstruktive Parameter modifizieren. 
+Eine Optimierung des Drehmomentes ist demenstprechend für die vorliegende Arbeit nur über den Zylinderdruckverlauf $p_Z(\phi)$ möglich.
+
+In Abbildung \ref{fig:Drehmom} kann man die Auswirkung der Funktion $g(\phi)$ auf die Drehmomentbildung erkennen. Diese Funktion stellt nämlich eine Art Gewichtung für den Druckverlauf $p_{Z}(\phi)$  bzw. für die in Gleichung \ref{eq:Hilfsfun} eingeführte Funktion $P(\phi)$ dar. Dabei werden nämlich die Anteile, bei denen die Funktion $P(\phi)$ einen positiven Wert annimmt, nur dann in ein positives Drehmoment überführt, falls die Gewichtungsfunktion $g(\phi)$ an diesem Zeitpunkt $t_a$ bzw. an dem zu $t_a$ entsprechenden Kurwelwinkel $\phi_a$ auch positive Werte annimmt. Ist der positive Drehmomentanteil größer als der negative, dann ist das Durchnittsdrehmonent, was an der Kurwelwelle wirksam ist, größer.
+%
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.35]{./Bilder/Drehmom1.jpg}
+\caption{Kinematik des Kurbeltriebs; Entnommen aus ~\cite{Zahn}}
+\label{fig:Drehmom}
+\end{figure}
+%
+
+Zwecks einer Verbesserung der Drehmomentbildung sollte demnach die Schwerpunktlage der Verbrennung (SPL) mit Hilfe der zur Verfügung stehenden Stellgrößen so eingestellt werden, dass sie nach dem oberen Totpunkt liegt. Dadurch kann nämlich der entstehender Zylinderdruck bzw. die aus dem Verbrennungsvorgang entstehende Kolbenkraft $F_K(\phi)$ nicht nur einen größeren Beitrag zur gesamten Drehmomentbildung leisten sondern der Verbrennungsvorgang wirkt sich positiver auf den Wirkungsgrad aus. Nach ~\cite{Beidl2} ist der Wirkungsgrad am Größten, wenn die SPL 8 °KW nach dem OT verlegt wird. Dieser optimale Wert wird dort dadurch begründet, dass die Wandwärmeverluste dabei am Niedriegsten gehalten werden, so dass ein höherer Anteil der im Brennstoff enthaltenen Energie in den nach der Verbrennung entstehendenn Zylinderdruck umgewandelt wird und nicht als Verlust in die Energiebilanz einzuorden ist.
+
+Es liegt der Vermutung nahe, dass eine vor dem OT langsam stattfindende Verbrennung nur dann mit einer guten Drehmomentbildung einhergehen würde, wenn der nachfolgende Vernunngsvorgang noch einen starken Beitrag zum Druckverlauf leisten könnte.
+
+Diese Tatsache wird hinsichtlich der Drehmomentoptimierung so ausgenutzt, dass mit Hilfe der ausgewählten Stellgrößen eine gute Drehmomentbildung unter Berücksichtigung der Geräuschemissionen trotzdem erzielt werden kann.
+%

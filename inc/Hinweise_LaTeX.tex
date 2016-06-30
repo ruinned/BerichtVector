@@ -1,0 +1,438 @@
+%
+\chapter{Allgemeine Hinweise und Informationen zum Erstellen einer schriftlichen Arbeit mit \LaTeX}
+\label{cha:Hinweise-Latex}
+
+%Dieses Kapitel gibt allgemeine Hinweise zur Erstellung einer wissenschaftlichen Arbeit mit dem Textsatzprogramm \LaTeX. Es ist inhaltlich identisch mit dem vorherigen Kapitel und enthält zusätzlich die \LaTeX-spezifischen Befehle, die bei der Umsetzung der Hinweise hilfreich sein könnten.
+
+%Wird die Arbeit \emph{nicht} mit \LaTeX\ erstellt, sollte das vorherige Kapitel gelesen werden.
+
+%Besonderes Augenmerk sollte auf Abschnitt~\ref{sec:Latex-Zitieren}, \textbf{Zitate und korrekte Zitierweisen} gelegt werden.
+
+Dieses Kapitel gibt allgemeine Hinweise zur Erstellung einer wissenschaftlichen Arbeit mit dem Textsatzprogramm \LaTeX. Das Kapitel sollte auch von Studierenden gelesen werden, die sich gegen eine Erstellung der Arbeit mit \LaTeX\ entschieden haben. Da das Layout der Arbeit in diesem Fall gemäß den TUD Designvorgaben zusätzlich selbst erstellt werden muss, dient die vorliegende Anleitung auch als Vorlage.
+
+%Wird die Arbeit \emph{nicht} mit \LaTeX\ erstellt, sollte das vorherige Kapitel gelesen werden.
+
+%Besonderes Augenmerk sollte auf Abschnitt~\ref{sec:Latex-Zitieren}, \textbf{Zitate und korrekte Zitierweisen} gelegt werden.
+
+\section{Editor}
+Für LATEX gibt es eine Vielzahl von freien und kommerziellen Texteditoren. Das \textsc{TeXnicCenter} ist ein freier open-source Editor, der sich bei uns am Institut bewährt hat. Eine Anleitung zur Einrichtung des \textsc{TeXnicCenter} befindet sich in dieser zip-Datei.
+
+\section{Rechtschreibung}
+
+Studentische Abschlussarbeiten am IAT sind nach \emph{neuer} deutscher
+Rechtschreibung zu verfassen. Die wesentlichen Änderungen betreffen die Groß-
+und Kleinschreibung sowie die Getrennt- und Zusammenschreibung,
+siehe~\cite{Duden}. Das offensichtlichste Merkmal ist die neue
+\glqq ß\grqq-Regel: Nach kurzem Vokal steht jetzt \emph{immer} \glqq ss\grqq\ (wie in Abschluss),
+nach langem Vokal \glqq ß\grqq\ (wie in Fuß). Die neue deutsche Rechtschreibung wird in
+\LaTeX\ mit dem Paket \verb|babel| über die Option \verb|ngerman| aktiviert.
+
+Im Internet findet man unter \verb|http://www.duden.de/| einen Crashkurs zur
+neuen deutschen Rechtschreibung.
+
+
+\section{Zitate und korrekte Zitierweise}
+\label{sec:Latex-Zitieren}
+
+Zitate sind wörtliche oder sinngemäße Wiedergaben von Gedanken, Ideen oder Meinungen anderer Autoren. Werden Ideen oder Inhalte aus Quellen wörtlich oder sinngemäß in die eigene Arbeit übernommen, besteht die \textbf{Pflicht}, diese zu kennzeichnen. Wird dies unterlassen, liegt ein \textbf{Täuschungsversuch} (Plagiat) vor und die Arbeit kann als \textbf{nicht bestanden} bewertet werden.
+
+Laut § 38 Abs. 2 der \emph{Allgemeinen Prüfungsbestimmungen} liegt \glqq\ [...] ein Täuschungsversuch [...] vor, wenn eine falsche Erklärung nach §§ 22 Abs. 7, 23 Abs. 7 abgegeben worden ist oder ein anderes Werk, eine Bearbeitung eines anderen Werkes, eine Umgestaltung eines anderen Werkes ganz oder teilweise in der Prüfungsarbeit wiedergeben werden, ohne dieses zu zitieren (Plagiat).\grqq~\cite{APB}
+
+\subsection*{Zitierfähigkeit}
+Zitierfähig sind nur veröffentlichte Werke aus allgemein zugänglichen Quellen (Bücher, Artikel, \etc). Quellen, bei denen die Verfügbarkeit nicht garantiert werden kann (Internetquellen) oder der Urheber nicht klar nachvollziehbar ist (Wikipedia, o.\,ä\,.), sind problematisch und sollten möglichst vermieden werden. Wird doch solch eine Quelle zitiert, ist die aktuelle Version zum Zeitpunkt des Zitates beizulegen.
+
+\subsection*{Wörtliche Zitate}
+Wörtliche Zitate in ingenieurwissenschaftlichen Arbeiten sind unüblich. Sollte doch ein wörtliches Zitat in die Arbeit übernommen werden, muss dieses buchstaben- und zeichengetreu, inklusive eventueller Rechtschreibfehler übernommen werden. Das wörtliche Zitat wird in Anführungszeichen eingefasst.
+
+\subsection*{Sinngemäße Zitate}
+Weit häufiger werden in wissenschaftlichen Arbeiten Ideen oder Meinungen anderer Autoren sinngemäß übernommen. Diese müssen durch einen Verweis auf die Quelle gekennzeichnet werden. Durch die Position des Verweises muss der Umfang der sinngemäßen Übernahme klar hervorgehen.
+
+\subsection*{Quellenangaben im Literaturverzeichnis}
+Für die Darstellung der Verweise, als auch für die Darstellung der Quellen im Literaturverzeichnis gibt es verschiedene Zitierweisen. Üblich sind die Harvard-Variante mit Autor und Veröffentlichungsjahr in runden Klammern, wie zum Beispiel (Isermann, 2001) oder eine fortlaufende Nummerierung in eckigen Klammern, wie in dieser Vorlage. Die Sortierung des Literaturverzeichnisses kann alphabetisch oder nach dem Erscheinen der Verweise erfolgen. Das \texttt{bibgerm} Paket ermöglicht verschiedene (im Deutschen übliche) Zitierweisen.
+
+Ein Verweis wird mit \verb|\cite{...}| eingefügt und mit einem festen Leerzeichen \verb|~| mit dem vorherigen Wort getrennt. Schließt der Verweis einen Satz ab, folgt der Punkt \emph{hinter} dem Verweis.
+
+Für die Erstellung des Literaturverzeichnisses bietet sich die Erweiterung \textsc{Bib}\TeX\ an. Das Literaturverzeichnis kann per Hand oder automatisch erstellt werden. Viele Literaturverwaltungsprogramme, wie zum Beispiel \textsc{JabRef} ermöglichen den direkten Export der Datenbank nach \textsc{Bib}\TeX.
+
+
+\section{Gliederung des Dokuments}
+\label{sec:Latex-Gliederung}
+
+
+Im Inhaltsverzeichnis wird die Gliederung der Arbeit dargestellt. Die Überschriften und Seitenangaben der Kapitel, Unterkapitel und Abschnitte müssen mit den Elementen im Inhaltsverzeichnis übereinstimmen. Überschriften sind kurz und prägnant zu formulieren und dürfen keine vollständigen Sätze sein. Gibt es Unterpunkte in der Gliederung, so müssen immer mindestens zwei davon existieren und inhaltlich auf der gleichen Ebene sein. Die einzelnen Punkte des Inhaltsverzeichnis müssen nummeriert werden. Die Übersichtlichkeit des Inhaltsverzeichnisses kann durch Einrücken der Unterpunkte erhöht werden.
+
+Das Inhaltsverzeichnis wird in \LaTeX\ automatisch erstellt.
+Innerhalb der einzelnen Kapitel \verb|\chapter{...}| werden weitere
+Unterteilungen mit den Befehlen \verb|\section{...}|, \verb|\subsection{...}|
+usw.\ vorgenommen. Werden diese mit einem \verb|*| versehen, dann erhält der
+jeweilige Abschnitt keine Nummer und erscheint nicht im Inhaltsverzeichnis. Dies
+kann in manchen Fällen nützlich sein.
+
+Um eine korrekte Darstellung des Inhaltsverzeichnisses
+zu erhalten, muss ggf. mehrmals hintereinander kompiliert werden, da sich aufgrund von
+Gleitobjekten Seitenzahlen ändern können. Dreimaliges Kompilieren reicht in der Regel.
+
+Bei Bildern und Tabellen, die in eine \verb|figure|- bzw.\ \verb|table|-Umgebung
+eingeschlossen sind, handelt es sich um sog.\ \emph{Gleitobjekte}, d.\,h.\ sie
+erscheinen nicht an der Stelle, an der sie eingebunden werden, sondern oben oder
+unten auf einer Seite, siehe \zB\ Tabelle~\ref{tab:Sonderzeichen} auf
+Seite~\pageref{tab:Sonderzeichen}. Optional können in \verb|[]| noch
+Positionierungswünsche angegeben werden. Mit dem Befehl \verb|\caption{...}|
+erhalten Bilder eine \emph{Unterschrift} und Tabellen eine \emph{Überschrift}.
+
+Kapitel, Abschnitte, Bilder, Tabellen und Gleichungen können mittels
+\verb|\label{...}| benannt werden. Dadurch ist es möglich, sie später mit
+\verb|\ref{...}| oder \verb|\pageref{...}| zu referenzieren. Es empfiehlt sich,
+den Namen (Labels) eine Markierung voranzustellen, aus der hervorgeht, um
+welches Objekt es sich handelt. Üblich sind \verb|cha:| für \glqq Chapter\grqq,
+\verb|sec:| für \glqq Section\grqq, \verb|fig:| für \glqq Figure\grqq,
+\verb|tab:| für \glqq Table\grqq\ und \verb|eq:| für \glqq Equation\grqq. Ein
+Bild benennt man also \zB\ mit \verb|\label{fig:Ausgangssignal}|.
+
+\section{Bilder}\label
+{sec:Latex-Bilder}
+
+Wenn möglich, sollten Bilder als Vektorgrafik eingebunden werden, damit sichergestellt werden, dass alle Details beim Ausdrucken erhalten bleiben. Es ist dabei auf eine ausreichende Strichstärke zu achten. Ebenfalls sollten die im Bild verwendete Schrift die gleiche sein, wie im übrigen Dokument.
+
+Werden doch Pixelgrafiken verwendet, so ist die richtige Wahl der Auflösung von besonderer Bedeutung. Einerseits sollten die Bilder auf dem ausgedrucken Dokument gut aussehen, andererseits aber auch eine zügige Bildschirmdarstellung und kleine Dateigröße ermöglichen.
+
+
+Für die Erstellung von Plots eignet sich das \LaTeX-Paket \texttt{PGFPLOTS} sehr gut. Eine Anleitung zu diesem Paket befindet sich in dieser zip-Datei. In Anhang~\ref{cha:Anhang-Grafiken} sind weitere geeignete Programme zur Erstellung von Bildern und Plots mit ihren Eigenschaften aufgelistet.
+
+Eine Grafik lässt sich am einfachsten mit dem Befehl \verb|\includegraphics{}|
+aus dem \verb|graphicx|-Paket einbinden. Eine vollständige Beschreibung des
+Befehls und weiterer nützlicher Grafikbefehle findet man in der Dokumentation
+des \verb|graphicx|-Pakets. Diese liegt -- wie die Beschreibung aller anderen
+\LaTeX-Pakete -- im \verb|doc|-Verzeichnis des \TeX-Systems. In welchem Format
+\verb|graphicx| die Grafiken benötigt, hängt davon ab, ob man \TeX\ in
+Verbindung mit Dvips verwendet oder stattdessen pdf\TeX, siehe
+Anhang~\ref{cha:TexSystem}.
+
+Für \textbf{\TeX/Dvips} (empfohlen) müssen alle Grafiken im
+\emph{Encapsulated-PostScript}-Format (\verb|*.eps|) vorliegen. EPS-Dateien
+lassen sich aus praktisch jeder Software erzeugen und können sowohl Vektor- als
+auch Pixelgrafiken enthalten -- zusätzlich sind auch Preview-Grafiken möglich,
+was aber in der \TeX-Welt im Allgemeinen nicht erforderlich ist.
+
+\textbf{pdf\TeX} verarbeitet dagegen Grafiken im \emph{Portable-Document-Format}
+(\verb|*.pdf|) sowie die Pixelformate JPEG und PNG. Den direkten Export von
+PDF-Grafiken bieten derzeit zwar nur wenige Programme an, sie lassen sich aber
+einfach aus dem EPS-Format mit Hilfe des Acrobat Distiller oder Ghostscript
+erzeugen.
+
+Bilder müssen zentriert sein (\verb|\centering|) und eine Bild\emph{unterschrift} (\verb|\caption{...}|) besitzen. Um auf eine Abbildung zu referenzieren, kann auch sie mit einem \verb|\label{fig:...}| versehen werden. Nur in besonderen Ausnahmefällen sollten Bilder mit Text umflossen werden. Wurden Abbildungen einer Quelle entnommen, muss dies entsprechend mit einem Verweis auf die Quelle im Literaturverzeichnis gekennzeichnet werden. Werden Abbildungen eine Quelle nachempfunden, angepasst oder abgeändert, ist dies mit dem Zusatz \glqq in Anlehnung an...\grqq\ oder ähnlich anzugeben.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics{./Bilder/BSB_Beispiel-ext}
+	\caption{Standard-Regelkreis; Bild erstellt mit \texttt{TikZ}}
+\end{figure}
+
+Generell ist die Arbeit (und insbesondere die Grafiken) so zu gestalten, dass
+sie auch schwarzweiß gedruckt werden kann. Farbige Fotos und Screenshots
+verursachen dabei i.\,Allg.\ keine zusätzlichen Probleme. Werden jedoch \zB\
+farbige Kurven in einem Diagramm dargestellt, hat dies folgende Konsequenzen:
+\begin{itemize}
+\item Keine zu hellen Farben für die Linien verwenden, da diese sonst beim
+  Drucken nicht zu erkennen sind. RGB-Grün $(0,1,0)$ ist tabu!
+\item Bei mehreren Kurvenverläufen darf deren Farbe nicht das einzige
+  Unterscheidungsmerkmal sein: Entweder sind unterschiedliche Linienformen zu
+  verwenden oder die Kurven im Diagramm beschriften.
+\end{itemize}
+
+Bei der Erstellung von Plots ist unbedingt die \href{http://de.wikipedia.org/wiki/DIN_461}{\texttt{DIN 461 Grafische Darstellung in Koordi}}\texttt{-} \href{http://de.wikipedia.org/wiki/DIN_461}{\texttt{natensystemen}} zu beachten. Hilfreich in diesem Zusammenhang und überhaupt für die korrekte Schreibweise von Zahlen und Einheiten im Fließtext und in Formeln sind die Hinweise der TU-Chemnitz: \verb+www.tu-chemnitz.de/physik/FPRAK/Grundsatz/Literatur/si_v1.pdf+.
+
+\section{Tabellen}
+
+Tabellen müssen ebenfalls zentriert sein und besitzen eine zentrierte Tabellen\emph{überschrift} (\verb|\caption{...}|). Hier gelten die gleichen Regeln zur Quellenangabe wie bei den Bildern. Ein Referenzieren wird auch hier mit \verb|\label{tab:...}| ermöglicht.
+
+Damit Tabellen \glqq schön\grqq\ aussehen, empfiehlt es sich, einige Grundregeln zu beachten. Es gilt das Prinzip: \emph{weniger ist mehr.} So sollte auf die Verwendung von senkrechten Linien verzichtet werden und nur wichtige Zeilen, wie zum Beispiel Überschriften, Sinnabschnitte, Unterpunkte, \etc mit horizontalen Linien getrennt werden. Das Paket \verb|booktabs| stellt Linientypen für den Kopf und Fuß einer Tabelle zur Verfügung.
+
+
+\begin{table}[htb]
+\begin{center}
+\caption{Parameter\footnotemark}
+\label{tab:Systemparameter}
+\begin{tabular}{ccccp{3mm}cccc}
+	\toprule
+	& Ref. & Mod. & Einheit & & & Ref. & Mod. & Einheit\\
+	\cmidrule(r){1-4}									\cmidrule(l){6-9}
+	$m_1$ & 4{,}0 & 4{,}63 & \unit{kg} &	
+		&$d_1$ & 0 & 0 & \unit{\frac{N\,m\,s}{rad}}\\[1mm]
+	$m_2$ & 10{,}1 & 11{,}15 & \unit{kg} &	
+		&$d_2$ & 0 & 0 & \unit{\frac{N\,m\,s}{rad}}\\[1mm]
+	$m_3$ & 45{,}7 & 42{,}5 & \unit{kg} &	
+		&$l_1$ & 0{,}5 & 0{,}45 & \unit{m}\\[1mm]
+	$J_1$ & 0{,}967 & 0{,}993 & \unit{kg\,m^2} &	
+		&$l_2$ & 1{,}5 & 1{,}59 & \unit{m}\\[1mm]
+	$J_2$ & 0{,}571 & 0{,}599 & \unit{kg\,m^2} &
+		&$\varphi_{1,0}$ & 100 & 98{,}5 & \unit{\degree}\\[1mm]
+$g$ & 9{,}81 & 9{,}81 & \unit{\frac{m}{s^2}} &
+		&$\varphi_{2,0}$ & {5} & {4.66} & \unit{\degree} \\
+	\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+\footnotetext{Eine schönere Formatierung der Tabelle (Ausrichtung am Trennzeichen, etc.) erlaubt das \texttt{siunitx}-Paket, welches sich aber mit irgendwas in der Vorlage beißt (nur Warnmeldungen, aber trotzdem...) }
+
+\section{Mathematische Formeln}
+
+Mathematische Formeln, wie 
+\begin{equation}
+  \label{eq:Allgemein-Approx}
+  \int_0^\infty g(x)\,\mathrm{d}x\approx\sum_{i=1}^n w_i\mathrm{e}^{x_i} g(x_i)
+\end{equation}
+werden eingerückt linksbündig dargestellt und nur dann nummeriert, wenn auf sie im Text verwiesen wird. Für eine bessere Lesbarkeit ist es sinnvoll Gleichungen als Bestandteil des Satzes zu verwenden, so wie mit Gleichung~\eqref{eq:Allgemein-Approx}. Die Referenzierung einer erst später aufgeführten Gleichung sollte vermieden werden.
+
+\emph{Alle} mathematischen Ausdrücke (auch wenn es nur einzelne Zeichen sind)
+werden im mathematischen Modus \verb|$...$| geschrieben, damit sie in der
+richtigen Schrift erscheinen. Hier gilt die Faustregel, dass gewöhnliche
+mathematische Größen \emph{kursiv} geschrieben werden, Ausdrücke mit
+konventioneller (feststehender) Bedeutung dagegen in normaler (steiler,
+aufrechter) Schrift, siehe~\cite{DIN1338}. Es sind insbesondere Einheiten,
+Standardfunktionen und -operatoren sowie mathematische Konstanten steil zu
+schreiben,
+\begin{displaymath}
+  \mathrm{e}^{ax}\;,\qquad a+\mathrm{j}b\;,\qquad
+  \int_{t=0}^{t=1\,\mathrm{s}} f(t)\cdot\sin(\omega t)\,\mathrm{d}t\;.
+\end{displaymath}
+Da der mathematische Modus zunächst alle Größen \emph{kursiv} setzt, müssen
+Ausdrücke, die in aufrechter Schrift erscheinen sollen, mit dem Befehl
+\verb|\mathrm{...}| gekennzeichnet werden; bei Textteilen innerhalb einer Formel
+verwendet man besser \verb|\mbox{...}| oder \verb|\text{...}| (aus dem
+\verb|amsmath|-Paket). Für Standardfunktionen werden von \LaTeX\ die
+entsprechenden Befehle \verb|\sin|, \verb|\log|, \verb|\max| usw.\ zur Verfügung
+gestellt. Konsequenter Weise muss dieses Prinzip auch auf Indizes angewendet
+werden, also \zB
+\begin{displaymath}
+  \sum_{i,\,j}a_{ij}\,\sin(ijx)\;,\qquad\mbox{aber:}\qquad
+  K_\mathrm{Regler} = 0{,}5\;.
+\end{displaymath}
+Als Ausnahme von der o.\,g.\ Faustregel werden große griechische Buchstaben
+meist \emph{nicht} kursiv geschrieben, so auch im mathematischen Modus von
+\LaTeX. Matrizen und Vektoren werden in \textbf{fetten} Buchstaben gesetzt.
+Damit sie sich besser von den übrigen Symbolen abheben, werden auch sie nicht
+\textbf{\emph{fett-kursiv}} sondern \textbf{fett-steil} geschrieben. Dazu
+definiert man zweckmäßigerweise im Vorspann des Dokuments den Befehl
+\begin{center}
+\verb|\newcommand{\mat}[1]{{\ensuremath{\boldsymbol{\mathrm{#1}}}}}|\,,
+\end{center}
+den man dann sowohl für Matrizen (Großbuchstaben, \zB\ \verb|\mat{A}|) als
+auch für Vektoren (Kleinbuchstaben, \zB\ \verb|\mat{x}|) verwenden kann.
+\begin{displaymath}
+  \mat{A}=\left(\begin{array}{ccc}
+    a_{11} & \ldots & a_{1n} \\
+    \vdots & \ddots & \vdots \\
+    a_{n1} & \ldots & a_{nn}
+  \end{array}\right)\;,\qquad
+  \mat{x}=\left(\begin{array}{@{}c@{}} x_1 \\ x_2 \end{array}\right)\;,\qquad
+  \mat{\beta}^\mathrm{T}=(\beta_1,\,\ldots,\,\beta_m)
+\end{displaymath}
+
+Chemische Formelzeichen schreibt man grundsätzlich in aufrechter Schrift.
+Variable Größen sind aber auch hier kursiv:
+\begin{displaymath}
+  \mathrm{H_2 O}\;,\qquad
+  \mathrm{NO}_x\;,\qquad
+  \mathrm{Fe_2^{2+}Cr_2^{\vphantom{2+}}O_4^{\vphantom{2+}}}
+\end{displaymath}
+
+
+Beim Referenzieren von Gleichungen muss diese nummeriert werden. Ist die Gleichung
+\begin{equation}
+  \label{eq:Approx}
+  \int_0^\infty g(x)\,\mathrm{d}x\approx\sum_{i=1}^n w_i\mathrm{e}^{x_i} g(x_i)
+\end{equation}
+mit \verb|\label{eq:Approx}| bezeichnet, erzeugt die Referenz \verb|\eqref{eq:Approx}| den Ausdruck \glqq \eqref{eq:Approx}\grqq. Kapitel, Abschnitte, Bilder und Tabellen bekommen keine Klammern, also \zB\
+\verb|Kapitel~\ref{cha:Intro}| für \glqq Kapitel~\ref{cha:Intro}\grqq. Es ist
+darauf zu achten, ob es sich um \emph{Kapitel} oder \emph{Abschnitte} handelt.
+Vor \verb|\ref{...}| steht ein \emph{festes} Leerzeichen~\verb|~|, damit dort
+kein Umbruch erfolgen kann. Literaturangaben werden mit \verb|\cite{...}|
+anstelle von \verb|\ref{...}| referenziert.
+
+Werden Gleichungen oder Listen in den laufenden Text eingefügt, darf dazwischen
+kein Absatz (d.\,h.\ eine Leerzeile im Quelltext) sein. Um den Quelltext
+besser zu gliedern, kann an dieser Stelle eine Zeile mit einem \verb|%|-Zeichen
+eingefügt werden. Eine Leerzeile darf nur dann im Quelltext stehen, wenn auch
+wirklich ein Absatz erwünscht ist. Der Zeilentrenner \verb|\\| erzeugt übrigens
+keinen Absatz und darf im laufenden Text überhaupt nicht vorkommen.
+
+
+\section{Auszeichnungen und Hervorhebungen}
+
+Wichtige Begriffe werden durch eine andere Schrift hervorgehoben (ausgezeichnet).
+Man unterscheidet dabei integrierte und aktive Auszeichnungen.
+Integrierte Auszeichnungen sollen erst beim Lesen wahrgenommen werden, sich aber
+ansonsten in den Text eingliedern. Die typische Form einer integrierten
+Auszeichung ist die \emph{kursive} Schrift, die mit \verb|\textit{...}| oder
+\verb|\emph{...}| erzeugt wird. Aktive Auszeichnungen sollen dagegen sofort beim
+Betrachten der Seite auffallen. Der wichtigste Vertreter ist hier die
+\textbf{fette} Schrift, die man durch Verwendung von \verb|\textbf{...}| erhält.
+In wissenschaftlichen Arbeiten werden vorwiegend integrierte Auszeichnungen
+benutzt.
+
+Grundsätzlich sollte bei Auszeichnungen immer nur \emph{ein} Attribut geändert
+werden, also \emph{nicht} gleichzeitig \emph{\underline{\textbf{fett, kursiv und
+unterstrichen}}}. Programmcode und Befehle setzt man üblicherweise mit
+\verb|\texttt{...}| oder \verb+\verb|...|+ in \texttt{Schreibmaschinenschrift},
+Namen gelegentlich mit \verb|\textsc{...}| in \textsc{Kapitälchen}. Für manche
+Bezeichnungen kommt eine \textsf{\textbf{fette serifenlose}} Schrift
+\verb|\textsf{\textbf{...}}| in Frage. Hier müssen ausnahmsweise \emph{zwei}
+Attribute geändert werden, da sich die \textsf{serifenlose} Schrift zu wenig vom
+übrigen Text abhebt.
+
+\glqq Anführungszeichen\grqq\ (siehe Abschnitt~\ref{sec:Sonderzeichen}) sind
+sparsam zu verwenden, \zB\ bei umgangssprachlichen Begriffen oder wörtlichen
+Zitaten. \underline{Unterstreichen} und \mbox{S\,p\,e\,r\,r\,e\,n} sollen
+überhaupt nicht benutzt werden. Es ist wichtig, sich zu Beginn der Arbeit
+zu überlegen, welche Begriffe in welcher Schrift
+gesetzt werden, und dies konsequent einzuhalten.
+
+
+\section{Einbinden von Quellcode}
+
+Wird Quellcode (MATLAB, C, \ldots) in der Arbeit angegeben, ist grundsätzlich
+eine Monospace-Schriftart zu verwenden, da nur so die Lesbarkeit des Codes
+gewährleistet werden kann.
+
+Quellcode (MATLAB, C, \ldots) kann auf verschiedene Arten eingebunden werden.
+Allgemein sollte mittels \verb|\linespread{1}| der ursprüngliche
+\LaTeX-Zeilenabstand benutzt werden. Manchmal kann es auch erforderlich sein,
+die Schrift zu verkleinern oder notfalls sogar die Seiten im Querformat zu
+beschreiben. Im laufenden Text sollten nur kleinere Code-Fragmente abgedruckt
+sein, längere Programme gehören grundsätzlich in den Anhang oder in einen
+separaten Ordner.
+
+Die einfachste Möglichkeit zum Einbinden von Quellcode ist die \verb|verbatim|-
+bzw.\ die \verb|verbatim*|-Umgebung. Der Code wird in
+Schreibmaschinenschrift \emph{exakt} (inkl.\ aller Leer- und Sonderzeichen) so
+wiedergegeben, wie er im \LaTeX-Quelltext steht.
+
+Komfortablere Möglichkeiten bietet das \verb|listings|-Paket, \zB\
+Syntax-Highlighting mit verschiedenen Schriften oder das Einbinden externer
+Dateien. Die Umschaltung auf den einfachen Zeilenabstand muss aber von Hand
+erfolgen, \zB\ mittels\\[\parskip]
+\hspace*{2em}\verb|\lstset{\basicstyle=\linespread{1}\selectfont}|
+
+
+\section{Abstände und Sonderzeichen}\label{sec:Sonderzeichen}
+
+\LaTeX\ interpretiert ein Leerzeichen \verb*| | im Quelltext als normalen
+Wortzwischenraum. Nach Befehlen wird es jedoch ignoriert, da es dort nur das
+Ende des Befehls kennzeichnet. Soll \zB\ in dem Satz \glqq\TeX\ ist
+toll!\grqq\ nach \glqq\TeX\grqq\ ein Leerzeichen erscheinen, dann muss im
+Quelltext entweder \verb*|\TeX\ | oder \verb|\TeX{}| geschrieben werden. Im
+ersten Fall wird durch \verb*|\ | ein Leerzeichen erzwungen, im zweiten Fall
+wird die leere Umgebung \verb|{}| benutzt, um den Befehl \verb|\TeX| zu beenden.
+
+Manchmal führt ein normales Leerzeichen zu unerwünschten Ergebnissen. Bei fest
+verbundenen Begriffen benutzt man ein \emph{festes} Leerzeichens, \zB\ bei
+\verb|Dr.~Müller| oder \verb|3~Uhr|, das weder umgebrochen noch gedehnt werden
+kann, s.\,a.\ Abschnitt~\ref{sec:Latex-Gliederung}. Bei zusammengesetzten Abkürzungen,
+beispielsweise \glqq d.\,h.\grqq, \glqq u.\,a.\grqq\ oder \glqq\zB\grqq, wird
+ein \emph{kleiner} Zwischenraum \verb|\,| verwendet. Hinter dem zweiten Punkt
+sollte wieder ein \verb*|\ | stehen, damit dieser nicht als Satzende
+interpretiert wird. Der kleine Zwischenraum \verb|\,| steht auch zwischen Zahl
+und Einheit bei physikalischen Größen, siehe Tabelle~\ref{tab:Sonderzeichen}.
+
+Im \emph{mathematischen} Modus wird das Komma als Aufzählungszeichen
+interpretiert und dahinter ein kleiner Abstand eingefügt. Dies ist jedoch
+problematisch, da das Komma im Deutschen auch als \emph{Dezimal}komma verwendet
+wird. Um den zusätzlichen Abstand zu unterdrücken schreibt man \zB\
+\verb|$2{,}5x$| für \glqq $2{,}5x$\grqq.
+
+Unterschiede sind auch bei den \glqq Strichen\grqq\ zu beachten. Der
+\emph{Bindestrich} \verb|-| steht bei zusammengesetzten Wörtern oder Trennungen
+und wird ohne zusätzlichen Zwischenraum benutzt. Der \emph{Gedankenstrich}
+\verb|--| steht bei eingeschobenen Satzteilen und als \glqq Bis-Strich\grqq. Als
+Gedankenstrich wird er immer mit einem Leerzeichen davor und dahinter benutzt,
+als \glqq Bis-Strich\grqq\ ohne Leerzeichen. Das \emph{Minuszeichen} \verb|$-$|
+gibt es nur im mathematischen Modus. Tabelle~\ref{tab:Sonderzeichen} zeigt
+Beispiele für die drei Fälle.
+
+Die deutschen Anführungszeichen werden mit \verb|\glqq| und \verb|\grqq{}| bzw.\
+\verb*|\grqq\ | gesetzt. Keinesfalls dürfen stattdessen englische
+Anführungszeichen \verb|``...''| oder gar das Zoll-Zeichen \verb|"..."| benutzt
+werden. Wie oben erläutert, muss der Befehl \verb|\grqq| mit \verb*|\ | oder mit
+\verb|{}| abgeschlossen werden, falls danach ein Leerzeichen folgen soll.
+
+\begin{table}
+  \caption{Die wichtigsten Abstände und Sonderzeichen.}
+  \label{tab:Sonderzeichen}
+  \setlength{\tabcolsep}{1em}\centering
+  \begin{tabular}{lll}\hline
+    Bezeichnung & Beispiel & Eingabe\\\hline
+    Leerzeichen & \TeX\ ist toll! & \verb*|\TeX\ ist toll!|\\
+    & & \verb*|\TeX{} ist toll!|\\
+    festes Leerzeichen & Dr.~Müller & \verb|Dr.~Müller|\\
+    kleines Leerzeichen & d.\,h.\ 3,5\,km & \verb*|d.\,h.\ 3,5\,km|\\
+    Bindestrich & \TeX-Datei & \verb|\TeX-Datei|\\
+    Gedankenstrich & S.~153--165 & \verb|S.~153--165|\\
+    Minuszeichen & $y=5x-2$ & \verb|$y=5x-2$|\\
+    Anführungszeichen & \glqq Beispiel\grqq\ & \verb*|\glqq Beispiel\grqq\ |\\
+    & & \verb*|\glqq Beispiel\grqq{}| \\ \hline
+  \end{tabular}
+\end{table}
+
+
+
+\section{Definition eigener Befehle}
+
+Die Möglichkeit eigene Befehle in \LaTeX{} zu definieren und zu verwenden erleichtert das Erstellen einer wissenschaftlichen Arbeit deutlich. So dient ein eigener Befehl oft dazu, häufig verwendete Befehlsfolgen kürzer und schneller schreiben zu können. Von zentraler Bedeutung ist außerdem, dass man diesen Befehl einfach ändern kann. Hat man \zB alle Matrizen mit einem eigenen Befehl versehen, der diese fett formatiert, so lässt sich dies auch schnell für alle Matrizen wieder ändern. Entscheidet man sich Matrizen mit einem Unterstrich zu kennzeichnen, so ist lediglich die Anpassung des entsprechenden Befehls notwendig.
+
+Dies lässt sich auch auf Variablennamen übertragen. Definiert man \zB für $\tilde{\hat{\mat x}}_{b2}$ einen neuen Befehl \verb|\xb2|, so verkürzt sich zum einen der Schreibaufwand. Zum anderen lässt sich selbst in der Endphase der Arbeit die Variable umbenennen, \zB in $\mat z_2$, indem lediglich der Befehl verändert wird. Die sinnvolle Verwendung eines Befehls setzt damit voraus, dass er auch immer verwendet wird.
+
+Beispielhafte selbst definierte Befehle, die teilweise hier am Institut verwendet werden, sind in \charef{cha:commonmacros} zu finden.
+
+\section{Sonstiges}
+
+
+\subsection*{PDF-Ausgabe}
+
+Das \verb|hyperref|-Paket wird benutzt, um  die Ausgabe
+für das \emph{Portable Document Format} (PDF) zu optimieren. Dies funktioniert
+sowohl mit \TeX/Dvips als auch mit pdf\TeX. Besondere Einstellungen sind dafür
+nicht erforderlich.
+
+Im PDF-Dokument können dann alle Verweise auf Kapitel, Gleichungen, Bilder,
+Literatur usw.\ angeklickt werden. Um eine gute Druckqualität zu gewährleisten,
+sind diese Links allerdings \emph{nicht} farblich hervorgehoben.
+
+Außerdem werden in das PDF-Dokument \emph{Bookmarks} (Lesezeichen) eingebettet,
+die später als Baumstruktur erscheinen und die Navigation erleichtern. In den
+Bookmarks erscheint die Titelseite sowie alle Einträge des
+Inhaltsverzeichnisses. Schließlich werden auch noch \emph{Pagelabels} (also
+\glqq wahre\grqq\ Seitenzahlen) erzeugt, die ebenfalls die Navigation
+erleichteren und von Vorteil sind, wenn nur Teile des Dokuments gedruckt werden.
+
+
+\subsection*{Verwenden von \LaTeX-Paketen}
+
+Durch das Einbinden von Zusatzpaketen kann \LaTeX\ angepasst und erweitert
+werden. Die Pakete werden mit dem Befehl \verb|\usepackage{...}| eingebunden,
+ggf.\ können auch noch Optionen in \verb|[...]| angegeben werden. Folgende
+Pakete sollten auf jeden Fall benutzt werden:
+
+\begin{tabular}{*{2}{@{\qquad}l}}
+  \verb|inputenc| &
+    Ermöglicht mit der Option \verb|latin1| Umlaute im Quelltext.\\
+  \verb|babel|    &
+    Mit Option \verb|ngerman| für neue deutsche Rechtschreibung.\\
+  \verb|graphicx| & Standard-Grafikpaket, \zB\ zum Einbinden von EPS-Bildern.\\
+\end{tabular}
+
+Zu sämtlichen Paketen findet man im Verzeichnis \verb|TEXMF/doc/latex| eine
+ausführliche Dokumentation. Welche Pakete sonst noch zum Einsatz kommen, hängt
+vom Einzelfall ab -- allerdings sollten nicht mehr als nötig verwendet werden.
+Insbesondere sollte man auf Pakete verzichten, die das Layout verändern oder zu
+stark in das Font-System eingreifen. Im Folgenden sind in alphabetischer
+Reihenfolge einige Pakete aufgelistet, die für Abschlussarbeiten
+interessant sein könnten:
+
+\begin{list}{}{\setlength{\leftmargin}{2em}\item[]}
+  \verb|amsmath    dcolumn    lscape      longtable    subfig|\\
+  \verb|amssymb    europs     latexsym    natbib       textcomp |\\
+  \verb|array      flafter    listings    siunits      verbatim |
+\end{list}
+
+

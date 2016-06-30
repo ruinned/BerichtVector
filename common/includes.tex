@@ -1,0 +1,61 @@
+% Dieses File dient zum einbinden wichtiger und nützlicher Pakete.
+% Nicht alle Pakete müssen verwendet werden.
+%
+\usepackage{t1enc}			% evtl. dc-Fonts
+\usepackage[T1]{fontenc}	% Für Silbentrennung bei Wörten mit Sonderzeichen (z.B. Umlaute)
+\usepackage[latin1]{inputenc}
+							% Um Sonderzeichen (ä, ß, é, ...) direkt eingeben zu können
+\usepackage[english,ngerman]{babel}
+							% Für Sprachenspezifisches
+							% ngerman ist schon als globale Option definiert
+
+%\usepackage{helvet}			% Helvetica als Standard-Sans-Schriftart
+\usepackage[stable]{footmisc}
+\usepackage{booktabs}
+
+\usepackage{sidecap}
+\usepackage{graphicx}		% zum Einbinden von Postscript
+\usepackage{psfrag}			% Beschriftung der Bilder
+\usepackage{amsmath}		% Mehr mathematischen Formelsatz
+%\usepackage{amssymb}		% Mehr mathematische Symbole
+%\usepackage{amsthm}
+
+\usepackage{float}			% Für Parameter [H] bei Fließobjekten
+
+\usepackage{epsfig}			% Um eps-Bilder einzubinden
+\usepackage{scrhack}    % Um Warnung "float@addtolists detected" zu unterdrücken 
+\usepackage{subfig}			% Für Unterabbildungen
+\usepackage{ltxtable} 		% Vereinigt TabularX und Longtable
+\usepackage{rotating}		% Zum Drehen von Objekten
+\usepackage{bibgerm}		% Für deutsche Literaturverwaltung
+%\usepackage{wrapfig}		% Für kleine Bilder am Rand
+%\usepackage{floatflt}		% Alternative zu wrapfig
+%\usepackage[hang]{caption}	% Damit mehrzeilige Bildunterschriften gut aussehen
+\usepackage{upgreek}		% Für nicht-kursive kleine griechischen Buchstaben
+
+\usepackage{multirow}		% Für mehrzeilige Felder in Tabellen
+
+\usepackage{textcomp}		% Für Sonderzeichen im normalen Text
+							% (offensichtlich in tudreport schon eingebunden)
+\usepackage[ngerman]{varioref}		% Für vref
+\usepackage{color}			% Für farbigen Text
+\usepackage{placeins}		% Für \FloatBarrier
+\usepackage{xspace}
+\usepackage{icomma}			% Damit nach Dezimalkommas kein Abstand eingefügt wird
+							% (in math-Umgebungen)
+
+\usepackage{cancel}			% Zum Wegstreichen von Gleichungstermen
+
+\usepackage{array}			% Für Zellentyp "m{}" in tabular-Umgebungen (Vertikal zentriert)
+
+\usepackage{listings}		% Um formatierten Quellcode einzubinden
+\usepackage{moreverb}		% Für Umgebung "`verbatimtab"' (Verbatim mit Tabs)
+\renewcommand{\verbatimtabsize}{4\relax}	% Standardtabweite in "`verbatimtab"'
+											% ist 4 Zeichen
+
+
+% Das Packet hyperref immer als letztes einbinden (nur bookmark darf danach kommen)!
+%\usepackage[ps2pdf, colorlinks=false, pdfborder={0 0 0}]{hyperref}
+%\usepackage[ps2pdf]{hyperref}	% Für Verlinkungen im erzeugten pdf
+\usepackage{hyperref}	% Für Verlinkungen im erzeugten pdf
+\usepackage{bookmark}

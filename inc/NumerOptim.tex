@@ -1,0 +1,34 @@
+\chapter{Numerische Optimierungsverfahren}\label{cha:NumerOptim}
+%
+Die in den Kapiteln ~\charef{cha:BeschrModell} beschriebenen Simulationsmodelle haben eine nicht lineare Struktur. Durch die Zusammenschaltung beider entsteht ein komplexes, nicht lineares Gesamtmodell das als Black-Box-Modell gehandhabt werden muss. In der Verwendung mit MATLAB\&Simulink kamen für die Optimierungsaufgabe zwei bereits im MATLAB-Code implementierte Funktionen in Frage. Zum einen ein lokales Optimierungsverfahren namens OPTIMIZE und zum anderen ein globales Verfahren mit der Bezeichnung GODLIKE. In den nächsten beiden Unterkapiteln soll grundlegendes Hintergrundwissen über die beiden Optimierungsverfahren vermittelt werden.
+%
+\section{OPTIMIZE}
+%
+Die Funktion OPTIMIZE ist eine Erweiterung der Funktion FMINCON. Sie basiert auf dem Downhill-Simplex-Verfahren nach John Nelder und Roger Mead. Dieses Verfahren gehört zur Gruppe der Hill-Climb-Suchverfahren und kommt wie oben gefordert ohne die Berechnung von Ableitungen aus. Bei diesem Verfahren wird im N-dimensionalen Suchraum ein Konstrukt aus N+1 Punkten gebildet. Bei einem 2-dimensionalen Optimierungsproblem wäre das ein Dreieck, im 3-dimensionalen ein Tetraeder. Dieses Konstrukt, genannt Simplex, bekommt durch einen Algorithmus eine Verhaltensregel auferlegt die es zu einem lokalen Minimum streben lässt. 
+%
+\section{GODLIKE}
+%
+Der GODLIKE\footnote{GODLIKE steht für Global Optimum Determination by Linking and Interchanging Kindred Evaluators.}-Algorithmus verwendet methaheuristische\footnote{Methaheuristische Verfahren stehen für Algorithmen zur näherungsweisen Lösung eines kombinatorischen Optimierungsproblems und definieren abstrakte Folgen von Schritten, die auf beliebige Problemstellungen anwendbar sind.} Optimierungsverfahren. Er berechnet zunächst eine Summe an zufälligen Funktionswerten, die als Polpulation bezeichnet werden. Aus diesen Startwerten bzw. Individuen dieser Population werden über ausgesuchte Wahrscheinlichkeitsverfahren neue Individuen gebildet, die eine neue Population bilden. Die Werte der Individuen konvergieren hierbei mit hoher Wahrscheinlichkeit gegen ein Minimum. 
+\newpage
+GODLIKE verwendet für die Suche eines Minimums vier Algorithmen, die im Folgenden erwähnt werden sollen.
+
+\begin{enumerate}
+  \item GA(Genetic Algorithm)
+	\item DE(Differential Evolution)
+	\item ASA(Adapted Simulated Annealing)
+	\item PSO(Particle Swarm Optimization)
+\end{enumerate}
+%
+\subsection{Multikriterielle Optimierung}
+%
+
+\section{Wahl des Optimierungsalgorithmus}\label{sec:Wahl}
+%
+Der GODLIKE-Algorithmus wird zur Suche eines globalen Minimums verwendet und bringt demnach den Vorteil, dass ein möglichst optimaler Stellgrößenvektor gefunden wird, dessen Einsatz im zu optimierenden Modell ein möglichst großes Drehmoment hervorrufen kann, wobei auch die Nebenbedingung einer geringen Geräuschemission gut eingehalten wird. Dagegen spricht die Tatsache, dass dieser Algorithmus nicht wie der lokale Alogorithmus einen Weg zum Minimum, sondern die vollständige Fläche des vorgegebenen Suchraums absucht, was dazu führt, dass er erheblich mehr Rechenresourcen benötigt. Aus diesem Grund kann der GODLIKE-Optimierungsalgorithmus nur für Offline-Simulationen verwendet werden, was im Rahmen dieser Arbeit kein großes Problem darstellt.
+
+Der Downhill-Simplex-Algorithmus ist ein lokal suchendes Optimierungsverfahren. Der Simplex wandert daher im Lösungsraum von seinem vorgegebenen Startwert aus zu dem nächst gelegenen Minimum. Grundlegender Nachteil hierbei ist, dass das lokale Minimum in der Regel nicht dem globalen Minimum entspricht. Ein klarer Vorteil ist jedoch die geringe Anzahl an Funktionsaufrufen die für die Lösungsfindung notwendig ist. Ein entscheidender Einflussfaktor bei der Verwendung dieser Funktion ist die Wahl der Startwerte. Zum einen ist die Anzahl der notwendigen Funktionsaufrufe zum Auffinden des lokalen Minimums um so kleiner je näher die Startwerte am Minimum plaziert sind. Zum anderen kann durch die Wahl der Startwerte der Simplex so im Suchraum positioniert werden, dass er mit hoher Wahrscheinlichkeit in das globale Minimum läuft und nicht in einem lokalen Minimum hängen bleibt. Da man in der Regel am globalen Minimum
+interessiert ist, ist es bei der Verwendung dieses Algorithmus nötig, ausreichendes Hintergrundwissen über das Optimierungsproblem zu besitzen, um entsprechende Anfangswerte wählen zu können.
+
+Der Einfachheithalber wird im Rahmen dieser Arbeit der globale Optimierungsalgorithmus GODLIKE verwendet, dessen Ergebnisse mit Hilfe des Downhill-Simplex-Algorithmus bestätigt werden können, indem man ihm zur Suche des lokalen bzw. globalen Minimums entsprechende Anfangswerte vorgibt.
+
+Für nähere Informationen über die GODLIKE- bzw. OPTIMIZE-Optimierungsalgorithmen wird auf ~\cite{Zydek} bzw. ~\cite{GODLIKE} verwiesen.

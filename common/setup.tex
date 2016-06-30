@@ -1,0 +1,134 @@
+% =================================================================================
+% Definitionen für rtm / rtp
+% =================================================================================
+\ifrtm
+	\newcommand{\SADAProf}{Prof. Dr.-Ing. Ulrich Konigorski}
+  \newcommand{\SADAinstitut}{Institut für Automatisierungstechnik und Mechatronik\\
+                             Fachgebiet Regelungstechnik und Mechatronik\\
+                             \SADAProf}
+  \newcommand{\SADAwebsite}{www.rtm.tu-darmstadt.de}
+  \newcommand{\SADAtel}{06151/16-4167}
+  \newcommand{\SADAlogo}{\includegraphics[width=3cm]{./common/IAT_rtm}}
+\else
+  \newcommand{\SADAProf}{Prof. Dr.-Ing. Dr. h.c. Rolf Isermann}
+  \newcommand{\SADAinstitut}{Institut für Automatisierungstechnik\\
+                             und Mechatronik\\
+                             FG Regelungstechnik und Prozessautomatisierung\\
+                             \SADAProf}
+  \newcommand{\SADAwebsite}{http://www.rtm.tu-darmstadt.de/rtp.html}
+  \newcommand{\SADAtel}{06151/16-5465}
+  \newcommand{\SADAlogo}{\includegraphics[scale=0.5]{./rtp_fuer_tex/rtp_fuer_tex_RGB.pdf}}
+\fi
+%\institution{\SADAinstitut}
+% =================================================================================		
+		
+		
+% =================================================================================
+% Definitionen für die Erklärung, dass die Arbeit ohne Hilfe Dritter etc. erstellt wurde
+% =================================================================================
+% Die folgende Zeile deklariert die möglichen Varianten der Erklärung, dass die
+% Arbeit ohne Hilfe Dritter etc. erstellt wurde.
+\def\ETIT{ETIT}\def\MBSA{MBSA}\def\MBDA{MBDA}
+% =================================================================================
+
+
+% =================================================================================
+% Definitionen aus tudreport-Vorlage
+% =================================================================================
+\newif\ifTUDmargin
+%\TUDmargintrue		% Sehr breiter rechter Rand
+\TUDmarginfalse		% Schmaler (normaler) rechter Rand
+
+\ifTUDmargin	% ggf. breiten Rand setzen
+  \geometry{marginparsep=4.2mm,marginparwidth=28.64mm}
+\fi
+
+\newlength{\longtablewidth}
+\setlength{\longtablewidth}{0.7\linewidth}
+\addtolength{\longtablewidth}{-\marginparsep}
+\addtolength{\longtablewidth}{-\marginparwidth}
+% =================================================================================
+
+
+% =================================================================================
+% Farbige Deckseite, graue Balken auf allen anderen Seiten
+% =================================================================================
+\newif\ifOnlyColorFront
+\OnlyColorFronttrue	    % Balken nur auf Deckblatt farbig
+% \OnlyColorFrontfalse		% alle Balken farbig
+% =================================================================================
+
+
+% =================================================================================
+% Befehle, die in scrreprt nicht exisiteren werden hier definiert, wenn diese
+% Klasse verwendet wird.
+% Auch die Seitenränder werden angepasst, so dass es grob wie mit tudreport
+% aussieht.
+% =================================================================================
+\ifTUDdesign
+	\title{\SADATitel}
+	\subtitle{\SADAAutor}
+	\subsubtitle{\SADATyp\ %-- \SADAAbgabe  
+			\\Betreuer: \SADABetreuer{}, \SADABetreuerII{}
+			\\Unternehmen: \SADAUnternehmen
+			\\Abteilung: PES1}
+	%\subsubsubtitle{\SADAUnternehmen}
+	\setinstitutionlogo[height]{rtp_fuer_tex/images_partner_13_vector}
+	\geometry{left=30mm, right=20mm, top=15mm, bottom=20mm}
+\else
+	\title{\SADATitel}
+	\subtitle{}
+	\author{\SADAAutor}	% scrreprt erwartet Autor
+	
+	\newcommand{\subsubtitle}[1]{}
+	\newcommand{\settitlepicture}[1]{}
+	\newcommand{\printpicturesize}{}
+	\newcommand{\institution}[1]{}
+    \pagestyle{headings}
+
+  % Diese Pakete nur extra einbinden, wenn NICHT tudreport als Basis.
+	\usepackage{amssymb}
+	\usepackage{geometry}
+	
+% \settitlepicture{}	% Bild für Deckblatt
+% \printpicturesize
+\fi
+% =================================================================================
+
+
+% =================================================================================
+% Anpassung Absatzformat
+% =================================================================================
+% Der Abstand der Zeilen beträgt das 1,25-fache des Standard-Abstands von
+% LaTeX. Da technische Arbeiten viele Formeln und Bilder enthalten, werden
+% Absätze durch einen zusätzlichen vertikalen Zwischenraum statt durch einen
+% Einzug getrennt.
+\linespread{1.25}
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{1ex}
+% =================================================================================
+
+
+% =================================================================================
+% Texte für die Rückseite des Titelblatts vorgeben
+% =================================================================================
+\uppertitleback{}
+\lowertitleback{}
+\dedication{}
+% =================================================================================
+
+
+% =================================================================================
+% Informationen (Meta-Daten) für pdf
+% =================================================================================
+\hypersetup{
+	pdftitle = {\SADATitel},
+	pdfsubject = {},
+	pdfauthor = {\SADAAutor},
+	pdfkeywords = {},
+	pdfcreator = {},
+	pdfproducer = {LaTeX with hyperref},
+	pdfstartview = {Fit},
+	pdfpagelayout = {SinglePage}
+}
+% =================================================================================

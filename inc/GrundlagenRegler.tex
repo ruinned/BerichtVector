@@ -1,0 +1,116 @@
+\chapter{Grundlagen des Reglerentwurfs}\label{cha:GrundlagenReg}
+
+Es gibt zwei unterschiedliche Ansätze, Störschwingungen zu unterdrücken: 
+\begin{enumerate}
+
+\item Vorsteuerungen(Feedfordward control), bei denen Regler eingesetzt werden, dessen Koeffizienten mit Hilfe eines Algorithmen an Veränderungen der Eingangsstörung angepasst werden. 
+
+\item Regelungen, die auf Rückkopplungen des Ausgangssignals beruhen(Feedback control).
+
+\end{enumerate}
+
+\section{Vorsteuerungen}
+
+Die Ziel der Vorsteuerung besteht darin, ein zur gemessenen Störung(primäre Störung) korreliertes Signal zu nutzen, um mit Hilfe eines adaptiven Filters eine sekundäre Störung in das System einzubringen, so dass der Effekt der primären Störung beseitigt bzw. vermindert wird. Dabei werden die Filterkoeffizienten so angepasst, dass das Fehlersignal an einer oder mehreren Stellen minimiert wird.
+
+
+\begin{figure}[htp]%
+\centering
+\includegraphics[scale=0.5]{./Bilder/feedfordwardcontrol}
+\caption{Vorsteuerungsprinzip; Entnommen aus ~\cite{Preumont}}
+\label{fig:feedfordward}%
+\end{figure}
+
+So dass der Effekt des Störsignals richtig aufgehoben werden kann, muss eine perfekte Einstellung des Amplituden- und Phasengangs des Reglers gewährleistet werden. Es herrscht demzufolge ein großer Zusammenhang zwischen dem von der primären Störschwingung verursachten Effekt und dem Effekt der mit Absicht in das mechanische System eingebrachten Störschwingung(sekundäre Störschwingung). Die Notwendigkeit eines adaptiven Algorithmus, der die Antwort des Reglers jedes Mal neu einstellt, ist an dieser Stelle erkennbar und im Vergleich zu einer Regelung mit Ausgangsrückführung von höherer Bedeutung.
+
+Aufgrund der stochastischen bzw. deterministischen Natur der Störsignale, müssen jeweils unterschiedliche Regleransätze implemetiert werden.
+ 
+Deterministische Störschwingungen können in manchen Fällen im Voraus modelliert werden, sodass ein von der primären Störung abgeleitetes Referenzsignal benutzt wird, um die Synchronisation der sekundären Störung zu gewährleisten.
+In anderen Fällen lassen sich  solche deterministische Störungen mit Hilfe von bestimmten Sensoren wie \zB Beschleunigungssensoren oder Kraftsensoren, aufgrund dessen erfassen, dass sich ihr Effekt durch die mechanische Struktur ausbreitet.
+Störungen deterministischer Natur lassen sich außerdem wegen der Annahme, dass das System linear und zeitinvariant ist, in einzelnen Frequenzen aufteilen, was die Untersuchung einzelner Störeffekte auf die Struktur erleichtert.
+
+Wenn aber stochatische Störsignale auftreten, können die oben genannte Ansätze nicht mehr angewendet werden, denn die Forderung, dass der Regler eine bestimmte Antwort für alle auftretenden Frequenzanteile im Arbeitsbereich besitzt, ist nicht mehr einzuhalten. Für solche Störschwingungen lassen sich andere Ansätze in Betracht ziehen, welche aber im Rahmen dieser Arbeit nur kurz erwähnt werden.
+
+\section{Regelung mit Ausgangsrückführung}
+
+
+Das Prinzip der Regelung mit Ausgangsrückführung wird in Abbildung ~\ref{fig:feedback} erläutert.
+
+\begin{figure}[htp]%
+\centering
+\includegraphics[scale=0.3,angle=-90]{./Bilder/feedback1}
+\caption{Regelung mit Ausgangsrückführung}
+\label{fig:feedback}%
+\end{figure}
+
+Das Ausgangssignal(Istgröße) $y$ wird mit dem Eingangssignal(Führungsgröße oder Sollgröße) $w$ vergliechen, und die Regelabweichung, $e=w-y$, wird dem Regler übergeben, welcher eine Stellgröße $u$ erzeugt, die auf das zu regelnde System $G(s)$ wirkt. Der Reglerentwurf hat als Hauptaufgaben, eine Übertragungsfunktion für den Regler $G_R(s)$ so zu bestimmen, dass der geschlossene Regelkreis sich stabil verhält und das Ausgangssignal des gesamten Systems, inklusiv die Regelung und das zu betrachtende System, dem Eingangssignal genau folgt.
+
+Geht man davon aus, dass das Messglied ideal ist, dann ist $M(s)=1$ und die Übertragungsfunktion des geschlossenen Regelkreises lautet:
+\begin{equation}
+  \label{eq:geschlossenerRegel}
+	\begin{split}
+  Y(s)&=\frac{G_R(s)G(s)}{1+G_R(s)G(s)}.W(s)+\frac{1}{1+G_R(s)G(s)}.D(s)\\
+	&=\frac{F_o(s)}{1+F_o(s)}.W(s)+\frac{1}{1+F_o(s)}.D(s)=F_w(s).W(s)+F_d(s).D(s)
+	\end{split}
+\end{equation}
+
+Dabei stellt folgende Gleichung
+\begin{equation}
+  \label{eq:offenerRegel}	
+  F_o(s)=G_R(s)G(s)
+\end{equation}
+
+die \textit{Übertragungsfunktion des offenen Regelkreises} dar. Die Gleichungen $F_w(s)$ und $F_d(s)$ bezeichet man jeweils als Führungs- bzw. Störübertragungsfunktion.
+
+In Gleichung \eqref{eq:geschlossenerRegel} kann man erkennen, dass sowohl Führungs- als auch Störübertragungsfunktion im Nenner die Gleichung $1+F_o(s)$ haben, welche die \textit{charakteristische Gleichung des Regelkreises} genannt wird.
+
+Wenn man Gleichung \eqref{eq:geschlossenerRegel} genauer betrachtet, kann man erkennen, dass im gewünschten Arbeitsbereich $|F_o(j\omega)|\gg 1$ für $0 \leq \omega \leq \omega_1$ bzw. der offene Regelkreis eine große Verstärkung und eine kleine Phasenverschiebung aufweisen soll, so dass einerseits die Istgröße $Y(s)$ der Sollgröße genau folgt, denn dann gilt 
+\begin{displaymath}
+   |Y(j\omega)|\approx|W(j\omega)| \qquad \textnormal{für } |F_o(j\omega)|\gg 1.
+\end{displaymath}
+
+Andererseits wird dadurch eine gute Störgrößenunterdrückung bzw. eine große Robustheit erzielt, denn es gilt 
+\begin{displaymath}
+   \frac{|Y(j\omega)|}{|D(j\omega)|}=\frac{1}{|1+F_o(j\omega)|}\approx 0 \qquad \textnormal{für } |F_o(j\omega)|\gg 1.  
+\end{displaymath}
+
+Obiger Sachverhalt kann nach ~\cite{SDRT1} durch folgende Gleichung
+\begin{equation}
+  \label{eq:regelFaktor}	
+  R(s)=\frac{1}{1+F_o(s)}
+\end{equation}
+
+betätigt werden, welche im Zusammenhang mit der \textit{Sensitivitätsanalyse} des Regelkreises als \textit{Empfindlichkeitsfunktion} bezeichnet wird. Nach einer kurzen mathematischen Umrechnung der Größen, kommt man auf
+\begin{equation}
+  \label{eq:sensitivitat}	
+  \frac{\textnormal{d}F_w(s)}{F_w(s)}=R(s).\frac{\textnormal{d}F_o(s)}{F_o(s)}.
+\end{equation}
+
+Berücksichtigt man \eqref{eq:sensitivitat} zusammen mit den Gleichungen \eqref{eq:regelFaktor} bzw. \eqref{eq:geschlossenerRegel}, dann lässt es sich erkennen, dass ein kleiner Wert von $|R(j\omega)|$ im gewünschten Arbeitsbereich also nicht nur ein gutes Regelverhalten sondern auch eine geringe Empfindlichkeit des geschlossenen Regelkreises gegenüber Parameteränderungen der Regelstrecke aufweist.
+
+
+Die Methoden, die auf Übertragungsfunktionen berühen, werden öfters als \textit{klassische Regelungsstrategien} bezeichnet. Diese sind zwar für den Reglerentwurf von SISO-Systemen geeignet, jedoch treten Schwierigkeiten auf, wenn man dieselben auf MIMO-Systemen implementieren will.
+
+Im Gegensatz dazu stellen Zustandraumdmodelle von den zu regelnden Systemen eine wesentlich einfachere Möglichkeit dar, Regelungen für MIMO-Systeme zu entwerfen. Letztere Methoden werden als \textit{moderne Regelungsstrategien} bezeichnet, welche von den Differenzialgleichungen 1. Grades ausgehen, die die Zustände des Systems beschreiben.
+
+% Hier kommt Abbildung Zustandsregelung Adamy Buch 
+
+In Abbildung  ist die Funktionsweise einer MIMO-Regelung dargestellt, wobei sich mit Hilfe der Differenzialgleichungen, die die Zustände des Systems beschreiben, folgende Darstellung herleiten lässt:
+\begin{equation}
+  \label{eq:zustandsraum}	
+	\begin{split}
+  & \ul{\dot{\ve{x}}}=\ul{\ma{A}} \ \ul{\ve{x}}+\ul{\ve{b}} \ u \qquad \qquad \ul{\dot{\ve{x}}}=\ul{\ma{A}} \ \ul{\ve{x}}+\ul{\ma{B }} \ \ul{\ve{u}}\\
+	& \ul{\ve{y}}=\ul{\ve{c}^\transp} \ \ul{\ve{ x}}+d \ u \qquad \qquad \ul{\ve{y}}=\ul{\ma{C}} \ \ul{\ve{x}}+\ul{\ma{D}} \ \ul{\ve{u}}\\
+	&\textnormal{SISO-System} \qquad \qquad \textnormal{MIMO-System}
+	\end{split}
+\end{equation}
+
+Durch obige Gleichungen \eqref{eq:zustandsraum} wird die Zustandsraumdarstellung für SISO- bzw. MIMO-Systeme festgelegt.
+Für die theoretische Grundlagen der Regelungsstrategien, die auf der Zustandsraumdartellung beruhen, wird auf ~\cite{Mehrgroessen} und ~\cite{SDRT2} verwiesen.
+
+
+
+
+
+
+ 

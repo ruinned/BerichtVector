@@ -1,0 +1,324 @@
+% Dieses File dient zum definieren nützlicher Befehle.
+% Es soll lediglich als Beispiel dienen, wie Befehle definiert werden, und welche Befehle nützlich sein können
+%
+
+
+% Inhalt
+% ======
+%	Allgemeine Abkürzungen
+%	Makros für Referenzen (Abbildungen, Zitate, ...)
+%	Makros für Abbildungen
+%	Makros für Einheiten, Exponenten
+%	Makros für Formeln
+%	Makros für Entwurf
+%   Definitionen für Umgebungen
+
+
+
+% Allgemeine Abkürzungen
+% ======================
+	\newcommand{\bzw}{bzw.\@\xspace}
+	\newcommand{\Bzw}{Bzw.\@\xspace}
+	\newcommand{\bzgl}{bzgl.\@\xspace}
+	\newcommand{\ca}{ca.\@\xspace}
+	\newcommand{\evtl}{evtl.\@\xspace}
+	\newcommand{\usw}{usw.\@\xspace}
+	\newcommand{\etc}{etc.\@\xspace}
+	\newcommand{\vgl}{vgl.\@\xspace}
+	\newcommand{\Vgl}{Vgl.\@\xspace}
+	\newcommand{\bspw}{bspw.\@\xspace}
+	\newcommand{\Bspw}{Bspw.\@\xspace}
+	\newcommand{\ggf}{ggf.\@\xspace}
+	\newcommand{\Ggf}{Ggf.\@\xspace}
+
+
+
+	\newcommand{\dah}{d.\thinspace{}h.\@\xspace}
+	\newcommand{\Dah}{D.\thinspace{}h.\@\xspace}
+	\newcommand{\iA}{i.\thinspace{}A.\@\xspace}
+	\newcommand{\IA}{i.\thinspace{}A.\@\xspace}
+	\newcommand{\ua}{u.\thinspace{}a.\@\xspace}
+	\newcommand{\Ua}{U.\thinspace{}a.\@\xspace}
+	\newcommand{\uU}{u.\thinspace{}U.\@\xspace}
+	\newcommand{\UU}{u.\thinspace{}U.\@\xspace}
+	\newcommand{\zB}{z.\thinspace{}B.\@\xspace}
+	\newcommand{\ZB}{Zum Beispiel\xspace}
+	\newcommand{\zT}{z.\thinspace{}T.\@\xspace}
+	\newcommand{\ZT}{Z.\thinspace{}T.\@\xspace}
+
+
+
+% Makros für Referenzen (Abbildungen, Zitate, ...)
+% ================================================
+
+	% Referenzierung auf Abbildungen, Tabellen, etc. (Hyperref-fähig)
+	\newcommand{\figref}[1]{\hyperref[#1]{\figurename\ \ref*{#1}}}
+	\newcommand{\tabref}[1]{\hyperref[#1]{\tablename\ \ref*{#1}}}
+	\newcommand{\equref}[1]{\hyperref[#1]{Gl.~(\ref*{#1})}}
+	\newcommand{\defref}[1]{\hyperref[#1]{Definition~\ref*{#1}}}
+	\newcommand{\figvref}[1]{\hyperref[#1]{\figurename}\vref{#1}}
+	\newcommand{\tabvref}[1]{\hyperref[#1]{\tablename}\vref{#1}}
+	\newcommand{\equvref}[1]{\hyperref[#1]{Gl.~(\ref*{#1}) auf Seite \pageref*{#1}}}
+	\newcommand{\pagerefh}[1]{\hyperref[#1]{Seite~\pageref*{#1}}}
+	\newcommand{\secref}[1]{\hyperref[#1]{Abschnitt~\ref*{#1}}}
+	\newcommand{\charef}[1]{\hyperref[#1]{Kapitel~\ref*{#1}}}
+	\newcommand{\lstref}[1]{\hyperref[#1]{Listing~\ref*{#1}}}
+
+
+	% Zitate mit Seitenangabe in Fußnote
+%	\newcommand{\citep}[2]{\cite{#1}\footnote{Seite #2}}
+%	\newcommand{\citepp}[2]{\cite{#1}\footnote{Seiten #2}}
+	\newcommand{\citep}[2]{\cite{#1} (S. #2)}
+	\newcommand{\citepp}[2]{\cite{#1} (S. #2)}
+	
+	
+% Makros für Abbildungen
+% ======================
+	% zum Skalieren nach Ersetzen durch psfrag
+	\newcommand{\incgraphicsw}[2]{\resizebox{#1}{!}{\includegraphics{#2}}}
+
+
+% Textbausteine
+% =============
+	% Produktnamen
+	\newcommand{\Matlab}{\textsc{Matlab}}
+	\newcommand{\Matlabreg}{\textsc{Matlab}\textsuperscript{\tiny \textregistered}}
+	\newcommand{\MatSim}{\textsc{Matlab/Simulink}}
+	\newcommand{\Simulink}{\textsc{Simulink}}
+	\newcommand{\Simulinkreg}{\textsc{Simulink}\textsuperscript{\tiny \textregistered}}
+
+
+
+% Makros für Einheiten, Exponenten
+% ================================
+
+	\newcommand{\unit}[1] { \ensuremath{\mathrm{#1}}}
+	
+	% Wert mit Einheit (mit kleinem Leerzeichen dazwischen), aus Text- UND Math-Modus
+	\newcommand{\valunit}[2]{\ensuremath{#1\,\mrm{#2}}}
+
+
+	% "°C", im Text- oder Mathe-Modus
+	\newcommand{\degC}{
+		\ifmmode
+			^\circ \mrm{C}%
+		\else
+			\textdegree C%
+		\fi}
+
+	\newcommand{\degree}{
+		\ifmmode
+			^\circ%
+		\else
+			\textdegree%
+		\fi}
+	
+	% Für Exponentenschreibweise ( Anwendung: 123\E{3} )
+	\newcommand{\E}[1]{ \ensuremath{\cdot 10^{#1}} }
+	
+	\newcommand{\eexp}[1]{ \mathrm{e}^{#1} }
+	\newcommand{\iu}{ \mathrm{j} }
+
+	\newcommand{\todots}{ ,\,\hdots,\, }
+
+
+% Makros für Formeln
+% ==================
+
+    \newcommand{\mat}[1]{{\ensuremath{\boldsymbol{\mathrm{#1}}}}}
+
+	\newcommand{\AP} { \mathrm{AP} }
+	\newcommand{\doti} {(i)^\cdot}
+
+	% Definition für Vektor und Matizen
+	\newcommand{\ve}[1]{\ensuremath{\mathbf{#1}}}
+	\newcommand{\ma}[1]{\ensuremath{\mathbf{#1}}}
+
+	% Definition für Vektor und Matizen
+	\newcommand{\ves}[1]{\ensuremath{\boldsymbol{#1}}}
+	\newcommand{\mas}[1]{\ensuremath{\boldsymbol{#1}}}
+	
+	
+	\newcommand{\inprod}[2]{\langle #1,\,#2 \rangle}
+	
+	\newcommand{\ul}[1]{\underline{#1}}
+
+	% gerades "d" (z.B. für Integral)
+	\newcommand{\ud} { \mathrm{d} }
+	
+	% normaler Text in Formeln
+	\newcommand{\tn}[1] { \textnormal{#1} }
+	
+	% nicht-kursive Schrift in Formeln
+	\newcommand{\mrm}[1] { \mathrm{#1}}
+	
+	% gerades "T" für Transponiert
+	\newcommand{\transp}{\mathrm{T}}
+	
+	% gerades "rg"
+	\newcommand{\rang}[1]{\mathrm{rg}(#1)}
+
+	% Für geklammerte Ausdrücke mit Index (Subscript)
+	% (einmal mit kursiven Index, einmal mit geradem Index)
+	\newcommand{\grpsb}[2] { \left( #1 \right)_{#2} }
+	\newcommand{\grprsb}[2] { \left( #1 \right)_{\mathrm{#2}} }
+
+	% Ableitungen und Integrale
+		% "normale" Ableitung (mit geraden "d"s)
+		\newcommand{\normd}[2] { \frac{\mathrm{d} #1 }{\mathrm{d} #2 } }
+		\newcommand{\normdat}[3] { \left. \frac{\mathrm{d} #1 }{\mathrm{d} #2 } \right|_{#3} }
+	
+		% Materielle Ableitung
+		\newcommand{\matd}[2] { \frac{\mathrm{D} #1 }{\mathrm{D} #2 } }
+		\newcommand{\matdat}[3] { \left. \frac{\mathrm{D} #1 }{\mathrm{D} #2 } \right|_{#3} }
+	
+		% Partielle Ableitung
+		\newcommand{\partiald}[2] { \frac{\partial #1 }{\partial #2 } }
+		\newcommand{\partialdat}[3] { \left. \frac{\partial #1 }{\partial #2 } \right|_{#3} }
+	
+	
+	% Transformationen
+	\newcommand{\FT}[1] { \mathfrak{F} \left\{ #1 \right\} }
+	\newcommand{\FTabs}[1]{\left| \mathfrak{F} \left\{ #1 \right\} \right|}
+	\newcommand{\IFT}[1] { \mathfrak{F}^{-1} \left\{ #1 \right\} }
+	\newcommand{\DFT}[1]{\mathrm{DFT} \left\{ #1 \right\}}
+	\newcommand{\DFTabs}[1]{\left| \mathrm{DFT} \left\{ #1 \right\} \right|}
+
+	\newcommand{\Laplace}[1]{\mathfrak{L}\left (#1\right)} % L-Transformation
+	\newcommand{\InvLaplace}[1]{\mathfrak{L^{-1}}\left (#1\right )} % L-Transformation, invers
+	\newcommand{\invtrans}{\quad\bullet\!\!-\!\!\!-\!\!\circ\quad}
+	\newcommand{\trans}{\quad\circ\!\!-\!\!\!-\!\!\bullet\quad}
+
+
+	\newcommand{\mlfct}[1]{{\tt #1}}
+	\newcommand{\mlvar}[1]{{\tt #1}}
+
+
+	% Manche textcomp-Zeichen funktionieren mit dem TU-Design nicht, diese können dann mit diesem
+	% Befehl gesetzt werden.
+	\newcommand{\textcompstdfont}[1]{{\fontfamily{cmr} \fontseries{m} \fontshape{n} \selectfont #1}}
+	
+
+
+% =================================================================================
+% Defintionen für Mathe-Umgebungen
+% =================================================================================
+	
+\newtheorem{theorem}{Satz}
+\newtheorem{lemma}[theorem]{Lemma}	% Selber Zähler wie theorem
+\newtheorem{definition}{Definition}
+% =================================================================================
+
+
+% =================================================================================
+% Defintionen für Beispiel-Umgebung
+% =================================================================================
+\newcounter{examplenumber}[chapter]      % Neuer Counter bspnummer nummeriert nach Kapitel
+\def\theexamplenumber{\thechapter.\arabic{examplenumber}}
+
+\newenvironment{example}[1][]
+{\vskip 3\parskip plus 1pt minus 1pt \refstepcounter{examplenumber}
+\vspace{.3cm} \begin{addmargin}[1cm]{0cm} \noindent \textbf{Beispiel \theexamplenumber}: \textbf{#1}\par}
+{\end{addmargin} \par \vspace{.3cm}}
+
+% Alternative, einfachere Beispielumgebung:
+% \newtheorem{example}{Beispiel}
+% =================================================================================
+
+
+
+
+% =================================================================================
+% Definitionen für Listingsumgebung
+% =================================================================================
+
+\lstloadlanguages{Matlab}
+
+\lstdefinestyle{Matlab_colored_smallfont}
+{
+	language = Matlab,
+	tabsize = 4,
+	framesep = 3mm,
+	frame=tb,
+	classoffset = 0,	
+	basicstyle = \footnotesize\ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.627,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	%escapeinside = {(*@}{@*)},
+	%moredelim = [s][\itshape\color[rgb]{0.5,0.5,0.5}]{[.}{.]},
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5
+}
+
+\lstdefinestyle{Matlab_colored}
+{
+	language = Matlab,
+	tabsize = 4,
+	framesep = 3mm,
+	frame=tb,
+	classoffset = 0,	
+	basicstyle = \ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.627,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	%escapeinside = {(*@}{@*)},
+	%moredelim = [s][\itshape\color[rgb]{0.5,0.5,0.5}]{[.}{.]},
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5
+}
+
+
+\lstdefinestyle{C_colored_smallfont}
+{
+	language=C,
+	tabsize = 4,
+	framesep = 3mm,
+	frame=tb,	
+	classoffset = 0,	
+	basicstyle = \footnotesize\ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.627,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	%escapeinside = {(*@}{@*)},
+	%moredelim = [s][\itshape\color[rgb]{0.5,0.5,0.5}]{[.}{.]},
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5
+}
+
+\lstdefinestyle{C_colored}
+{
+	language=C,
+	tabsize = 4,
+	framesep = 3mm,
+	frame=tb,
+	classoffset = 0,	
+	basicstyle = \ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.627,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	%escapeinside = {(*@}{@*)},
+	%moredelim = [s][\itshape\color[rgb]{0.5,0.5,0.5}]{[.}{.]},
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5
+}

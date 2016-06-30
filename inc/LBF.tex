@@ -1,0 +1,153 @@
+\chapter{Wochenübersicht und Arbeitsberichte}
+%
+\section{1. Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Am ersten Tag meiner Tätigkeit als Praktikant bei Vector Informatik wurden mir die Firma und ihre unterschiedlichen Abteilungen vorgestellt. Es gab zusätzlich eine Schulung über die sicherheitsrelevanten Themen, der Verschwiegenheitsplicht und den richtigen Umgang mit unterschiedlichen Software-Richtlinien, welche während meiner Tätigkeit bei der Firma eingehalten werden sollen. Mein interner Betreuer, der Herr Dipl. Ing. Markus Schwarz, gab mir eine kleine Einführung  über die Abteilung und führte mich an meinen zugehörigen Arbeitsplatz.
+Bei Vector werden unterschiedliche Programme eingesetzt, welche von jedem Mitarbeiter beherrscht werden sollen und u.a. Informationen über die Arbeitstätigkeit in der Firma der Personalabteilung weiterleiten.
+Diese sind unter anderem (diese Version richtet sich nach den Richtlinien der Universität. In der Version von Vector muss ich eine richtige Themengliederung angeben. Ein richtiger Bericht muss es werden):
+TortoiseSVN: Hier bitte eine kurze Beschreibung von Tortoise geben. Du kannst auch dazu irgendeine Präsentation von ADP benutzen, suche im Intranet danach. 
+%
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1]{./Bilder/Repo.pdf}
+\caption{Tortoisegit}
+\label{fig:Tortoisegit}
+\end{figure}
+%
+Nachdem ich mich mit den ersten Software Tools vertraut gemacht habe, wurde mir ebenfalls die Aufgabe gestellt, mich mit den Konzepten des MISRA-C-Kodierungsstandards auseinanderzusetzen, welcher zur Entwicklung robusterer Software beiträgt.
+
+Wie in der Einführung angegeben ist der Schwerpunkt bei der Arbeit der PES-Abteilung die Erstellung eingebetteter Software, deren Programmierung überwiegend in der Programmiersprache C erfolgt.  Aufgrund der Tatsache, dass C keine sichere Programmierung von Software gewährleistet, wird seit mehreren Jahren  bei Vector Informatik der C-Programmierstandard  MISRA-C: 2004 eingesetzt.
+Der genannte Standard wies bisher noch bestimmte Nachteile auf, welche dazu führten, dass im Jahr 2013 eine neue Version ( MISRA-C: 2012 ) verabschiedet wurde. Diese Version soll Verbesserungen und Ergänzungen zu der alten Version hervorbringen. 
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/MISRA1.pdf}
+\caption{MISRA}
+\label{fig:MISRA}
+\end{figure}
+%
+Vektor und somit die Abteilung PES sind aus diesem Grund darauf angewiesen, einen Umstieg in die neue Version zu ermöglichen. Da dies sich nicht ohne großen Aufwand umsetzen lässt, muss dazu muss eine detaillierte Analyse vor allem über die Kompatibilität zwischen den beiden Versionen durchgeführt werden.
+Hier soll eine ausführliche Erklärung über die Aufgabe angegeben werden, bei der der Vergleich der beiden MISRA-Versionen durchgeführt wird.
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.7]{./Bilder/QAC.pdf}
+\caption{QAC}
+\label{fig:MISRA}
+\end{figure}
+%
+\section{2. Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Meine Tätigkeiten bestanden vorwiegend darin, die richtigen Einstellungen zur statischen Code-Analyse einer in der Abteilung erstellten eingebetteten Beispiel-Anwendung durchzuführen. Die Analyse sollte mit Hilfe der Version 7.0 der Analyse-Software QAC erfolgen, deren Funktionalität im Beschreibungskapitel der 1. Woche angegeben wird (Dokoment QAC User Guide verwenden). Diese Version wird momentan in Vector angewendet.
+Die folgende Graphik zeigt einen Überblick über die funktionalen Beziehungen der Analyse-Software und die unterschiedlichen Ergebnisse einer beliebigen Beispielanwendung.
+%
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC1.pdf}
+\caption{QAC}
+\label{fig:QAC1}
+\end{figure}
+%
+
+Es ist notwendig richtige Einstellungen für jedes QAC-Projekt durchzuführen, welches der Struktur eines entsprechenden Entwicklungsprojekt wiederspiegelt. Ein entsprechendes Projekt beinhaltet ein oder mehrere Ordner, Quellcode-Dateien bzw. Einstellungsinformationen, die als personalities bezeichnet werden.
+In den personalities werden laut application note jeweils folgende Einstellungen durchgeführt:
+...... Beschreibung der einzelnen Files ($*.p_a, *.p_c, *.p_s$).
+
+Inerhalb der Datei $*.p_c$ musste ich die Definition $_WIN32_WINNT$ anpassen, da auf dem Computer, auf dem die statische Codeanalyse durchgeführt werden soll, ein 64-bit-Betriebssystem läuft. Somit sollen manche Makros angepasst oder sogar außer Betracht gelassen werden .
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC2.pdf}
+\caption{QAC}
+\label{fig:QAC2}
+\end{figure}
+%
+
+Nachdem die richtigen Einstellungen für das Projekt ausgewählt und vorgenommen wurden, haben die ersten Analysen stattgefunden, welche Hinweise auf eventuell fehlerhafte Teile beim Code ausgaben.
+%
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC3.pdf}
+\caption{QAC}
+\label{fig:QAC3}
+\end{figure}
+%
+
+%
+\section{Dritte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Während der dritten Woche im Unternehmen bekam ich den Auftrag, die release notes vom QAC Programm zu sammeln und untereinander zu vergleichen. Das Ziel war dabei, die Unterschiede zwischen der aktuell der PES-Abteilung zur Verfügung stehenden QAC-Version 7.0 und den höheren Versionen des verwendeten Programms festzustellen. Es war somit notwendig eine Methodik auszuwählen, um die genannten Unterschiede darzustellen. 
+Es hat sich dementsprechend als sinnvoll erwiesen eine Excel-Tabelle zu erstellen, damit sich jeder einen möglichst guten Überblick über das Thema verschafft. Die Struktur der genannten Tabelle, welche in Abbildung \ref{fig:QAC4} zu sehen ist, stellt idealerweise einen Teil der Entwicklungslinie der neuen QAC-Versionen. Insgesamt sind 6150 Nachrichten behandelt worden, die innerhalb des Entwicklungsprozesses der statischen QAC-Analysesoftware eingeführt worden sind. Unter diesen Nachrichten befinden sich jedoch auch welche, die gelöscht, angepasst oder völlig umgeschrieben wurden. Dementsprechend würde sich ohne eine geeignete Methode nur schwer erkennen lassen, welche relevanten Modifikationen die Analysesoftware erfahren hat.
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC4.pdf}
+\caption{QAC}
+\label{fig:QAC4}
+\end{figure}
+
+Bei der Untersuchung musste ich überprüfen...
+
+Danach war es notwendig, nach dem Neuerwerb der QAC Version 9.0 für eine kleine Anzahl an Sourcecode (simple component) ein QAC-Projekt zu erstellen und deren Einstellungen anzupassen. Gleichzeitig war es notwendig, die Quelldateien mit der QAC Version 7.0 zu analysieren, um zu untersuchen, welche Änderungen vorkommen und was gleich geblieben ist. Folgende Tabelle wurde erstellt, beschreiben...
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC5.pdf}
+\caption{QAC}
+\label{fig:QAC5}
+\end{figure}
+%
+\section{Vierte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Während der 4. Woche musste ich mich mit den weiteren Einstellungen eines QAC-Projekts beschäfitgen. Diesmal handelte es sich um ein relativ umfanreicheres Projekt, so dass es aufwendiger war, die Konfigurationsdateien anzupassen. 
+Das Ziel war, beide Versionen am Beispiel eines umfangreicheres Projekt zu analysieren. Dieses bestand aus einer großen Anzahl an Quellcode.
+Die zu analysierende Dateien mussten in ein bestimmtes Verzeichnis übertragen werden, wobei sich diese ursprünglich zur besseren Übersicht  für den Kunden in sehr vielen Unterodner organisiert waren. Dies hat dazu geführt, dass ich mir eine Methode aussuche, um die Dateien nicht einzeln und per Hand in die Zieladressen zu kopieren. Es hat sich somit als sinnvoll erwiesen, eine dazu geeignete Programmiersprache zu verwenden, die mir diese Aufgabe erleichterte. Ich konnte feststellen, dass sich zum Lösen u.a. der genannten Aufgabe einige Skriptsprachen wie Perl oder Python eignen. Da bisher in der Abteilung die Mitarbeiter meistens mit Perl große Projekte erstellten und somit große Erfahrung dabei haben, habe ich mit entschieden Perl einzusetzen.
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC6.pdf}
+\caption{QAC}
+\label{fig:QAC6}
+\end{figure}
+
+Die Übertragung der Dateien war nicht die einzige Aufgabe, die zum Erstellen des QAC 9.0-Projektes durchgeführt werden musste. Es war außerdem notwendig die Pfade der einzelnen zu analysierenden Dateien anzugeben. Wie im Bild XX zu erkennen ist, bedient sich QAC9.0 einer XML-Konfigurationsdatei, aus der das Programm nicht nur die Pfade der Dateien entnimmt, sondern auch weitere wichtige Einstellungen, die im Prinzip sich auch über die GUI angeben lassen. Diese Methode bzw. die XML-Datei zu bearbeiten, ist jedoch hilfreich, um das Aufrufen des Programms implizit beispielsweise über die Console zu ermöglichen. Dies wird in einem späteren Szenario meiner Tätigkeit nötig sein, damit man eine statische Code-Analyse für die verschiedene Abteilungen automatisieren und somit vereinfachen kann. \cite{Zydek}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC7.pdf}
+\caption{QAC}
+\label{fig:QAC7}
+\end{figure}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC8.pdf}
+\caption{QAC}
+\label{fig:QAC8}
+\end{figure}
