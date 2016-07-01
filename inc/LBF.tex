@@ -136,7 +136,7 @@ Die zu analysierende Dateien mussten in ein bestimmtes Verzeichnis übertragen we
 \label{fig:QAC6}
 \end{figure}
 
-Die Übertragung der Dateien war nicht die einzige Aufgabe, die zum Erstellen des QAC 9.0-Projektes durchgeführt werden musste. Es war außerdem notwendig die Pfade der einzelnen zu analysierenden Dateien anzugeben. Wie im Bild XX zu erkennen ist, bedient sich QAC9.0 einer XML-Konfigurationsdatei, aus der das Programm nicht nur die Pfade der Dateien entnimmt, sondern auch weitere wichtige Einstellungen, die im Prinzip sich auch über die GUI angeben lassen. Diese Methode bzw. die XML-Datei zu bearbeiten, ist jedoch hilfreich, um das Aufrufen des Programms implizit beispielsweise über die Console zu ermöglichen. Dies wird in einem späteren Szenario meiner Tätigkeit nötig sein, damit man eine statische Code-Analyse für die verschiedene Abteilungen automatisieren und somit vereinfachen kann. \cite{Zydek}
+Die Übertragung der Dateien war nicht die einzige Aufgabe, die zum Erstellen des QAC 9.0-Projektes durchgeführt werden musste. Es war außerdem notwendig die Pfade der einzelnen zu analysierenden Dateien anzugeben. Wie im Bild XX zu erkennen ist, bedient sich QAC9.0 einer XML-Konfigurationsdatei, aus der das Programm nicht nur die Pfade der Dateien entnimmt, sondern auch weitere wichtige Einstellungen, die im Prinzip sich auch über die GUI angeben lassen. Diese Methode bzw. die XML-Datei zu bearbeiten, ist jedoch hilfreich, um das Aufrufen des Programms implizit beispielsweise über die Console zu ermöglichen. Dies wird in einem späteren Szenario meiner Tätigkeit nötig sein, damit man eine statische Code-Analyse für die verschiedene Abteilungen automatisieren und somit vereinfachen kann. 
 
 \begin{figure}[!htp]
 \centering
@@ -151,3 +151,65 @@ Die Übertragung der Dateien war nicht die einzige Aufgabe, die zum Erstellen des
 \caption{QAC}
 \label{fig:QAC8}
 \end{figure}
+%
+\section{Fünfte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Nachdem die Einstellungen für das oben erwähnte Projekt durchgeführt worden sind, lässt sich die statische Codeanalyse mit Hilfe der neuen QAC-Version (9.0) durchführen. Es muss dabei untersucht werden, inwiefern die aktuellen Projekte sich mit Hilfe der neuen QAC-Version analysieren lassen, ohne dass dabei beispielsweise eine große Menge von falsch positiven bzw. negativen Nachrichten ausgegeben werden.
+
+Eine Möglichkeit, dies zu realisieren, besteht darin, ein mit Hilfe der 7.0-QAC-Version bereits analysiertes Projekt ebenfalls mit Hilfe der 9.0-QAC-Version zu analysieren und anschließend die entsprechende Reports zu miteinander zu vergleichen.
+%
+\section{Sexte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Die Aufgabe der letzten Woche musste fortgesetzt werden. Die Daten aus den Analyseergebnissen mussten extrahiert werden. Einerseits wird dies vom QAC-Programm selbst dadurch erledigt, dass in Form von *.xml-Dateien die verschiedenen verletzten MISRA-Regel bzw. QAC-Warnungen ausgegeben werden. Diese Form der Datendarstellung ist für die Datenübertragung geeignet, jedoch nicht dafür, dass Trends und Zusammenhänge erkannt werden. Diese Daten müssen erstmal extrahiert und so bearbeitet werden, dass ein Mensch diese verstehen und verwenden kann.
+
+Eine *.xml-Datei lässt sich mit Hilfe einer xslt-Transormation so bearbeiten, dass die enthaltenen Daten als eine Tabelle und beispielsweise als eine *.txt-Datei dargestellt werden kann. (Hierbei muss ich eine genaue Beschreibung der XSLT-Transformation angeben)
+
+Eine Art, die Daten besser darzustellen sind Excel-Tabellen, wie in der unteren Tabelle zu erkennen ist. Die in den beschriebenen *.xml-Dateien enthaltenen Daten können dadurch besser miteinander vergliechen werden.
+
+Ich musste auch anfangen, mich mit den qacli-Befehlen zu beschäftigen, da diese auch eine wichtige Rolle spielen, wenn man über die Konsole eine automatische statische Analyse ermöglichen möchte. (Hier sollte ich versuchen, Markus Bilder wiederzugeben). Die wichtigsten QACLI befehle auch hier angeben.
+
+Als letztes habe ich die erstellten PERL- bzw. Batch-Dateien zum Aufrufen letzterer in dem Netzwerkordner gespeichert! 
+%
+\section{Siebte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Markus hat mir am Dienstag (Montag war ja Feiertag) die zweite Aufgabe vorgestellt. Dabei handelte es sich um das Modifizieren bzw. das Anpassen eines Frameworks zum automatisierten Testen von Software-Module. Ein sogenanntes Basic Test Environment (BTE) gehört zu dem genannten Testframework (Bilder hinzufügen), welches hardware unabhängig Software-Komponenten auf einem beliebigen PC testet. Bei den Tests werden wie in der Abbildung gezeigt von der BTE Nachrichten aus den Testergebnissen erstellt und in verschiedenen Report-Dateien aufgelegt. Auf diese Art und Weise kann der Software-Tester oder der Anwender einfacher überprüfen, in welchen Stellen des getesteten Codes es fehlerhafte Module gibt oder Warnungen auftauchen.
+
+Zu meiner Aufgabe gehört, diese Möglichkeit so zu erweitern, dass die BTE auch auf einer beliebigen Hardware läuft, d.h. hardwareunabhängig, und entsprechende Reports erstellt. Die Reports würden in diesem Fall nicht mehr als entsprechende Dateien abgelegt sondern bevorzug auf der RAM als Zahlen temporär gespeichert.
+
+Der auf dem Mikrocontroller erzeugte Report sollte auf einer Speicher sparenden Art und Weise erstellt werden. Die Hierarchie, wie dies geschiecht, wird im Folgenden Bild wiedergeben:
+
+XXX Bild zur Architektur des Reports, welches auf der RAM gespeichert wird. 
+
+Die erzielten Lerneffekte sind vor allem der Umgang mit einer Skriptsprache, das speicherplatz sparend Codieren in C.
+%
+\section{Achte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Die Stellen vom Speicher, wo die zu interessierenden Daten der durchgeführten Tests zum Erstellen eines Reports lassen sich mit Hilfe eines memory mapping des entsprechenden Prozessors. Dies ist mit einem Debugger möglich und wird bestenfalls vom Debugger als binary file ausgegeben. 
+%
+
+%
+Ein Ansatz, um aus den binary files ein Report zu erstellen ist, das binary file mit Hilfe einer Skriptsprache zu analysieren, damit das ursprungliche von der BTE auf dem PC erzeugte Report erneut ausgegeben werden kann. Die dazu erstellten Datei wird im folgenden angegeben: 
