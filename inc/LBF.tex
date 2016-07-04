@@ -192,13 +192,7 @@ Tabelle
 %
 Markus hat mir am Dienstag (Montag war ja Feiertag) die zweite Aufgabe vorgestellt. Dabei handelte es sich um das Modifizieren bzw. das Anpassen eines Frameworks zum automatisierten Testen von Software-Module. Ein sogenanntes Basic Test Environment (BTE) gehört zu dem genannten Testframework (Bilder hinzufügen), welches hardware unabhängig Software-Komponenten auf einem beliebigen PC testet. Bei den Tests werden wie in der Abbildung gezeigt von der BTE Nachrichten aus den Testergebnissen erstellt und in verschiedenen Report-Dateien aufgelegt. Auf diese Art und Weise kann der Software-Tester oder der Anwender einfacher überprüfen, in welchen Stellen des getesteten Codes es fehlerhafte Module gibt oder Warnungen auftauchen.
 
-Zu meiner Aufgabe gehört, diese Möglichkeit so zu erweitern, dass die BTE auch auf einer beliebigen Hardware läuft, d.h. hardwareunabhängig, und entsprechende Reports erstellt. Die Reports würden in diesem Fall nicht mehr als entsprechende Dateien abgelegt sondern bevorzug auf der RAM als Zahlen temporär gespeichert.
-
-Der auf dem Mikrocontroller erzeugte Report sollte auf einer Speicher sparenden Art und Weise erstellt werden. Die Hierarchie, wie dies geschiecht, wird im Folgenden Bild wiedergeben:
-
-XXX Bild zur Architektur des Reports, welches auf der RAM gespeichert wird. 
-
-Die erzielten Lerneffekte sind vor allem der Umgang mit einer Skriptsprache, das speicherplatz sparend Codieren in C.
+Zu meiner Aufgabe gehört, diese Möglichkeit so zu erweitern, dass die BTE auch auf einer beliebigen Hardware läuft, d.h. hardwareunabhängig, wobei die Möglichkeit geboten sein muss, entsprechende Reports zu erstellen. Die Reports können in diesem Fall nicht mehr als entsprechende Dateien auf dem Rechner abgelegt werden, viel mehr muss eine Methode  gefunden werden, wie der Report auf der RAM temporär zu speichern ist.
 %
 \section{Achte Woche}
 %
@@ -208,8 +202,74 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Die Stellen vom Speicher, wo die zu interessierenden Daten der durchgeführten Tests zum Erstellen eines Reports lassen sich mit Hilfe eines memory mapping des entsprechenden Prozessors. Dies ist mit einem Debugger möglich und wird bestenfalls vom Debugger als binary file ausgegeben. 
-%
+In der BTE Software sind Methoden (sprintf, fprintf, printf) implementiert, die die Ein- und Ausgabe von Strings ermöglichen. Mit deren Hilfe lässt sich ein Testreport leichter erstellen und auf der Festplatte sichern. 
 
+Der Umgang mit Strings verbraucht in der Regel zahreiche Softwareressourcen. Auf einem normalen Rechner sind diese meistens im Überfluss vorhanden. Im Gegensatz dazu ist dies bei eingebetteten System nicht der Fall. Deswegen ist dafür zu sorgen, dass entweder entsprechende Ersatzbibliotheken stattdessen eingebunden werden, die zwar den Umgang mit Strings ermöglichen, diese die knappen Ressouercen nicht komplett aufbrauchen.
+
+Aus den Anforderungen zur Erstellung der neuen Anwendung hat sich herausgestellt, dass
+
+XXX Bild zur Architektur des Reports, welches auf der RAM gespeichert wird. 
+
+Die erzielten Lerneffekte sind vor allem der Umgang mit einer Skriptsprache, das Speicherplatz sparend Codieren in C.
+
+Die Stellen vom Speicher, wo die zu interessierenden Daten der durchgeführten Tests zum Erstellen eines Reports abgelegt wurden, lassen sich mit Hilfe eines memory mapping des entsprechenden Prozessors analysieren. Dies ist mit einem Debugger möglich und wird bestenfalls vom Debugger als binary file ausgegeben. Das ist die Beschreibung des Ansatzs, welcher von Markus und Timo erklärt worden ist.
 %
-Ein Ansatz, um aus den binary files ein Report zu erstellen ist, das binary file mit Hilfe einer Skriptsprache zu analysieren, damit das ursprungliche von der BTE auf dem PC erzeugte Report erneut ausgegeben werden kann. Die dazu erstellten Datei wird im folgenden angegeben: 
+Ein Ansatz, um aus den binary files ein Report zu erstellen ist, das binary File mit Hilfe einer Skriptsprache zu analysieren, damit das ursprungliche von der BTE auf dem PC erzeugte Report erneut ausgegeben werden kann. Die dazu erstellten Datei wird im folgenden angegeben: 
+%
+\section{Neunte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Da die Reports auf einer beliebigen Hardware zu implementieren war, sollte eine bestimmte Hardware ausgesucht werden. Die Hardware die mir vorgestellt wurde, war das STM32F4-Entwicklungsboard. Mit dieser Hardware habe ich in der Vergangenheit schon zu tun gehabt, deswegen konnte ich ohne große Mühe die Einstellungen vornehmen, um ein Projekt zu starten.
+
+Das genannte Board lässt sich über ST-Link-Treiber flaschen , welcher vom Hersteller zur Verfügung gestellt wird.
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[angle=90,scale=0.5]{./Bilder/eclipsegit.pdf}
+\caption{eclipsegit}
+\label{fig:eclipsegit}
+\end{figure}
+%
+Der auf dem Mikrocontroller erzeugte Report sollte auf einer Speicher sparenden Art und Weise erstellt werden. Man hat sich 2 Möglichkeiten überlegt, wie dies geschehen soll. Letzteres wird im Folgenden Bild wiedergeben:
+
+%Bild hier angeben%
+
+Zu der Erkenntnis konnte man gelagen, dass die zweite Möglichkeit besser geeinet ist und auf einer seriellen Übertragung der Daten basiert.
+%
+\section{Zehnte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+In der vorliegenden Woche war meine Aufgabe das Perl Programm zu pflegen und ein wenig besser zu strukturieren. Außerdem wurde mir erklärt, dass die Messages, die über die BTE durchgeschaltet, jedoch nicht in die LogListe registriert werden, auch in dem Report vorkommen sollten. Dies geschieht auch bei einem normalen Report, welcher bei einem Test auf dem Computer erzeugt wird. Dies musste ebenfalls im Programm implementiert werden. 
+
+Die aktuelle Version meiner Anwendung erzeugt das auf dem linken Teil gezeigtem File im xml-Format. Das rechts davon gezeigte File ist das Report, welcher wie bereits oben erwähnt bei einem Test auf dem Computer erzeugt wird. Die Unterschiede lassen sich dadurch erklären, dass manche Features, die im auf dem Computer erstellten Report in dem auf der RAM gespeicherten Report nicht relevant sind und somit nicht darzustellen sind. 
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[angle=90,scale=0.45]{./Bilder/reports.pdf}
+\caption{reports}
+\label{fig:reports}
+\end{figure}
+%
+Das Bild zum UML Statechart sollte ich mal einfügen und von Markus checken lassen und endgültig hier einfügen.
+
+Am Ende erfogte eine Abgabe der letzten Version meiner programmierten PERL-Anwendung abgegeben werden. Markus hat manche Korrekturen und Verbesserungen durcgeführt und mir dann diesbezüglich Rückmeldung gegeben.
+%
+\section{Elfte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Diese Woche wurde mir die dritte Aufgabe vorgestellt. Dabei ginge es darum mich mit der Arduino Anwendung und der Einstellung eines geeigneten SCI-Treiber zu beschäftigen. Dabei hat die Programmierung der SCI-Anwendung in VS erfolgt, ich habe mich entschieden das Arduino Projekt nicht wie Andreas vorgeschlagen hat, sondern in AtmelStudio umzusetzen.

@@ -17,11 +17,13 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces QAC\relax }}{12}{figure.caption.16}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces QAC\relax }}{14}{figure.caption.17}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces QAC\relax }}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces eclipsegit\relax }}{19}{figure.caption.19}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces reports\relax }}{20}{figure.caption.20}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces gesamtes Simulink-Modell des Verbrennungsmotors\relax }}{23}{figure.caption.19}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces gesamtes Simulink-Modell des Verbrennungsmotors\relax }}{27}{figure.caption.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Embendded-MATLAB Function zur Berechnung der Schwerpunktlage der Verbrennung $\phi _{Q50}$\relax }}{25}{figure.caption.20}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Embendded-MATLAB Function zur Berechnung des Druckgradienten $\frac {dp_{z}}{d\phi }$\relax }}{28}{figure.caption.21}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Embendded-MATLAB Function zur Berechnung der Schwerpunktlage der Verbrennung $\phi _{Q50}$\relax }}{29}{figure.caption.22}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Embendded-MATLAB Function zur Berechnung des Druckgradienten $\frac {dp_{z}}{d\phi }$\relax }}{32}{figure.caption.23}
 \addvspace {10\p@ }
