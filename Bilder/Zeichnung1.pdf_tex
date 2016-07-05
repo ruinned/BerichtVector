@@ -1,0 +1,109 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Zeichnung1.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{458.23732848bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.58323178)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Zeichnung1.pdf}}%
+    \put(0.15538807,0.0123127){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Zeichnung1.pdf}}%
+    \put(0.18277765,0.54097982){\color[rgb]{0.69411765,0.71372549,0.72941176}\makebox(0,0)[lb]{\smash{Aufbau-Organisation}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Zeichnung1.pdf}}%
+    \put(0.44615126,0.46645586){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{\textbf{E}\textbf{x}\textbf{e}\textbf{c}\textbf{u}\textbf{t}\textbf{i}\textbf{v}\textbf{e}\textbf{ }\textbf{B}\textbf{o}\textbf{a}\textbf{r}\textbf{d}\textbf{ }\textbf{(}\textbf{E}\textbf{X}\textbf{E}\textbf{)}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Zeichnung1.pdf}}%
+    \put(0.21723101,0.4083919){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{Product Lines}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Zeichnung1.pdf}}%
+    \put(0.38949782,0.4083919){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{Customer Interface}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Zeichnung1.pdf}}%
+    \put(0.6044349,0.4083919){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{Administration}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{Zeichnung1.pdf}}%
+    \put(0.25831556,0.36691764){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{D}\textbf{G}\textbf{\\ }\textbf{D}\textbf{i}\textbf{a}\textbf{g}\textbf{n}\textbf{o}\textbf{s}\textbf{t}\textbf{i}\textbf{c}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{Zeichnung1.pdf}}%
+    \put(0.18839975,0.27658151){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{M}\textbf{C}\textbf{ }\textbf{–}\textbf{M}\textbf{e}\textbf{a}\textbf{s}\textbf{u}\textbf{r}\textbf{e}\textbf{m}\textbf{e}\textbf{n}\textbf{t}\textbf{ }\textbf{&}\textbf{\\ }\textbf{C}\textbf{a}\textbf{l}\textbf{i}\textbf{b}\textbf{r}\textbf{a}\textbf{t}\textbf{i}\textbf{o}\textbf{n}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{Zeichnung1.pdf}}%
+    \put(0.25975713,0.32155516){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{E}\textbf{S}\textbf{\\ }\textbf{E}\textbf{m}\textbf{b}\textbf{e}\textbf{d}\textbf{d}\textbf{e}\textbf{d}\textbf{ }\textbf{S}\textbf{o}\textbf{f}\textbf{t}\textbf{w}\textbf{a}\textbf{r}\textbf{e}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{Zeichnung1.pdf}}%
+    \put(0.2067076,0.23095982){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{N}\textbf{D}\textbf{ }\textbf{–}\textbf{N}\textbf{e}\textbf{t}\textbf{w}\textbf{o}\textbf{r}\textbf{k}\textbf{ }\textbf{&}\textbf{\\ }\textbf{D}\textbf{i}\textbf{s}\textbf{t}\textbf{r}\textbf{i}\textbf{b}\textbf{u}\textbf{t}\textbf{e}\textbf{d}\textbf{ }\textbf{S}\textbf{y}\textbf{s}\textbf{t}\textbf{e}\textbf{m}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{Zeichnung1.pdf}}%
+    \put(0.2601896,0.18585656){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{N}\textbf{I}\textbf{\\ }\textbf{N}\textbf{e}\textbf{t}\textbf{w}\textbf{o}\textbf{r}\textbf{k}\textbf{ }\textbf{I}\textbf{n}\textbf{t}\textbf{e}\textbf{r}\textbf{f}\textbf{a}\textbf{c}\textbf{e}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{Zeichnung1.pdf}}%
+    \put(0.2601896,0.09331712){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{S}\textbf{E}\textbf{\\ }\textbf{S}\textbf{y}\textbf{s}\textbf{t}\textbf{e}\textbf{m}\textbf{s}\textbf{ }\textbf{E}\textbf{n}\textbf{g}\textbf{i}\textbf{n}\textbf{e}\textbf{e}\textbf{r}\textbf{i}\textbf{n}\textbf{g}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{Zeichnung1.pdf}}%
+    \put(0.39079523,0.36717685){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{C}\textbf{I}\textbf{S}\textbf{ }\textbf{–}\textbf{I}\textbf{n}\textbf{t}\textbf{e}\textbf{r}\textbf{n}\textbf{.}\textbf{ }\textbf{S}\textbf{a}\textbf{l}\textbf{e}\textbf{s}\textbf{ }\textbf{&}\textbf{\\ }\textbf{M}\textbf{a}\textbf{r}\textbf{k}\textbf{e}\textbf{t}\textbf{i}\textbf{n}\textbf{g}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{Zeichnung1.pdf}}%
+    \put(0.45537726,0.27580387){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{C}\textbf{S}\textbf{L}\textbf{\\ }\textbf{S}\textbf{a}\textbf{l}\textbf{e}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{Zeichnung1.pdf}}%
+    \put(0.45710714,0.23095982){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{C}\textbf{S}\textbf{P}\textbf{\\ }\textbf{S}\textbf{u}\textbf{p}\textbf{p}\textbf{o}\textbf{r}\textbf{t}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{Zeichnung1.pdf}}%
+    \put(0.6509974,0.36704724){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{A}\textbf{D}\textbf{P}\textbf{\\ }\textbf{I}\textbf{T}\textbf{ }\textbf{/}\textbf{ }\textbf{D}\textbf{a}\textbf{t}\textbf{a}\textbf{ }\textbf{P}\textbf{r}\textbf{o}\textbf{c}\textbf{e}\textbf{s}\textbf{s}\textbf{i}\textbf{n}\textbf{g}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{Zeichnung1.pdf}}%
+    \put(0.65142987,0.32155516){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{A}\textbf{F}\textbf{A}\textbf{\\ }\textbf{F}\textbf{a}\textbf{c}\textbf{i}\textbf{l}\textbf{i}\textbf{t}\textbf{i}\textbf{e}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{Zeichnung1.pdf}}%
+    \put(0.65171818,0.2763223){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{A}\textbf{F}\textbf{C}\textbf{\\ }\textbf{F}\textbf{i}\textbf{n}\textbf{a}\textbf{n}\textbf{c}\textbf{e}\textbf{ }\textbf{&}\textbf{ }\textbf{C}\textbf{o}\textbf{n}\textbf{t}\textbf{r}\textbf{o}\textbf{l}\textbf{l}\textbf{i}\textbf{n}\textbf{g}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{Zeichnung1.pdf}}%
+    \put(0.58237899,0.18598617){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{A}\textbf{O}\textbf{Q}\textbf{ }\textbf{–}\textbf{O}\textbf{r}\textbf{g}\textbf{a}\textbf{n}\textbf{i}\textbf{z}\textbf{a}\textbf{t}\textbf{i}\textbf{o}\textbf{n}\textbf{ }\textbf{&}\textbf{\\ }\textbf{Q}\textbf{u}\textbf{a}\textbf{l}\textbf{i}\textbf{t}\textbf{y}\textbf{ }\textbf{M}\textbf{a}\textbf{n}\textbf{a}\textbf{g}\textbf{e}\textbf{m}\textbf{e}\textbf{n}\textbf{t}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{Zeichnung1.pdf}}%
+    \put(0.65013246,0.23160786){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{A}\textbf{H}\textbf{R}\textbf{\\ }\textbf{H}\textbf{u}\textbf{m}\textbf{a}\textbf{n}\textbf{ }\textbf{R}\textbf{e}\textbf{s}\textbf{o}\textbf{u}\textbf{r}\textbf{c}\textbf{e}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{Zeichnung1.pdf}}%
+    \put(0.25961297,0.13958684){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{P}\textbf{T}\textbf{\\ }\textbf{P}\textbf{r}\textbf{o}\textbf{c}\textbf{e}\textbf{s}\textbf{s}\textbf{ }\textbf{T}\textbf{o}\textbf{o}\textbf{l}\textbf{s}}}}%
+    \put(0.83076034,0.03149455){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stand: Februar2016}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{Zeichnung1.pdf}}%
+    \put(0.25961297,0.04782504){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{P}\textbf{T}\textbf{R}\textbf{\\ }\textbf{T}\textbf{r}\textbf{a}\textbf{i}\textbf{n}\textbf{i}\textbf{n}\textbf{g}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{Zeichnung1.pdf}}%
+    \put(0.80135245,0.41720518){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{Research and\\ Development}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{Zeichnung1.pdf}}%
+    \put(0.80510051,0.36782489){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{R}\textbf{D}\textbf{I}\textbf{ }\textbf{–}\textbf{R}\textbf{ }\textbf{&}\textbf{ }\textbf{D}\textbf{o}\textbf{f}\textbf{\\ }\textbf{I}\textbf{n}\textbf{n}\textbf{o}\textbf{v}\textbf{a}\textbf{t}\textbf{i}\textbf{v}\textbf{e}\textbf{ }\textbf{A}\textbf{p}\textbf{p}\textbf{l}\textbf{i}\textbf{c}\textbf{a}\textbf{t}\textbf{i}\textbf{o}\textbf{n}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{Zeichnung1.pdf}}%
+    \put(0.81389405,0.32207359){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{R}\textbf{D}\textbf{E}\textbf{ }\textbf{–}\textbf{R}\textbf{ }\textbf{&}\textbf{ }\textbf{D}\textbf{\\ }\textbf{E}\textbf{m}\textbf{b}\textbf{e}\textbf{d}\textbf{d}\textbf{e}\textbf{d}\textbf{ }\textbf{S}\textbf{y}\textbf{s}\textbf{t}\textbf{e}\textbf{m}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{Zeichnung1.pdf}}%
+    \put(0.39771473,0.32207359){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{C}\textbf{P}\textbf{L}\textbf{ }\textbf{–}\textbf{P}\textbf{r}\textbf{o}\textbf{d}\textbf{u}\textbf{c}\textbf{t}\textbf{i}\textbf{o}\textbf{n}\textbf{ }\textbf{&}\textbf{\\ }\textbf{L}\textbf{o}\textbf{g}\textbf{i}\textbf{s}\textbf{t}\textbf{i}\textbf{c}\textbf{s}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{Zeichnung1.pdf}}%
+    \put(0.02800467,0.26790132){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Abteilung,\\ wo ich \\ eingesetzt\\ wurde}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{Zeichnung1.pdf}}%
+  \end{picture}%
+\endgroup%

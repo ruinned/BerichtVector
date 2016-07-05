@@ -8,7 +8,20 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Am ersten Tag meiner Tätigkeit als Praktikant bei Vector Informatik wurden mir die Firma und ihre unterschiedlichen Abteilungen vorgestellt. Es gab zusätzlich eine Schulung über die sicherheitsrelevanten Themen, der Verschwiegenheitsplicht und den richtigen Umgang mit unterschiedlichen Software-Richtlinien, welche während meiner Tätigkeit bei der Firma eingehalten werden sollen. Mein interner Betreuer, der Herr Dipl. Ing. Markus Schwarz, gab mir eine kleine Einführung  über die Abteilung und führte mich an meinen zugehörigen Arbeitsplatz.
+Am ersten Tag meiner Tätigkeit bei Vector Informatik bekam ich die Gelegenheit die Firma und ihre unterschiedlichen Abteilungen näher kennen zu lernen. Es war erforderlich, an einer ausführlichen Präsentation über die Firma und die unterschiedlichen Abteilungen teilzunehmen. Dabei konnte ich ebenfalls Mitarbeiter kennen lernen, für die dieser auch ihr erster Tag bei Vector war.
+%
+\begin{figure}[htp]
+\centering
+%\def\svgwidth{scale=0.4}
+%\input{./Bilder/Zeichnung1.pdf_tex}
+\includegraphics[scale=1]{./Bilder/Zeichnung1.pdf}
+\caption{Zeichnung1}
+\label{fig:Zeichnung1}
+\end{figure}
+
+Die Softwareabteilung (ADP) gab uns u.a. zahlreiche Einblicke in Themen wie vorhandene Software-Packete, Software-Sicherheit und vor allem der Verschwiegenheitsplicht bezüglich dienstliche Angelegenheiten und Sachverhalte, die mir während des Praktikums bekannt werden. 
+
+Mein interner Betreuer, der Herr Dipl. Ing. Markus Schwarz, gab mir eine kleine Einführung  über die Abteilung und führte mich an meinen zugehörigen Arbeitsplatz.
 Bei Vector werden unterschiedliche Programme eingesetzt, welche von jedem Mitarbeiter beherrscht werden sollen und u.a. Informationen über die Arbeitstätigkeit in der Firma der Personalabteilung weiterleiten.
 Diese sind unter anderem (diese Version richtet sich nach den Richtlinien der Universität. In der Version von Vector muss ich eine richtige Themengliederung angeben. Ein richtiger Bericht muss es werden):
 TortoiseSVN: Hier bitte eine kurze Beschreibung von Tortoise geben. Du kannst auch dazu irgendeine Präsentation von ADP benutzen, suche im Intranet danach. 
@@ -202,19 +215,24 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-In der BTE Software sind Methoden (sprintf, fprintf, printf) implementiert, die die Ein- und Ausgabe von Strings ermöglichen. Mit deren Hilfe lässt sich ein Testreport leichter erstellen und auf der Festplatte sichern. 
+In der BTE Software sind Methoden (sprintf, printf) verwendet, die die formatierte Ein- und Ausgabe von Strings ermöglichen. Zudem werden Methodenaufrufe wie fprintf oder fopen eingesetzt, die der Umgang mit Streams bzw. die Erstellung einer Datei ermöglichen.
 
-Der Umgang mit Strings verbraucht in der Regel zahreiche Softwareressourcen. Auf einem normalen Rechner sind diese meistens im Überfluss vorhanden. Im Gegensatz dazu ist dies bei eingebetteten System nicht der Fall. Deswegen ist dafür zu sorgen, dass entweder entsprechende Ersatzbibliotheken stattdessen eingebunden werden, die zwar den Umgang mit Strings ermöglichen, diese die knappen Ressouercen nicht komplett aufbrauchen.
+Zwei Mögichkeiten können betrachtet werden, um mit den knappen Softwareressourcen der Embedded Platform umzugehen:
 
-Aus den Anforderungen zur Erstellung der neuen Anwendung hat sich herausgestellt, dass
+\begin{itemize}
+\item Man bindet entsprechende Ersatzbibliotheken ein, bei denen der Verbrauch der Ressouercen in Grenzen gehalten wird.
+\item Man bietet dem Anwender die Möglichkeit an, durch entsprechende Routinen diejenigen Teile vom Code beim Kompiliervorgang auszublenden, die nicht einzusetzen sind.
+\end{itemize}
+
+Die zweite Lösung wird so angewendet, dass die nicht kompatiblen Codestellen mit vorhandenen und zusätzlich eingebauten Präprozessor-Direktiven \lstinline$#define$\ \grqq auskommentiert\glqq werden.
 
 XXX Bild zur Architektur des Reports, welches auf der RAM gespeichert wird. 
 
-Die erzielten Lerneffekte sind vor allem der Umgang mit einer Skriptsprache, das Speicherplatz sparend Codieren in C.
+Die Stellen vom Speicher, wo die zu interessierenden Daten der durchgeführten Tests zum Erstellen eines Reports abgelegt wurden, lassen sich mit Hilfe eines memory mapping des entsprechenden Prozessors analysieren. Dies ist mit einem Debugger möglich und kann bestenfalls als binary file ausgegeben werden. Das ist die Beschreibung des Ansatzs, welcher von Markus und Timo erklärt worden ist.
 
-Die Stellen vom Speicher, wo die zu interessierenden Daten der durchgeführten Tests zum Erstellen eines Reports abgelegt wurden, lassen sich mit Hilfe eines memory mapping des entsprechenden Prozessors analysieren. Dies ist mit einem Debugger möglich und wird bestenfalls vom Debugger als binary file ausgegeben. Das ist die Beschreibung des Ansatzs, welcher von Markus und Timo erklärt worden ist.
-%
-Ein Ansatz, um aus den binary files ein Report zu erstellen ist, das binary File mit Hilfe einer Skriptsprache zu analysieren, damit das ursprungliche von der BTE auf dem PC erzeugte Report erneut ausgegeben werden kann. Die dazu erstellten Datei wird im folgenden angegeben: 
+Ein Ansatz, um aus den binary files ein Report zu erstellen, ist, das binary File mit Hilfe einer Skriptsprache zu analysieren, damit das ursprungliche von der BTE auf dem PC erzeugte Report erneut ausgegeben werden kann. Die genaue Darstellung des Perl-Scripts (Perl-Listing) kann im Anhang \ref{cha:tools} gefunden werden. 
+
+Die erzielten Lerneffekte sind vor allem der Umgang mit einer Skriptsprache, das Speicherplatz sparend Codieren in C.
 %
 \section{Neunte Woche}
 %
@@ -224,7 +242,7 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Da die Reports auf einer beliebigen Hardware zu implementieren war, sollte eine bestimmte Hardware ausgesucht werden. Die Hardware die mir vorgestellt wurde, war das STM32F4-Entwicklungsboard. Mit dieser Hardware habe ich in der Vergangenheit schon zu tun gehabt, deswegen konnte ich ohne große Mühe die Einstellungen vornehmen, um ein Projekt zu starten.
+Da die Reports auf einer beliebigen Hardware zu implementieren sind, sollte eine bestimmte Hardware ausgesucht werden. Die Hardware die mir vorgestellt wurde, war das STM32F4-Entwicklungsboard. Mit dieser Hardware habe ich in der Vergangenheit schon zu tun gehabt, deswegen konnte ich ohne große Mühe die Einstellungen vornehmen, um ein Projekt zu starten.
 
 Das genannte Board lässt sich über ST-Link-Treiber flaschen , welcher vom Hersteller zur Verfügung gestellt wird.
 %
@@ -272,4 +290,8 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Diese Woche wurde mir die dritte Aufgabe vorgestellt. Dabei ginge es darum mich mit der Arduino Anwendung und der Einstellung eines geeigneten SCI-Treiber zu beschäftigen. Dabei hat die Programmierung der SCI-Anwendung in VS erfolgt, ich habe mich entschieden das Arduino Projekt nicht wie Andreas vorgeschlagen hat, sondern in AtmelStudio umzusetzen.
+Diese Woche wurde mir die dritte Aufgabe vorgestellt. Dabei ginge es darum mich mit der Arduino Anwendung und der Einstellung eines geeigneten SCI-Treiber zu beschäftigen. Die Programmierung von Win32-Anwendungen ist nicht trivial, dabei ist man auf die Verwendung von Funktionen angewiesen, die von Windows zur Verfügung gestellt werden. 
+
+Hierbei beschreiben, was Win32 ist und wieso ich nicht andere Module Verwenden könnte.
+
+Dabei hat die Programmierung der SCI-Anwendung in VS erfolgt, ich habe mich entschieden das Arduino Projekt nicht wie Andreas vorgeschlagen hat, sondern in AtmelStudio umzusetzen. Die Atmelstudio Anwendung und die Einstellung eines Projektes mit den external configurations beschreiben.
