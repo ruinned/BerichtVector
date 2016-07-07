@@ -23,7 +23,7 @@
      inkscape:window-height="1148"
      inkscape:window-width="1920"
      showgrid="false"
-     inkscape:current-layer="g4226"
+     inkscape:current-layer="g3532"
      inkscape:document-units="px"
      inkscape:cy="623.36176"
      inkscape:cx="379.40097"
@@ -96,834 +96,837 @@
          transform="scale(0.12,0.12)"
          id="g3532">
         <g
-           id="g4028"
-           transform="matrix(0.4949235,0,0,0.55048197,2425.5405,2157.7429)">
+           id="g4248">
           <g
-             id="g3534">
+             transform="matrix(0.4949235,0,0,0.55048197,2425.5405,2157.7429)"
+             id="g4028">
             <g
-               id="g3536"
-               clip-path="url(#clipPath3538)">
-              <path
-                 d="m 228.992,507.992 4500,0 0,6000 -4500,0 0,-6000 z"
-                 style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
-                 id="path3542"
-                 inkscape:connector-curvature="0" />
-            </g>
-          </g>
-          <g
-             id="g3544"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,556.079,77.8791)"
-               style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3546">
-              <tspan
-                 x="0"
-                 y="0"
-                 id="tspan3548">1</tspan>
-            </text>
-          </g>
-          <g
-             id="g3550">
-            <g
-               id="g3552"
-               clip-path="url(#clipPath3554)">
-              <path
-                 d="m 562.992,6009.99 48,0 -97,166 -96,-166 48,0 48,83"
-                 style="fill:#b70032;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                 id="path3558"
-                 inkscape:connector-curvature="0" />
-              <path
-                 d="m 472.992,5421.99 0,24 83,-48 -83,-48 0,24 41,24"
-                 style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                 id="path3560"
-                 inkscape:connector-curvature="0" />
-            </g>
-          </g>
-          <path
-             d="m 469.992,5792.99 c 0,-24 20,-44 44,-44 24,0 44,20 44,44 0,24 -20,44 -44,44 -24,0 -44,-20 -44,-44 z m 68,0 c 0,-13 -11,-23 -24,-23 -12,0 -22,10 -22,23 0,12 10,23 22,23 13,0 24,-11 24,-23"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3562"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 537.992,5609.99 c 0,-12 -11,-22 -24,-22 -12,0 -22,10 -22,22 0,7 2,13 6,16 -14,15 -14,15 -14,15 -8,-7 -14,-18 -14,-31 0,-24 20,-43 44,-43 24,0 44,19 44,43 0,13 -5,24 -12,31 -16,-15 -16,-15 -16,-15 5,-3 8,-9 8,-16"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3564"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 491.992,5657.99 0,28 64,0 0,20 -64,0 0,29 -19,0 0,-77"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3566"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 555.992,5472.99 0,64 -18,0 0,-43 -15,0 0,34 -19,0 0,-34 -12,0 0,43 -19,0 0,-64"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3568"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 499.992,5944.99 c -15,0 -27,-12 -27,-27 0,-51 0,-51 0,-51 83,0 83,0 83,0 0,21 0,21 0,21 -28,0 -28,0 -28,0 0,17 0,17 0,17 28,16 28,16 28,16 0,24 0,24 0,24 -30,-17 -30,-17 -30,-17 -4,11 -14,17 -26,17 z m 10,-29 c 0,-28 0,-28 0,-28 -18,0 -18,0 -18,0 0,28 0,28 0,28 0,4 3,9 8,9 6,0 10,-5 10,-9"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3570"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3572"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,66.5991,100.679)"
-               style="font-variant:normal;font-weight:normal;font-size:15.96000004px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#b1b6ba;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3574">
-              <tspan
-                 x="0 10.926484 21.009476 26.656458 36.615711 46.222321 56.305313 63.503689 76.101944 82.945808 92.90506 102.51167 112.59467 116.90806 125.18812 134.79472 141.15404 145.46744 155.18849"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3576">Aufbau-Organisation</tspan>
-            </text>
-          </g>
-          <path
-             d="m 938.992,838.992 279,0 0,5340 -279,0 0,-5340 z"
-             style="fill:#848b8e;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3578"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 933.992,834.992 0,5347.998 287.998,0 0,-5347.998 -287.998,0 z m 283.998,8 -5,-4 0,5339.998 5,-4 -278.998,0 4,4 0,-5339.998 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3580"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3582"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,135.599,319.919)"
-               style="font-variant:normal;font-weight:bold;font-size:15.96000004px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3584">
-              <tspan
-                 x="0 10.918317 21.59919 32.158192 41.512146 52.905724 60.232643 65.635887 75.957443 86.516449 92.279686 104.40417 115.33178 126.01228 133.93115 145.0872 150.97044 159.60315 170.52147 182.76671 193.68501"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3586">Executive Board (EXE)</tspan>
-            </text>
-          </g>
-          <path
-             d="m 1392.99,840.992 279,0 0,1264 -279,0 0,-1264 z"
-             style="fill:#b70032;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3588"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 1388.99,836.992 0,1271.998 287,0 0,-1271.998 -287,0 z m 283,8 -4,-4 0,1263.998 4,-4 -279,0 4,4 0,-1263.998 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3590"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3592"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,189.359,129.359)"
-               style="font-variant:normal;font-weight:normal;font-size:14.03999996px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3594">
-              <tspan
-                 x="0 8.5196161 14.523016 23.043949 31.803291 40.685925 48.005978 53.525375 58.211517 66.016563 69.970749 78.853378 87.257553"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3596">Product Lines</tspan>
-            </text>
-          </g>
-          <path
-             d="m 1392.99,2209.99 279,0 0,1263 -279,0 0,-1263 z"
-             style="fill:#b70032;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3598"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 1388.99,2204.99 0,1273 287,0 0,-1273 -287,0 z m 283,9 -4,-4 0,1263 4,-4 -279,0 4,4 0,-1263 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3600"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3602"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,189.359,272.759)"
-               style="font-variant:normal;font-weight:normal;font-size:14.03999996px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3604">
-              <tspan
-                 x="0 9.8365993 18.719233 26.039288 31.558683 40.079617 53.764442 62.16861 68.172012 72.738152 78.619576 87.502213 93.021606 101.42577 107.42918 112.35532 120.76113 128.08119"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3606">Customer Interface</tspan>
-            </text>
-          </g>
-          <path
-             d="m 1392.99,3559.99 279,0 0,1264 -279,0 0,-1264 z"
-             style="fill:#b70032;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3608"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 1388.99,3555.99 0,1272 287,0 0,-1272 -287,0 z m 283,8 -4,-4 0,1264 4,-4 -279,0 4,4 0,-1264 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3610"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3612"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,189.359,451.679)"
-               style="font-variant:normal;font-weight:normal;font-size:14.03999996px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3614">
-              <tspan
-                 x="0 9.6057034 18.365046 32.049873 36.004059 44.886692 48.840878 56.160931 61.680328 67.443726 75.849541 81.368942 85.203125 93.72406"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3616">Administration</tspan>
-            </text>
-          </g>
-          <path
-             d="m 1804.99,840.992 224,0 0,1264 -224,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3618"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 1800.99,836.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -5,-4 0,1263.998 5,-4 -224,0 5,4 0,-1263.998 -5,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3620"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3622"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,227.759,163.559)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3624">
-              <tspan
-                 x="0 8.0409918 17.16013"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3626">PDG</tspan>
-              <tspan
-                 x="-22.799999 -13.680862 -9.9586201 -2.6382749 5.03931 12.954868 20.52013 27.117241 32.162025 35.88427 42.360085"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3628">Diagnostics</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2502.99,840.992 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3630"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2497.99,836.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -4,-4 0,1263.998 4,-4 -223,0 4,4 0,-1263.998 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3632"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3634"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,311.399,105.359)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3636">
-              <tspan
-                 x="0 8.0409918 18.483709 26.527763 30.130005 41.770691 52.213409 59.532719 66.853065 73.450172 81.36573 86.884956 94.204269 105.8431 113.16241 120.95797 126.00275 129.36501 138.84163"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3638">PMC –Measurement &amp;</tspan>
-              <tspan
-                 x="37.560001 45.604053 52.9244 56.646641 60.368885 68.046471 73.565689 80.88604 85.930824 89.653069 97.21833"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3640">Calibration</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2155.99,838.992 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3642"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2151.99,834.992 0,1271.998 231,0 0,-1271.998 -231,0 z m 227,8 -4,-4 0,1263.998 4,-4 -223,0 4,4 0,-1263.998 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3644"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3646"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,269.759,164.759)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3648">
-              <tspan
-                 x="0 8.0409918 15.599828"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3650">PES</tspan>
-              <tspan
-                 x="-50.52 -42.961163 -31.322329 -23.644743 -16.325434 -8.6478491 -0.97026384 6.3490462 14.026631 17.868874 25.663914 33.229176 37.905167 42.949951 53.744518 61.064861 66.584084"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3652">Embedded Software</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2854.99,838.992 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3654"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2850.99,834.992 0,1271.998 231,0 0,-1271.998 -231,0 z m 227,8 -4,-4 0,1263.998 4,-4 -223,0 4,4 0,-1263.998 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3656"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3658"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,353.639,120.599)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3660">
-              <tspan
-                 x="0 8.0409918 17.404528 26.523666 30.245909 41.886593 51.25013 58.569443 63.614227 74.408791 81.974052 87.493279 94.934402 98.416641 107.89328"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3662">PND –Network &amp;</tspan>
-              <tspan
-                 x="-6.7199998 2.3991375 6.1213799 12.718491 17.763277 23.282501 27.004744 34.682327 42.597885 47.642673 54.961983 62.639568 66.241814 74.03685 81.23819 87.835297 92.880089 100.19939 111.83823"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3664">Distributed Systems</tspan>
-            </text>
-          </g>
-          <path
-             d="m 3202.99,841.992 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3666"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 3198.99,837.992 0,1271.998 231,0 0,-1271.998 -231,0 z m 227,8 -4,-4 0,1263.998 4,-4 -223,0 4,4 0,-1263.998 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3668"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3670"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,395.399,165.119)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3672">
-              <tspan
-                 x="0 8.0409918 17.404528"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3674">PNI</tspan>
-              <tspan
-                 x="-48.720001 -39.356464 -32.037155 -26.992367 -16.1978 -8.6325397 -3.1133156 4.3278055 7.8100481 13.81117 21.726727 26.771515 34.090824 39.610046 44.286037 51.606384 58.082199 65.401512"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3676">Network Interfaces</tspan>
-            </text>
-          </g>
-          <path
-             d="m 3915.99,841.992 224,0 0,1264 -224,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3678"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 3911.99,837.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -4,-4 0,1263.998 4,-4 -224,0 5,4 0,-1263.998 -5,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3680"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3682"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,481.079,165.119)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3684">
-              <tspan
-                 x="0 8.0409918 15.836033"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3686">PSE</tspan>
-              <tspan
-                 x="-53.279999 -45.484959 -38.283623 -31.686512 -26.641726 -19.322414 -7.6835794 -1.0864686 2.3957736 9.9546089 17.870167 25.547752 29.269995 37.185555 44.504864 51.824173 57.343395 61.065639 68.981201"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3688">Systems Engineering</tspan>
-            </text>
-          </g>
-          <path
-             d="m 1803.99,2209.99 223,0 0,1263 -223,0 0,-1263 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3690"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 1799.99,2204.99 0,1273 232,0 0,-1273 -232,0 z m 227,9 -4,-4 0,1263 4,-4 -223,0 4,4 0,-1263 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3692"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3694"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,227.519,273.839)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3696">
-              <tspan
-                 x="0 8.044054 14.045175 21.840216 25.682459 37.203152 43.204273 51.119831 56.164616 63.483929 69.003151 76.918709 80.875084 84.477333 92.272369 99.592712 103.31496 110.63427 117.23138 120.95362 130.43025"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3698">CIS –Intern. Sales &amp;</tspan>
-              <tspan
-                 x="35.880001 46.322716 53.643063 59.162285 66.603409 73.922714 78.967506 82.689743 90.605301"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3700">Marketing</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2507.99,2209.99 224,0 0,1263 -224,0 0,-1263 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3702"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2503.99,2204.99 0,1273 232,0 0,-1273 -232,0 z m 228,9 -4,-4 0,1263 4,-4 -224,0 5,4 0,-1263 -5,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3704"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3706"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,312.119,327.599)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3708">
-              <tspan
-                 x="0 8.044054 15.839094 22.916809"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3710">CSL</tspan>
-              <tspan
-                 x="-3 4.7950406 12.115386 15.837628 23.156939"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3712">Sales</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2854.99,2209.99 223,0 0,1263 -223,0 0,-1263 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3714"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2850.99,2204.99 0,1273 231,0 0,-1273 -231,0 z m 227,9 -4,-4 0,1263 4,-4 -223,0 4,4 0,-1263 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3716"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3718"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,353.639,329.039)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3720">
-              <tspan
-                 x="0 8.044054 15.839094"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3722">CSP</tspan>
-              <tspan
-                 x="-12.72 -4.9249592 2.9905987 10.668183 18.345768 25.91103 31.430254"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3724">Support</tspan>
-            </text>
-          </g>
-          <path
-             d="m 1804.99,3562.99 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3726"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 1800.99,3558.99 0,1272 231,0 0,-1272 -231,0 z m 227,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3728"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3730"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,227.639,490.439)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3732">
-              <tspan
-                 x="0 8.5159464 17.635084"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3734">ADP</tspan>
-              <tspan
-                 x="-51.48 -45.478878 -37.914913 -34.192669 -26.637671 -22.795429 -13.676291 -6.3559465 -1.3111595 6.0091853 9.7314281 17.772419 23.291643 30.856905 37.332722 44.652031 51.249142 57.846252 61.568497 69.484055"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3736">IT / Data Processing</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2155.99,3559.99 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3738"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2151.99,3555.99 0,1272 231,0 0,-1272 -231,0 z m 227,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3740"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3742"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,269.759,490.799)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3744">
-              <tspan
-                 x="0 8.5159464 15.711634"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3746">AFA</tspan>
-              <tspan
-                 x="-15.24 -8.0443125 -0.72396743 5.7518497 9.4740915 13.196335 16.918577 21.963364 25.685606 33.004917"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3748">Facilities</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2504.99,3559.99 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3750"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2500.99,3555.99 0,1272 232,0 0,-1272 -232,0 z m 227,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3752"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3754"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,311.639,491.039)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3756">
-              <tspan
-                 x="0 8.5159464 15.711634"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3758">AFC</tspan>
-              <tspan
-                 x="-54.720001 -47.524311 -43.802071 -35.886513 -28.566166 -20.650608 -14.174791 -6.8554816 -3.2532392 6.2233973 10.065639 18.109694 25.674955 33.590511 38.6353 44.154522 51.719784 55.442028 59.164268 62.886513 70.802071"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3760">Finance &amp; Controlling</tspan>
-            </text>
-          </g>
-          <path
-             d="m 3201.99,3559.99 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3762"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 3196.99,3555.99 0,1272 232,0 0,-1272 -232,0 z m 228,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3764"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3766"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,395.279,433.319)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3768">
-              <tspan
-                 x="0 8.5159464 17.874868 27.233789 30.956032 42.596718 51.955643 57.474865 65.152451 72.472794 80.388351 84.110596 90.714134 98.034477 103.07926 106.80151 114.36677 122.28233 126.12457 135.60121"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3770">AOQ –Organization &amp;</tspan>
-              <tspan
-                 x="5.6399999 14.998921 22.91448 30.234825 33.957069 37.67931 42.724098 49.925434 53.647675 64.090393 71.410736 79.326294 86.646645 94.324226 101.64354 113.28237 120.60168 128.51724"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3772">Quality Management</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2849.99,3559.99 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3774"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2844.99,3555.99 0,1272 232,0 0,-1272 -232,0 z m 228,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3776"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3778"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,353.039,489.719)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3780">
-              <tspan
-                 x="0 8.5159464 17.751505"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3782">AHR</tspan>
-              <tspan
-                 x="-42.599998 -33.364441 -25.448883 -13.810048 -6.4897032 1.425855 5.1480975 13.785596 21.104906 27.702017 35.267277 43.182835 48.702061 55.177876 62.497189"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3784">Human Resources</tspan>
-            </text>
-          </g>
-          <path
-             d="m 3559.99,838.992 224,0 0,1264 -224,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3786"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 3555.99,834.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -5,-4 0,1263.998 5,-4 -224,0 4,4 0,-1263.998 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3788"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3790"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,438.239,164.639)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3792">
-              <tspan
-                 x="0 8.0409918 16.081984"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3794">PPT</tspan>
-              <tspan
-                 x="-30.48 -22.439009 -16.919785 -9.3545227 -2.8787062 4.4406037 11.037714 17.634825 20.997066 28.561035 36.126297 43.691559 47.413799"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3796">Process Tools</tspan>
-            </text>
-            <text
-               transform="matrix(0,1,1,0,538.319,640.079)"
-               style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3798">
-              <tspan
-                 x="0 6.1236563 9.7232695 15.126996 20.768684 26.408262 30.487349 33.611286 38.773922 44.176594 49.816174 53.658352 59.300037 64.703766 71.78595 77.548264 83.310585 89.072906"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3800">Stand: Februar2016</tspan>
-            </text>
-          </g>
-          <path
-             d="m 4267.99,841.992 224,0 0,1264 -224,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3802"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 4263.99,837.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -5,-4 0,1263.998 5,-4 -224,0 4,4 0,-1263.998 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3804"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3806"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,523.199,164.639)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3808">
-              <tspan
-                 x="0 8.0409918 15.604959"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3810">PTR</tspan>
-              <tspan
-                 x="-13.56 -5.9960327 -0.47680876 6.8435364 10.565779 18.481337 22.203579 30.119137"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3812">Training</tspan>
-            </text>
-          </g>
-          <path
-             d="m 1394.99,4913.99 279,0 0,1264 -279,0 0,-1264 z"
-             style="fill:#b70032;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3814"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 1390.99,4909.99 0,1272 287,0 0,-1272 -287,0 z m 283,8 -4,-4 0,1264 4,-4 -279,0 4,4 0,-1264 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3816"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3818"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,181.199,615.599)"
-               style="font-variant:normal;font-weight:normal;font-size:14.03999996px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3820">
-              <tspan
-                 x="0 9.3556128 17.759781 25.079836 33.484005 41.889816 47.893219 55.213272 64.095901 68.782043 77.187859 86.070496 94.829834"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3822">Research and</tspan>
-              <tspan
-                 x="3.1199999 13.92691 22.331078 30.493931 38.898098 42.852283 51.373219 60.132561 73.817383 82.22155 91.104187"
-                 y="16.799999"
-                 sodipodi:role="line"
-                 id="tspan3824">Development</tspan>
-            </text>
-          </g>
-          <path
-             d="m 1798.99,4913.99 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3826"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 1794.99,4909.99 0,1272 231,0 0,-1272 -231,0 z m 227,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3828"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3830"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,226.919,618.719)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3832">
-              <tspan
-                 x="0 8.6374989 17.756636 23.757757 27.48 39.120686 47.758186 51.480427 60.957066 64.799309 77.638443 85.203705 89.879692"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3834">RDI –R &amp; Dof</tspan>
-              <tspan
-                 x="-26.52 -20.518879 -12.603321 -4.6877627 2.8774986 10.078577 17.398922 22.443708 26.165951 33.367031 40.68634 44.168583 52.684528 60.362114 68.039696 71.76194 75.484184 81.959999 89.280342 94.325134 98.047371 105.61263 113.52819"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3836">Innovative Applications</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2151.99,4914.99 223,0 0,1264 -223,0 0,-1264 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3838"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2146.99,4910.99 0,1272 232,0 0,-1272 -232,0 z m 228,9 -4,-5 0,1264 4,-4 -223,0 4,4 0,-1264 -4,5"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3840"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3842"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,269.279,626.039)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3844">
-              <tspan
-                 x="0 8.6374989 17.756636 25.315472 29.037714 40.678402 49.315899 53.038143 62.514778 66.237022"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3846">RDE –R &amp; D</tspan>
-              <tspan
-                 x="-20.76 -13.201164 -1.5623287 6.1152563 13.434566 21.112152 28.789736 36.109047 43.786633 47.628872 55.423916 62.625252 69.222359 74.267151 81.586456 93.225296"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3848">Embedded Systems</tspan>
-            </text>
-          </g>
-          <path
-             d="m 2151.99,2209.99 223,0 0,1263 -223,0 0,-1263 z"
-             style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
-             id="path3850"
-             inkscape:connector-curvature="0" />
-          <path
-             d="m 2146.99,2204.99 0,1273 232,0 0,-1273 -232,0 z m 228,9 -4,-4 0,1263 4,-4 -223,0 4,4 0,-1263 -4,4"
-             style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path3852"
-             inkscape:connector-curvature="0" />
-          <g
-             id="g3854"
-             transform="scale(8.33333,8.33333)">
-            <text
-               transform="matrix(0,1,1,0,269.279,279.599)"
-               style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-               id="text3856">
-              <tspan
-                 x="0 8.044054 16.085045 23.16276 26.765003 38.405689 46.446682 51.965904 59.531166 67.208748 75.124306 81.600128 86.644913 90.367157 97.932419 105.84798 109.33022 118.80685"
-                 y="0"
-                 sodipodi:role="line"
-                 id="tspan3858">CPL –Production &amp;</tspan>
-              <tspan
-                 x="34.080002 41.157715 48.722977 56.400562 60.122803 66.719917 71.764702 75.486946 81.962761"
-                 y="13.2"
-                 sodipodi:role="line"
-                 id="tspan3860">Logistics</tspan>
-            </text>
-          </g>
-        </g>
-        <g
-           id="g4214"
-           transform="matrix(0.609482,0,0,0.65713469,1361.3847,900.51351)">
-          <g
-             id="g4226"
-             transform="matrix(0.76000716,0,0,0.78976056,836.73359,553.2896)">
-            <g
-               id="g4237">
+               id="g3534">
               <g
-                 transform="matrix(0.81451613,0,0,0.80495358,889.28236,517.87189)"
-                 id="g4203">
-                <ellipse
-                   style="fill:#cccccc"
-                   id="path4201"
-                   cx="1474.4078"
-                   cy="4099.5752"
-                   transform="matrix(0,1,1,0,0,0)"
-                   rx="543.79883"
-                   ry="417.52972" />
-                <text
-                   xml:space="preserve"
-                   style="font-style:normal;font-weight:normal;font-size:130.09657288px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-                   x="1261.45"
-                   y="3639.3672"
-                   id="text4190"
-                   sodipodi:linespacing="125%"
-                   transform="matrix(0,0.94066088,1.0630824,0,0,0)"><tspan
-                     sodipodi:role="line"
-                     id="tspan4192"
-                     x="1261.45"
-                     y="3639.3672"
-                     style="font-size:130.09657288px">Abteilung,</tspan><tspan
-                     sodipodi:role="line"
-                     x="1261.45"
-                     y="3801.9878"
-                     id="tspan4194"
-                     style="font-size:130.09657288px">wo ich </tspan><tspan
-                     sodipodi:role="line"
-                     x="1261.45"
-                     y="3964.6086"
-                     id="tspan4196"
-                     style="font-size:130.09657288px">eingesetzt</tspan><tspan
-                     sodipodi:role="line"
-                     x="1261.45"
-                     y="4127.2295"
-                     style="font-size:130.09657288px"
-                     id="tspan4224">wurde</tspan></text>
+                 clip-path="url(#clipPath3538)"
+                 id="g3536">
+                <path
+                   inkscape:connector-curvature="0"
+                   id="path3542"
+                   style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+                   d="m 228.992,507.992 4500,0 0,6000 -4500,0 0,-6000 z" />
               </g>
-              <path
-                 inkscape:connector-curvature="0"
-                 id="path4210"
-                 d="M 3896.4279,1603.3898 3490.0772,2625.1154"
-                 style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.92718697px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-              <path
-                 inkscape:connector-curvature="0"
-                 id="path4212"
-                 d="m 4335.2792,2122.2718 -623.8213,500.2646"
-                 style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.44511127px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+            </g>
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3544">
+              <text
+                 id="text3546"
+                 style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,556.079,77.8791)">
+                <tspan
+                   id="tspan3548"
+                   y="0"
+                   x="0">1</tspan>
+              </text>
+            </g>
+            <g
+               id="g3550">
+              <g
+                 clip-path="url(#clipPath3554)"
+                 id="g3552">
+                <path
+                   inkscape:connector-curvature="0"
+                   id="path3558"
+                   style="fill:#b70032;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   d="m 562.992,6009.99 48,0 -97,166 -96,-166 48,0 48,83" />
+                <path
+                   inkscape:connector-curvature="0"
+                   id="path3560"
+                   style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   d="m 472.992,5421.99 0,24 83,-48 -83,-48 0,24 41,24" />
+              </g>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3562"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 469.992,5792.99 c 0,-24 20,-44 44,-44 24,0 44,20 44,44 0,24 -20,44 -44,44 -24,0 -44,-20 -44,-44 z m 68,0 c 0,-13 -11,-23 -24,-23 -12,0 -22,10 -22,23 0,12 10,23 22,23 13,0 24,-11 24,-23" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3564"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 537.992,5609.99 c 0,-12 -11,-22 -24,-22 -12,0 -22,10 -22,22 0,7 2,13 6,16 -14,15 -14,15 -14,15 -8,-7 -14,-18 -14,-31 0,-24 20,-43 44,-43 24,0 44,19 44,43 0,13 -5,24 -12,31 -16,-15 -16,-15 -16,-15 5,-3 8,-9 8,-16" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3566"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 491.992,5657.99 0,28 64,0 0,20 -64,0 0,29 -19,0 0,-77" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3568"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 555.992,5472.99 0,64 -18,0 0,-43 -15,0 0,34 -19,0 0,-34 -12,0 0,43 -19,0 0,-64" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3570"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 499.992,5944.99 c -15,0 -27,-12 -27,-27 0,-51 0,-51 0,-51 83,0 83,0 83,0 0,21 0,21 0,21 -28,0 -28,0 -28,0 0,17 0,17 0,17 28,16 28,16 28,16 0,24 0,24 0,24 -30,-17 -30,-17 -30,-17 -4,11 -14,17 -26,17 z m 10,-29 c 0,-28 0,-28 0,-28 -18,0 -18,0 -18,0 0,28 0,28 0,28 0,4 3,9 8,9 6,0 10,-5 10,-9" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3572">
+              <text
+                 id="text3574"
+                 style="font-variant:normal;font-weight:normal;font-size:15.96000004px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#b1b6ba;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,66.5991,100.679)">
+                <tspan
+                   id="tspan3576"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 10.926484 21.009476 26.656458 36.615711 46.222321 56.305313 63.503689 76.101944 82.945808 92.90506 102.51167 112.59467 116.90806 125.18812 134.79472 141.15404 145.46744 155.18849">Aufbau-Organisation</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3578"
+               style="fill:#848b8e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 938.992,838.992 279,0 0,5340 -279,0 0,-5340 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3580"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 933.992,834.992 0,5347.998 287.998,0 0,-5347.998 -287.998,0 z m 283.998,8 -5,-4 0,5339.998 5,-4 -278.998,0 4,4 0,-5339.998 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3582">
+              <text
+                 id="text3584"
+                 style="font-variant:normal;font-weight:bold;font-size:15.96000004px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,135.599,319.919)">
+                <tspan
+                   id="tspan3586"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 10.918317 21.59919 32.158192 41.512146 52.905724 60.232643 65.635887 75.957443 86.516449 92.279686 104.40417 115.33178 126.01228 133.93115 145.0872 150.97044 159.60315 170.52147 182.76671 193.68501">Executive Board (EXE)</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3588"
+               style="fill:#b70032;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 1392.99,840.992 279,0 0,1264 -279,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3590"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 1388.99,836.992 0,1271.998 287,0 0,-1271.998 -287,0 z m 283,8 -4,-4 0,1263.998 4,-4 -279,0 4,4 0,-1263.998 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3592">
+              <text
+                 id="text3594"
+                 style="font-variant:normal;font-weight:normal;font-size:14.03999996px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,189.359,129.359)">
+                <tspan
+                   id="tspan3596"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.5196161 14.523016 23.043949 31.803291 40.685925 48.005978 53.525375 58.211517 66.016563 69.970749 78.853378 87.257553">Product Lines</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3598"
+               style="fill:#b70032;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 1392.99,2209.99 279,0 0,1263 -279,0 0,-1263 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3600"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 1388.99,2204.99 0,1273 287,0 0,-1273 -287,0 z m 283,9 -4,-4 0,1263 4,-4 -279,0 4,4 0,-1263 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3602">
+              <text
+                 id="text3604"
+                 style="font-variant:normal;font-weight:normal;font-size:14.03999996px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,189.359,272.759)">
+                <tspan
+                   id="tspan3606"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 9.8365993 18.719233 26.039288 31.558683 40.079617 53.764442 62.16861 68.172012 72.738152 78.619576 87.502213 93.021606 101.42577 107.42918 112.35532 120.76113 128.08119">Customer Interface</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3608"
+               style="fill:#b70032;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 1392.99,3559.99 279,0 0,1264 -279,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3610"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 1388.99,3555.99 0,1272 287,0 0,-1272 -287,0 z m 283,8 -4,-4 0,1264 4,-4 -279,0 4,4 0,-1264 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3612">
+              <text
+                 id="text3614"
+                 style="font-variant:normal;font-weight:normal;font-size:14.03999996px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,189.359,451.679)">
+                <tspan
+                   id="tspan3616"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 9.6057034 18.365046 32.049873 36.004059 44.886692 48.840878 56.160931 61.680328 67.443726 75.849541 81.368942 85.203125 93.72406">Administration</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3618"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 1804.99,840.992 224,0 0,1264 -224,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3620"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 1800.99,836.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -5,-4 0,1263.998 5,-4 -224,0 5,4 0,-1263.998 -5,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3622">
+              <text
+                 id="text3624"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,227.759,163.559)">
+                <tspan
+                   id="tspan3626"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.0409918 17.16013">PDG</tspan>
+                <tspan
+                   id="tspan3628"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-22.799999 -13.680862 -9.9586201 -2.6382749 5.03931 12.954868 20.52013 27.117241 32.162025 35.88427 42.360085">Diagnostics</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3630"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2502.99,840.992 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3632"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2497.99,836.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -4,-4 0,1263.998 4,-4 -223,0 4,4 0,-1263.998 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3634">
+              <text
+                 id="text3636"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,311.399,105.359)">
+                <tspan
+                   id="tspan3638"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.0409918 18.483709 26.527763 30.130005 41.770691 52.213409 59.532719 66.853065 73.450172 81.36573 86.884956 94.204269 105.8431 113.16241 120.95797 126.00275 129.36501 138.84163">PMC –Measurement &amp;</tspan>
+                <tspan
+                   id="tspan3640"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="37.560001 45.604053 52.9244 56.646641 60.368885 68.046471 73.565689 80.88604 85.930824 89.653069 97.21833">Calibration</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3642"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2155.99,838.992 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3644"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2151.99,834.992 0,1271.998 231,0 0,-1271.998 -231,0 z m 227,8 -4,-4 0,1263.998 4,-4 -223,0 4,4 0,-1263.998 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3646">
+              <text
+                 id="text3648"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,269.759,164.759)">
+                <tspan
+                   id="tspan3650"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.0409918 15.599828">PES</tspan>
+                <tspan
+                   id="tspan3652"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-50.52 -42.961163 -31.322329 -23.644743 -16.325434 -8.6478491 -0.97026384 6.3490462 14.026631 17.868874 25.663914 33.229176 37.905167 42.949951 53.744518 61.064861 66.584084">Embedded Software</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3654"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2854.99,838.992 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3656"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2850.99,834.992 0,1271.998 231,0 0,-1271.998 -231,0 z m 227,8 -4,-4 0,1263.998 4,-4 -223,0 4,4 0,-1263.998 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3658">
+              <text
+                 id="text3660"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,353.639,120.599)">
+                <tspan
+                   id="tspan3662"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.0409918 17.404528 26.523666 30.245909 41.886593 51.25013 58.569443 63.614227 74.408791 81.974052 87.493279 94.934402 98.416641 107.89328">PND –Network &amp;</tspan>
+                <tspan
+                   id="tspan3664"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-6.7199998 2.3991375 6.1213799 12.718491 17.763277 23.282501 27.004744 34.682327 42.597885 47.642673 54.961983 62.639568 66.241814 74.03685 81.23819 87.835297 92.880089 100.19939 111.83823">Distributed Systems</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3666"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 3202.99,841.992 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3668"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 3198.99,837.992 0,1271.998 231,0 0,-1271.998 -231,0 z m 227,8 -4,-4 0,1263.998 4,-4 -223,0 4,4 0,-1263.998 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3670">
+              <text
+                 id="text3672"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,395.399,165.119)">
+                <tspan
+                   id="tspan3674"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.0409918 17.404528">PNI</tspan>
+                <tspan
+                   id="tspan3676"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-48.720001 -39.356464 -32.037155 -26.992367 -16.1978 -8.6325397 -3.1133156 4.3278055 7.8100481 13.81117 21.726727 26.771515 34.090824 39.610046 44.286037 51.606384 58.082199 65.401512">Network Interfaces</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3678"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 3915.99,841.992 224,0 0,1264 -224,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3680"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 3911.99,837.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -4,-4 0,1263.998 4,-4 -224,0 5,4 0,-1263.998 -5,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3682">
+              <text
+                 id="text3684"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,481.079,165.119)">
+                <tspan
+                   id="tspan3686"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.0409918 15.836033">PSE</tspan>
+                <tspan
+                   id="tspan3688"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-53.279999 -45.484959 -38.283623 -31.686512 -26.641726 -19.322414 -7.6835794 -1.0864686 2.3957736 9.9546089 17.870167 25.547752 29.269995 37.185555 44.504864 51.824173 57.343395 61.065639 68.981201">Systems Engineering</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3690"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 1803.99,2209.99 223,0 0,1263 -223,0 0,-1263 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3692"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 1799.99,2204.99 0,1273 232,0 0,-1273 -232,0 z m 227,9 -4,-4 0,1263 4,-4 -223,0 4,4 0,-1263 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3694">
+              <text
+                 id="text3696"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,227.519,273.839)">
+                <tspan
+                   id="tspan3698"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.044054 14.045175 21.840216 25.682459 37.203152 43.204273 51.119831 56.164616 63.483929 69.003151 76.918709 80.875084 84.477333 92.272369 99.592712 103.31496 110.63427 117.23138 120.95362 130.43025">CIS –Intern. Sales &amp;</tspan>
+                <tspan
+                   id="tspan3700"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="35.880001 46.322716 53.643063 59.162285 66.603409 73.922714 78.967506 82.689743 90.605301">Marketing</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3702"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2507.99,2209.99 224,0 0,1263 -224,0 0,-1263 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3704"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2503.99,2204.99 0,1273 232,0 0,-1273 -232,0 z m 228,9 -4,-4 0,1263 4,-4 -224,0 5,4 0,-1263 -5,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3706">
+              <text
+                 id="text3708"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,312.119,327.599)">
+                <tspan
+                   id="tspan3710"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.044054 15.839094 22.916809">CSL</tspan>
+                <tspan
+                   id="tspan3712"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-3 4.7950406 12.115386 15.837628 23.156939">Sales</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3714"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2854.99,2209.99 223,0 0,1263 -223,0 0,-1263 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3716"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2850.99,2204.99 0,1273 231,0 0,-1273 -231,0 z m 227,9 -4,-4 0,1263 4,-4 -223,0 4,4 0,-1263 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3718">
+              <text
+                 id="text3720"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,353.639,329.039)">
+                <tspan
+                   id="tspan3722"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.044054 15.839094">CSP</tspan>
+                <tspan
+                   id="tspan3724"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-12.72 -4.9249592 2.9905987 10.668183 18.345768 25.91103 31.430254">Support</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3726"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 1804.99,3562.99 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3728"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 1800.99,3558.99 0,1272 231,0 0,-1272 -231,0 z m 227,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3730">
+              <text
+                 id="text3732"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,227.639,490.439)">
+                <tspan
+                   id="tspan3734"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.5159464 17.635084">ADP</tspan>
+                <tspan
+                   id="tspan3736"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-51.48 -45.478878 -37.914913 -34.192669 -26.637671 -22.795429 -13.676291 -6.3559465 -1.3111595 6.0091853 9.7314281 17.772419 23.291643 30.856905 37.332722 44.652031 51.249142 57.846252 61.568497 69.484055">IT / Data Processing</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3738"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2155.99,3559.99 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3740"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2151.99,3555.99 0,1272 231,0 0,-1272 -231,0 z m 227,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3742">
+              <text
+                 id="text3744"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,269.759,490.799)">
+                <tspan
+                   id="tspan3746"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.5159464 15.711634">AFA</tspan>
+                <tspan
+                   id="tspan3748"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-15.24 -8.0443125 -0.72396743 5.7518497 9.4740915 13.196335 16.918577 21.963364 25.685606 33.004917">Facilities</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3750"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2504.99,3559.99 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3752"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2500.99,3555.99 0,1272 232,0 0,-1272 -232,0 z m 227,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3754">
+              <text
+                 id="text3756"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,311.639,491.039)">
+                <tspan
+                   id="tspan3758"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.5159464 15.711634">AFC</tspan>
+                <tspan
+                   id="tspan3760"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-54.720001 -47.524311 -43.802071 -35.886513 -28.566166 -20.650608 -14.174791 -6.8554816 -3.2532392 6.2233973 10.065639 18.109694 25.674955 33.590511 38.6353 44.154522 51.719784 55.442028 59.164268 62.886513 70.802071">Finance &amp; Controlling</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3762"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 3201.99,3559.99 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3764"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 3196.99,3555.99 0,1272 232,0 0,-1272 -232,0 z m 228,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3766">
+              <text
+                 id="text3768"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,395.279,433.319)">
+                <tspan
+                   id="tspan3770"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.5159464 17.874868 27.233789 30.956032 42.596718 51.955643 57.474865 65.152451 72.472794 80.388351 84.110596 90.714134 98.034477 103.07926 106.80151 114.36677 122.28233 126.12457 135.60121">AOQ –Organization &amp;</tspan>
+                <tspan
+                   id="tspan3772"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="5.6399999 14.998921 22.91448 30.234825 33.957069 37.67931 42.724098 49.925434 53.647675 64.090393 71.410736 79.326294 86.646645 94.324226 101.64354 113.28237 120.60168 128.51724">Quality Management</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3774"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2849.99,3559.99 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3776"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2844.99,3555.99 0,1272 232,0 0,-1272 -232,0 z m 228,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3778">
+              <text
+                 id="text3780"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,353.039,489.719)">
+                <tspan
+                   id="tspan3782"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.5159464 17.751505">AHR</tspan>
+                <tspan
+                   id="tspan3784"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-42.599998 -33.364441 -25.448883 -13.810048 -6.4897032 1.425855 5.1480975 13.785596 21.104906 27.702017 35.267277 43.182835 48.702061 55.177876 62.497189">Human Resources</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3786"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 3559.99,838.992 224,0 0,1264 -224,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3788"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 3555.99,834.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -5,-4 0,1263.998 5,-4 -224,0 4,4 0,-1263.998 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3790">
+              <text
+                 id="text3792"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,438.239,164.639)">
+                <tspan
+                   id="tspan3794"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.0409918 16.081984">PPT</tspan>
+                <tspan
+                   id="tspan3796"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-30.48 -22.439009 -16.919785 -9.3545227 -2.8787062 4.4406037 11.037714 17.634825 20.997066 28.561035 36.126297 43.691559 47.413799">Process Tools</tspan>
+              </text>
+              <text
+                 id="text3798"
+                 style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,538.319,640.079)">
+                <tspan
+                   id="tspan3800"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 6.1236563 9.7232695 15.126996 20.768684 26.408262 30.487349 33.611286 38.773922 44.176594 49.816174 53.658352 59.300037 64.703766 71.78595 77.548264 83.310585 89.072906">Stand: Februar2016</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3802"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 4267.99,841.992 224,0 0,1264 -224,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3804"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 4263.99,837.992 0,1271.998 232,0 0,-1271.998 -232,0 z m 228,8 -5,-4 0,1263.998 5,-4 -224,0 4,4 0,-1263.998 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3806">
+              <text
+                 id="text3808"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,523.199,164.639)">
+                <tspan
+                   id="tspan3810"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.0409918 15.604959">PTR</tspan>
+                <tspan
+                   id="tspan3812"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-13.56 -5.9960327 -0.47680876 6.8435364 10.565779 18.481337 22.203579 30.119137">Training</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3814"
+               style="fill:#b70032;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 1394.99,4913.99 279,0 0,1264 -279,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3816"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 1390.99,4909.99 0,1272 287,0 0,-1272 -287,0 z m 283,8 -4,-4 0,1264 4,-4 -279,0 4,4 0,-1264 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3818">
+              <text
+                 id="text3820"
+                 style="font-variant:normal;font-weight:normal;font-size:14.03999996px;font-family:Verdana;-inkscape-font-specification:Verdana;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,181.199,615.599)">
+                <tspan
+                   id="tspan3822"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 9.3556128 17.759781 25.079836 33.484005 41.889816 47.893219 55.213272 64.095901 68.782043 77.187859 86.070496 94.829834">Research and</tspan>
+                <tspan
+                   id="tspan3824"
+                   sodipodi:role="line"
+                   y="16.799999"
+                   x="3.1199999 13.92691 22.331078 30.493931 38.898098 42.852283 51.373219 60.132561 73.817383 82.22155 91.104187">Development</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3826"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 1798.99,4913.99 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3828"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 1794.99,4909.99 0,1272 231,0 0,-1272 -231,0 z m 227,8 -4,-4 0,1264 4,-4 -223,0 4,4 0,-1264 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3830">
+              <text
+                 id="text3832"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,226.919,618.719)">
+                <tspan
+                   id="tspan3834"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.6374989 17.756636 23.757757 27.48 39.120686 47.758186 51.480427 60.957066 64.799309 77.638443 85.203705 89.879692">RDI –R &amp; Dof</tspan>
+                <tspan
+                   id="tspan3836"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-26.52 -20.518879 -12.603321 -4.6877627 2.8774986 10.078577 17.398922 22.443708 26.165951 33.367031 40.68634 44.168583 52.684528 60.362114 68.039696 71.76194 75.484184 81.959999 89.280342 94.325134 98.047371 105.61263 113.52819">Innovative Applications</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3838"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2151.99,4914.99 223,0 0,1264 -223,0 0,-1264 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3840"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2146.99,4910.99 0,1272 232,0 0,-1272 -232,0 z m 228,9 -4,-5 0,1264 4,-4 -223,0 4,4 0,-1264 -4,5" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3842">
+              <text
+                 id="text3844"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,269.279,626.039)">
+                <tspan
+                   id="tspan3846"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.6374989 17.756636 25.315472 29.037714 40.678402 49.315899 53.038143 62.514778 66.237022">RDE –R &amp; D</tspan>
+                <tspan
+                   id="tspan3848"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="-20.76 -13.201164 -1.5623287 6.1152563 13.434566 21.112152 28.789736 36.109047 43.786633 47.628872 55.423916 62.625252 69.222359 74.267151 81.586456 93.225296">Embedded Systems</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path3850"
+               style="fill:#b2b2b2;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               d="m 2151.99,2209.99 223,0 0,1263 -223,0 0,-1263 z" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path3852"
+               style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 2146.99,2204.99 0,1273 232,0 0,-1273 -232,0 z m 228,9 -4,-4 0,1263 4,-4 -223,0 4,4 0,-1263 -4,4" />
+            <g
+               transform="scale(8.33333,8.33333)"
+               id="g3854">
+              <text
+                 id="text3856"
+                 style="font-variant:normal;font-weight:bold;font-size:11.03999996px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 transform="matrix(0,1,1,0,269.279,279.599)">
+                <tspan
+                   id="tspan3858"
+                   sodipodi:role="line"
+                   y="0"
+                   x="0 8.044054 16.085045 23.16276 26.765003 38.405689 46.446682 51.965904 59.531166 67.208748 75.124306 81.600128 86.644913 90.367157 97.932419 105.84798 109.33022 118.80685">CPL –Production &amp;</tspan>
+                <tspan
+                   id="tspan3860"
+                   sodipodi:role="line"
+                   y="13.2"
+                   x="34.080002 41.157715 48.722977 56.400562 60.122803 66.719917 71.764702 75.486946 81.962761">Logistics</tspan>
+              </text>
+            </g>
+          </g>
+          <g
+             transform="matrix(0.609482,0,0,0.65713469,1361.3847,900.51351)"
+             id="g4214">
+            <g
+               transform="matrix(0.76000716,0,0,0.78976056,836.73359,553.2896)"
+               id="g4226">
+              <g
+                 id="g4237">
+                <g
+                   id="g4203"
+                   transform="matrix(0.81451613,0,0,0.80495358,889.28236,517.87189)">
+                  <ellipse
+                     ry="417.52972"
+                     rx="543.79883"
+                     transform="matrix(0,1,1,0,0,0)"
+                     cy="4099.5752"
+                     cx="1474.4078"
+                     id="path4201"
+                     style="fill:#cccccc" />
+                  <text
+                     transform="matrix(0,0.94066088,1.0630824,0,0,0)"
+                     sodipodi:linespacing="125%"
+                     id="text4190"
+                     y="3639.3672"
+                     x="1261.45"
+                     style="font-style:normal;font-weight:normal;font-size:130.09657288px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                     xml:space="preserve"><tspan
+                       style="font-size:130.09657288px"
+                       y="3639.3672"
+                       x="1261.45"
+                       id="tspan4192"
+                       sodipodi:role="line">Abteilung,</tspan><tspan
+                       style="font-size:130.09657288px"
+                       id="tspan4194"
+                       y="3801.9878"
+                       x="1261.45"
+                       sodipodi:role="line">wo ich </tspan><tspan
+                       style="font-size:130.09657288px"
+                       id="tspan4196"
+                       y="3964.6086"
+                       x="1261.45"
+                       sodipodi:role="line">eingesetzt</tspan><tspan
+                       id="tspan4224"
+                       style="font-size:130.09657288px"
+                       y="4127.2295"
+                       x="1261.45"
+                       sodipodi:role="line">wurde</tspan></text>
+                </g>
+                <path
+                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.92718697px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   d="M 3896.4279,1603.3898 3490.0772,2625.1154"
+                   id="path4210"
+                   inkscape:connector-curvature="0" />
+                <path
+                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.44511127px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   d="m 4335.2792,2122.2718 -623.8213,500.2646"
+                   id="path4212"
+                   inkscape:connector-curvature="0" />
+              </g>
             </g>
           </g>
         </g>

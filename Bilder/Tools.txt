@@ -1,3 +1,9 @@
 nircmd	save screenshots easily : nircmd cmdwait 3000 savescreenshoot "D:\usr\BerichtVector\Bilder\*.jpg"
 jpeg2pdf kann ich benutzen, um ein jpeg in pdf umzuwandeln, das Abscheiden erfolgt mit briss
 briss 0.9 pdf cromp soll ich mit batch-Datei ausführen
+
+Ab jetzt kann ich einfach folgenden Aufruf verwenden:
+	nircmd_batscreenshot.bat <name der Datei>
+	Note: nircmd muss im Windowspfad enthalten sein, nachdem Paint aufgemacht wird, kann das screenshot zugeschnitten werden,
+	nachdem Paint zugemacht wird, macht die batch-Datei mit der Ausführung des Programms weiter. Also
+	PDF-File so erstellen, dass zugeschnittenes Bild genau rein passt.
