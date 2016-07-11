@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{HardTime}
+{\sc Douglass, Bruce~Powel}: {\em Doing Hard Time}.
+\newblock Addison-Wesley.
+
 \bibitem{Zahn}
 {\sc Zahn, S.}: {\em Arbeitsspielaufgelöste Modellbildung und
   Hardware-in-the-Loop-Simulation von Pkw-Dieselmotoren mit
