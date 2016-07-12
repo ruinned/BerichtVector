@@ -304,6 +304,8 @@ Tabelle
 %
 Diese Woche wurde mir die dritte Aufgabe vorgestellt. Dabei ginge es darum mich mit der Arduino Anwendung und der Einstellung eines geeigneten SCI-Treiber zu beschäftigen. Die Programmierung von Win32-Anwendungen ist nicht trivial, dabei ist man auf die Verwendung von Funktionen angewiesen, die von Windows zur Verfügung gestellt werden. 
 
-Hierbei beschreiben, was Win32 ist und wieso ich nicht andere Module Verwenden könnte.
+Hierbei beschreiben, was Win32 ist und wieso ich nicht andere Module verwenden könnte.
 
 Dabei hat die Programmierung der SCI-Anwendung in VS erfolgt, ich habe mich entschieden das Arduino Projekt nicht wie Andreas vorgeschlagen hat, sondern in AtmelStudio umzusetzen. Die Atmelstudio Anwendung und die Einstellung eines Projektes mit den external configurations beschreiben.
+
+Der programmierte Win32-Treiber arbeitet so, dass die aufzurufende Funktion so lange wartet bis die aufgerufene feritg ist.(waiting rendezvous) nach ~\cite{HardTime}. Die dabei verwendete Methode(...) arbeitet als \grqq timed rendezvous \glqq, wartet also nur eine bestimmte Zeit bis benötigte Task antwortet, ansonsten bricht sie ihren Methodenaufruf ab.

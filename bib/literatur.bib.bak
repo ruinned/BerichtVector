@@ -51,6 +51,17 @@
   timestamp = {2013.10.21}
 }
 
+@ARTICLE{Nelder,
+  author = {J. Nelder, R, Mead},
+  title = {A simplex method for function minimization},
+  journal = {Computer Journal},
+  year = {1965},
+  volume = {7},
+  pages = {308-313},
+  owner = {revelocordoba},
+  timestamp = {2013.10.25}
+}
+
 @BOOK{Jacobi,
   title = {Rechnergestützte Optimierung statischer und dynamischer Systeme.},
   publisher = {Springer Verlag Berlin},
