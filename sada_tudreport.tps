@@ -11,19 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-<<<<<<< HEAD
 NormalPos.right=769
 NormalPos.bottom=780
-=======
-NormalPos.right=1179
-NormalPos.bottom=394
->>>>>>> dfcbac533e765a20c1aa35c8da2a7b714cbbbe43
 Class=LaTeXView
-Document=Bilder\Zeichnung1.pdf_tex
+Document=inc\LBF.tex
 
 [Frame0_View0,0]
-TopLine=124
-Cursor=0
+TopLine=34
+Cursor=1655
 
 [Frame1]
 Flags=0
@@ -34,19 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-<<<<<<< HEAD
 NormalPos.right=769
 NormalPos.bottom=780
-=======
-NormalPos.right=1179
-NormalPos.bottom=394
->>>>>>> dfcbac533e765a20c1aa35c8da2a7b714cbbbe43
-Class=LaTeXView
-Document=common\preface.tex
+Class=BibTeXView
+Document=bib\literatur.bib
 
 [Frame1_View0,0]
-TopLine=19
-Cursor=488
+TopLine=0
+Cursor=81
 
 [Frame2]
 Flags=0
@@ -57,23 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-<<<<<<< HEAD
 NormalPos.right=769
 NormalPos.bottom=780
-=======
-NormalPos.right=1179
-NormalPos.bottom=394
->>>>>>> dfcbac533e765a20c1aa35c8da2a7b714cbbbe43
 Class=LaTeXView
-Document=inc\Anhang.tex
+Document=Bilder\Zeichnung1.pdf_tex
 
 [Frame2_View0,0]
-<<<<<<< HEAD
-TopLine=113
-=======
-TopLine=276
->>>>>>> dfcbac533e765a20c1aa35c8da2a7b714cbbbe43
-Cursor=3390
+TopLine=124
+Cursor=0
 
 [Frame3]
 Flags=0
@@ -84,19 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-<<<<<<< HEAD
 NormalPos.right=769
 NormalPos.bottom=780
-=======
-NormalPos.right=1179
-NormalPos.bottom=394
->>>>>>> dfcbac533e765a20c1aa35c8da2a7b714cbbbe43
 Class=LaTeXView
-Document=inc\Einfuehrung.tex
+Document=common\preface.tex
 
 [Frame3_View0,0]
-TopLine=0
-Cursor=597
+TopLine=19
+Cursor=488
 
 [Frame4]
 Flags=0
@@ -107,19 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-<<<<<<< HEAD
 NormalPos.right=769
 NormalPos.bottom=780
-=======
-NormalPos.right=1179
-NormalPos.bottom=394
->>>>>>> dfcbac533e765a20c1aa35c8da2a7b714cbbbe43
 Class=LaTeXView
-Document=sada_tudreport.tex
+Document=inc\Anhang.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=213
+TopLine=283
+Cursor=3390
 
 [Frame5]
 Flags=0
@@ -130,23 +101,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-<<<<<<< HEAD
 NormalPos.right=769
 NormalPos.bottom=780
-=======
-NormalPos.right=1179
-NormalPos.bottom=394
->>>>>>> dfcbac533e765a20c1aa35c8da2a7b714cbbbe43
 Class=LaTeXView
-Document=inc\LBF.tex
+Document=inc\Einfuehrung.tex
 
 [Frame5_View0,0]
-<<<<<<< HEAD
-TopLine=29
-Cursor=2666
-=======
-TopLine=409
-Cursor=19700
+TopLine=0
+Cursor=597
 
 [Frame6]
 Flags=0
@@ -157,17 +119,16 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1179
-NormalPos.bottom=394
-Class=BibTeXView
-Document=bib\literatur.bib
+NormalPos.right=769
+NormalPos.bottom=780
+Class=LaTeXView
+Document=sada_tudreport.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=81
->>>>>>> dfcbac533e765a20c1aa35c8da2a7b714cbbbe43
+Cursor=213
 
 [SessionInfo]
 FrameCount=7
-ActiveFrame=5
+ActiveFrame=0
 
