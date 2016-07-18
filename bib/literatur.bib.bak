@@ -1,193 +1,84 @@
-% This file was created with JabRef 2.9.2.
-% Encoding: Cp1252
+% Encoding: windows-1252
 
-@UNPUBLISHED{Beidl,
-  author = {C. Beidl},
-  title = {Skriptum Verbrennungskraftmaschinen I},
-  note = {Institut für Verbrennungskraftmaschinen, Technische Universität Darmstadt},
-  year = {2012},
-  owner = {revelocordoba},
-  timestamp = {2013.09.12}
+
+@Book{HardTime,
+  Title                    = {Doing Hard Time},
+  Author                   = {Bruce Powel Douglass},
+  Publisher                = {Addison-Wesley},
+
+  Owner                    = {SamirAlexis},
+  Timestamp                = {2016.07.10}
 }
 
-@UNPUBLISHED{Beidl2,
-  author = {C. Beidl},
-  title = {Skriptum Verbrennungskraftmaschinen II},
-  note = {Institut für Verbrennungskraftmaschinen, Technische Universität Darmstadt},
-  year = {2012},
-  owner = {revelocordoba},
-  timestamp = {2013.09.28}
+@Book{GrundlVerbr_Buch,
+  Title                    = {Grundlagen Verbrennungsmotoren - Simulation der Gemischbildung, Verbrennung, Schadstoffbilfung und Aufladung.},
+  Author                   = {Merker, Günter P.(Hrsg.); Schwarz, Christian(Hrsg.)},
+  Publisher                = {View+Teubner},
+  Year                     = {2009},
+
+  Address                  = {Wiesbaden},
+  Volume                   = {4. Auflage},
+
+  Owner                    = {revelocordoba},
+  Timestamp                = {2013.09.05}
 }
 
-@PHDTHESIS{Barba,
-  author = {Barba C.},
-  title = {Erarbeitung von Verbrennungskennwerten aus Indizierdaten zur verbesserten
-	Prognose und rechnerischen Simulation des Verbrennungsablaufes bei
-	Pkw-DE-Dieselmotoren mit Common-RailEinspritzung},
-  school = {Technische Hochschule Zürich},
-  year = {2001},
-  address = {Zürich},
-  owner = {revelocordoba},
-  timestamp = {2013.09.10}
+@PhdThesis{Zahn,
+  Title                    = {Arbeitsspielaufgelöste Modellbildung und Hardware-in-the-Loop-Simulation von Pkw-Dieselmotoren mit Abgasturboaufladung},
+  Author                   = {S. Zahn},
+  School                   = {Technische Universität Darmstadt},
+  Year                     = {2012},
+
+  Address                  = {Darmstadt, Deutschland},
+  Month                    = {April},
+
+  Owner                    = {revelocordoba},
+  Timestamp                = {2013.09.05}
 }
 
-@PHDTHESIS{Finger,
-  author = {K. Finger},
-  title = {Untersuchungen zur Kraftanregung durch die Verbrennung beim direkteinspritzenden
-	Common-Rail Dieselmotor unter Berücksichtigung des Körperschallübertragungsverhaltens},
-  school = {Technische Universität Darmstadt},
-  year = {2001},
-  address = {Darmstadt},
-  owner = {revelocordoba},
-  timestamp = {2013.09.24}
+@Unpublished{Zydek,
+  Title                    = {Modellbasierte Optimierung von dynamischen Lastwechselübergängen und modellbasierte Emissionsregelung eines Diesel-Verbrennungsmotors},
+  Author                   = {S. Zydek},
+  Note                     = {Studienarbeit},
+
+  Month                    = {November},
+  Year                     = {2010},
+
+  Abstract                 = {Technische Universität Darmstadt},
+  Owner                    = {revelocordoba},
+  Timestamp                = {2013.09.18}
 }
 
-@PHDTHESIS{Heuer,
-  author = {S. Heuer},
-  title = {Verbrennungsgeräusch des direkteinspritzenden Hubkolbenmotors},
-  school = {Rheinisch-Westfälische Technische Hochschule Aachen},
-  year = {2001},
-  owner = {revelocordoba},
-  timestamp = {2013.10.21}
+@Manual{MISRA2004,
+  title        = {MISRA-C:2004 Guidelines for the use of the C language in critical systems},
+  organization = {The Motor Industry Software Reliability Association},
+  month        = {October},
+  year         = {2004},
 }
 
-@ARTICLE{Nelder,
-  author = {J. Nelder, R, Mead},
-  title = {A simplex method for function minimization},
-  journal = {Computer Journal},
-  year = {1965},
-  volume = {7},
-  pages = {308-313},
-  owner = {revelocordoba},
-  timestamp = {2013.10.25}
+@Manual{MISRACodeMetric,
+  title        = {MISRA and Code Metrics Product Development PES},
+  author       = {H. Hörner, A. Raisch},
+  organization = {Vector Informatik GmbH},
+  address      = {Vector Informatik GmbH Ingersheimer Str. 24 70499 Stuttgart},
+  month        = {April},
+  year         = {2013},
+  abstract     = {Defines MISRA and HIS metric compliance procedure},
 }
 
-@BOOK{Jacobi,
-  title = {Rechnergestützte Optimierung statischer und dynamischer Systeme.},
-  publisher = {Springer Verlag Berlin},
-  year = {1982},
-  author = {H.-G. Jacobi},
-  volume = {1. Auflage},
-  address = {Heidelberg},
-  owner = {revelocordoba},
-  timestamp = {2013.09.18}
+@Manual{MISRA2012,
+  title        = {MISRA C:2012 Guidlines for the use of the C language in critical systems},
+  organization = {The Motor Industry Software Reliability Association},
+  month        = {March},
+  year         = {2013},
 }
 
-@PHDTHESIS{Jankov,
-  author = {K. Jankov},
-  title = {Beitrag zur automatisierten Steuerkennfeld-Applikation bei Fahrzeug-Dieselmotoren},
-  school = {Technische Universität Berlin},
-  year = {2008},
-  address = {Berlin},
-  month = {Juli},
-  owner = {revelocordoba},
-  timestamp = {2013.09.21}
+@TechReport{WarMISRAC,
+  author      = {P. Burden},
+  title       = {Warum ein neues MISRA C?},
+  institution = {PRQA},
+  year        = {2013},
+  url         = {www.programmingresearch.com},
 }
 
-@BOOK{HandDiesel,
-  title = {Handbuch Dieselmotoren},
-  publisher = {Springer Verlag},
-  year = {2007},
-  author = {K. Mollehauer, H. Tschöke},
-  volume = {3. Auflage},
-  owner = {revelocordoba},
-  timestamp = {2013.09.30}
-}
-
-@TECHREPORT{Mrosekb,
-  author = {M. Mrosek, R. Isermann},
-  title = {Model-based Estimation and Control of the Intake Gas Composition
-	for Turbocharged Diesel Engines with High- and Low-Pressure EGR},
-  year = {2010b},
-  address = {10. Internationales Stuttgarter Symposium, Stuttgart, Deutschland},
-  month = {16.-17.03},
-  owner = {revelocordoba},
-  timestamp = {2013.09.08}
-}
-
-@TECHREPORT{Mroseka,
-  author = {M. Mrosek , R. Isermann},
-  title = {On the Parametrisation of Turbocharger Power and Heat Transfer Models},
-  year = {2010a},
-  address = {IFAC Symposium Advances in Automotive Control},
-  owner = {revelocordoba},
-  timestamp = {2013.09.08}
-}
-
-@BOOK{GrundlVerbr_Buch,
-  title = {Grundlagen Verbrennungsmotoren - Simulation der Gemischbildung, Verbrennung,
-	Schadstoffbilfung und Aufladung.},
-  publisher = {View+Teubner},
-  year = {2009},
-  author = {Merker, Günter P.(Hrsg.); Schwarz, Christian(Hrsg.)},
-  volume = {4. Auflage},
-  address = {Wiesbaden},
-  owner = {revelocordoba},
-  timestamp = {2013.09.05}
-}
-
-@PHDTHESIS{Naumann,
-  author = {T. Naumann},
-  title = {Wissensbasierte Optimierungsstrategien für elektronische Steuergeräte
-	an Common-Rail-Dieselmotoren},
-  school = {Technische Unitversität Berlin},
-  year = {2002},
-  address = {Berlin},
-  owner = {revelocordoba},
-  timestamp = {2013.09.21}
-}
-
-@UNPUBLISHED{GODLIKE,
-  author = {R. Oldenhuis},
-  title = {Programmdokumentation GODLIKE},
-  owner = {revelocordoba},
-  timestamp = {2013.09.18}
-}
-
-@BOOK{Pischinger,
-  title = {Thermodynamik der Verbrennungskraftmaschine},
-  publisher = {Springer Wien NewYork},
-  year = {2009},
-  author = {R. Pischinger,M. Klell, T. Sams},
-  volume = {3. Auflage},
-  owner = {revelocordoba},
-  timestamp = {2013.09.10}
-}
-
-@PHDTHESIS{Seewaldt,
-  author = {S. Seewaldt},
-  title = {Entwicklung einer Funktionsstruktur für die zylinderdruckbasierte
-	Regelung der teilhomogenen Dieselverbrennung},
-  school = {Universität Stuttgart},
-  year = {2013},
-  address = {Institut für Verbrennungsmotoren und Kraftfahrwesen der Universität
-	Stuttgart},
-  month = {Februar},
-  owner = {revelocordoba},
-  timestamp = {2013.10.22}
-}
-
-@PHDTHESIS{Zahn,
-  author = {S. Zahn},
-  title = {Arbeitsspielaufgelöste Modellbildung und Hardware-in-the-Loop-Simulation
-	von Pkw-Dieselmotoren mit Abgasturboaufladung},
-  school = {Technische Universität Darmstadt},
-  year = {2012},
-  address = {Darmstadt, Deutschland},
-  month = {April},
-  owner = {revelocordoba},
-  timestamp = {2013.09.05}
-}
-
-@UNPUBLISHED{Zydek,
-  author = {S. Zydek},
-  title = {Modellbasierte Optimierung von dynamischen Lastwechselübergängen
-	und modellbasierte Emissionsregelung eines Diesel-Verbrennungsmotors},
-  note = {Studienarbeit},
-  month = {November},
-  year = {2010},
-  abstract = {Technische Universität Darmstadt},
-  owner = {revelocordoba},
-  timestamp = {2013.09.18}
-}
-
+@Comment{jabref-meta: databaseType:bibtex;}

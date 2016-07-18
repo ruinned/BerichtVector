@@ -1,5 +1,23 @@
 \begin{thebibliography}{1}
 
+\bibitem{MISRA2004}
+{\sc The Motor Industry Software Reliability Association}: {\em MISRA-C:2004
+  Guidelines for the use of the C language in critical systems}, October 2004.
+
+\bibitem{MISRACodeMetric}
+{\sc H.~Hörner, A.~Raisch}: {\em MISRA and Code Metrics Product Development
+  PES}.
+\newblock Vector Informatik GmbH, Vector Informatik GmbH Ingersheimer Str. 24
+  70499 Stuttgart, April 2013.
+
+\bibitem{MISRA2012}
+{\sc The Motor Industry Software Reliability Association}: {\em MISRA C:2012
+  Guidlines for the use of the C language in critical systems}, March 2013.
+
+\bibitem{WarMISRAC}
+{\sc Burden, P.}: {\em Warum ein neues MISRA C?}
+\newblock \Btxtechreplong{}, PRQA, 2013.
+
 \bibitem{HardTime}
 {\sc Douglass, Bruce~Powel}: {\em Doing Hard Time}.
 \newblock Addison-Wesley.

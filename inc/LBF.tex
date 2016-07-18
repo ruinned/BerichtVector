@@ -1,4 +1,4 @@
-\chapter{Wochenübersicht und Arbeitsberichte}
+\chapter{Arbeitsbericht}
 %
 \section{1. Woche}
 %
@@ -6,7 +6,7 @@
 %
 Tabelle
 %
-\subsection{Arbeitsbericht}
+\subsection{Beschreibung}
 %
 Am ersten Tag meiner Tätigkeit bei Vector Informatik bekam ich die Gelegenheit die Firma und ihre unterschiedlichen Abteilungen näher kennen zu lernen. Es war erforderlich, an einer ausführlichen Präsentation über die Firma und die unterschiedlichen Abteilungen teilzunehmen. Dabei konnte ich ebenfalls Mitarbeiter kennen lernen, für die dieser auch ihr erster Tag bei Vector war.
 %
@@ -38,16 +38,15 @@ In den folgenden Tagen wurde mir die 1. Aufgabe meiner Arbeitstätigkeit bei Vect
 %\subsection*{MISRA C}
 \paragraph{MISRA C}
 %
-MISRA-C hat seinen Ursprung in der Automobilindustrie. Er wurde durch die britische \glqq The Motor Industry Sofrware Reliability Association \grqq eingeführt, um den ersten Standard für die Programmiersprache C zu definieren. Letzterer wurde in 1998 veröffentlich. Seitdem sind 2 weitere Ausgaben mit Verbesserungen und Ergänzungen zu den alten erfolgt.
+MISRA-C hat seinen Ursprung in der Automobilindustrie. Er wurde durch die britische \glqq The Motor Industry Sofrware Reliability Association\grqq\ eingeführt, um den ersten Standard für die Programmiersprache C zu definieren. Letzterer wurde zum ersten Mal in 1998 mit dem Ziel veröffentlich, eine positive Auswirkung auf die Verwendung von Software innerhalb der britischen Automobilindustrie zu haben~\cite{MISRA2004}. Seit seiner ersten Einführung hat sich der MISRA-Standard nicht nur im Automobilsektor durchgesetzt sondern auch u.a. in der Raumfahrtindustrie und Medizintechnik. 
 
-Beim MISRA-C-Standard sind eine Vielzahl an Regeln veröffentlicht, um robusteren und zuverlässigeren C-Code für Steuergeräte zu produzieren. Desweiteren wird damit erreicht, dass die erstellten Softwarekomponenten wiederverwendbar und portabler sind.
+Eine Vielzahl an Regeln sind dabei veröffentlicht worden, um robusteren und zuverlässigeren Embedded C-Code für Steuergeräte zu produzieren. Außerdem wird damit erreicht, dass die erstellten Software-Produkte wiederverwendbar und portabler sind. 
 
-Die PES-Abteilung hat sich somit das Ziel gesetzt, die Anwendung der aktuellen MISRA-Standards in ihre Produktionslinien zu gewährleisten. 
+Die Anwender dieser Richtlinien auf ihre Produkte konnten außer der erwähnten Vorteile einige Verbesserungsvorschläge treffen, die manchen Nachteilen beim Einsatz des MISRA-Standards entgegenwirken sollen. Aus diesem Grund entschloss sich die MISRA-Arbeitsgruppe weitere Ausgaben zu veröffentlichen, welche jeweils in den Jahren 2004 bzw. 2012 erschienen sind.
 
-Die MISRA-Version, die bisher bei PES bzw. bei der Vector GmbH eingesetzt wird, bezieht sich auf die \glqq MISRA-C:2004 guidelines for the use of the C language in critical systems \grqq. Eine neue Version ist im Jahr 2012 verabschiedet worden. Diese beinhaltet ausführliche Änderungen und Anpassungen.
+Bei Vector Informatik GmbH wird zur Zeit die Version des Kodierungsstandards eingesetz, die im Jahr 2004 verabschiedet wurde~\cite{MISRACodeMetric}. Die Kodierungsstandards von Vector Informatik richten sich momentan noch nicht nach der am 18. März 2013 genannte 2012 MISRA-Version, da die Mehrheit der Regeln umnummeriert und umstrukturiert wurden. Das bedeutet, dass ein Umstieg von der letzten MISRA-C:2004-Version auf die aktuelle Version nicht vollständig automatisiert umzusetzen ist.
+%
 
-Auf Aufgrund der Tatsache, dass C keine sichere Programmierung von Software gewährleistet, wird seit mehreren Jahren  bei Vector Informatik der C-Programmierstandard  MISRA-C: 2004 eingesetzt.
-Der genannte Standard wies bisher noch bestimmte Nachteile auf, welche dazu führten, dass im Jahr 2013 eine neue Version ( MISRA-C: 2012 ) verabschiedet wurde. Diese Version soll Verbesserungen und Ergänzungen zu der alten Version hervorbringen. 
 %
 \begin{figure}[!htp]
 \centering
@@ -56,8 +55,55 @@ Der genannte Standard wies bisher noch bestimmte Nachteile auf, welche dazu führ
 \label{fig:MISRA}
 \end{figure}
 %
+
+%
+%\subsection*{Erste Aufgabenstellung}
+\paragraph{Erste Aufgabenstellung}
+%
 Vektor und somit die Abteilung PES sind aus diesem Grund darauf angewiesen, einen Umstieg in die neue Version zu ermöglichen. Da dies sich nicht ohne großen Aufwand umsetzen lässt, muss dazu muss eine detaillierte Analyse vor allem über die Kompatibilität zwischen den beiden Versionen durchgeführt werden.
-Hier soll eine ausführliche Erklärung über die Aufgabe angegeben werden, bei der der Vergleich der beiden MISRA-Versionen durchgeführt wird.
+Hier soll eine ausführliche Erklärung über die Aufgabe angegeben werden, bei der Vergleich der beiden MISRA-Versionen durchgeführt wird.(Hier Beschriebung von Zeugnis, welches Markus erstellt hat)
+%
+\section{2. Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Beschreibung}
+%
+%\subsection*{Durchführung der ersten Aufgabenstellung}
+\paragraph{Durchführung der ersten Aufgabenstellung}
+%
+Eine genaue Rechnerche über die oben erwähnten Standards ist notwendig gewesen, um nicht nur einen Einblick in das Thema zu gewinnen sondern auch die technischen Zusammenhänge zu verstehen.
+
+Im Folgenden wird eine kurze Einführung in die neuen Features angegeben, die von der MISRA C:2012-Version unterstützt werden und wie letztere strukturiert ist.
+%
+\subparagraph{MISRA C:2012}
+%
+Im Gegensatz zu der Vorversion fordert MISRA C:2012, dass Code dem Standard \textsc{C99} \footnote{ISO Standard for the C language ISO/IEC 9899:1999~\cite{MISRA2012}} entspricht. Dabei sind einige neue Regeln hinzugekommen, die sich hauptsächlich auf \textsc{C99} beziehen, einige wenige wurden umformuliert oder sogar entfernt~\cite{WarMISRAC}.
+Der zahlreiche Einsatz der MISRA C:2004 über die Jahre hat vielfältige Ergänzungen und Verbesserungen als Folge gehabt. Die Regeln sind jetzt klarer definiert und beschrieben, wobei verbesserte Begründungen für ihre Nutzung angegeben werden.
+
+Die einzelnen Regeln bestehen jetzt aus mehreren Teilen:
+
+\begin{itemize}
+\item Erweiterte Erläuterungen (Amplification): \\
+umfangreichere Beschreibeung der betrachteten Richtlinie.
+\item Begründung (Rationale): \\
+Erläuterung, warum die Regel benötigt wird.
+\item Ausnahmen (Exceptions): \\
+Beschreibung der Fälle, bei denen die betrachtete Regel nicht gilt.
+\item Beispiele (Examples): \\
+Beispiele, wie man die Regel anwenden kann.
+\end{itemize}
+
+Bei den ersten MISRA-Versionen sind die Regeln in zwei Kategorien eingeteilt: 
+notwendige (required) und empfohlene (advisory) Regel. Die ersten sind zwingend erforderliche Anforderungen an dem Programmierer. Die empfohlenen Regeln können im Gegensatz dazu eingehalten werden, müssen aber nicht.
+
+\textsc{MISRA C:2012} hat eine zusätzliche Kategorie eigeführt: 
+
+Meine Tätigkeiten bestanden vorwiegend darin, die richtigen Einstellungen zur statischen Code-Analyse einer in der Abteilung erstellten eingebetteten Beispiel-Anwendung durchzuführen. Die Analyse sollte mit Hilfe der Version 7.0 der Analyse-Software QAC erfolgen, deren Funktionalität im Beschreibungskapitel der 1. Woche angegeben wird (Dokoment QAC User Guide verwenden). Diese Version wird momentan in Vector angewendet.
+Die folgende Graphik zeigt einen Überblick über die funktionalen Beziehungen der Analyse-Software und die unterschiedlichen Ergebnisse einer beliebigen Beispielanwendung.
+%
 %
 \begin{figure}[!htp]
 \centering
@@ -66,18 +112,6 @@ Hier soll eine ausführliche Erklärung über die Aufgabe angegeben werden, bei der
 \label{fig:MISRA}
 \end{figure}
 %
-\section{2. Woche}
-%
-\subsection{Wochenübersicht}
-%
-Tabelle
-%
-\subsection{Arbeitsbericht}
-%
-Meine Tätigkeiten bestanden vorwiegend darin, die richtigen Einstellungen zur statischen Code-Analyse einer in der Abteilung erstellten eingebetteten Beispiel-Anwendung durchzuführen. Die Analyse sollte mit Hilfe der Version 7.0 der Analyse-Software QAC erfolgen, deren Funktionalität im Beschreibungskapitel der 1. Woche angegeben wird (Dokoment QAC User Guide verwenden). Diese Version wird momentan in Vector angewendet.
-Die folgende Graphik zeigt einen Überblick über die funktionalen Beziehungen der Analyse-Software und die unterschiedlichen Ergebnisse einer beliebigen Beispielanwendung.
-%
-
 \begin{figure}[!htp]
 \centering
 \includegraphics[scale=1]{./Bilder/QAC1.pdf}
