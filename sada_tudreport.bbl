@@ -1,8 +1,22 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{CLang}
+{\sc B.~Kernighan, D.~Ritchie}: {\em The C Programming Language}.
+\newblock Prentice Hall, 1978.
+
+\bibitem{MasterThMISRA}
+{\sc Kaiser, G.}: {\em
+  Exemplarisches Eclipse-Plugin zur statischen C-Syntaxanalyse am Beispiel von Misra-C Regeln }.
+\newblock \btxmastthesis{}, Hochschule für angewandte Wissenschaften Hamburg,
+  2007.
 
 \bibitem{MISRA2004}
 {\sc The Motor Industry Software Reliability Association}: {\em MISRA-C:2004
   Guidelines for the use of the C language in critical systems}, October 2004.
+
+\bibitem{MISRA2012}
+{\sc The Motor Industry Software Reliability Association}: {\em MISRA C:2012
+  Guidlines for the use of the C language in critical systems}, March 2013.
 
 \bibitem{MISRACodeMetric}
 {\sc H.~Hörner, A.~Raisch}: {\em MISRA and Code Metrics Product Development
@@ -10,13 +24,18 @@
 \newblock Vector Informatik GmbH, Vector Informatik GmbH Ingersheimer Str. 24
   70499 Stuttgart, April 2013.
 
-\bibitem{MISRA2012}
-{\sc The Motor Industry Software Reliability Association}: {\em MISRA C:2012
-  Guidlines for the use of the C language in critical systems}, March 2013.
-
 \bibitem{WarMISRAC}
 {\sc Burden, P.}: {\em Warum ein neues MISRA C?}
 \newblock \Btxtechreplong{}, PRQA, 2013.
+\newblock \url{http://www.programmingresearch.com}.
+
+\bibitem{QAC_Iseite}
+{\em Testwerkzeuge für statisches Testen: QA-C und QA-C++}.
+\newblock \url{http://www.qa-systems.de/produkte/qa-c.html}.
+
+\bibitem{QAC70WinUserGuide}
+{\sc QA-Systems}: {\em QAC-7.0-Win-UserGuide}.
+\newblock The Programming Research Ltda.
 
 \bibitem{HardTime}
 {\sc Douglass, Bruce~Powel}: {\em Doing Hard Time}.

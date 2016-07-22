@@ -1,12 +1,12 @@
 \chapter{Arbeitsbericht}
 %
-\section{1. Woche}
+\section{Erste Woche}
 %
 \subsection{Wochenübersicht}
 %
 Tabelle
 %
-\subsection{Beschreibung}
+\subsection{Beschreibung}\label{Be1Woche}
 %
 Am ersten Tag meiner Tätigkeit bei Vector Informatik bekam ich die Gelegenheit die Firma und ihre unterschiedlichen Abteilungen näher kennen zu lernen. Es war erforderlich, an einer ausführlichen Präsentation über die Firma und die unterschiedlichen Abteilungen teilzunehmen. Dabei konnte ich ebenfalls Mitarbeiter kennen lernen, für die dieser auch ihr erster Tag bei Vector war.
 %
@@ -33,20 +33,38 @@ Während der ersten Tagen galt meine Arbeit der Einarbeitung und Verwendung manch
 \end{figure}
 %
 
-In den folgenden Tagen wurde mir die 1. Aufgabe meiner Arbeitstätigkeit bei Vector vorgestellt. Diese bestand darin, mich mit den Konzepten des MISRA-C-Kodierungsstandards vertraut zu machen. Eine kurze Einführung wird im folgenden Unterkapitel gegeben.
+Diese sind unter anderem TortoiseSVN: Hier bitte eine kurze Beschreibung von Tortoise geben. Du kannst auch dazu irgendeine Präsentation von ADP benutzen, suche im Intranet danach. 
 %
-%\subsection*{MISRA C}
-\paragraph{MISRA C}
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1]{./Bilder/Repo.pdf}
+\caption{Tortoisegit}
+\label{fig:Tortoisegit}
+\end{figure}
 %
-MISRA-C hat seinen Ursprung in der Automobilindustrie. Er wurde durch die britische \glqq The Motor Industry Sofrware Reliability Association\grqq\ eingeführt, um den ersten Standard für die Programmiersprache C zu definieren. Letzterer wurde zum ersten Mal in 1998 mit dem Ziel veröffentlich, eine positive Auswirkung auf die Verwendung von Software innerhalb der britischen Automobilindustrie zu haben~\cite{MISRA2004}. Seit seiner ersten Einführung hat sich der MISRA-Standard nicht nur im Automobilsektor durchgesetzt sondern auch u.a. in der Raumfahrtindustrie und Medizintechnik. 
-
-Eine Vielzahl an Regeln sind dabei veröffentlicht worden, um robusteren und zuverlässigeren Embedded C-Code für Steuergeräte zu produzieren. Außerdem wird damit erreicht, dass die erstellten Software-Produkte wiederverwendbar und portabler sind. 
-
-Die Anwender dieser Richtlinien auf ihre Produkte konnten außer der erwähnten Vorteile einige Verbesserungsvorschläge treffen, die manchen Nachteilen beim Einsatz des MISRA-Standards entgegenwirken sollen. Aus diesem Grund entschloss sich die MISRA-Arbeitsgruppe weitere Ausgaben zu veröffentlichen, welche jeweils in den Jahren 2004 bzw. 2012 erschienen sind.
-
-Bei Vector Informatik GmbH wird zur Zeit die Version des Kodierungsstandards eingesetz, die im Jahr 2004 verabschiedet wurde~\cite{MISRACodeMetric}. Die Kodierungsstandards von Vector Informatik richten sich momentan noch nicht nach der am 18. März 2013 genannte 2012 MISRA-Version, da die Mehrheit der Regeln umnummeriert und umstrukturiert wurden. Das bedeutet, dass ein Umstieg von der letzten MISRA-C:2004-Version auf die aktuelle Version nicht vollständig automatisiert umzusetzen ist.
+\subsubsection{Erste Aufgabenstellung}
+%\paragraph{Erste Aufgabenstellung}
 %
+In den folgenden Tagen wurde mir die 1. Aufgabe meiner Arbeitstätigkeit bei Vector vorgestellt. Diese bestand darin, mich erstens mit den Konzepten des MISRA-C-Kodierungsstandards vertraut zu machen. Anschließend sollte ich mögliche Rückschlüsse ziehen, wie umfangreich ein Umstieg von dem aktuell in der Firma geprüften Kodierungsstandard MISRA C:2004 in den neuen Standard MISRA C:2012 ist.
+ 
+Hier soll eine ausführliche Erklärung über die Aufgabe angegeben werden, bei der Vergleich der beiden MISRA-Versionen durchgeführt wird (Hier Beschriebung von Zeugnis, welches Markus erstellt hat).
 
+Eine kurze Einführung wird im folgenden Unterkapitel gegeben.
+%
+%\subsection{MISRA C}
+\paragraph*{\uppercase{MISRA-C-Standard und Gründe für seine Einführung}}\label{MISRAC}
+%
+Die Programmiersprache C wurde im Jahr 1972 von Dennis Ritchie und Brian W. Kernighan entwickelt~\cite{CLang}. Gegenüber Assembler sollte C damals den Software-Entwicklern das Programmieren erleichtern.
+
+Im Bereich eingebetteter Systeme bietet C dem Programmierer viele Möglichkeiten explizit auf die Speicherbereiche der Hardware zuzugreifen. Dadurch kann die Gefahr bestehen, u.a. bewusst oder unbewusst viele systemeingene Speicheradressen zu manipulieren und zu einem ungewünschten Systemverhalten zu führen. Weitere kritische Aspekte von C als Programmiersprache können in~\cite{MasterThMISRA} nachgelesen werden.
+
+MISRA-C hat seinen Ursprung in der Automobilindustrie und wurde durch die britische \glqq The Motor Industry Sofrware Reliability Association\grqq\ eingeführt. Die erste Version wurde in 1998 mit dem Ziel veröffentlich, eine positive Auswirkung auf die Verwendung von eingebetteter Software innerhalb der britischen Automobilindustrie zu haben~\cite{MISRA2004}. Seitdem ist der MISRA-Standard nicht nur im Automobilsektor eingesetzt worden sondern auch u.a. in Bereichen wie Raumfahrtindustrie und Medizintechnik. 
+
+Eine Vielzahl an Regeln sind dabei veröffentlicht worden, um robusteren und zuverlässigeren Embedded C-Code im Automobilsektor zu produzieren. Außerdem wird damit erreicht, dass die erstellten Software-Produkte wiederverwendbar und portabler sind~\cite{MISRA2012}. 
+
+Der zahlreiche Einsatz der MISRA C:2004-Version über die Jahre hat vielfältige Ergänzungen und Verbesserungen als Folge gehabt. Die Regeln sind jetzt bei MISRA C:2012 so definiert und beschrieben, dass die Begründungen für ihre Nutzung umfangreicher wurden. 
+
+Die Kodierungsstandards von Vector Informatik richten sich momentan noch nicht nach der aktuellen MISRA C:2012-Version~\cite{MISRACodeMetric}. Der Hauptgrund liegt darin, dass bei dem neuen Standard die Mehrheit der Regeln umnummeriert und umstrukturiert wurden. Das bedeutet, dass sich ein Umstieg von der letzten MISRA-C:2004-Version auf die aktuelle Version nicht automatisiert durchführen lässt.
 %
 \begin{figure}[!htp]
 \centering
@@ -55,15 +73,10 @@ Bei Vector Informatik GmbH wird zur Zeit die Version des Kodierungsstandards ein
 \label{fig:MISRA}
 \end{figure}
 %
-
+Die OEMs fordern seit der Einführung von MISRA C:2012, dass die in ihren Produkten eingesetzten embedded software mit dieser Version des Standards konform gehen soll.
+Vektor und somit die Abteilung PES sind aus diesem Grund darauf angewiesen, in naher Zukunft einen Umstieg in die neue Version zu ermöglichen. Da dies sich nicht ohne Weiteres umsetzen lässt, muss dazu eine detaillierte Analyse vor allem über die Kompatibilität zwischen den beiden Versionen durchgeführt werden.
 %
-%\subsection*{Erste Aufgabenstellung}
-\paragraph{Erste Aufgabenstellung}
-%
-Vektor und somit die Abteilung PES sind aus diesem Grund darauf angewiesen, einen Umstieg in die neue Version zu ermöglichen. Da dies sich nicht ohne großen Aufwand umsetzen lässt, muss dazu muss eine detaillierte Analyse vor allem über die Kompatibilität zwischen den beiden Versionen durchgeführt werden.
-Hier soll eine ausführliche Erklärung über die Aufgabe angegeben werden, bei der Vergleich der beiden MISRA-Versionen durchgeführt wird.(Hier Beschriebung von Zeugnis, welches Markus erstellt hat)
-%
-\section{2. Woche}
+\section{Zweite Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -71,19 +84,21 @@ Tabelle
 %
 \subsection{Beschreibung}
 %
-%\subsection*{Durchführung der ersten Aufgabenstellung}
-\paragraph{Durchführung der ersten Aufgabenstellung}
+\subsubsection{Durchführung der ersten Aufgabenstellung}
+%\paragraph{Durchführung der ersten Aufgabenstellung}
 %
-Eine genaue Rechnerche über die oben erwähnten Standards ist notwendig gewesen, um nicht nur einen Einblick in das Thema zu gewinnen sondern auch die technischen Zusammenhänge zu verstehen.
+Eine genaue Rechnerche über die oben erwähnten Standards war notwendig, um nicht nur einen Einblick in das Thema zu gewinnen sondern auch die technischen Zusammenhänge zu verstehen.
 
-Im Folgenden wird eine kurze Einführung in die neuen Features angegeben, die von der MISRA C:2012-Version unterstützt werden und wie letztere strukturiert ist.
+Im Folgenden wird eine kurze Einführung in die neuen Features angegeben, die von der MISRA C:2012-Version unterstützt werden und wie diese strukturiert ist.
 %
-\subparagraph{MISRA C:2012}
+\paragraph*{\uppercase{MISRA C:2012}}
 %
-Im Gegensatz zu der Vorversion fordert MISRA C:2012, dass Code dem Standard \textsc{C99} \footnote{ISO Standard for the C language ISO/IEC 9899:1999~\cite{MISRA2012}} entspricht. Dabei sind einige neue Regeln hinzugekommen, die sich hauptsächlich auf \textsc{C99} beziehen, einige wenige wurden umformuliert oder sogar entfernt~\cite{WarMISRAC}.
-Der zahlreiche Einsatz der MISRA C:2004 über die Jahre hat vielfältige Ergänzungen und Verbesserungen als Folge gehabt. Die Regeln sind jetzt klarer definiert und beschrieben, wobei verbesserte Begründungen für ihre Nutzung angegeben werden.
+Im Gegensatz zu den ersten MISRA-Versionen fordert MISRA C:2012, dass programmiertes C Code mit dem Standard \textsc{C99} \footnote{ISO Standard for the C language ISO/IEC 9899:1999~\cite{MISRA2012}} konform geht. Außerdem sind einige neue Regeln hinzugekommen, die sich hauptsächlich auf \textsc{C99} beziehen, einige wenige wurden umformuliert oder sogar entfernt~\cite{WarMISRAC}.
 
-Die einzelnen Regeln bestehen jetzt aus mehreren Teilen:
+Bei den ersten MISRA-Versionen sind die Regeln in zwei Kategorien eingeteilt: 
+notwendige (required) und empfohlene (advisory) Regel. Die ersten sind erforderliche Anforderungen an dem Programmierer. Die empfohlenen Regeln können eingehalten werden, müssen demgegenüger aber nicht.
+
+Die einzelnen Regeln bestehen bei MISRA C:2012 aus mehreren Teilen:
 
 \begin{itemize}
 \item Erweiterte Erläuterungen (Amplification): \\
@@ -96,64 +111,28 @@ Beschreibung der Fälle, bei denen die betrachtete Regel nicht gilt.
 Beispiele, wie man die Regel anwenden kann.
 \end{itemize}
 
-Bei den ersten MISRA-Versionen sind die Regeln in zwei Kategorien eingeteilt: 
-notwendige (required) und empfohlene (advisory) Regel. Die ersten sind zwingend erforderliche Anforderungen an dem Programmierer. Die empfohlenen Regeln können im Gegensatz dazu eingehalten werden, müssen aber nicht.
+\textsc{MISRA C:2012} hat somit eine zusätzliche Kategorie eigeführt, nämlich die zwingend erforderliche Regel (mandatory). Unter keinen Umständen dürfen solche Regel verletzt werden.
 
-\textsc{MISRA C:2012} hat eine zusätzliche Kategorie eigeführt: 
+Dem Begriff der Durchsetzbarkeit einer Regel wurde besondendere Aufmerksamkeit geschenkt. Die Durchsetzbarkeit besagt, wie gut sich eine Regel mithilfe einer statischen Analyse prüfen lässt. Letzteres ist von hoher Bedeutung, denn die automatische Prüfung von Regeln spart viel Zeit, wirkt sofort, ist zuverlässig, wiederholbar und konsistent~\cite{WarMISRAC}. Dabei wird beispielsweise die Notwendgikeit verringert, von der manuellen Codeanalyse abhängig zu sein. 
 
-Meine Tätigkeiten bestanden vorwiegend darin, die richtigen Einstellungen zur statischen Code-Analyse einer in der Abteilung erstellten eingebetteten Beispiel-Anwendung durchzuführen. Die Analyse sollte mit Hilfe der Version 7.0 der Analyse-Software QAC erfolgen, deren Funktionalität im Beschreibungskapitel der 1. Woche angegeben wird (Dokoment QAC User Guide verwenden). Diese Version wird momentan in Vector angewendet.
-Die folgende Graphik zeigt einen Überblick über die funktionalen Beziehungen der Analyse-Software und die unterschiedlichen Ergebnisse einer beliebigen Beispielanwendung.
-%
+Die Maßnahmen, die diesbezüglich bei der neuen MISRA-Version getroffen wurden, sind im Folgenden erläutert\footnote{Siehe dazu~\cite{MISRA2012}, Unterkapitel 6.6}:
+
+\begin{itemize}
+\item Es besteht nun ein Unterschied zwischen Regeln und Anordnungen (Directives). Regeln lassen sich direkt durch eine Analyse des Quellcodes durchsetzen (Siehe die obige Definition von Durchsetzbarkeit). Anordnungen sind im Gegensatz dazu nicht präzise definiert, so dass ihre Einhaltung  eine genauere Untersuchung u.a. der Funktionsanforderungen benötigt.
+\item Eine Regel kann innerhalb einer \textit{einzelnen Übersetzungseinheit} (Single Translation Unit) oder eines \textit{Systems} (System) analysiert werden. Diese Begriffe geben den nötigen Aufwand einer Analyse wieder, um eine Regel zu überprüfen.
+\end{itemize}
+
+Abbildung \ref{fig:MISRA2004} gibt die obigen Zusammenhänge zwischen den relevanten MISRA-Versionen wieder.
 %
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.7]{./Bilder/QAC.pdf}
-\caption{QAC}
-\label{fig:MISRA}
-\end{figure}
-%
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=1]{./Bilder/QAC1.pdf}
-\caption{QAC}
-\label{fig:QAC1}
+\includegraphics[scale=0.7]{./Bilder/MISRA2004.pdf}
+\caption{Vergleich zwischen den akteullen MISRA-Versionen. In Anlehnung an~\cite{WarMISRAC}}
+\label{fig:MISRA2004}
 \end{figure}
 %
 
-Es ist notwendig richtige Einstellungen für jedes QAC-Projekt durchzuführen, welches der Struktur eines entsprechenden Entwicklungsprojekt wiederspiegelt. Ein entsprechendes Projekt beinhaltet ein oder mehrere Ordner, Quellcode-Dateien bzw. Einstellungsinformationen, die als personalities bezeichnet werden.
-In den personalities werden laut application note jeweils folgende Einstellungen durchgeführt:
-...... Beschreibung der einzelnen Files ($*.p_a, *.p_c, *.p_s$).
-
-Inerhalb der Datei $*.p_c$ musste ich die Definition $_WIN32_WINNT$ anpassen, da auf dem Computer, auf dem die statische Codeanalyse durchgeführt werden soll, ein 64-bit-Betriebssystem läuft. Somit sollen manche Makros angepasst oder sogar außer Betracht gelassen werden .
-%
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=1]{./Bilder/QAC2.pdf}
-\caption{QAC}
-\label{fig:QAC2}
-\end{figure}
-%
-
-Nachdem die richtigen Einstellungen für das Projekt ausgewählt und vorgenommen wurden, haben die ersten Analysen stattgefunden, welche Hinweise auf eventuell fehlerhafte Teile beim Code ausgaben.
-%
-
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=1]{./Bilder/QAC3.pdf}
-\caption{QAC}
-\label{fig:QAC3}
-\end{figure}
-%
-Bei Vector werden unterschiedliche Programme eingesetzt, welche von jedem Mitarbeiter beherrscht werden sollen und u.a. Informationen über die Arbeitstätigkeit in der Firma der Personalabteilung weiterleiten.
-Diese sind unter anderem (diese Version richtet sich nach den Richtlinien der Universität. In der Version von Vector muss ich eine richtige Themengliederung angeben. Ein richtiger Bericht muss es werden):
-TortoiseSVN: Hier bitte eine kurze Beschreibung von Tortoise geben. Du kannst auch dazu irgendeine Präsentation von ADP benutzen, suche im Intranet danach. 
-%
-\begin{figure}[htp]
-\centering
-\includegraphics[scale=1]{./Bilder/Repo.pdf}
-\caption{Tortoisegit}
-\label{fig:Tortoisegit}
-\end{figure}
+Um den Nachweis liefern zu können, wie konform ein spezifisches Software-Projekt mit dem gesamten MISRA-C-Regelwerk geht, wird in der Regel ein ausgewähltes statisches Analysewerkzeug eingesetzt. Eine ausführliche Beschreibung über dieses Thema wird im Folgenden gegeben.
 %
 \section{Dritte Woche}
 %
@@ -163,7 +142,88 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Während der dritten Woche im Unternehmen bekam ich den Auftrag, die release notes vom QAC Programm zu sammeln und untereinander zu vergleichen. Das Ziel war dabei, die Unterschiede zwischen der aktuell der PES-Abteilung zur Verfügung stehenden QAC-Version 7.0 und den höheren Versionen des verwendeten Programms festzustellen. Es war somit notwendig eine Methodik auszuwählen, um die genannten Unterschiede darzustellen. 
+\paragraph*{\uppercase{Verwendetes statisches Analysewerkzeug}}
+%
+Bei der Vector Informatik GmbH wird das Programm QA-C der Firma QA-Systems verwendet, um die genannte statische Code-Analyse ihrer Software-Produkte durchzuführen~\cite{MISRACodeMetric}. Das genannte Tool ist eine kommerzielle Software zur automatisierten Überprüfung eines fetgelegten, firmenspezifischen Programmierstandards~\cite{QAC_Iseite}.
+
+QA-C bietet die Möglichkeit eine statische Code-Analyse in 3 Phasen durchzuführen. In der 1. Phase der Analyse wird der Quellcode auf Konformität mit definierten Standards wie beispielsweise \textsc{C99} untersucht. Die drauf folgende Analyse (secondary analysis) ist ein optionale Erweiterung, bei der sich in der Regel industrie-, firmeneigene oder standardspezifische Tests durchführen lassen (MISRA-C:2004 bzw. MISRA-C:2004). In der dritten Phase wird die so genannte cross-module-Analyse durchgeführt, welche die aus dem Source Code extrahierten \textit{translation units} untersucht. Für eine genaue Beschriebung der QA-C-Funktionaliäten sei auf~\cite{QAC70WinUserGuide} verwiesen. 
+
+Die folgende Graphik zeigt einen Überblick über die funktionalen Beziehungen der Analyse-Software und die unterschiedlichen Ergebnisse einer beliebigen Beispielanwendung.
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1.2]{./Bilder/QAC_functions.pdf}
+\caption{QA-C-Funktionalitäten. In Anlehnung an~\cite{QAC70WinUserGuide}.}
+\label{fig:QACfunc}
+\end{figure}
+%
+
+Um mir einen Überblick über die Verwendung der betrachteten Software zu verschaffen, war es nötig eine statische Analyse einer BSW-Komponente durchzuführen. Die Analyse erfolgte mithilfe der Version 7.0. Das entsprechende Ergebnis ist in Abbildung \ref{fig:QAC7Single} dargestellt.
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.7]{./Bilder/QAC7Single1.pdf}
+\caption{Analyse einer erste BSW-Komponente mit QA-C7.}
+\label{fig:QAC7Single1}
+\end{figure}
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.45]{./Bilder/QAC7Single.pdf}
+\caption{Ergebnisse der Analyse vom betrachteten Source Code.}
+\label{fig:QAC7Single}
+\end{figure}
+%
+
+In Abbildung \ref{fig:QACfunc} kann man erkennen, dass beim Teil \textit{Configuration} bestimmte Files notwendig sind, damit ein QA-C-Projekt richtig initialisiert und überhaupt die Analyse stattfinden kann. Diese Einstellungsdateien werden als \textit{personalities} bezeichnet.
+
+Nach~\cite{QAC70WinUserGuide} weisen die jeweiligen Dateien folgende Eigenschaften:
+
+\begin{itemize}
+\item Compiler Personality ($*.p_c$): \\
+umfangreichere Beschreibeung der betrachteten Richtlinie.
+\item Analysis Personality ($*.p_a$): \\
+Erläuterung, warum die Regel benötigt wird.
+\item Message Personality ($*.p_s$): \\
+Beschreibung der Fälle, bei denen die betrachtete Regel nicht gilt.
+\end{itemize}
+
+
+Inerhalb der Datei $*.p_c$ musste ich die Definition $\_WIN32 \quad \_WINNT$ anpassen, da auf dem Computer, auf dem die statische Codeanalyse durchgeführt werden soll, ein 64-bit-Betriebssystem läuft. Somit sollen manche Makros angepasst oder sogar außer Betracht gelassen werden .
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC2.pdf}
+\caption{QAC}
+\label{fig:QAC2}
+\end{figure}
+%
+\paragraph*{\uppercase{Lösungsansatz zum Vergleich der relevanten MISRA-Versionen}}
+%
+Die Version des genannten Analysewerkzeugs, für das Vector über eine Lizenz verfügt, ist die 7.0. Diese Version unterstützt die Untersuchung von Software-Produkten darauf, ob diese mit dem MISRA-C:2004-Standard konform gehen. 
+
+Für einen möglichen Umstieg auf MISRA 2012 sind somit die Unterschiede der beiden betrachteten MISRA Standards wie oben erläutert genauer zu analysisieren und gegenüberzustellen. Es ist jedoch nicht nur der obiger Vergleich nötig, dazu sind die QA-C Versionen 7.0 und 9.0 in Bezug auf unterstützte Regeln und Toolnutzung miteinander zu vergleichen.
+
+
+Nachdem die richtigen Einstellungen für ein QAC-Projekt ausgewählt und vorgenommen wurden, haben die ersten Analysen stattgefunden, welche Hinweise auf eventuell fehlerhafte Teile beim Code ausgaben. Die Analyse im nächsten Unterkapitel.
+%
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/QAC3.pdf}
+\caption{QAC}
+\label{fig:QAC3}
+\end{figure}
+%
+\section{Vierte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Während der vierten Woche im Unternehmen bekam ich den Auftrag, die release notes vom QAC Programm zu sammeln und untereinander zu vergleichen. Das Ziel war dabei, die Unterschiede zwischen der aktuell der PES-Abteilung zur Verfügung stehenden QAC-Version 7.0 und den höheren Versionen des verwendeten Programms festzustellen. Es war somit notwendig eine Methodik auszuwählen, um die genannten Unterschiede darzustellen. 
 Es hat sich dementsprechend als sinnvoll erwiesen eine Excel-Tabelle zu erstellen, damit sich jeder einen möglichst guten Überblick über das Thema verschafft. Die Struktur der genannten Tabelle, welche in Abbildung \ref{fig:QAC4} zu sehen ist, stellt idealerweise einen Teil der Entwicklungslinie der neuen QAC-Versionen. Insgesamt sind 6150 Nachrichten behandelt worden, die innerhalb des Entwicklungsprozesses der statischen QAC-Analysesoftware eingeführt worden sind. Unter diesen Nachrichten befinden sich jedoch auch welche, die gelöscht, angepasst oder völlig umgeschrieben wurden. Dementsprechend würde sich ohne eine geeignete Methode nur schwer erkennen lassen, welche relevanten Modifikationen die Analysesoftware erfahren hat.
 
 \begin{figure}[!htp]
@@ -184,7 +244,7 @@ Danach war es notwendig, nach dem Neuerwerb der QAC Version 9.0 für eine kleine 
 \label{fig:QAC5}
 \end{figure}
 %
-\section{Vierte Woche}
+\section{Fünfte Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -192,7 +252,7 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Während der 4. Woche musste ich mich mit den weiteren Einstellungen eines QAC-Projekts beschäfitgen. Diesmal handelte es sich um ein relativ umfanreicheres Projekt, so dass es aufwendiger war, die Konfigurationsdateien anzupassen. 
+Während der 5. Woche musste ich mich mit den weiteren Einstellungen eines QAC-Projekts beschäfitgen. Diesmal handelte es sich um ein relativ umfanreicheres Projekt, so dass es aufwendiger war, die Konfigurationsdateien anzupassen. 
 Das Ziel war, beide Versionen am Beispiel eines umfangreicheres Projekt zu analysieren. Dieses bestand aus einer großen Anzahl an Quellcode.
 Die zu analysierende Dateien mussten in ein bestimmtes Verzeichnis übertragen werden, wobei sich diese ursprünglich zur besseren Übersicht  für den Kunden in sehr vielen Unterodner organisiert waren. Dies hat dazu geführt, dass ich mir eine Methode aussuche, um die Dateien nicht einzeln und per Hand in die Zieladressen zu kopieren. Es hat sich somit als sinnvoll erwiesen, eine dazu geeignete Programmiersprache zu verwenden, die mir diese Aufgabe erleichterte. Ich konnte feststellen, dass sich zum Lösen u.a. der genannten Aufgabe einige Skriptsprachen wie Perl oder Python eignen. Da bisher in der Abteilung die Mitarbeiter meistens mit Perl große Projekte erstellten und somit große Erfahrung dabei haben, habe ich mit entschieden Perl einzusetzen.
 
@@ -219,7 +279,7 @@ Die Übertragung der Dateien war nicht die einzige Aufgabe, die zum Erstellen des
 \label{fig:QAC8}
 \end{figure}
 %
-\section{Fünfte Woche}
+\section{Sechste Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -231,7 +291,7 @@ Nachdem die Einstellungen für das oben erwähnte Projekt durchgeführt worden sind
 
 Eine Möglichkeit, dies zu realisieren, besteht darin, ein mit Hilfe der 7.0-QAC-Version bereits analysiertes Projekt ebenfalls mit Hilfe der 9.0-QAC-Version zu analysieren und anschließend die entsprechende Reports zu miteinander zu vergleichen.
 %
-\section{Sexte Woche}
+\section{Siebte Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -249,7 +309,7 @@ Ich musste auch anfangen, mich mit den qacli-Befehlen zu beschäftigen, da diese 
 
 Als letztes habe ich die erstellten PERL- bzw. Batch-Dateien zum Aufrufen letzterer in dem Netzwerkordner gespeichert! 
 %
-\section{Siebte Woche}
+\section{Achte Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -261,7 +321,7 @@ Markus hat mir am Dienstag (Montag war ja Feiertag) die zweite Aufgabe vorgestel
 
 Zu meiner Aufgabe gehört, diese Möglichkeit so zu erweitern, dass die BTE auch auf einer beliebigen Hardware läuft, d.h. hardwareunabhängig, wobei die Möglichkeit geboten sein muss, entsprechende Reports zu erstellen. Die Reports können in diesem Fall nicht mehr als entsprechende Dateien auf dem Rechner abgelegt werden, viel mehr muss eine Methode  gefunden werden, wie der Report auf der RAM temporär zu speichern ist.
 %
-\section{Achte Woche}
+\section{Neunte Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -288,7 +348,7 @@ Ein Ansatz, um aus den binary files ein Report zu erstellen, ist, das binary Fil
 
 Die erzielten Lerneffekte sind vor allem der Umgang mit einer Skriptsprache, das Speicherplatz sparend Codieren in C.
 %
-\section{Neunte Woche}
+\section{Zehnte Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -313,7 +373,7 @@ Der auf dem Mikrocontroller erzeugte Report sollte auf einer Speicher sparenden 
 
 Zu der Erkenntnis konnte man gelagen, dass die zweite Möglichkeit besser geeinet ist und auf einer seriellen Übertragung der Daten basiert.
 %
-\section{Zehnte Woche}
+\section{Elfte Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -336,7 +396,7 @@ Das Bild zum UML Statechart sollte ich mal einfügen und von Markus checken lasse
 
 Am Ende erfogte eine Abgabe der letzten Version meiner programmierten PERL-Anwendung abgegeben werden. Markus hat manche Korrekturen und Verbesserungen durcgeführt und mir dann diesbezüglich Rückmeldung gegeben.
 %
-\section{Elfte Woche}
+\section{Zwolfte Woche}
 %
 \subsection{Wochenübersicht}
 %
