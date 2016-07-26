@@ -74,7 +74,8 @@ Die Kodierungsstandards von Vector Informatik richten sich momentan noch nicht n
 \end{figure}
 %
 Die OEMs fordern seit der Einführung von MISRA C:2012, dass die in ihren Produkten eingesetzten embedded software mit dieser Version des Standards konform gehen soll.
-Vektor und somit die Abteilung PES sind aus diesem Grund darauf angewiesen, in naher Zukunft einen Umstieg in die neue Version zu ermöglichen. Da dies sich nicht ohne Weiteres umsetzen lässt, muss dazu eine detaillierte Analyse vor allem über die Kompatibilität zwischen den beiden Versionen durchgeführt werden.
+
+Vektor und somit die Abteilung PES sind aus diesem Grund darauf angewiesen, in naher Zukunft einen Umstieg in die neue Version zu ermöglichen. Da dies sich nicht ohne Weiteres umsetzen lässt, muss dazu eine detaillierte Analyse vor allem über die Kompatibilität zwischen den beiden Versionen (2004 und 2012) durchgeführt werden, deren Ergebnisse in den Kapitel \ref{sec:DritteWoche} bzw. \ref{sec:VierteWoche} ausführlich beschrieben werden.
 %
 \section{Zweite Woche}
 %
@@ -134,7 +135,7 @@ Abbildung \ref{fig:MISRA2004} gibt die obigen Zusammenhänge zwischen den relevan
 
 Um den Nachweis liefern zu können, wie konform ein spezifisches Software-Projekt mit dem gesamten MISRA-C-Regelwerk geht, wird in der Regel ein ausgewähltes statisches Analysewerkzeug eingesetzt. Eine ausführliche Beschreibung über dieses Thema wird im Folgenden gegeben.
 %
-\section{Dritte Woche}
+\section{Dritte Woche}\label{sec:DritteWoche}
 %
 \subsection{Wochenübersicht}
 %
@@ -142,14 +143,15 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-\paragraph*{\uppercase{Verwendetes statisches Analysewerkzeug}}
+\paragraph*{Verwendetes statisches Analysewerkzeug}
 %
-Bei der Vector Informatik GmbH wird das Programm QA-C der Firma QA-Systems verwendet, um die genannte statische Code-Analyse ihrer Software-Produkte durchzuführen~\cite{MISRACodeMetric}. Das genannte Tool ist eine kommerzielle Software zur automatisierten Überprüfung eines fetgelegten, firmenspezifischen Programmierstandards~\cite{QAC_Iseite}.
+Bei der Vector Informatik GmbH wird zurzeit noch das Programm QA-C der Firma QA-Systems verwendet, um die genannte statische Code-Analyse ihrer Software-Produkte durchzuführen~\cite{MISRACodeMetric}. Das genannte Tool ist eine kommerzielle Software zur automatisierten Überprüfung eines fetgelegten, firmenspezifischen Programmierstandards~\cite{QAC_Iseite}.
 
 QA-C bietet die Möglichkeit eine statische Code-Analyse in 3 Phasen durchzuführen. In der 1. Phase der Analyse wird der Quellcode auf Konformität mit definierten Standards wie beispielsweise \textsc{C99} untersucht. Die drauf folgende Analyse (secondary analysis) ist ein optionale Erweiterung, bei der sich in der Regel industrie-, firmeneigene oder standardspezifische Tests durchführen lassen (MISRA-C:2004 bzw. MISRA-C:2004). In der dritten Phase wird die so genannte cross-module-Analyse durchgeführt, welche die aus dem Source Code extrahierten \textit{translation units} untersucht. Für eine genaue Beschriebung der QA-C-Funktionaliäten sei auf~\cite{QAC70WinUserGuide} verwiesen. 
 
-Die folgende Graphik zeigt einen Überblick über die funktionalen Beziehungen der Analyse-Software und die unterschiedlichen Ergebnisse einer beliebigen Beispielanwendung.
+Abbildung \ref{fig:QACfunc} zeigt einen Überblick über die funktionalen Beziehungen der Analyse-Software und die unterschiedlichen Ergebnisse einer beliebigen Beispielanwendung.
 
+%
 \begin{figure}[!htp]
 \centering
 \includegraphics[scale=1.2]{./Bilder/QAC_functions.pdf}
@@ -158,11 +160,24 @@ Die folgende Graphik zeigt einen Überblick über die funktionalen Beziehungen der
 \end{figure}
 %
 
-Um mir einen Überblick über die Verwendung der betrachteten Software zu verschaffen, war es nötig eine statische Analyse einer BSW-Komponente durchzuführen. Die Analyse erfolgte mithilfe der Version 7.0. Das entsprechende Ergebnis ist in Abbildung \ref{fig:QAC7Single} dargestellt.
+Dabei kann man erkennen, dass beim Teil \textit{Configuration} bestimmte Files notwendig sind, damit ein QA-C-Projekt richtig initialisiert und überhaupt die Analyse stattfinden kann. Diese Einstellungsdateien werden als \textit{personalities} bezeichnet und werden im folgenden näher beschrieben~\cite{QAC70WinUserGuide}: 
+
+\begin{itemize}
+\item Compiler Personality ($*.p_c$): \\
+definiert die Einstellungen für den Compiler, der bei der Entwicklung der Source Files verwendet wird. 
+\item Analysis Personality ($*.p_a$): \\
+definiert die Analyse-Einstellungen, die projektabhängig sind wie Include-Pfade, usw.  
+\item Message Personality ($*.p_s$): \\
+Einstellungen bezüglich der für die Untersuchung relevanten QA-C-Nachrichten.
+\end{itemize}
+
+Die Struktur bzw. der Aufbau der obigen Dateien wird vom Hersteller (QA-Systems) vorgegeben. Man ist deswegen zur korrekten Anwendung auf die Dokumentation der Software angewiesen. 
+
+Ich durfte eigenständig eine statische Analyse einer BSW-Komponente (Single Component) mit der betrachteten QA-C-Software durchführen und dabei die oben eingeführten Einstellungsdateien selber strukturieren. Die Analyse erfolgte mithilfe der Version QA-C 7.0, für die die Abteilung über eine Lizenz verfügt. Die Analysen, die mit QA-C durchgeführt werden können, beschränken sich nicht nur auf Kodierungsregeln wie beispielsweise die MISRA-C-Regeln, sondern erkennen auch funktionale und technische Fehler, potentielle Bugs sowie auch qaualitative Schwachstellen im Code~\cite{QAC70WinUserGuide}. Die entsprechenden Ergebnisse sind in \figref{fig:QAC7Single1} bzw. \figref{fig:QAC7Single} dargestellt. 
 %
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.7]{./Bilder/QAC7Single1.pdf}
+\includegraphics[scale=0.55]{./Bilder/QAC7Single1.pdf}
 \caption{Analyse einer erste BSW-Komponente mit QA-C7.}
 \label{fig:QAC7Single1}
 \end{figure}
@@ -175,47 +190,99 @@ Um mir einen Überblick über die Verwendung der betrachteten Software zu verschaf
 \end{figure}
 %
 
-In Abbildung \ref{fig:QACfunc} kann man erkennen, dass beim Teil \textit{Configuration} bestimmte Files notwendig sind, damit ein QA-C-Projekt richtig initialisiert und überhaupt die Analyse stattfinden kann. Diese Einstellungsdateien werden als \textit{personalities} bezeichnet.
-
-Nach~\cite{QAC70WinUserGuide} weisen die jeweiligen Dateien folgende Eigenschaften:
-
-\begin{itemize}
-\item Compiler Personality ($*.p_c$): \\
-umfangreichere Beschreibeung der betrachteten Richtlinie.
-\item Analysis Personality ($*.p_a$): \\
-Erläuterung, warum die Regel benötigt wird.
-\item Message Personality ($*.p_s$): \\
-Beschreibung der Fälle, bei denen die betrachtete Regel nicht gilt.
-\end{itemize}
-
-
-Inerhalb der Datei $*.p_c$ musste ich die Definition $\_WIN32 \quad \_WINNT$ anpassen, da auf dem Computer, auf dem die statische Codeanalyse durchgeführt werden soll, ein 64-bit-Betriebssystem läuft. Somit sollen manche Makros angepasst oder sogar außer Betracht gelassen werden .
+Um die Analyse des Projekts zu starten, wurden die folgenden Listings erstellt: 
 %
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=1]{./Bilder/QAC2.pdf}
-\caption{QAC}
-\label{fig:QAC2}
-\end{figure}
-%
-\paragraph*{\uppercase{Lösungsansatz zum Vergleich der relevanten MISRA-Versionen}}
-%
-Die Version des genannten Analysewerkzeugs, für das Vector über eine Lizenz verfügt, ist die 7.0. Diese Version unterstützt die Untersuchung von Software-Produkten darauf, ob diese mit dem MISRA-C:2004-Standard konform gehen. 
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize, caption = {Compiler personality file QA-C.p\_c}, label={lst:QAC_p_c}]
+-i "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include" 
+-i "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include" 
+-q "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include" 
+-q "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include" 
+-it "ptrdiff_t=int"
+-it "wchar_t=unsigned short"
+-d "__alignof(type)=1"
+-d "__based(type)="
+-d "__cdecl="
+-d "__COUNTER__=1"
+-d "__declspec(arg)="
+-d "__declspec=_ignore_paren"
+-d "__event="
+-d "__far="
+-d "__fastcall="
+-d "__forceinline=inline"
+-d "__FUNCDNAME__=__FUNCTION__"
+-d "__FUNCSIG__=__FUNCTION__"
+...
+\end{lstlisting}
 
-Für einen möglichen Umstieg auf MISRA 2012 sind somit die Unterschiede der beiden betrachteten MISRA Standards wie oben erläutert genauer zu analysisieren und gegenüberzustellen. Es ist jedoch nicht nur der obiger Vergleich nötig, dazu sind die QA-C Versionen 7.0 und 9.0 in Bezug auf unterstützte Regeln und Toolnutzung miteinander zu vergleichen.
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize, caption = {Analysis personality file QA-C.p\_s}, label={lst:QAC_p_s}]
+-rem "ShellExe=C:\Program Files (x86)\PRQA\QAC-7.0\m2cm\bin\qacsa_m2cm.exe"
+-rem "EnablePostAnalysis=1"
+-rem "ShellParams=%Q %F -forget cmaf"
+-up "d:\uti\CDK\Tools\QAC\m2cm\messages\" 
+-usr .m2cm
+-l+
+-format "%?u==0%(%q%:%?F%(%F%)%)(%l,%c) : %?u==0%(%?h%(Err%:Msg%)%:-->%)(%g:%N) %R(%u,  )%t MisraId %v"
+-max 0
+-m+
+-st+
+-hdr-
+-summary-
+-references+
+-onelineonly-  
+-hiddenwarnings-
 
+-o 9
+-o 40
+-o 41
+-o 42
+-o 97
+-o 159
+...
+\end{lstlisting}
 
-Nachdem die richtigen Einstellungen für ein QAC-Projekt ausgewählt und vorgenommen wurden, haben die ersten Analysen stattgefunden, welche Hinweise auf eventuell fehlerhafte Teile beim Code ausgaben. Die Analyse im nächsten Unterkapitel.
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize, caption = {Message personality file QA-C.p\_a}, label={lst:QAC_p_a}]
+-il 0
+-i "D:\usr\Task_01\QAC_Eval\SimpleComponent\Code\Relevant"                    
+-i "D:\usr\Task_01\QAC_Eval\SimpleComponent\Code\Includes"                    
+-q "D:\usr\Task_01\QAC_Eval\SimpleComponent\Code\Includes"         
+-d "__MSVC_RUNTIME_CHECKS"
+-d "_CHAR_UNSIGNED"
+-d "_CONSOLE"
+-d "_CPPRTTI"
+-d "_DEBUG"
+-d "_DLL"
+-d "_MT"
+-d "_UNICODE"
+-d "CDK_CHECK_MISRA"
+-d "UNICODE"
+-d "VECTOR_DEBUG"
+-sty exdented
+-tab 2
+-en ASC
+-maxerr 0
+...
+\end{lstlisting}
+
+Mithilfe dieser Dateien fiel es mir einfacher zu verstehen, wie die oben genannten Einstellungen über die \textit{personality files} durchzuführen sind. In \lstref{lst:QAC_p_c} lässt sich beispielweise erkennen, wie bei den QA-C-Compiler-Optionen $-i$ die Suchpfade für den beim analysierten Projekt verwendeten Compiler vorgegeben werden. Analog lassen sich projektabhängige Include-Pfade am Anfang der \textit{personality file} QA-C.p\_a (siehe \lstref{lst:QAC_p_a}) angeben.
 %
-
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=1]{./Bilder/QAC3.pdf}
-\caption{QAC}
-\label{fig:QAC3}
-\end{figure}
+\paragraph*{Lösungsansatz zum Vergleich der relevanten MISRA-Versionen}
 %
-\section{Vierte Woche}
+Wie schon oben einführend erwähnt verfügt die PES-Abteilung über eine Lizenz der QA-C 7.0-Version, mit deren Hilfe die Konformität von eingebetteter Software mit dem MISRA-C:2004-Standard überprüft wird. 
+
+Für einen möglichen Umstieg auf MISRA-C:2012 ist es somit unabdingbar, dass die Unterschiede der beiden betrachteten MISRA Standards genauer analysisiert und gegenüberzustellt werden. Es erweist sich gleichzeitig als sinnvoll,  die QA-C Versionen 7.0 und (die aktuelle) 9.0 in Bezug auf unterstützte Regeln und Toolnutzung miteinander zu vergleichen.
+
+Das aktuelle Release (9.0) der QA-C-Software unterstützt beide Versionen des MISRA-Standards (2004 und 2012). Erst dieses Jahr veröffentlichte QA-Systems das genannte Release, deswegen war es nur mithilfe einer Testlizenz möglich, die genannten Vergleiche durchzuführen.
+
+Ziel dieser Aufgabe ist es im Endeffekt, die Möglichkeit zu betrachten, den Umstieg auf den MISRA 2012-Standard zu automatisieren. Der Fall, dass dieser Umstieg mit sehr viel Aufwand verbunden ist, kann nicht ausgeschlossen werden.  
+
+Ein möglicher Ansatz, die obigen Stadards und deren genannten Versionen gegenüberzustellen, besteht darin, die unterschiedlichen zwischen den Versionen 7.0 und 9.0 veröffentlichten Release Notes der QA-C-Software zu betrachten. 5 Relevanten Dokummenten wurden ausgesucht und einer ausführlichen Analyse unterzogen.
+
+Es wäre zu erwarten, dass die Analyse des Base Line Projekts mit der 
+
+Dazu sind neben dem oben genannten Single Component-Projekt ein zweites Projekt (Baseline) sowohl mit QA-C 7.0 als auch mit QA-C 9.0 analysiert worden. Die entsprechende Ergebnisse sind im nächsten Kapitel dargestellt.
+%
+\newpage
+\section{Vierte Woche}\label{sec:VierteWoche}
 %
 \subsection{Wochenübersicht}
 %
