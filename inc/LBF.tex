@@ -61,7 +61,7 @@ Eine Vielzahl an Regeln sind dabei veröffentlicht worden, um robusteren und zuve
 
 Der zahlreiche Einsatz der MISRA C:2004-Version über die Jahre hat vielfältige Ergänzungen und Verbesserungen als Folge gehabt. Die Regeln sind jetzt bei MISRA C:2012 so definiert und beschrieben, dass die Begründungen für ihre Nutzung umfangreicher wurden. 
 
-Die Kodierungsstandards von Vector Informatik richten sich momentan noch nicht nach der aktuellen MISRA C:2012-Version~\cite{MISRACodeMetric}. Der Hauptgrund liegt darin, dass bei dem neuen Standard die Mehrheit der Regeln umnummeriert und umstrukturiert wurden. Das bedeutet, dass sich ein Umstieg von der letzten MISRA-C:2004-Version auf die aktuelle Version nicht automatisiert durchführen lässt.
+Die Kodierungsstandards von Vector Informatik richten sich momentan noch nicht nach der aktuellen MISRA C:2012-Version~\cite{MISRACodeMetric}. Der Hauptgrund liegt darin, dass bei dem neuen Standard die Mehrheit der Regeln umnummeriert bzw. umstrukturiert wurden. Das bedeutet, dass sich ein Umstieg von der letzten MISRA-C:2004-Version auf die aktuelle Version nicht direkt durchführen lässt, ohne davor einen entsprechenden Aufwand zu investieren.
 %
 \begin{figure}[!htp]
 \centering
@@ -353,16 +353,18 @@ Bei der Analyse sind 6 relevanten release notes ausgewählt und einer ausführlich
 
 Die in \figvref{fig:QAC7_9Zusam} gezeigte Excel-Tabelle zeigt das Ergebnis der durchgeführten Untersuchung.
 %
+\begin{landscape}
 \begin{figure}[!htp]
 \centering
-\includegraphics[angle=90,scale=0.55]{./Bilder/QAC7_9Zusam.pdf}
+\includegraphics[scale=0.55]{./Bilder/QAC7_9Zusam.pdf}
 \caption{QAC}
 \label{fig:QAC7_9Zusam}
 \end{figure}
+\end{landscape}
 %
 
 Dabei ist auf der linken Seite des Bilds zu erkennen, dass eine Vielzahl von QA-C zugehörigen Regeln aufgezeichnet sind. Insgesamt konnte man 6150 QA-C-Nachrichten und deren entsprechenden Eigenschaften zusammenfassen.
-\newpage
+
 Folgende sind die Bewertungskriterien:
 %
 \begin{itemize}
@@ -417,7 +419,7 @@ Die Dokumentation, welche von QA-Systems zur Verfügung gestellt wird, sollte som
 
 Analog zum Unterkapitel \ref{QAC7Einf} werden im Folgenden die Einstellungsfiles eines QA-C9 Projekts zusammenfassend beschrieben:
 
-\begin{itemize}
+\begin{itemize}\label{it:ConfFileQA9}
 \item Analysis Configuration File (ACF): \\
 definiert die Analyse-Einstellungen, die projektabhängig sind wie Include-Pfade, projektabhänigie Defines, usw.
 \item  Rule Configuration File (RCF): \\
@@ -463,32 +465,88 @@ Die durchgeführte Analyse erwies sich als umständlich und erforderte starke Konz
 
 Da bisher in der Abteilung einige Mitarbeiter bei der Programmierung mit PERL große Erfahrung gesammelt haben, entschloss ich mich diese Programmiersprache zur Bearbeitung der Konfigurationsdateien einzusetzen. Eine geeignete IDE, mit der es möglich ist, PERL-Skripte zu erstellen, kompilieren und Debuggen ist nicht leicht zu finden. Eine gute alternative bietet die als Eclipse-Plugin kostenlos zur Verfügung stehende EPIC-IDE. Diese stellt nicht nur die Möglichkeit dar, PERL-Skripte zu bearbeiten, sondern auch diese zu kompilieren und zu debuggen.
 
-In \figvref{fig:EPICskr1} wird sowohl der erste erstellte PERL-Skript als auch die genannte EPIC-IDE gezeigt. Mithilfe des erstellten Skripts war es möglich, die oben beschriebene Aufgabe zu lösen. Der komplette Skript wird im Anhang \ref{cha:tools} angegeben.
+In \figvref{fig:EPICskr1} werden sowohl ein kleiner Teil des ersten erstellten PERL-Skripts als auch die genannte EPIC-IDE gezeigt.
+
+Bei dieser Aufgabe  Mithilfe des erstellten Skripts war es möglich, die oben beschriebene Aufgabe zu lösen. Der vollständige Skript befindet sich in \lstref{lst:PERL_Dateiueb}.
 
 %
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.45]{./Bilder/EPIC_skr1.pdf}
+\includegraphics[scale=0.55]{./Bilder/EPIC_skr1.pdf}
 \caption{EPICskr1}
 \label{fig:EPICskr1}
 \end{figure}
 
-Die Übertragung der Dateien war nicht die einzige Aufgabe, die zum Erstellen des QAC 9.0-Projektes durchgeführt werden musste. Es war außerdem notwendig die Pfade der einzelnen zu analysierenden Dateien anzugeben. Wie im Bild XX zu erkennen ist, bedient sich QAC9.0 einer XML-Konfigurationsdatei, aus der das Programm nicht nur die Pfade der Dateien entnimmt, sondern auch weitere wichtige Einstellungen, die im Prinzip sich auch über die GUI angeben lassen. Diese Methode bzw. die XML-Datei zu bearbeiten, ist jedoch hilfreich, um das Aufrufen des Programms implizit beispielsweise über die Console zu ermöglichen. Dies wird in einem späteren Szenario meiner Tätigkeit nötig sein, damit man eine statische Code-Analyse für die verschiedene Abteilungen automatisieren und somit vereinfachen kann. 
+Die Übertragung der Dateien war nicht die einzige Aufgabe, die zum Erstellen des QA-C9-Projektes durchgeführt werden musste. Es war außerdem notwendig die Pfade der einzelnen zu analysierenden Dateien anzugeben. Wie weiter oben in diesem Kapitel erläutert, bedient sich QA-C9 einer XML-Konfigurationsdatei, um dabei sowohl die Pfade der zu analysierenden Dateien als auch weitere wichtige Einstellungen zu entnehmen.
 
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=1]{./Bilder/QAC7.pdf}
-\caption{QAC}
-\label{fig:QAC7}
-\end{figure}
+Diese XML-Datei als Textdatei so zu behandeln, dass dabei die richtige Einträge hinzugefügt werden, ist sehr hilfreich, um eine automatisierte statische Codeanalyse von sehr vielen Sourcefiles durchzuführen. Dazu wird ein von QA-Systems zur Verfügung gestellte Compiler (QA-CLI) mit den richtigen Optionen aufgerufen, wobei dem Compiler auch die richtigen QA-C9-Konfigurationsdateien zur Verfügung stehen müssen. Diese Methode hat man zwar bisher in der Abteilung eingesetzt, der dabei verwendeter Compiler gehört zu der QA-C7-Version \cite{MISRACodeMetric}.
 
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=1]{./Bilder/QAC8.pdf}
-\caption{QAC}
-\label{fig:QAC8}
-\end{figure}
+Eine genaue Beschreibung der Kompilerbefehle (QA-CLI) bezüglich der QA-C9-Version können in \cite{PRQA9}~nachgelesen werden.
+
+Mit dem Ziel ein QA-C-Projekt automatisiert über den genannten Compiler auszuführen, habe ich ebenfalls einen PERL-Skript programmiert. Dieser bearbeitet einen vorhandenen Template-File eines QA-C9-Projekts, welches nur wenige Einträge enthält und fügt die relevanten, zu analysierende Files und deren Pfadenamen hinzu. Das Ergebnis nach der Ausführung des in \lstref{lst:PERL_XML} angegebenen PERL-Skripts kann im folgenden Listing betrachtet werden:
 %
+\definecolor{forestgreen}{RGB}{34,139,34}%definition fuer xml Comment style 
+
+\begin{lstlisting}[language=XML, caption = {Compiler personality file QA-C.p\_c}, label={lst:QAC9_xml}]
+...
+  <language target="C++">
+   <extension ext=".cxx"/>
+  </language>
+  <language target="C++">
+   <extension ext=".cc"/>
+  </language>
+  <language target="C++">
+   <extension ext=".CPP"/>
+  </language>
+  <language target="C++">
+   <extension ext=".CXX"/>
+  </language>
+  <language target="C++">
+   <extension ext=".CC"/>
+  </language>
+ </file_extensions>
+ <!-- Files in project... -->
+ <files>
+  <!-- Explicit files... -->
+  <file target="C" name="Adc.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="BswM.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Can.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Can_Irq.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="CanIf.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="CanNm.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="CanSM.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="CanTp.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="CanTrcv_30_GenericCan.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="CanTSyn.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="CanXcp.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Com.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="ComM.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Crc.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Cry.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Cry_AesDecrypt128.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Cry_AesEncrypt128.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Cry_Fips186.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Cry_HmacSha1.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Cry_RsaDecrypt1024.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Cry_RsaSha1SigVer.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Csm.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Dbg.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Dcm.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Dcm_Ext.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Dem.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Det.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Dio.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="Dlt.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="DoIP.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="E2E.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="E2E_P01.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="E2E_P02.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="E2E_P04.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+  <file target="C" name="E2E_P05.c" folder="=Z:/PES/PES1/res/Task01/QAC_Analysen/Relevant"/>
+...
+\end{lstlisting}
+%
+\newpage
 \section{Sechste Woche}
 %
 \subsection{Wochenübersicht}
@@ -497,10 +555,43 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Nachdem die Einstellungen für das oben erwähnte Projekt durchgeführt worden sind, lässt sich die statische Codeanalyse mit Hilfe der neuen QAC-Version (9.0) durchführen. Es muss dabei untersucht werden, inwiefern die aktuellen Projekte sich mit Hilfe der neuen QAC-Version analysieren lassen, ohne dass dabei beispielsweise eine große Menge von falsch positiven bzw. negativen Nachrichten ausgegeben werden.
-
-Eine Möglichkeit, dies zu realisieren, besteht darin, ein mit Hilfe der 7.0-QAC-Version bereits analysiertes Projekt ebenfalls mit Hilfe der 9.0-QAC-Version zu analysieren und anschließend die entsprechende Reports zu miteinander zu vergleichen.
+\subsubsection{Zweite Aufgabenstellung}
 %
+In den folgenden Tagen wurde mir die 2. Aufgabe meiner Arbeitstätigkeit bei Vector vorgestellt. 
+
+Ein Basic Test Environment (BTE) ist ein in Vector entwickeltes und eingesetztes Component Unit Test Framework, mit dessen Hilfe man auf einem beliebigen Rechner hardwareunabhängige (AUTOSAR-) BSW-Komponeneten testet \cite{BTE}.
+
+Die in \figvref{fig:BTE_func1} vorgestellte BTE-Version bietet verschiedene Testsfunktionalitäten, u.a. das Emulieren einer inneren ECU-Umgebung, die Ereignisprotokollierung und das Erstellen von entsprechenden Reports \cite{BTE}.
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.8]{./Bilder/BTE_func1.pdf}
+\caption{Framework-Emulation of ECU environment on a PC. Entnommen aus \cite{BTE}.}
+\label{fig:BTE_func1}
+\end{figure}
+%
+
+Gegenüber diesen Vorteilen gibt es jedoch auch einen Nachteil, der sich eher als eine Einschränkung des genannten Tools äußert. Mithilfe der BTE lassen sich nämlich die jeweiligen Testreports lediglich auf einem lokalen Rechner ausgeben und abspeichern, da die BTE betriebssystemabhängige Funktionen u.a. zur formatierten Ein- und Ausgabe von Strings verwendet. Diese Funktionalitäten benötigen somit viele Hardwareresourcen. 
+
+Es wäre diesbezüglich auch vorteilhalft, diese Funktionalitäten so anzupassen, dass diese direkt auf einer beliebig eingebetteten Hardware lauffähig sind. Die Komponententests (Component Unit Test) könnten dadurch unter realen bzw. Echtzeitbedingungen durchgeführt werden.
+
+Die Aufgabestellung basiert somit auf der beschriebenen Anforderung, das BTE-Tool so zu erweitern, dass dieses auch auf der Hardware lauffähig ist, wo gleichzeitig die CUT\footnote{Component under test} laufen soll. 
+%
+\subsubsection{Durchführung der zweiten Aufgabenstellung}
+%
+Eine Hardware, die ein Beispiel eines eingebetteten System darstellt und auf der die BTE lauffähig sein soll, wurde mir zur Verfügung gestellt. Es handelte sich dabei um das STM32F4-DiscoveryBoard.
+
+Um die Hauptaufgabe zu lösen, war es notwendig das genannte Entwicklungsboard in Betrieb zu nehmen und mir dabei eine passende Entwicklungsumgebung auszusuchen. Diese sollte dementsprechend geignete 
+Compiler- und Linker-Bibliotheken zur Verfügung stellen, die das Erstellen einer Applikation für den auf dem Entwicklungsboard eingebauten Mikrocontroller unterstützen. Dabei handelt es sich um eine Cortex-M4-Hardwarearchitektur.
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.4]{./Bilder/stm32f4_discovery.jpg}
+\caption{Verwendete Test-Hardware (STM32F4), auf welcher die RT-BTE lauffähig sein soll.}
+\label{fig:BTE_func1}
+\end{figure}
+%
+\newpage
 \section{Siebte Woche}
 %
 \subsection{Wochenübersicht}
@@ -509,16 +600,99 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Die Aufgabe der letzten Woche musste fortgesetzt werden. Die Daten aus den Analyseergebnissen mussten extrahiert werden. Einerseits wird dies vom QAC-Programm selbst dadurch erledigt, dass in Form von *.xml-Dateien die verschiedenen verletzten MISRA-Regel bzw. QAC-Warnungen ausgegeben werden. Diese Form der Datendarstellung ist für die Datenübertragung geeignet, jedoch nicht dafür, dass Trends und Zusammenhänge erkannt werden. Diese Daten müssen erstmal extrahiert und so bearbeitet werden, dass ein Mensch diese verstehen und verwenden kann.
+Zwei Mögichkeiten können betrachtet werden, um mit den knappen Softwareressourcen der Embedded Platform umzugehen:
 
-Eine *.xml-Datei lässt sich mit Hilfe einer xslt-Transormation so bearbeiten, dass die enthaltenen Daten als eine Tabelle und beispielsweise als eine *.txt-Datei dargestellt werden kann. (Hierbei muss ich eine genaue Beschreibung der XSLT-Transformation angeben)
+\begin{itemize}
+\item Man bindet entsprechende Ersatzbibliotheken ein, bei denen der Verbrauch der Ressouercen in Grenzen gehalten wird.
+\item Man bietet dem Anwender die Möglichkeit an, durch entsprechende Routinen diejenigen Teile vom Code beim Kompiliervorgang auszublenden, die nicht einzusetzen sind.
+\end{itemize}
 
-Eine Art, die Daten besser darzustellen sind Excel-Tabellen, wie in der unteren Tabelle zu erkennen ist. Die in den beschriebenen *.xml-Dateien enthaltenen Daten können dadurch besser miteinander vergliechen werden.
+Die zweite Möglichkeit wird zur Lösung der Aufgabe umsetzt und wie folgt vorgegangen:
 
-Ich musste auch anfangen, mich mit den qacli-Befehlen zu beschäftigen, da diese auch eine wichtige Rolle spielen, wenn man über die Konsole eine automatische statische Analyse ermöglichen möchte. (Hier sollte ich versuchen, Markus Bilder wiederzugeben). Die wichtigsten QACLI befehle auch hier angeben.
+Mit vorhandenen und zusätzlich eingebauten Präprozessor-Direktiven (\verb+#define+) wird die Möglichkeit geboten, die Methodensaufrufe auszublenden, die zu viele Rechenressourcen benötigen, um richtig zu funktionieren. Ebenfalls sollten solche Methodensaufrufe ausfallen, die auf der eingebetteten Hardware nicht kompilierbar sind, da diese Hardwareressourcen verwenden, die nicht zur Verfügung stehen. Ein Beispiel dazu sind solche Methoden, die das lokale Abspeichern von Dateien ermöglichen.
 
-Als letztes habe ich die erstellten PERL- bzw. Batch-Dateien zum Aufrufen letzterer in dem Netzwerkordner gespeichert! 
+Bekannte Methodensaufrufe, die obige Eigenschaften besitzen, sind folgende: fopen, fclose, sprintf, usw. 
+
+Mithilfe der neu eingeführten Direktive \verb+#define USE_PRINTF+ werden alle Methodensaufrufe ausgeblendet, die lediglich mit Strings umgehen. Dies ermöglicht somit solche Methoden nur dann einzusetzen, wenn die Hardware genug RAM zur Verfügung stellt.
+
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteTestHandler.c}, label={lst:useprintf1}]
+...
+typedef struct stBteTestSequence
+{
+  uint16 id_num;
+  uint8 isOpen;
+#if defined ( USE_PRINTF )
+  char  description_id[50];
+  char  description_name[100];
+  char  description_parameter[100];
+  char  description_purpose[100];
+  char  description_reference[100];
+  char  description_text[1000];
+#endif
+} tBteTestSequence;
+...
+\end{lstlisting}
+
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteCheck.c}, label={lst:useprintf1}]
+...
+void BteAvailableOk( char *text )
+{
+#if defined USE_PRINTF
+  char output[kBteTextSize];
+  sprintf( output, "%s is available (as expected)", text );
+  BteOk( output );
+#else
+  BteOk( text );
+#endif
+
+}
+...
+\end{lstlisting}
+
+Durch das Umdefinieren einer schon vorhandenen Direktive \verb+#define BTE_ENABLE_TESTREPORT+ wird ein Ausblenden der oben genannten Methodensaufrufe möglich, die mit dem Erstellen und der lokalen Abspeicherung von Dateiobjekten umgehen. 
+
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteReport.c}, label={lst:usefprintf1}]
+...
+void BteReport_Write( char *text )
+{
+#if defined ( BTE_ENABLE_TESTREPORT )
+  if( pBteTestReport != 0 ) 
+  {
+    fprintf( pBteTestReport, "%s\n",text );
+  }
+#endif
+}
+...
+\end{lstlisting}
 %
+
+\verb+#define NOTUSE_HARDWARE+ wurde ebenfalls eingeführt, um in dem Template-File, die hardwareabhängige Funktionsaufrufe einzublenden, wenn die BTE auf dem eingebetteten System verwendet wird.
+%
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:usehardware}]
+...
+/* Hardware Includes */
+#if defined ( USE_HARDWARE )
+#include "stm32f4xx_hal.h"
+#include "stm32f4_discovery.h"
+#endif
+...
+#if defined ( USE_HARDWARE )
+  ConfigSTM32F4();
+#endif
+...
+#if defined (USE_HARDWARE)
+  /* Infinite loop */
+  while (1)
+  {
+    BSP_LED_Toggle(LED4);
+    HAL_Delay(1000);
+ }
+#endif
+...
+\end{lstlisting}
+%
+%
+\newpage
 \section{Achte Woche}
 %
 \subsection{Wochenübersicht}
@@ -527,28 +701,6 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Markus hat mir am Dienstag (Montag war ja Feiertag) die zweite Aufgabe vorgestellt. Dabei handelte es sich um das Modifizieren bzw. das Anpassen eines Frameworks zum automatisierten Testen von Software-Module. Ein sogenanntes Basic Test Environment (BTE) gehört zu dem genannten Testframework (Bilder hinzufügen), welches hardware unabhängig Software-Komponenten auf einem beliebigen PC testet. Bei den Tests werden wie in der Abbildung gezeigt von der BTE Nachrichten aus den Testergebnissen erstellt und in verschiedenen Report-Dateien aufgelegt. Auf diese Art und Weise kann der Software-Tester oder der Anwender einfacher überprüfen, in welchen Stellen des getesteten Codes es fehlerhafte Module gibt oder Warnungen auftauchen.
-
-Zu meiner Aufgabe gehört, diese Möglichkeit so zu erweitern, dass die BTE auch auf einer beliebigen Hardware läuft, d.h. hardwareunabhängig, wobei die Möglichkeit geboten sein muss, entsprechende Reports zu erstellen. Die Reports können in diesem Fall nicht mehr als entsprechende Dateien auf dem Rechner abgelegt werden, viel mehr muss eine Methode  gefunden werden, wie der Report auf der RAM temporär zu speichern ist.
-%
-\section{Neunte Woche}
-%
-\subsection{Wochenübersicht}
-%
-Tabelle
-%
-\subsection{Arbeitsbericht}
-%
-In der BTE Software sind Methoden (sprintf, printf) verwendet, die die formatierte Ein- und Ausgabe von Strings ermöglichen. Zudem werden Methodenaufrufe wie fprintf oder fopen eingesetzt, die der Umgang mit Streams bzw. die Erstellung einer Datei ermöglichen.
-
-Zwei Mögichkeiten können betrachtet werden, um mit den knappen Softwareressourcen der Embedded Platform umzugehen:
-
-\begin{itemize}
-\item Man bindet entsprechende Ersatzbibliotheken ein, bei denen der Verbrauch der Ressouercen in Grenzen gehalten wird.
-\item Man bietet dem Anwender die Möglichkeit an, durch entsprechende Routinen diejenigen Teile vom Code beim Kompiliervorgang auszublenden, die nicht einzusetzen sind.
-\end{itemize}
-
-Die zweite Lösung wird so angewendet, dass die nicht kompatiblen Codestellen mit vorhandenen und zusätzlich eingebauten Präprozessor-Direktiven \lstinline$#define$\ \grqq auskommentiert\glqq werden.
 
 XXX Bild zur Architektur des Reports, welches auf der RAM gespeichert wird. 
 
@@ -570,12 +722,16 @@ Da die Reports auf einer beliebigen Hardware zu implementieren sind, sollte eine
 
 Das genannte Board lässt sich über ST-Link-Treiber flaschen , welcher vom Hersteller zur Verfügung gestellt wird.
 %
+\begin{landscape}
 \begin{figure}[!htp]
+%\fbox{\begin{minipage}{21.8cm}% 
 \centering
-\includegraphics[angle=90,scale=0.5]{./Bilder/eclipsegit.pdf}
+\includegraphics[scale=0.5]{./Bilder/eclipsegit.pdf}
+%\end{minipage}}%
 \caption{eclipsegit}
 \label{fig:eclipsegit}
 \end{figure}
+\end{landscape}
 %
 Der auf dem Mikrocontroller erzeugte Report sollte auf einer Speicher sparenden Art und Weise erstellt werden. Man hat sich 2 Möglichkeiten überlegt, wie dies geschehen soll. Letzteres wird im Folgenden Bild wiedergeben:
 
@@ -595,12 +751,14 @@ In der vorliegenden Woche war meine Aufgabe das Perl Programm zu pflegen und ein
 
 Die aktuelle Version meiner Anwendung erzeugt das auf dem linken Teil gezeigtem File im xml-Format. Das rechts davon gezeigte File ist das Report, welcher wie bereits oben erwähnt bei einem Test auf dem Computer erzeugt wird. Die Unterschiede lassen sich dadurch erklären, dass manche Features, die im auf dem Computer erstellten Report in dem auf der RAM gespeicherten Report nicht relevant sind und somit nicht darzustellen sind. 
 %
+\begin{landscape}
 \begin{figure}[!htp]
 \centering
-\includegraphics[angle=90,scale=0.45]{./Bilder/reports.pdf}
+\includegraphics[width=\linewidth,height=150mm]{./Bilder/reports.pdf}
 \caption{reports}
 \label{fig:reports}
 \end{figure}
+\end{landscape}
 %
 Das Bild zum UML Statechart sollte ich mal einfügen und von Markus checken lassen und endgültig hier einfügen.
 

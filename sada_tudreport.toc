@@ -25,36 +25,31 @@
 \contentsline {section}{\numberline {2.5}F\"unfte Woche}{17}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Wochen\"ubersicht}{17}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Arbeitsbericht}{17}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Sechste Woche}{21}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Wochen\"ubersicht}{21}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Arbeitsbericht}{21}{subsection.2.6.2}
-\contentsline {section}{\numberline {2.7}Siebte Woche}{21}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Wochen\"ubersicht}{21}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Arbeitsbericht}{21}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Achte Woche}{24}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Wochen\"ubersicht}{24}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Arbeitsbericht}{24}{subsection.2.8.2}
-\contentsline {section}{\numberline {2.9}Neunte Woche}{25}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Wochen\"ubersicht}{25}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Arbeitsbericht}{25}{subsection.2.9.2}
-\contentsline {section}{\numberline {2.10}Zehnte Woche}{25}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Wochen\"ubersicht}{25}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Arbeitsbericht}{26}{subsection.2.10.2}
-\contentsline {section}{\numberline {2.11}Elfte Woche}{26}{section.2.11}
-\contentsline {subsection}{\numberline {2.11.1}Wochen\"ubersicht}{26}{subsection.2.11.1}
-\contentsline {subsection}{\numberline {2.11.2}Arbeitsbericht}{26}{subsection.2.11.2}
-\contentsline {section}{\numberline {2.12}Zwolfte Woche}{26}{section.2.12}
-\contentsline {subsection}{\numberline {2.12.1}Wochen\"ubersicht}{29}{subsection.2.12.1}
-\contentsline {subsection}{\numberline {2.12.2}Arbeitsbericht}{29}{subsection.2.12.2}
-\contentsline {chapter}{\numberline {3}Zusammenfassung und Ausblick}{31}{chapter.3}
-\contentsline {chapter}{\numberline {A}Motorpr\"ufstand des IAT}{33}{appendix.A}
-\contentsline {chapter}{\numberline {B}Verwendeter Dieselmotor und entsprechendes Simulationsmodell}{35}{appendix.B}
-\contentsline {section}{\numberline {B.1}Motordaten}{35}{section.B.1}
-\contentsline {section}{\numberline {B.2}Verwendetes Simulink-Modell des Dieselverbrennungsmotors}{35}{section.B.2}
-\contentsline {chapter}{\numberline {C}Softwaredokumentation}{37}{appendix.C}
-\contentsline {section}{\numberline {C.1}Berechnung der Schwerpunktlage der Verbrennung $\phi _{Q50}$}{37}{section.C.1}
-\contentsline {section}{\numberline {C.2}Berechnung des Druckgradienten}{40}{section.C.2}
-\contentsline {chapter}{\numberline {D}Pr\"ufstandsmessdaten}{43}{appendix.D}
-\contentsline {chapter}{Abbildungsverzeichnis}{45}{section*.29}
-\contentsline {chapter}{Tabellenverzeichnis}{47}{section*.33}
-\contentsline {chapter}{Literaturverzeichnis}{49}{section*.37}
+\contentsline {section}{\numberline {2.6}Sechste Woche}{23}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Wochen\"ubersicht}{23}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Arbeitsbericht}{23}{subsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.2.1}Zweite Aufgabenstellung}{23}{subsubsection.2.6.2.1}
+\contentsline {subsubsection}{\numberline {2.6.2.2}Durchf\"uhrung der zweiten Aufgabenstellung}{24}{subsubsection.2.6.2.2}
+\contentsline {section}{\numberline {2.7}Siebte Woche}{25}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Wochen\"ubersicht}{25}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Arbeitsbericht}{25}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Achte Woche}{28}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Wochen\"ubersicht}{28}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Arbeitsbericht}{28}{subsection.2.8.2}
+\contentsline {section}{\numberline {2.9}Zehnte Woche}{28}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Wochen\"ubersicht}{28}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Arbeitsbericht}{28}{subsection.2.9.2}
+\contentsline {section}{\numberline {2.10}Elfte Woche}{30}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Wochen\"ubersicht}{30}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Arbeitsbericht}{30}{subsection.2.10.2}
+\contentsline {section}{\numberline {2.11}Zwolfte Woche}{32}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Wochen\"ubersicht}{32}{subsection.2.11.1}
+\contentsline {subsection}{\numberline {2.11.2}Arbeitsbericht}{32}{subsection.2.11.2}
+\contentsline {chapter}{\numberline {3}Zusammenfassung und Ausblick}{33}{chapter.3}
+\contentsline {chapter}{\numberline {A}Softwaredokumentation}{35}{appendix.A}
+\contentsline {section}{\numberline {A.1}Datei\"ubertragung }{35}{section.A.1}
+\contentsline {section}{\numberline {A.2}Bearbeitung einer XML-Datei}{38}{section.A.2}
+\contentsline {chapter}{\numberline {B}Pr\"ufstandsmessdaten}{41}{appendix.B}
+\contentsline {chapter}{Abbildungsverzeichnis}{43}{section*.26}
+\contentsline {chapter}{Tabellenverzeichnis}{45}{section*.30}
+\contentsline {chapter}{Literaturverzeichnis}{47}{section*.34}

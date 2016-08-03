@@ -1,50 +1,3 @@
-\chapter{Motorprüfstand des IAT}\label{cha:motorprüfstand}
-%
-Die experimentelle Untersuchung des Versuchsmotors erfolgt am hochdynamischen Motorprüfstand des Instituts für Automatisierungstechnik der TU Darmstadt \ref{fig:Motopruefstand_cropped}. Es handelt sich dabei um einen modern ausgestatteten Prüfstand bei dem die Versuchsträger auf Rollenwagen aufgebaut und mit Schnellkupplungen für die Kraftstoff- und Kühlwasserversorgung versehen sind. Das Rollenwagenkonzept ermöglicht einen Austausch der Versuchsmotoren in kürzester Zeit.
-
-Eine Asynchronmaschine zählt zu den weiteren Bestandsteile des Prüfstands, denn durch sie erfolgt die Belastung des Motors.
-Diese wird üblicherweise drehzahlgeregelt betrieben. Sie erzeugt abhängig vom gewählten Motorbetriebspunkt ein positives oder negatives Belastungsmoment (generatorischer bzw. motorischer Betrieb). Die Momentenanregelzeit des Systems aus Umrichter und Asynchronmaschine liegt unter 5ms. Der Prüfstand ist damit insbesondere für die Untersuchung dynamischer Fahrzustände geeignet. 
-
-Ein RCP-System\footnote{engl. Rapid Control Prototyping} steuert den Frequenzumrichter der Asynchronmaschine, die Abgasanlage, die Messtechnik und regelt das Kühlsystem~\cite{Zahn}.
-%
-\chapter{Verwendeter Dieselmotor und entsprechendes Simulationsmodell}\label{cha:verbrennungsmotorDaten}
-%
-\section{Motordaten}
-%
-Der Versuchsmotor ist ein Opel/Fiat 1.9l Common-Rail Dieselmotor. Es ist mit einer Hochdruckabgasrückführung und einem Abgasturbolader mit variablen Turbinengeometrie ausgestattet. Eine Niederdruckabgasrückführung-Einrichtung wurde nachträglich eingebaut.
-
-%
-\begin{minipage}{0.35\textwidth}
-%\includegraphics [width=\columnwidth]{}
-\end{minipage}
-\begin{minipage}{0.35\textwidth}
-\begin{tabular}{|l|l|}
-\hline
-Hersteller & GM/Opel und Fiat \\
-Motorbezeichnung & Z19DTH (4V) \\
-Kreisprozess & Viertaktmotor \\
-Zylinderzahl & 4 \\
-Hubraum & 1910 $cm^3$ \\
-Verdichtungsverhältnis & 17.5 \\
-Max. Leistung(bei 4000 $min^{-1}$) & 110 kW \\
-Max. Drehmoment(bei 2000 $min^{-1}$) & 315 Nm \\
-Leerlaufdrehzahl & 850 $min^{-1}$ \\
-Maximale Drehzahl & 5100 $min^{-1}$ \\
-\hline 
-\end{tabular}
-\end{minipage}
-%
-\section{Verwendetes Simulink-Modell des Dieselverbrennungsmotors}
-%
-In Abbildung \ref{fig:gesamtModellSim} ist der modellierte Dieselmotor dargestellt. Das links im Bild gelegene Luftpfadmodell liefert dem Verbrennungsmodell (rechte Seite) die entsprechenden Luftpfadsgrößen Gaszusammensetzung $x_{2EB}$ bzw. $x_3$, die Temperatur $T_{2EB}$ bzw. $T_3$ und die Drücke $P_{2EB}$ bzw. $P_3$ des jeweiligen Einlass- und Auslassbehälters. Das Verbrennungsmodell führt nach einem Arbeitsspiel die berechnete SPL zurück zum Luftpfadmodell.
-%
-\begin{figure}[!ht]
-\centering
-%\includegraphics [angle=90,scale=0.8]{}
-\caption{gesamtes Simulink-Modell des Verbrennungsmotors}
-\label{fig:gesamtModellSim}
-\end{figure}
-%
 \chapter{Softwaredokumentation}\label{cha:tools}
 %
 Im Rahmen dieser Arbeit sind folgende Software-Tools entwickelt worden:
@@ -57,123 +10,185 @@ Im Rahmen dieser Arbeit sind folgende Software-Tools entwickelt worden:
 %
 Die oben genannten Tools werden im Folgenden näher erläutert.
 %
-\section{Berechnung der Schwerpunktlage der Verbrennung $\phi_{Q50}$}
+\section{Dateiübertragung }
 %
-Um die Kenngröße SPL in Echtzeit ermitteln zu können, sind die momentanen Werte des simulierten integralen Brennverlaufs $Q_B$ und des Kurbelwinkels $\phi$ nötig. Diese Kenngrößen werden vom Verbrennungsmodell ermittelt und können dementsprechend benutzt werden. In Abbildung \ref{fig:Schwerpunktlage} ist die entsprechende Embendded MATLAB Function zu erkennen, mit deren Hilfe die SPL berechnet wird. Der jeweilige Quellcode wird im Listing \ref{lst:SPL} aufgezeigt.
 
-%
-\begin{figure}[htp]
-\centering
-%\includegraphics[scale=0.5]{}
-\caption{Embendded-MATLAB Function zur Berechnung der Schwerpunktlage der Verbrennung $\phi_{Q50}$}
-\label{fig:Schwerpunktlage}
-\end{figure}
-%
-\begin{lstlisting}[style=Matlab_colored, caption = {Embendded MATLAB Function},label={lst:SPL}]
+\begin{lstlisting}[style=PERL_st, caption = {PERL Dateiübertragung},label={lst:PERL_Dateiueb}]
 
-function SPL = function_SPL(phi_mod,QB,abtastzeit_s,nMot)
-%#codegen
+#!/Dwimperl/perl/bin/perl.exe -w
+use strict;
+use File::Copy;
+use Cwd;
 
-abtastzeit_radKW=2*pi*nMot*abtastzeit_s/60;	% Abtastzeit Sek. -> rad KW 
-Anzahl_abtast_radKW=ceil(4*pi/abtastzeit_radKW); % Gesamte Anzahl Abtastschritte in rad KW
+my $workingdir =cwd();	# find the directory where the script is being run
+my $target_loc = "$workingdir/Relevant";	# set the target directory for the files
+mkdir $target_loc;
 
-persistent QB_toSave phi_toSave counter SPL_persistent hilfe_phi
+# file where the paths of the source and header files are indicated 
+open (PRJ_QAC , "$workingdir/Folder.prj")
+or die "Fehler beim Oeffnen von '$workingdir/Baseline/Folder.prj': $!\n";
 
-if isempty(QB_toSave)      % Initialisierung der persistent-Variablen
-    QB_toSave=zeros(Anzahl_abtast_radKW+3,1);	
-    hilfe_phi=0;    
-    counter=1;
-end
+my @zeilen = <PRJ_QAC>;
+my @var_arr;
+my $var_str;
+# hilfsvariablen
+my $h1 = 0;	# wird der Anfangpunkt der Source-Pfade
+my $h2 = 0;	
+my $h3 = 0;	# wird der Endpunkt der Source-Pfade
 
-if isempty(phi_toSave)     % Initialisierung der persistent-Variablen
-    SPL_persistent=0; 
-    probe=0;
-    phi_toSave=zeros(Anzahl_abtast_radKW+3,1);
-    
-end
+# es muss ermoeglicht werden, den Punkt zu finden, ab dem die Source-Pfade ausgelesen werden koennen
 
-if phi_mod == 0 % Die relevanten Daten werden bei phi_mod==0 nur einmal gespeichert.
-    QB_toSave(counter,1) = QB;
-    phi_toSave(counter,1) = phi_mod;
-    hilfe_phi=phi_mod;	% Diese Variable hilft dabei, das Ende eines Arbeitsspiels zu erkennen.
-    counter=counter+1;
+foreach(@zeilen){	# iteriere ueber die Einstellungsdatei
+	
+	my $hola = 4;
+	
+	if($_ =~ /CompPers/){	# suche nach dem patern
+		$h3 = $h1;	# wurde der Patern gefunden, dann halte die Zeilenummer -h1- fest und fange eine neue Suche ab dem Ort an
+		for (my $p = $h1+1 ;$p < @zeilen ; $p++){
+			if($zeilen[$p] =~ /EndContainedFilesMarker/){
+				last;	# verlasse innere for-Schleife
+			}
+		$h3++
+		}
+		last;	# verlasse aeussere for-Schleife
+	}	
+	$h1++;
+}
 
-elseif hilfe_phi < phi_mod	% Ist ein Arbeitsspiel noch nicht vorbei, dann werden die relevanten Daten weiter gespeichert. 																					
-    QB_toSave(counter,1) = QB;                          
-    phi_toSave(counter,1) = phi_mod;
-    hilfe_phi=phi_mod;
-    counter=counter+1;
-    
-elseif hilfe_phi > phi_mod % Ist ein Arbeitsspiel vorbei, dann wird aus den gespeicherten Daten die SPL berechnet.
-    
-    check=max(QB_toSave)/2;	% Die Hälfte des integralen Heizverlaufs wird bestimmt.
-    
-    for i=1:counter			% Der Index wird gesucht, bei dem die Hälfte des int. Brennverlauf gespeichert wurde. Anschiessend wird dieser Index benutzt, um die SPL zu bestimmen.
-        if(QB_toSave(i,1) > check)	% 
-            SPL_persistent=(phi_toSave(i,1)-pi)*180/pi;	% SPL wird als °KW ausgegeben
-            hilfe_phi=phi_mod;
-            counter=1;
-            break;
-        elseif (i==counter)		% Diese if-Anfrage, hilft dabei, die Variablen neu zu setzen, falls bei der 1. if-Anfrage die SPL nicht gefunden werden konnte.
-            hilfe_phi=phi_mod; 
-            QB_toSave=zeros(Anzahl_abtast_radKW+3,1);
-            counter=1;
-            SPL_persistent=0;
-            phi_toSave=zeros(Anzahl_abtast_radKW+3,1);
-        end
-    end
-end
-SPL=SPL_persistent;	% SPL wird ausgegeben
+for(my $t = $h1+1;$t <= $h3; $t ++ )	{ #wird ueber Datei iteriert
+	
+	
+	@var_arr = split(/\\/,$zeilen[$t]);	# trenne Zeile in Array ueber \ Zeichen
+	$var_str = $var_arr[$#var_arr];		# bekomme letzter Eintrag des Arrays
+	
+	
+	$h2 = $zeilen[$t];
+	$h2 =~ tr/\\/\//;
+		
+	$target_loc = $target_loc."/$var_str";
+	
+	chomp($target_loc);
+	chomp($h2);
 
+	print "$target_loc\n";	# gebe aus, welche Dateien kopiert werden
+
+
+	copy($h2, $target_loc) or die "File cannot be copied.";
+	
+	$target_loc = "$workingdir/Relevant";
+	
+}
 \end{lstlisting}
 %
 \newpage
-\section{Berechnung des Druckgradienten}
+\section{Bearbeitung einer XML-Datei}
 %
 Für die Echtzeitbestimmung der Kenngrößen Druckgradientenverlauf $\frac{dp}{d\phi}$ und deren zeitlichen Ableitung $\frac{d^2p}{d\phi^2}$ sind die momentanen Werte des simulierten Zylinderdrucks $p_Z$ und des Kurbelwinkels $\phi$ nötig. Diese Kenngrößen werden vom Verbrennungsmodell ermittelt und können dementsprechend verarbeitet werden. In Abbildung \ref{fig:DruckgradSimulink} ist die entsprechende Embendded MATLAB Function zu erkennen. Der jeweilige Quellcode wird im Listing \ref{lst:Druckgrad} aufgezeigt.
 %
-\begin{figure}[htp]
-\centering
-%\includegraphics[scale=0.5]{}
-\caption{Embendded-MATLAB Function zur Berechnung des Druckgradienten $\frac{dp_{z}}{d\phi}$}
-\label{fig:DruckgradSimulink}
-\end{figure}
-%
-\begin{lstlisting}[style=Matlab_colored, caption = {Embendded MATLAB Function},label={lst:Druckgrad}]
-function [dp_dphi,ddp_ddphi]  = Grad_dGrad(phi,pZ)
-%#codegen
 
-persistent counter phi_toSave pZ_toSave dp_toSave
+\begin{lstlisting}[style=PERL_st, caption = {PERL XML},label={lst:PERL_XML}]
+#!/Dwimperl/perl/bin/perl.exe -w
+use strict;
+use Cwd;
 
-if isempty(counter)	% persistent-Variablen werden initialisiert.
-    counter=0;
-    phi_toSave=phi;
-    pZ_toSave=pZ;  
-    dp_toSave=0;
-end
+my $working = cwd();
+my $string1 = "  \<file target=\"C\" name\=\"";
+my $string2 = "\" folder\=\"=$working/Relevant\"\/\>";
 
-if (counter == 1) && (phi > phi_toSave)    % Ab hier beginnt die Gradientenbestimmung.
-    dp_dphi=(pZ_toSave-pZ)/(phi_toSave-phi);	% Alleresrte Druckgradientbestimmung.
-    dp_toSave=dp_dphi;			% Vorherige relevante Werte werden gepeichert.
-    pZ_toSave=pZ;
-    phi_toSave=phi;
-    counter=counter+1;
-    return
-elseif (counter == 2) && (phi > phi_toSave)	% Ab hier beginnt die 2. zeitliche Ableitung des Drucks, gleichzeitig wird die Druckgradientbestimmung fortgefahren.
-    dp_dphi=(pZ_toSave-pZ)/(phi_toSave-phi); % Druckgradientenbestimmung.
-    ddp_ddphi=(dp_toSave-dp_dphi)/(phi_toSave-phi); % 2. zeitliche Ableitung des Drucks.
-    dp_toSave=dp_dphi;
-    pZ_toSave=pZ;
-    phi_toSave=phi;    
-    return
-elseif counter == 0	% Anfangswerte von Hilfsvariablen werden festgelegt.
-   counter=counter+1;
-   dp_dphi=0; 
-   ddp_ddphi=0;
-   return
-end
-dp_dphi=0;		% Falls ein Fehler auftritt, betragen beide Kenngröße 0.
-ddp_ddphi=0;
+my $z1 = 0;
+
+# file where the paths of the source and header files are indicated 
+open(LESEN1,"$working/Baseline/Folder.prj")
+or die "Fehler beim Oeffnen von 'Folder.prj': $!\n";
+# default file where the default information of the qac9 project is indicated
+open(LESEN2,"prqaproject.xml")
+or die "Fehler beim Oeffnen von 'prqaproject.xml': $!\n";
+
+my @zeilen_files = <LESEN1>;
+my @zeilen_xml = <LESEN2>;
+
+close(LESEN1);
+close(LESEN2);
+unlink "prqaproject.xml";	# delete default file, afterwards a new file will be again created
+
+
+my @var_arr;		#store the splited strings
+my @var_arr_files;	#store the strings of the source files
+my $var_str;
+my $hilfsvar = 0;
+my $h1 = 0;	# wird der Anfangpunkt der Source-Pfade
+my $h2 = 0;	
+my $h3 = 0;	# wird der Endpunkt der Source-Pfade
+my $h1_xml = 0;
+my $h2_xml = 0;
+
+
+# es muss ermoeglicht werden, den Punkt zu finden, ab dem die Source-Pfade ausgelesen werden koennen
+foreach(@zeilen_files){	# iteriere ueber die Einstellungsdatei
+	
+	if($_ =~ /CompPers/){	# suche nach dem Muster
+		$h3 = $h1;	# wurde der Muster gefunden, dann halte die Zeilenummer -h1- fest und fange eine neue Suche ab dem Ort an
+		for (my $p = $h1+1 ;$p < @zeilen_files ; $p++){
+			if($zeilen_files[$p] =~ /EndContainedFilesMarker/){
+				last;	# verlasse innere for-Schleife
+			}
+		$h3++
+		}
+		last;	# verlasse aeussere for-Schleife
+	}	
+	$h1++;
+}
+
+
+for(my $t = $h1+1;$t <= $h3; $t ++ )	{ #wird ueber Datei iteriert
+	
+	@var_arr = split(/\\/,$zeilen_files[$t]);	# trenne Zeile in Array ueber \ Zeichen
+	# print $zeilen_files[$t]."\n";
+	$var_str = $var_arr[$#var_arr];		# bekomme letzter Eintrag des Arrays, also den Namen der c-Datei
+	
+	$var_arr_files[$t-$h1-1] = $var_str;	# speichere die Namen der Datein in den entsprechenden Eintrag	
+	
+}	
+
+
+foreach(@zeilen_xml){	# iteriere ueber die Einstellungsdatei
+	
+	if($_ =~ /\<\!-- Explicit files... --\>/){	# suche nach dem Muster
+		$h2_xml = $h1_xml;	# wurde der Muster gefunden, dann halte die Zeilenummer -h1- fest und fange eine neue Suche ab dem Ort an
+		for (my $p = $h1_xml+1 ;$p < @zeilen_xml ; $p++){
+			if($zeilen_xml[$p] =~ /\<\/prqaproject\>/){
+				last;	# verlasse innere for-Schleife
+			}
+		$h2_xml++
+		}
+		last;	# verlasse aeussere for-Schleife
+	}	
+	$h1_xml++;
+}	
+
+print $h1_xml."\n";
+print $h2_xml."\n";
+	
+open(SCHREIBEN,"> prqaproject.xml")
+or die "Fehler beim Oeffnen von 'prqaproject.xml': $!\n";
+
+
+foreach(@zeilen_xml){
+	
+	if($z1 < $h1_xml+1){	# schreibe die Anfangszeilen zu der Datei
+		print SCHREIBEN $zeilen_xml[$z1];
+	} else {
+		foreach(@var_arr_files){	# schreibe die Namen der Files in die Zieldatei
+			chomp($_);
+			print SCHREIBEN "$string1".$_."$string2\n";
+		}
+		print SCHREIBEN " \<\/files\>\n\<\/prqaproject\>";		
+		last;
+	}
+	$z1++;	
+}
+
+close(SCHREIBEN) or die "Fehler beim Schliessen von 'prqaproject.xml': $! \n";
 \end{lstlisting}
 %
 \chapter{Prüfstandsmessdaten}\label{cha:PruefMess}

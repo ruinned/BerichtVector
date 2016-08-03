@@ -298,7 +298,8 @@
 	%moredelim = [s][\itshape\color[rgb]{0.5,0.5,0.5}]{[.}{.]},
 	numbers = left,
 	numberstyle = \tiny,
-	stepnumber = 5
+	stepnumber = 5,
+	xleftmargin=1cm
 }
 
 \lstdefinestyle{C_colored}
@@ -321,6 +322,47 @@
 	numbers = left,
 	numberstyle = \tiny,
 	stepnumber = 5
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[b]{>}{<},
+  morecomment=[s]{<?}{?>},
+  morecomment=[s]{<!--}{-->},
+  stringstyle=\color{blue},
+  identifierstyle=\color{blue},
+  keywordstyle=\color{red},
+	commentstyle=\color{black},
+  morekeywords={target,folder,name},% list your attributes here
+	basicstyle=\ttfamily\scriptsize,
+  columns=fullflexible,
+  showstringspaces=false,
+	%xleftmargin=1cm,
+  %xrightmargin=1.5cm,
+  breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow
+}
+
+\lstdefinestyle{PERL_st}
+{
+	language=Perl,
+	basicstyle=\small\sffamily,
+	numbers=left,
+ 	numberstyle=\tiny,
+	frame=tb,
+	tabsize=4,
+	columns=fixed,
+	showstringspaces=false,
+	showtabs=false,
+	keepspaces,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue},
+	breaklines = true,
+	prebreak = -->,
+	postbreak = <--,
+	xleftmargin=1cm,
 }
 
 \DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}

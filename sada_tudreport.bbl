@@ -20,8 +20,8 @@
 \bibitem{MISRACodeMetric}
 {\sc H.~Hörner, A.~Raisch}: {\em MISRA and Code Metrics Product Development
   PES}.
-\newblock Vector Informatik GmbH, Vector Informatik GmbH Ingersheimer Str. 24
-  70499 Stuttgart, April 2013.
+\newblock Vector Informatik GmbH, Ingersheimer Str. 24 70499 Stuttgart, April
+  2013.
 
 \bibitem{WarMISRAC}
 {\sc Burden, P.}: {\em Warum ein neues MISRA C?}
@@ -41,15 +41,17 @@
   Addendum 1 - Rule Mapping}.
 \newblock \Btxtechreplong{}, 2013.
 
+\bibitem{PRQA9}
+{\sc PRQA Programming Research}: {\em Component Manual PRQA-Framework 2.0.1},
+  February 2016.
+
+\bibitem{BTE}
+{\sc P.~Kallenberg, M.~Schwarz}: {\em Basic Test Environment: User Manual
+  (Component Unit Test Framework)}.
+\newblock Vector Informatik GmbH.
+
 \bibitem{HardTime}
 {\sc Douglass, Bruce~Powel}: {\em Doing Hard Time}.
 \newblock Addison-Wesley.
-
-\bibitem{Zahn}
-{\sc Zahn, S.}: {\em Arbeitsspielaufgelöste Modellbildung und
-  Hardware-in-the-Loop-Simulation von Pkw-Dieselmotoren mit
-  Abgasturboaufladung}.
-\newblock \btxphdthesis{}, Technische Universität Darmstadt, Darmstadt,
-  Deutschland, April 2012.
 
 \end{thebibliography}

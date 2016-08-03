@@ -12,12 +12,12 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=855
+NormalPos.bottom=904
 Class=LaTeXView
 Document=common\preface.tex
 
 [Frame0_View0,0]
-TopLine=16
+TopLine=13
 Cursor=1624
 
 [Frame1]
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=855
+NormalPos.bottom=904
 Class=LaTeXView
-Document=inc\Anhang.tex
+Document=inc\Symbole.tex
 
 [Frame1_View0,0]
-TopLine=75
-Cursor=2975
+TopLine=67
+Cursor=4411
 
 [Frame2]
 Flags=0
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=855
+NormalPos.bottom=904
 Class=LaTeXView
-Document=sada_tudreport.tex
+Document=common\includes.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=4180
+TopLine=24
+Cursor=2731
 
 [Frame3]
 Flags=0
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=855
+NormalPos.bottom=904
 Class=LaTeXView
-Document=inc\LBF.tex
+Document=inc\Anhang.tex
 
 [Frame3_View0,0]
-TopLine=715
-Cursor=29667
+TopLine=81
+Cursor=2921
 
 [Frame4]
 Flags=0
@@ -84,13 +84,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=855
+NormalPos.bottom=904
 Class=LaTeXView
-Document=inc\Einfuehrung.tex
+Document=inc\LBF.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=564
+TopLine=768
+Cursor=38293
 
 [Frame5]
 Flags=0
@@ -102,15 +102,51 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=855
+NormalPos.bottom=904
 Class=LaTeXView
-Document=inc\Symbole.tex
+Document=inc\Einfuehrung.tex
 
 [Frame5_View0,0]
-TopLine=68
-Cursor=4281
+TopLine=0
+Cursor=654
+
+[Frame6]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=769
+NormalPos.bottom=904
+Class=LaTeXView
+Document=sada_tudreport.tex
+
+[Frame6_View0,0]
+TopLine=0
+Cursor=1030
+
+[Frame7]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=769
+NormalPos.bottom=904
+Class=LaTeXView
+Document=common\commonmacros.tex
+
+[Frame7_View0,0]
+TopLine=317
+Cursor=11214
 
 [SessionInfo]
-FrameCount=6
-ActiveFrame=3
+FrameCount=8
+ActiveFrame=4
 
