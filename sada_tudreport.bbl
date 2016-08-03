@@ -7,8 +7,7 @@
 \bibitem{MasterThMISRA}
 {\sc Kaiser, G.}: {\em
   Exemplarisches Eclipse-Plugin zur statischen C-Syntaxanalyse am Beispiel von Misra-C Regeln }.
-\newblock \btxmastthesis{}, Hochschule für angewandte Wissenschaften Hamburg,
-  2007.
+\newblock candthesis, Hochschule für angewandte Wissenschaften Hamburg, 2007.
 
 \bibitem{MISRA2004}
 {\sc The Motor Industry Software Reliability Association}: {\em MISRA-C:2004
@@ -36,6 +35,11 @@
 \bibitem{QAC70WinUserGuide}
 {\sc QA-Systems}: {\em QAC-7.0-Win-UserGuide}.
 \newblock The Programming Research Ltda.
+
+\bibitem{Addendum1}
+{\sc Association, The Motor Industry Sofrware~Reliability}: {\em MISRA C 2012
+  Addendum 1 - Rule Mapping}.
+\newblock \Btxtechreplong{}, 2013.
 
 \bibitem{HardTime}
 {\sc Douglass, Bruce~Powel}: {\em Doing Hard Time}.
