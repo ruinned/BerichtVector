@@ -11,13 +11,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=769
-NormalPos.bottom=904
+NormalPos.right=1745
+NormalPos.bottom=835
 Class=LaTeXView
 Document=common\preface.tex
 
 [Frame0_View0,0]
-TopLine=13
+TopLine=12
 Cursor=1624
 
 [Frame1]
@@ -29,8 +29,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=769
-NormalPos.bottom=904
+NormalPos.right=1745
+NormalPos.bottom=835
 Class=LaTeXView
 Document=inc\Symbole.tex
 
@@ -47,13 +47,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=769
-NormalPos.bottom=904
+NormalPos.right=1745
+NormalPos.bottom=835
 Class=LaTeXView
 Document=common\includes.tex
 
 [Frame2_View0,0]
-TopLine=24
+TopLine=22
 Cursor=2731
 
 [Frame3]
@@ -65,8 +65,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=769
-NormalPos.bottom=904
+NormalPos.right=1745
+NormalPos.bottom=835
 Class=LaTeXView
 Document=inc\Anhang.tex
 
@@ -83,13 +83,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=769
-NormalPos.bottom=904
+NormalPos.right=1745
+NormalPos.bottom=835
 Class=LaTeXView
 Document=inc\LBF.tex
 
 [Frame4_View0,0]
-TopLine=768
+TopLine=0
 Cursor=38293
 
 [Frame5]
@@ -101,8 +101,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=769
-NormalPos.bottom=904
+NormalPos.right=1745
+NormalPos.bottom=835
 Class=LaTeXView
 Document=inc\Einfuehrung.tex
 
@@ -119,8 +119,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=769
-NormalPos.bottom=904
+NormalPos.right=1745
+NormalPos.bottom=835
 Class=LaTeXView
 Document=sada_tudreport.tex
 
@@ -137,8 +137,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=769
-NormalPos.bottom=904
+NormalPos.right=1745
+NormalPos.bottom=835
 Class=LaTeXView
 Document=common\commonmacros.tex
 
