@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html><title>, </title><style type="text/css">
+        #box1 {
+          width: 500px;
+          height: 300px;
+          overflow:auto;
+        }
+        
+        #box1 {
+          position: absolute;
+          top: 60%;
+          left: 60%;
+          position: expression("absolute");
+          top: expression(document.body.scrollTop - this.offsetHeight + this.offsetHeight + 550);
+        }
+        
+        #box1[id] {
+          position: fixed;
+        }
+        
+        table, td {
+          border-color: #000000;
+          border-style: solid;
+        }
+        
+        td,th   {
+          border-color: #000000;
+          font-family: Verdana,Arial,Helvetica;
+          font-size:10pt;
+          vertical-align:top;
+        }
+
+        table {
+          border-width: 1px 1px 1px 1px;
+          border-spacing: 1;
+          border-collapse: collapse;
+          table-layout: fixed;
+        }
+
+        td {
+          margin: 0;
+          padding: 3px;
+          border-width: 1px 1px 0 0;
+          word-wrap: break-word;
+        }
+
+        body {
+          font-family: Verdana,Arial,Helvetica;
+          font-size:10pt;
+        }
+        
+        ul {
+          position:relative;
+          left: -15px;
+        }
+        
+        div.MetricBarBase {
+          height: 6px;
+          background-color: #a5a5a5;
+          border-style: none;
+          border-width: 0;
+          font-size: 1px;
+        }
+        
+        div.MetricBarOK {
+          height: 6px;
+          background-color: #00CC00;
+          border-style: none;
+          border-width: 0;
+          font-size: 1px;
+        }
+
+        div.MetricBarFail {
+          height: 6px;
+          background-color: #CC0000;
+          border-style: none;
+          border-width: 0;
+          font-size: 1px;
+        }
+        
+        img {
+          max-width:100%
+          overflow:scroll
+          opacity:0.5;
+          filter: alpha(opacity=100);
+        }
+        
+        [data-tooltip] {
+          position: relative;
+          z-index: 2;
+          cursor: default;
+        }
+        [data-tooltip]:before,
+        [data-tooltip]:after {
+          visibility: hidden;
+          opacity: 0;
+          pointer-events: none;
+        }
+        
+        /* Position tooltip above the element */
+        [data-tooltip]:before {
+          position: absolute;
+          bottom: 150%;
+          left: 50%;
+          margin-bottom: 5px;
+          margin-left: -5px;
+          padding: 7px;
+          width: 300px;
+          min-width:50px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius:    3px;
+          border-radius:         3px;
+          background-color: #ffffff;
+          background-color: rgba(255, 255, 255, 0.98);
+          color: #000;
+          content: attr(data-tooltip);
+          text-align: left;
+          white-space: normal;
+          font-size: 10pt;
+          line-height: 1.2;
+        }
+        
+        /* Triangle hack to make tooltip look like a speech bubble */
+        [data-tooltip]:after {
+          position: absolute;
+          bottom: 150%;
+          left: 50%;
+          width: 0;
+          border-top: 5px solid #ffffff;
+          border-top: 5px solid rgba(255, 255, 255, 0.98);
+          border-right: 5px solid transparent;
+          border-left: 5px solid transparent;
+          content: " ";
+          font-size: 0;
+          line-height: 0;
+        }
+        
+        /* Show tooltip content on hover */
+          [data-tooltip]:hover:before,
+          [data-tooltip]:hover:after {
+          visibility: visible;
+          opacity: 1;
+        }
+        
+        /* Format pre sections used for test case and test group descriptions */
+        pre {
+          font-family: Verdana,Arial,Helvetica;
+          font-size:10pt;
+          white-space: pre-wrap; /* css-3 */
+          white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+          white-space: -pre-wrap; /* Opera 4-6 */
+          white-space: -o-pre-wrap; /* Opera 7 */
+          word-wrap: break-word; /* Internet Explorer 5.5+ */
+        }
+      </style><body bgcolor="#e5e5e5"><a name="top" /><p align="right"><a href="http://wiki.vi.vector.int/wiki-pes/FileType/.vtr">Help</a></p><a name="testplan" /><h1>
+      Test Report - 
+      </h1><h2>Content</h2><a href="#TestPlan_Result" accesskey="1">Test Result</a><br /><a href="#TestPlan_Object" accesskey="2">Test Elements</a><br /><a href="#TestPlan_Overview" accesskey="3">Test Overview</a><br /><a href="#TestPlan_Details" accesskey="4">Test Sequences</a><br /><a href="#TestPlan_TestCaseList" accesskey="5">Test Cases</a><br /><a href="#TestPlan_History" accesskey="6">Test History</a><br /><a href="#TestPlan_Statistic" accesskey="7">Test Statistic</a><br /><br /><a name="TestPlan_Data" /><table border="0" width="100%"><colgroup><col width="20%" /><col width="80%" /></colgroup><td bgcolor="#b70032" colspan="2"><font size="4" color="#ffffff">Test Result</font></td><tr><td>
+          Overall test result
+        </td><td size="4" bgcolor="red">
+            fail
+            (3/3 "not-ok" testruns are unjustified)
+          </td></tr><tr><td>
+          Testrun result
+        </td><td size="4" bgcolor="red">fail</td></tr><tr><td>
+          Testcase coverage
+        </td><td size="4" bgcolor="yellow">70% 
+            (9/13)
+          </td></tr></table><br /><a name="TestPlan_Object" /><table border="0" width="100%"><colgroup><col width="10%" /><col width="20%" /><col width="35%" /><col width="30%" /><col width="5%" /></colgroup><td bgcolor="#b70032" colspan="6"><font color="#ffffff" size="4">
+          Test Elements
+        </font></td><tr bgcolor="darkgray"><td> name </td><td> version </td><td> SVN info </td><td> SVN status </td><td> result </td></tr></table><br /><a name="TestPlan_Overview" /><table border="0" width="100%"><colgroup><col width="2%" /><col width="33%" /><col width="35%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /></colgroup><tr bgcolor="#b70032"><td colspan="8"><font size="4" color="#ffffff">Test Overview</font></td><td><a href="#testplan" accesskey="1">Top</a></td></tr><tr bgcolor="darkgray"><td colspan="3" /><td>ok</td><td>fail</td><td>warn</td><td>N/A</td><td>process</td><td>total</td></tr><tr bgcolor="darkgray"><td colspan="10">testcase data</td></tr><tr><td colspan="3">total</td><td bgcolor="lime">4</td><td bgcolor="red">3</td><td>0</td><td>2</td><td>0</td><td>9</td></tr><tr bgcolor="darkgray"><td colspan="9">testrun data</td></tr><tr bgcolor="lightgray"><td /><td colspan="2">total</td><td bgcolor="lime">4</td><td bgcolor="red">3</td><td /><td>2</td><td /><td>9</td></tr><tr><td /><td colspan="2" id="overview_ID0AE0F"><a href="#ID0AE0F">1 General</a></td><td /><td /><td /><td /><td /><td bgcolor="yellow" /></tr><tr><td /><td colspan="1" id="overview_ID0AH0J">
+        
+      <a href="#ID0AH0J">[TC:Standard_Embedded.CheckVersion] </a></td><td></td><td /><td /><td /><td /><td /><td bgcolor="yellow" /></tr><tr><td /><td colspan="1" id="overview_ID0ALC0NC">
+        
+      <a href="#ID0ALC0NC">[TC:Standard_Embedded.CheckConfiguration] </a></td><td></td><td /><td /><td /><td /><td /><td bgcolor="yellow" /></tr><tr><td bgcolor="red" /><td colspan="2" id="overview_ID0AUD0VD"><a href="#ID0AUD0VD">2 API</a></td><td /><td>1</td><td /><td>1</td><td /><td>2</td></tr><tr><td bgcolor="red" /><td colspan="2" id="overview_ID0AXD0YD">
+        
+      <a href="#ID0AXD0YD">2.1 API</a></td><td /><td>1</td><td /><td>1</td><td /><td>2</td></tr><tr><td bgcolor="red" /><td colspan="1" id="overview_ID0A1D03D">
+        
+      
+        
+      <a href="#ID0A1D03D">[TCASE_SAMIR] </a></td><td></td><td /><td bgcolor="red">1</td><td /><td /><td /><td>1</td></tr><tr><td /><td colspan="1" id="overview_ID0AWF0YF">
+        
+      
+        
+      <a href="#ID0AWF0YF">[TSEQ_Mip_GetVersionInfo.001] </a></td><td></td><td /><td /><td /><td>1</td><td /><td>1</td></tr><tr><td bgcolor="lime" /><td colspan="2" id="overview_ID0APAAC0QAAC"><a href="#ID0APAAC0QAAC">3 Metrics</a></td><td>2</td><td /><td /><td /><td /><td>2</td></tr><tr><td bgcolor="lime" /><td colspan="1" id="overview_ID0ASAAC0UAAC">
+        
+      <a href="#ID0ASAAC0UAAC">[TC:Standard_Embedded.FunctionCallContext] </a></td><td></td><td bgcolor="lime">1</td><td /><td /><td /><td /><td>1</td></tr><tr><td bgcolor="lime" /><td colspan="1" id="overview_ID0AGCAC0ICAC">
+        
+      <a href="#ID0AGCAC0ICAC">[TC:Standard_Embedded.FunctionRuntime] </a></td><td></td><td bgcolor="lime">1</td><td /><td /><td /><td /><td>1</td></tr><tr><td /><td colspan="2" id="overview_ID0APDAC0QDAC"><a href="#ID0APDAC0QDAC">4 General</a></td><td /><td /><td /><td /><td /><td bgcolor="yellow" /></tr><tr><td /><td colspan="1" id="overview_ID0ASDAC0UDAC">
+        
+      <a href="#ID0ASDAC0UDAC">[TC:Standard_Embedded.CheckVersion] </a></td><td></td><td /><td /><td /><td /><td /><td bgcolor="yellow" /></tr><tr><td /><td colspan="1" id="overview_ID0AWFAC0YFAC">
+        
+      <a href="#ID0AWFAC0YFAC">[TC:Standard_Embedded.CheckConfiguration] </a></td><td></td><td /><td /><td /><td /><td /><td bgcolor="yellow" /></tr><tr><td bgcolor="red" /><td colspan="2" id="overview_ID0A6GAC0AHAC"><a href="#ID0A6GAC0AHAC">5 API</a></td><td /><td>1</td><td /><td>1</td><td /><td>2</td></tr><tr><td bgcolor="red" /><td colspan="2" id="overview_ID0ACHAC0DHAC">
+        
+      <a href="#ID0ACHAC0DHAC">5.1 API</a></td><td /><td>1</td><td /><td>1</td><td /><td>2</td></tr><tr><td bgcolor="red" /><td colspan="1" id="overview_ID0AFHAC0HHAC">
+        
+      
+        
+      <a href="#ID0AFHAC0HHAC">[TCASE_SAMIR] </a></td><td></td><td /><td bgcolor="red">1</td><td /><td /><td /><td>1</td></tr><tr><td /><td colspan="1" id="overview_ID0ABJAC0DJAC">
+        
+      
+        
+      <a href="#ID0ABJAC0DJAC">[TSEQ_Mip_GetVersionInfo.001] </a></td><td></td><td /><td /><td /><td>1</td><td /><td>1</td></tr><tr><td bgcolor="lime" /><td colspan="2" id="overview_ID0AZLAC01LAC"><a href="#ID0AZLAC01LAC">6 Metrics</a></td><td>2</td><td /><td /><td /><td /><td>2</td></tr><tr><td bgcolor="lime" /><td colspan="1" id="overview_ID0A3LAC05LAC">
+        
+      <a href="#ID0A3LAC05LAC">[TC:Standard_Embedded.FunctionCallContext] </a></td><td></td><td bgcolor="lime">1</td><td /><td /><td /><td /><td>1</td></tr><tr><td bgcolor="lime" /><td colspan="1" id="overview_ID0AQNAC0SNAC">
+        
+      <a href="#ID0AQNAC0SNAC">[TC:Standard_Embedded.FunctionRuntime] </a></td><td></td><td bgcolor="lime">1</td><td /><td /><td /><td /><td>1</td></tr><tr><td bgcolor="red" /><td colspan="1" id="overview_ID0AZOAC02OAC"><a href="#ID0AZOAC02OAC">BteTestHandler_BackgroundTest_Log </a></td><td></td><td /><td bgcolor="red">1</td><td /><td /><td /><td>1</td></tr></table><br /><a name="TestPlan_Details" /><table style="table-layout: fixed" border="0" width="100%"><colgroup><col width="20%" /><col width="75%" /><col width="5%" /></colgroup><tr bgcolor="#b70032"><td colspan="2"><font size="4" color="#ffffff">Test Details</font></td><td><a href="#testplan" accesskey="1">Top</a></td></tr><tr bgcolor="darkgray"><td> testcase </td><td> details </td><td> result </td></tr><tr><td id="ID0AE0F" colspan="2"><font size="4">1 General</font></td><td><a href="#TestPlan_Overview">Test Overview</a></td></tr><tr bgcolor="lightgray"><td id="ID0AH0J"><b>ID: </b>[TC:Standard_Embedded.CheckVersion]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TC:Standard_Embedded.CheckVersion].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TC:Standard_Embedded.CheckVersion].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0AH0J">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup></table></td><td /></tr><tr><td></td><td>
+          No TestRuns...
+        </td><td>
+        Not Tested
+        <br /><br /></td></tr><tr bgcolor="lightgray"><td id="ID0ALC0NC"><b>ID: </b>[TC:Standard_Embedded.CheckConfiguration]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TC:Standard_Embedded.CheckConfiguration].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TC:Standard_Embedded.CheckConfiguration].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0ALC0NC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup></table></td><td /></tr><tr><td></td><td>
+          No TestRuns...
+        </td><td>
+        Not Tested
+        <br /><br /></td></tr><tr><td id="ID0AUD0VD" colspan="2"><font size="4">2 API</font></td><td><a href="#TestPlan_Overview">Test Overview</a></td></tr><tr><td id="ID0AXD0YD" colspan="2"><font size="4">2.1 API</font></td><td><a href="#TestPlan_Overview">Test Overview</a></td></tr><tr bgcolor="lightgray"><td id="ID0A1D03D"><b>ID: </b>[TCASE_SAMIR]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TCASE_SAMIR].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TCASE_SAMIR].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0A1D03D">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td><a href="#Testrun_ID0A1D02D_ID0A5D0BE">config=(null) </a></td><td>2016-05-17 13:07:09</td><td>visres</td><td bgcolor="red">fail</td></tr></table></td><td /></tr><tr><td id="Testrun_ID0A1D02D_ID0A5D0BE">config=(null) </td><td>
+<h1 /><table border="0" width="100%"><colgroup><col width="1*" /><col width="1*" /><col width="7*" /></colgroup><tr><th> type </th><th> time </th><th> test step description </th></tr><tr><td>cmd</td><td>0</td><td> Mip_InitMemory () </td></tr><tr><td>cmd</td><td>0</td><td> Mip_Init () </td></tr><tr><td bgcolor="red">fail</td><td>0</td><td> DET Error </td></tr><tr><td>info</td><td>0</td><td> DebugMessage </td></tr><tr><td bgcolor="lime">ok</td><td>0</td><td> Ok message </td></tr><tr><td bgcolor="red">fail</td><td>100</td><td> MyError </td></tr><tr><td>cmd</td><td>100</td><td> Mip_GetVersionInfo () </td></tr><tr><td></td><td>100</td><td> Det_ReportError (ModuleId=0, InstanceId=0, ApiId=16, ErrorId=12) </td></tr><tr><td bgcolor="red">fail</td><td>100</td><td> DET Error </td></tr><tr><td>cmd</td><td>100</td><td> Mip_GetVersionInfo () </td></tr><tr><td bgcolor="red">fail</td><td>100</td><td> My Text: 0 == 52428 </td></tr></table>
+
+</td><td bgcolor="red">
+              fail<br />2016-05-17 13:07:09<br />visres</td></tr><tr bgcolor="lightgray"><td id="ID0AWF0YF"><b>ID: </b>[TSEQ_Mip_GetVersionInfo.001]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TSEQ_Mip_GetVersionInfo.001].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TSEQ_Mip_GetVersionInfo.001].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0AWF0YF">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td>config=(null) Variant 0<br />
+                      N/A Justification: My Sample Justificatio</td><td>2016-05-17 13:07:09</td><td>visres</td><td><span title="My Sample Justificatio">
+            N/A<br /></span></td></tr></table></td><td /></tr><tr><td id="ID0APAAC0QAAC" colspan="2"><font size="4">3 Metrics</font></td><td><a href="#TestPlan_Overview">Test Overview</a></td></tr><tr bgcolor="lightgray"><td id="ID0ASAAC0UAAC"><b>ID: </b>[TC:Standard_Embedded.FunctionCallContext]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TC:Standard_Embedded.FunctionCallContext].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TC:Standard_Embedded.FunctionCallContext].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0ASAAC0UAAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td><a href="#Testrun_ID0ASAAC0TAAC_ID0AWAAC0ZAAC">config=(null) </a></td><td>2016-05-17 13:07:09</td><td>visres</td><td bgcolor="lime">ok</td></tr></table></td><td /></tr><tr><td id="Testrun_ID0ASAAC0TAAC_ID0AWAAC0ZAAC">config=(null) </td><td>
+<b>Function call context</b>
+    The following table gives an overview for the callcontext and the IR lock state for selected functions.
+    The data for input functions are defined in the test. The data of the output function is collected during the tests.
+    <table border="0" width="100%"><colgroup><col width="3*" /><col width="2*" /><col width="2*" /><col width="2*" /><col width="2*" /></colgroup><tr bgcolor="darkgray"><th> name </th><th> type </th><th> call context </th><th> IR lock state </th><th> ExArea </th></tr><tr><td>Mip_GetVersionInfo</td><td>
+          in
+        </td><td>
+            task
+          </td><td>
+            IR not locked
+          </td><td /></tr><tr><td>Mip_Init</td><td>
+          in
+        </td><td>
+            task
+          </td><td>
+            IR locked
+          </td><td /></tr><tr><td>Mip_InitMemory</td><td>
+          in
+        </td><td>
+            task
+          </td><td>
+            IR locked
+          </td><td /></tr><tr><td>Det_ReportError</td><td>
+          out
+        </td><td>
+            task
+          </td><td>
+            IR locked, IR not locked
+          </td><td>notEA1 notEA0 </td></tr></table>
+
+</td><td bgcolor="lime">
+          ok<br />2016-05-17 13:07:09<br />visres</td></tr><tr bgcolor="lightgray"><td id="ID0AGCAC0ICAC"><b>ID: </b>[TC:Standard_Embedded.FunctionRuntime]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TC:Standard_Embedded.FunctionRuntime].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TC:Standard_Embedded.FunctionRuntime].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0AGCAC0ICAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td><a href="#Testrun_ID0AGCAC0HCAC_ID0AKCAC0NCAC">config=(null) </a></td><td>2016-05-17 13:07:09</td><td>visres</td><td bgcolor="lime">ok</td></tr></table></td><td /></tr><tr><td id="Testrun_ID0AGCAC0HCAC_ID0AKCAC0NCAC">config=(null) </td><td>
+<b>Function Runtime</b><table border="0" width="100%"><colgroup><col width="4*" /><col width="1*" /><col width="1*" /><col width="1*" /><col width="1*" /></colgroup><tr bgcolor="darkgray"><th> name </th><th> min </th><th> max </th><th> avg </th><th> occurrence </th></tr><tr><td>Mip_GetVersionInfo</td><td>1</td><td>168</td><td>84</td><td>4</td></tr><tr><td>Mip_Init</td><td>68</td><td>78</td><td>72</td><td>4</td></tr><tr><td>Mip_InitMemory</td><td>2</td><td>2</td><td>2</td><td>4</td></tr></table>
+
+</td><td bgcolor="lime">
+          ok<br />2016-05-17 13:07:09<br />visres</td></tr><tr><td id="ID0APDAC0QDAC" colspan="2"><font size="4">4 General</font></td><td><a href="#TestPlan_Overview">Test Overview</a></td></tr><tr bgcolor="lightgray"><td id="ID0ASDAC0UDAC"><b>ID: </b>[TC:Standard_Embedded.CheckVersion]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TC:Standard_Embedded.CheckVersion].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TC:Standard_Embedded.CheckVersion].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0ASDAC0UDAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup></table></td><td /></tr><tr><td></td><td>
+          No TestRuns...
+        </td><td>
+        Not Tested
+        <br /><br /></td></tr><tr bgcolor="lightgray"><td id="ID0AWFAC0YFAC"><b>ID: </b>[TC:Standard_Embedded.CheckConfiguration]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TC:Standard_Embedded.CheckConfiguration].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TC:Standard_Embedded.CheckConfiguration].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0AWFAC0YFAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup></table></td><td /></tr><tr><td></td><td>
+          No TestRuns...
+        </td><td>
+        Not Tested
+        <br /><br /></td></tr><tr><td id="ID0A6GAC0AHAC" colspan="2"><font size="4">5 API</font></td><td><a href="#TestPlan_Overview">Test Overview</a></td></tr><tr><td id="ID0ACHAC0DHAC" colspan="2"><font size="4">5.1 API</font></td><td><a href="#TestPlan_Overview">Test Overview</a></td></tr><tr bgcolor="lightgray"><td id="ID0AFHAC0HHAC"><b>ID: </b>[TCASE_SAMIR]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TCASE_SAMIR].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TCASE_SAMIR].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0AFHAC0HHAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td><a href="#Testrun_ID0AFHAC0GHAC_ID0AJHAC0MHAC">config=(null) Variant 0</a></td><td>2016-05-17 13:07:09</td><td>visres</td><td bgcolor="red">fail</td></tr></table></td><td /></tr><tr><td id="Testrun_ID0AFHAC0GHAC_ID0AJHAC0MHAC">config=(null) Variant 0</td><td>
+<h1 /><table border="0" width="100%"><colgroup><col width="1*" /><col width="1*" /><col width="7*" /></colgroup><tr><th> type </th><th> time </th><th> test step description </th></tr><tr><td>cmd</td><td>0</td><td> Mip_InitMemory () </td></tr><tr><td>cmd</td><td>0</td><td> Mip_Init () </td></tr><tr><td bgcolor="red">fail</td><td>0</td><td> DET Error </td></tr><tr><td>info</td><td>0</td><td> DebugMessage </td></tr><tr><td bgcolor="lime">ok</td><td>0</td><td> Ok message </td></tr><tr><td bgcolor="red">fail</td><td>100</td><td> MyError </td></tr><tr><td>cmd</td><td>100</td><td> Mip_GetVersionInfo () </td></tr><tr><td></td><td>100</td><td> Det_ReportError (ModuleId=0, InstanceId=0, ApiId=16, ErrorId=12) </td></tr><tr><td bgcolor="red">fail</td><td>100</td><td> DET Error </td></tr><tr><td>cmd</td><td>100</td><td> Mip_GetVersionInfo () </td></tr><tr><td bgcolor="red">fail</td><td>100</td><td> My Text: 0 == 52428 </td></tr></table>
+
+</td><td bgcolor="red">
+              fail<br />2016-05-17 13:07:09<br />visres</td></tr><tr bgcolor="lightgray"><td id="ID0ABJAC0DJAC"><b>ID: </b>[TSEQ_Mip_GetVersionInfo.001]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TSEQ_Mip_GetVersionInfo.001].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TSEQ_Mip_GetVersionInfo.001].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0ABJAC0DJAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td>config=(null) Variant 1<br />
+                      N/A Justification: My Sample Justificatio</td><td>2016-05-17 13:07:09</td><td>visres</td><td><span title="My Sample Justificatio">
+            N/A<br /></span></td></tr></table></td><td /></tr><tr><td id="ID0AZLAC01LAC" colspan="2"><font size="4">6 Metrics</font></td><td><a href="#TestPlan_Overview">Test Overview</a></td></tr><tr bgcolor="lightgray"><td id="ID0A3LAC05LAC"><b>ID: </b>[TC:Standard_Embedded.FunctionCallContext]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TC:Standard_Embedded.FunctionCallContext].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TC:Standard_Embedded.FunctionCallContext].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0A3LAC05LAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td><a href="#Testrun_ID0A3LAC04LAC_ID0AAMAC0DMAC">config=(null) </a></td><td>2016-05-17 13:07:09</td><td>visres</td><td bgcolor="lime">ok</td></tr></table></td><td /></tr><tr><td id="Testrun_ID0A3LAC04LAC_ID0AAMAC0DMAC">config=(null) </td><td>
+<b>Function call context</b>
+    The following table gives an overview for the callcontext and the IR lock state for selected functions.
+    The data for input functions are defined in the test. The data of the output function is collected during the tests.
+    <table border="0" width="100%"><colgroup><col width="3*" /><col width="2*" /><col width="2*" /><col width="2*" /><col width="2*" /></colgroup><tr bgcolor="darkgray"><th> name </th><th> type </th><th> call context </th><th> IR lock state </th><th> ExArea </th></tr><tr><td>Mip_GetVersionInfo</td><td>
+          in
+        </td><td>
+            task
+          </td><td>
+            IR not locked
+          </td><td /></tr><tr><td>Mip_Init</td><td>
+          in
+        </td><td>
+            task
+          </td><td>
+            IR locked
+          </td><td /></tr><tr><td>Mip_InitMemory</td><td>
+          in
+        </td><td>
+            task
+          </td><td>
+            IR locked
+          </td><td /></tr><tr><td>Det_ReportError</td><td>
+          out
+        </td><td>
+            task
+          </td><td>
+            IR locked, IR not locked
+          </td><td>notEA1 notEA0 </td></tr></table>
+
+</td><td bgcolor="lime">
+          ok<br />2016-05-17 13:07:09<br />visres</td></tr><tr bgcolor="lightgray"><td id="ID0AQNAC0SNAC"><b>ID: </b>[TC:Standard_Embedded.FunctionRuntime]<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\[TC:Standard_Embedded.FunctionRuntime].png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\[TC:Standard_Embedded.FunctionRuntime].png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0AQNAC0SNAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td><a href="#Testrun_ID0AQNAC0RNAC_ID0AUNAC0XNAC">config=(null) </a></td><td>2016-05-17 13:07:09</td><td>visres</td><td bgcolor="lime">ok</td></tr></table></td><td /></tr><tr><td id="Testrun_ID0AQNAC0RNAC_ID0AUNAC0XNAC">config=(null) </td><td>
+<b>Function Runtime</b><table border="0" width="100%"><colgroup><col width="4*" /><col width="1*" /><col width="1*" /><col width="1*" /><col width="1*" /></colgroup><tr bgcolor="darkgray"><th> name </th><th> min </th><th> max </th><th> avg </th><th> occurrence </th></tr><tr><td>Mip_GetVersionInfo</td><td>1</td><td>586</td><td>136</td><td>8</td></tr><tr><td>Mip_Init</td><td>67</td><td>78</td><td>70</td><td>8</td></tr><tr><td>Mip_InitMemory</td><td>2</td><td>2</td><td>2</td><td>8</td></tr></table>
+
+</td><td bgcolor="lime">
+          ok<br />2016-05-17 13:07:09<br />visres</td></tr><tr bgcolor="lightgray"><td id="ID0AZOAC02OAC"><b>ID: </b>BteTestHandler_BackgroundTest_Log<br /><b>Name: </b><br /></td><td><a href="&#xD;&#xA;            .\_TempImages\BteTestHandler_BackgroundTest_Log.png&#xD;&#xA;          "><img style="max-width:100%;overflow:scroll" src=".\_TempImages\BteTestHandler_BackgroundTest_Log.png&#xD;&#xA;          " alt="" /></a><br /></td><td><a href="#overview_ID0AZOAC02OAC">Overview</a></td></tr><tr><td>
+        TestRun Overview
+      </td><td><table border="0" width="100%"><colgroup><col width="70%" /><col width="15%" /><col width="10%" /><col width="5%" /></colgroup><tr><td><a href="#Testrun_ID0AZOAC01OAC_ID0A4OAC0APAC">config=(null) Variant 1</a></td><td>2016-05-17 13:07:09</td><td>visres</td><td bgcolor="red">fail</td></tr></table></td><td /></tr><tr><td id="Testrun_ID0AZOAC01OAC_ID0A4OAC0APAC">config=(null) Variant 1</td><td>
+<h1 /><table border="0" width="100%"><colgroup><col width="1*" /><col width="1*" /><col width="7*" /></colgroup><tr><th> type </th><th> time </th><th> test step description </th></tr><tr><td>cmd</td><td>0</td><td> Mip_InitMemory () </td></tr><tr><td>cmd</td><td>0</td><td> Mip_Init () </td></tr><tr><td bgcolor="red">fail</td><td>0</td><td> DET Error </td></tr></table>
+
+</td><td bgcolor="red">
+              fail<br />2016-05-17 13:07:09<br />visres</td></tr></table><br /><a name="TestPlan_TestCaseList" /><table border="0" width="100%"><colgroup><col width="20%" /><col width="75%" /><col width="5%" /></colgroup><tr bgcolor="#b70032"><td colspan="2"><font size="4" color="#ffffff">TestCase Overview</font></td><td><a href="#testplan" accesskey="1">Top</a></td></tr><tr bgcolor="darkgray"><td> testcase </td><td> details </td><td> result </td></tr></table><br /><a name="TestPlan_History" /><table border="0" width="100%"><colgroup><col width="40%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /><col width="5%" /></colgroup><tr bgcolor="#b70032"><td colspan="12"><font size="4" color="#ffffff">Test History</font></td><td><a href="#testplan" accesskey="1">Top</a></td></tr><tr bgcolor="darkgray"><td colspan="13">
+          Testcase/testrun data
+        </td></tr><tr bgcolor="lightgray"><td /><td colspan="6">
+          Testcase
+        </td><td colspan="6">
+          Testrun
+        </td></tr><tr bgcolor="lightgray"><td>
+          Date,Time,User
+        </td><td>ok</td><td>fail</td><td>warn</td><td>N/A</td><td>process</td><td>total</td><td>ok</td><td>fail</td><td>warn</td><td>N/A</td><td>process</td><td>total</td></tr></table>
+    Note: Data in this table is only created for structured test reports.
+  <br /><a name="TestPlan_Statistic" /><table border="0" width="100%"><colgroup><col width="20%" /><col width="80%" /></colgroup><tr><td bgcolor="#b70032" colspan="2"><font size="4" color="#ffffff">Test Statistic</font></td></tr><tr bgcolor="darkgray"><td colspan="2">
+          Testrun Dates (shows when the current testruns have been executed)
+        </td></tr><tr bgcolor="lightgray"><td>
+          Date
+        </td><td>
+          Number of testruns
+        </td></tr><tr><td>2016-05-17</td><td>9</td></tr></table><br /><br /><small>
+        StyleSheetVersion 1.01.03</small></body></html>

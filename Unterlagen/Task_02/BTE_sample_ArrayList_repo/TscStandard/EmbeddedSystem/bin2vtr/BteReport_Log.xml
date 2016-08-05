@@ -1,0 +1,84 @@
+<testcase id = TC:"7">
+<testrun date="Mon Jun 20 13:53:40 2016" executor="visres" parameter="">
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory </Element>
+<Element type="cmd" time="0"> Mip_Init() </Element>
+<Element type="" time="0"> Det_ReportError( ModuleId=0 InstanceId=0 ApiId=0 Error=10 ) </Element>
+<Element type="fail" time="0"> Message </Element>
+<Element type="ok" time="0"> Message </Element>
+<Element type="cmd" time="0"> Mip_MainFunction </Element>
+<Element type="cmd" time="10"> Mip_MainFunction </Element>
+<Element type="cmd" time="20"> Mip_MainFunction </Element>
+<Element type="cmd" time="30"> Mip_MainFunction </Element>
+<Element type="cmd" time="40"> Mip_MainFunction </Element>
+<Element type="cmd" time="50"> Mip_MainFunction </Element>
+<Element type="cmd" time="60"> Mip_MainFunction </Element>
+<Element type="cmd" time="70"> Mip_MainFunction </Element>
+<Element type="cmd" time="80"> Mip_MainFunction </Element>
+<Element type="cmd" time="90"> Mip_MainFunction </Element>
+<Element type="fail" time="100"> Message </Element>
+<Element type="cmd" time="100"> Mip_GetVersionInfo </Element>
+<Element type="fail" time="100"> Message </Element>
+<Element type="cmd" time="100"> Mip_GetVersionInfo </Element>
+<Element type="fail" time="100"> Message </Element>
+</log>
+</testrun>
+</testcase>
+<testcase id = TC:"2">
+<testrun date="Mon Jun 20 13:53:40 2016" executor="visres" parameter="">
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory </Element>
+<Element type="cmd" time="0"> Mip_Init() </Element>
+<Element type="" time="0"> Det_ReportError( ModuleId=0 InstanceId=0 ApiId=0 Error=10 ) </Element>
+<Element type="fail" time="0"> Message </Element>
+<Element type="ok" time="0"> Message </Element>
+<Element type="cmd" time="0"> Mip_MainFunction </Element>
+<Element type="cmd" time="10"> Mip_MainFunction </Element>
+<Element type="cmd" time="20"> Mip_MainFunction </Element>
+<Element type="cmd" time="30"> Mip_MainFunction </Element>
+<Element type="cmd" time="40"> Mip_MainFunction </Element>
+<Element type="cmd" time="50"> Mip_MainFunction </Element>
+<Element type="cmd" time="60"> Mip_MainFunction </Element>
+<Element type="cmd" time="70"> Mip_MainFunction </Element>
+<Element type="cmd" time="80"> Mip_MainFunction </Element>
+<Element type="cmd" time="90"> Mip_MainFunction </Element>
+<Element type="fail" time="100"> Message </Element>
+<Element type="cmd" time="100"> Mip_GetVersionInfo </Element>
+<Element type="fail" time="100"> Message </Element>
+<Element type="cmd" time="100"> Mip_GetVersionInfo </Element>
+<Element type="fail" time="100"> Message </Element>
+</log>
+</testrun>
+</testcase>
+<testcase id = TC:"6">
+<testrun date="Mon Jun 20 13:53:40 2016" executor="visres" parameter="">
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory </Element>
+<Element type="cmd" time="0"> Mip_Init() </Element>
+<Element type="" time="0"> Det_ReportError( ModuleId=0 InstanceId=0 ApiId=0 Error=10 ) </Element>
+<Element type="fail" time="0"> Message </Element>
+<Element type="cmd" time="0"> Mip_GetVersionInfo </Element>
+<Element type="" time="0"> Det_ReportError( ModuleId=0 InstanceId=0 ApiId=16 Error=12 ) </Element>
+<Element type="fail" time="0"> Message </Element>
+<Element type="fail" time="0"> Message </Element>
+<Element type="fail" time="0"> Message </Element>
+<Element type="cmd" time="0"> Mip_GetVersionInfo </Element>
+<Element type="ok" time="0"> Message </Element>
+<Element type="ok" time="0"> Message </Element>
+<Element type="ok" time="0"> Message </Element>
+<Element type="ok" time="0"> Message </Element>
+<Element type="ok" time="0"> Message </Element>
+<Element type="ok" time="0"> Message </Element>
+</log>
+</testrun>
+</testcase>
+<testcase id = TC:"3">
+<testrun date="Mon Jun 20 13:53:40 2016" executor="visres" parameter="">
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory </Element>
+<Element type="cmd" time="0"> Mip_Init() </Element>
+<Element type="" time="0"> Det_ReportError( ModuleId=0 InstanceId=0 ApiId=0 Error=10 ) </Element>
+<Element type="fail" time="0"> Message </Element>
+</log>
+</testrun>
+</testcase>

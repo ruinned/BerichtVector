@@ -1,0 +1,163 @@
+[1mdiff --git a/AnwenderFile.txt b/AnwenderFile.txt[m
+[1mindex 5bd8a2c..c467931 100644[m
+[1m--- a/AnwenderFile.txt[m
+[1m+++ b/AnwenderFile.txt[m
+[36m@@ -1,8 +1,8 @@[m
+[31m-01 Mip_InitMemory[m
+[31m-02 Mip_Init[m
+[31m-03 Mip_MainFunction[m
+[31m-04 Mip_GetVersionInfo[m
+[31m-21 Det_ReportError[m
+[32m+[m[32m0001 Mip_InitMemory[m
+[32m+[m[32m0002 Mip_Init[m
+[32m+[m[32m0003 Mip_MainFunction[m
+[32m+[m[32m0004 Mip_GetVersionInfo[m
+[32m+[m[32m0201 Det_ReportError[m
+ data1 ModuleId[m
+ data2 InstanceId[m
+ data3 ApiId[m
+[1mdiff --git a/BteReport_Log.xml b/BteReport_Log.xml[m
+[1mindex 4646c48..662bce6 100644[m
+[1m--- a/BteReport_Log.xml[m
+[1m+++ b/BteReport_Log.xml[m
+[36m@@ -1,5 +1,5 @@[m
+ <testcase id = TC:"9">[m
+[31m-<testrun date="Wed Jun  8 10:48:20 2016" executor="visres" parameter="">[m
+[32m+[m[32m<testrun date="Wed Jun  8 13:08:30 2016" executor="visres" parameter="">[m
+ <log>[m
+ <Element type="cmd" time="0"> Mip_InitMemory ( ) </Element>[m
+ <Element type="cmd" time="0"> Mip_Init ( ) </Element>[m
+[36m@@ -14,7 +14,7 @@[m
+ </testrun>[m
+ </testcase>[m
+ <testcase id = TC:"8">[m
+[31m-<testrun date="Wed Jun  8 10:48:20 2016" executor="visres" parameter="">[m
+[32m+[m[32m<testrun date="Wed Jun  8 13:08:30 2016" executor="visres" parameter="">[m
+ <log>[m
+ <Element type="cmd" time="0"> Mip_InitMemory ( ) </Element>[m
+ <Element type="cmd" time="0"> Mip_Init ( ) </Element>[m
+[36m@@ -28,7 +28,7 @@[m
+ </testrun>[m
+ </testcase>[m
+ <testcase id = TC:"7">[m
+[31m-<testrun date="Wed Jun  8 10:48:20 2016" executor="visres" parameter="">[m
+[32m+[m[32m<testrun date="Wed Jun  8 13:08:30 2016" executor="visres" parameter="">[m
+ <log>[m
+ <Element type="cmd" time="0"> Mip_InitMemory ( ) </Element>[m
+ <Element type="cmd" time="0"> Mip_Init ( ) </Element>[m
+[36m@@ -54,7 +54,7 @@[m
+ </testrun>[m
+ </testcase>[m
+ <testcase id = TC:"1">[m
+[31m-<testrun date="Wed Jun  8 10:48:20 2016" executor="visres" parameter="">[m
+[32m+[m[32m<testrun date="Wed Jun  8 13:08:30 2016" executor="visres" parameter="">[m
+ <log>[m
+ <Element type="cmd" time="0"> Mip_InitMemory ( ) </Element>[m
+ <Element type="cmd" time="0"> Mip_Init ( ) </Element>[m
+[1mdiff --git a/bin2xml_v2.pl b/bin2xml_v2.pl[m
+[1mindex fa56aca..362738a 100644[m
+[1m--- a/bin2xml_v2.pl[m
+[1m+++ b/bin2xml_v2.pl[m
+[36m@@ -97,9 +97,9 @@[m [msub ProcessEvent($$@)[m
+ 	(my $local_element_type, my $local_numParam, my @dataevent) = @_;	 [m
+ 	[m
+ 	# analyse event id[m
+[31m-	my $element_id_comp = atoi($dataevent[0]);[m
+[31m-	my $element_id_code = atoi($dataevent[1]);[m
+[31m-	my $element_id = GetDataUser("$element_id_comp$element_id_code");[m
+[32m+[m	[32mmy $element_id_comp = atoh($dataevent[0]);[m
+[32m+[m	[32mmy $element_id_code = atoh($dataevent[1]);[m
+[32m+[m	[32mmy $element_id = GetUserEntry("$element_id_comp$element_id_code");[m
+ [m
+ 	# analyse time information	[m
+ 	my $time = process32(@dataevent[2..5]);	[m
+[36m@@ -116,7 +116,7 @@[m [msub ProcessEvent($$@)[m
+ 		for (my $r = 1; $r <= $local_numParam; $r++)[m
+ 		{[m
+ 			my $data = process32(@dataevent[$start_pos..$start_pos+3]);[m
+[31m-			my $data_string = GetDataUser("data$r");[m
+[32m+[m			[32mmy $data_string = GetUserEntry("data$r");[m
+ 			WriteToFile(" $data_string=$data");[m
+ 			$start_pos += 4; 					[m
+ 		}[m
+[36m@@ -143,10 +143,10 @@[m [msub CloseTestcase[m
+ sub GetNumParam($)[m
+ {	[m
+ 	# number of parameters are analysed[m
+[31m-	return (atoi($_[0]) & hex('f0'))>>4;		[m
+[32m+[m	[32mreturn (atod($_[0]) & hex('f0'))>>4;[m[41m		[m
+ }[m
+ [m
+[31m-sub GetDataUser($)[m
+[32m+[m[32msub GetUserEntry($)[m
+ {	[m
+ 	if ($datauser_loaded == 0)[m
+ 	{[m
+[36m@@ -177,7 +177,7 @@[m [msub GetDataUser($)[m
+ #			{[m
+ 				[m
+ 				$hash_rows{$temparr[0]} = $temparr[1]; [m
+[31m-#			#}[m
+[32m+[m			[32m#}[m
+ 			[m
+ 		}[m
+ 		$datauser_loaded = 1;[m
+[36m@@ -190,15 +190,15 @@[m [msub GetEventKind($)[m
+ {[m
+ 	my $type;[m
+ 	[m
+[31m-	if ((atoi($_[0]) & hex('f')) == 0)[m
+[32m+[m	[32mif ((atod($_[0]) & hex('f')) == 0)[m
+ 	{[m
+ 		$type = "";[m
+ 	} [m
+[31m-	elsif ((atoi($_[0]) & hex('f')) == 1)[m
+[32m+[m	[32melsif ((atod($_[0]) & hex('f')) == 1)[m
+ 	{[m
+ 		$type = "cmd";[m
+ 	}[m
+[31m-	elsif ((atoi($_[0]) & hex('f')) == 2)[m
+[32m+[m	[32melsif ((atod($_[0]) & hex('f')) == 2)[m
+ 	{[m
+ 		$type = "fail";[m
+ 	}	[m
+[36m@@ -256,10 +256,10 @@[m [msub process32(@)[m
+ 	my $var = 0;[m
+ 	my @loc_arr = @_;	[m
+ 	[m
+[31m-	$var |= atoi($loc_arr[0]) << 24;	[m
+[31m-	$var |= atoi($loc_arr[1]) << 16;[m
+[31m-	$var |= atoi($loc_arr[2]) << 8;[m
+[31m-	$var |= atoi($loc_arr[3]);	[m
+[32m+[m	[32m$var |= atod($loc_arr[0]) << 24;[m[41m	[m
+[32m+[m	[32m$var |= atod($loc_arr[1]) << 16;[m
+[32m+[m	[32m$var |= atod($loc_arr[2]) << 8;[m
+[32m+[m	[32m$var |= atod($loc_arr[3]);[m[41m	[m
+ 	[m
+ 	return $var;[m
+ }[m
+[36m@@ -269,13 +269,13 @@[m [msub process16(@)[m
+ 	my $var = 0;[m
+ 	my @loc_arr = @_;		[m
+ 	[m
+[31m-	$var |= atoi($loc_arr[0]) << 8;[m
+[31m-	$var |= atoi($loc_arr[1]); [m
+[32m+[m	[32m$var |= atod($loc_arr[0]) << 8;[m
+[32m+[m	[32m$var |= atod($loc_arr[1]);[m[41m [m
+ 	[m
+ 	return $var;[m
+ }[m
+ [m
+[31m-sub atoi($)[m
+[32m+[m[32msub atod($)[m
+ {[m
+ 	return hex(unpack('H*',$_[0]));	[m
+ }[m
+[36m@@ -285,6 +285,7 @@[m [msub atoh($)[m
+ 	return unpack('H*',$_[0]);[m
+ }[m
+ [m
+[32m+[m[32m#diese Methode muss noch angepasst werden, um das EOF zu finden[m
+ sub find_EOF(@)[m
+  {[m
+  	my @loc_array = @_;[m

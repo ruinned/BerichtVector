@@ -1,0 +1,21 @@
+<testgroup name="Dynamic"> 
+<testcase id="[TC:Standard_Embedded.BuildVisual]" name="Build VC"> 
+<description>Build code with VisualStudio compiler.</description> 
+<testrun date="2016-07-21 10:44" executor="visres" parameter="config=.\Unknown2, prj=TestEnv_Stub, trg=Exe_Code" CDK="1.03.00"> 
+<testenv>              
+<version>              
+Visual8 (vcbuild.exe)    
+</version>            
+<option>               
+N/A                      
+</option>             
+</testenv>            
+<log_build>
+<message file="---" line="---" ID="---">
+<text>no findings</text>
+<result>ok</result>
+</message>
+</log_build>
+<result>ok</result>
+</testrun> 
+</testcase> 

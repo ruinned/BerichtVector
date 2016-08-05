@@ -1,0 +1,37 @@
+Print;Time;Type;Name;Object File;Module;Caller Object File;Caller Module;OS Task;Values;Parameters
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_InitMemory ()
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_Init ()
+autonumber 0 "<b>t=0"
+DUT -> Det : Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10)
+ note right of Appl #red: Fail: DET Error
+ note left of Appl: DebugMessage
+ note right of Appl #lime: Ok: Ok message 
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 10 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 20 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 30 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 40 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 50 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 60 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 70 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 80 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+autonumber 90 "<b>t=0"
+Appl -> DUT : Mip_MainFunction ()
+ note right of Appl #red: Fail: MyError
+autonumber 100 "<b>t=0"
+Appl -> DUT : Mip_GetVersionInfo ()
+ note right of Appl #red: Fail: DET Error
+autonumber 100 "<b>t=0"
+Appl -> DUT : Mip_GetVersionInfo ()
+ note right of Appl #red: Fail: My Text: 0 == 52428

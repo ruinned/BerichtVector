@@ -1,0 +1,5 @@
+0001 Mip_InitMemory
+0002 Mip_Init()
+0003 Mip_MainFunction
+0004 Mip_GetVersionInfo
+0201 Det_ReportError( ModuleId={2..3} InstanceId={7} ApiId={11} Error={15} )

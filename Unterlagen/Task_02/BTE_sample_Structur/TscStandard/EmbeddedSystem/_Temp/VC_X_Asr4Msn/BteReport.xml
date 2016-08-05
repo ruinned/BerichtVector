@@ -1,0 +1,98 @@
+<testgroup name="General">
+<testcase id="TC:"9"" name="">
+<testrun date="2016-08-05 17:24:08" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory () </Element>
+<Element type="cmd" time="0"> Mip_Init () </Element>
+<Element type="" time="0"> Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10) </Element>
+<Element type="fail" time="0"> DET Error </Element>
+<EmbeddedVersion name="Version of embedded components">
+<versionData name="Test Object">
+<component name="Mip" version="04.00.03"></component>
+</versionData>
+<versionData name="Test Data">
+</versionData>
+<versionData name="Test Environment">
+<component name="TscDem" version="01.00.00"></component>
+<component name="TscDet" version="01.00.00"></component>
+<component name="TscEcuM" version="02.00.00"></component>
+<component name="TscSchM" version="01.00.00"></component>
+<component name="TscTest" version="02.01.00"></component>
+</versionData>
+</EmbeddedVersion>
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory () </Element>
+<Element type="cmd" time="0"> Mip_Init () </Element>
+<Element type="" time="0"> Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10) </Element>
+<Element type="fail" time="0"> DET Error </Element>
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> No beta version: 3 != 255 </Element>
+</log>
+</testcase>
+</log>
+<result>fail</result>
+</testrun>
+</testcase>
+<testcase id="TC:"8"" name="">
+<testrun date="2016-08-05 17:24:08" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory () </Element>
+<Element type="cmd" time="0"> Mip_Init () </Element>
+<Element type="" time="0"> Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10) </Element>
+<Element type="fail" time="0"> DET Error </Element>
+<EmbeddedConfig name="Configuration of code">
+<configGroup name="PreCompiler">
+<configAttr name="ISSM_DEV_ERROR_DETECT" value="STD_OFF"></configAttr>
+<configAttr name="ISSM_CRC_CHECK" value="STD_OFF"></configAttr>
+</configGroup>
+</EmbeddedConfig>
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory () </Element>
+<Element type="cmd" time="0"> Mip_Init () </Element>
+<Element type="" time="0"> Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10) </Element>
+<Element type="fail" time="0"> DET Error </Element>
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+</log>
+</testcase>
+</testgroup>
+<testgroup name="API">
+<testcase id="TC:"7"" name="">
+<testrun date="2016-08-05 17:24:08" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory () </Element>
+<Element type="cmd" time="0"> Mip_Init () </Element>
+<Element type="" time="0"> Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10) </Element>
+<Element type="fail" time="0"> DET Error </Element>
+<Element type="info" time="0"> DebugMessage </Element>
+<Element type="ok" time="0"> Ok message </Element>
+<Element type="cmd" time="0"> Mip_MainFunction () </Element>
+<Element type="cmd" time="10"> Mip_MainFunction () </Element>
+<Element type="cmd" time="20"> Mip_MainFunction () </Element>
+<Element type="cmd" time="30"> Mip_MainFunction () </Element>
+<Element type="cmd" time="40"> Mip_MainFunction () </Element>
+<Element type="cmd" time="50"> Mip_MainFunction () </Element>
+<Element type="cmd" time="60"> Mip_MainFunction () </Element>
+<Element type="cmd" time="70"> Mip_MainFunction () </Element>
+<Element type="cmd" time="80"> Mip_MainFunction () </Element>
+<Element type="cmd" time="90"> Mip_MainFunction () </Element>
+<Element type="fail" time="100"> MyError </Element>
+<Element type="cmd" time="100"> Mip_GetVersionInfo () </Element>
+<Element type="fail" time="100"> DET Error </Element>
+<Element type="cmd" time="100"> Mip_GetVersionInfo () </Element>
+<Element type="fail" time="100"> My Text: 0 == 52428 </Element>
+</log>
+<result>fail</result>
+</testrun>
+</testcase>
+</testgroup>
+<testcase id="TC:"1"" name="">
+<testrun date="2016-08-05 17:24:08" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="cmd" time="0"> Mip_InitMemory () </Element>
+<Element type="cmd" time="0"> Mip_Init () </Element>
+<Element type="" time="0"> Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10) </Element>
+<Element type="fail" time="0"> DET Error </Element>
+</log>
+<result>fail</result>
+</testrun>
+</testcase>

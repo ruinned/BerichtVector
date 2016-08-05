@@ -1,0 +1,671 @@
+<testgroup name="Functional">
+<testgroup name="VERSIONS">
+<EmbeddedVersion name="Version of embedded components">
+<versionData name="Test Object">
+<component name="FrTrcv Software Version" version="04.01.00"></component>
+<component name="FrTrcv AUTOSAR Release" version="04.00.03"></component>
+</versionData>
+<versionData name="Test Data">
+</versionData>
+<versionData name="Test Environment">
+<component name="TscAppl" version="01.00.00"></component>
+<component name="TscTest" version="01.00.00"></component>
+</versionData>
+</EmbeddedVersion>
+<testcase id="" name="TC_EmbeddedVersion"> <description>Check versions</description>
+<testrun date="2016-08-05 09:55:38" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:02 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<EmbeddedConfig name="Configuration of code">
+<configGroup name="Number of Channels (Link-Time)">
+<configAttr name="Number of FlexRay Channels" value="1"></configAttr>
+</configGroup>
+<configGroup name="Features and Options (Pre-Compile)">
+<configAttr name="FRTRCV_30_TJA1080_VERSION_INFO_API STD_OFF" value="1"></configAttr>
+<configAttr name="FRTRCV_30_TJA1080_DEV_ERROR_DETECT STD_OFF" value="1"></configAttr>
+</configGroup>
+</EmbeddedConfig>
+<testcase id="" name="TC_EmbeddedConfiguration"> <description>Check Configuration</description>
+<testrun date="2016-08-05 09:55:38" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+</testgroup>
+<testgroup name="FEATURES">
+<testcase id="TCASE-25905" name="Version Info API Tests"> <description>Check Version Info API</description>
+<testrun date="2016-08-05 09:55:38" executor="visres" parameter="config=(null) Channel = 0">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE25905: moduleID: 0x0047==0x0047 </Element>
+<Element type="ok" time="0"> TCASE25905: sw_major_version: 0x0004==0x0004 </Element>
+<Element type="ok" time="0"> TCASE25905: sw_minor_version: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE25905: sw_patch_version: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE25905: vendorID: 0x001E==0x001E </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-343426" name="Verify DET check - FrTrcv_30_xxx_GetVersionInfo"> <description></description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) Channel = 0">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:07, ErrorId:20 (FRTRCV_E_FR_INVALID_POINTER)
+ </Element>
+<Element type="ok" time="0"> TCASE-343426: NULLPTR DET of FrTrcv_30_Tja1080_GetVersionInfo should occur 1 times with following data 0x0047, 0x0000, 0x0007, 0x0020: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-18149" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+Call FrTrcv_InitMemory() to reset init state
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:01, ErrorId:10 (FRTRCV_E_FR_UNINIT)
+ </Element>
+<Element type="ok" time="0"> TCASE18149: 2. Assert return value E_NOT_OK of FrTrcv_30_xxx_SetTransceiverMode: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert UNINIT DET error of FrTrcv_30_xxx_SetTransceiverMode should occur 1 times with following data 0x0047, 0x0000, 0x0001, 0x0010: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:05, ErrorId:10 (FRTRCV_E_FR_UNINIT)
+ </Element>
+<Element type="ok" time="0"> TCASE18149: 4. Assert return value E_NOT_OK of FrTrcv_30_xxx_GetTransceiverMode: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert UNINIT DET error of FrTrcv_30_xxx_GetTransceiverMode should occur 1 times with following data 0x0047, 0x0000, 0x0005, 0x0010: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:06, ErrorId:10 (FRTRCV_E_FR_UNINIT)
+ </Element>
+<Element type="ok" time="0"> TCASE18149: 6. Assert return value E_NOT_OK of FrTrcv_30_xxx_GetTransceiverWUReason: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert UNINIT DET error of FrTrcv_30_xxx_GetTransceiverWUReason should occur 1 times with following data 0x0047, 0x0000, 0x0006, 0x0010: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:0C, ErrorId:10 (FRTRCV_E_FR_UNINIT)
+ </Element>
+<Element type="ok" time="0"> TCASE18149: 8. Assert return value E_NOT_OK of FrTrcv_30_xxx_ClearTransceiverWakeup: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert UNINIT DET error of FrTrcv_30_xxx_ClearTransceiverWakeup should occur 1 times with following data 0x0047, 0x0000, 0x000C, 0x0010: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:08, ErrorId:10 (FRTRCV_E_FR_UNINIT)
+ </Element>
+<Element type="ok" time="0"> TCASE18149: 10. Assert return value E_NOT_OK of FrTrcv_30_xxx_GetTransceiverError: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert UNINIT DET error of FrTrcv_30_xxx_GetTransceiverError should occur 1 times with following data 0x0047, 0x0000, 0x000C, 0x0010: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert return value E_NOT_OK of FrTrcv_30_xxx_DisableTransceiverBranch: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert return value E_OK of FrTrcv_30_xxx_EnableTransceiverBranch: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert no UNINT DET error of FrTrcv_30_xxx_CheckWakeupByTransceiver should occur 0 times with following data 0x0047, 0x0000, 0x000E, 0x0010: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE18149: Assert no UNINT DET error of FrTrcv_30_xxx_MainFunction should occur 0 times with following data 0x0047, 0x0000, 0x000D, 0x0010: 0x0000==0x0000 </Element>
+Call FrTrcv_Init() to initialize init state
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE18149: Assert no UNINT DET error of FrTrcv_30_xxx_MainFunction should occur 0 times with following data 0x0047, 0x0000, 0x000D, 0x0010: 0x0000==0x0000 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-371379" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE-371379: 3. Assert that E_OK is returned: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE-371379: 2. Assert that no DET is called should occur 0 times with following data 0x0047, 0x0000, 0x0005, 0x0010: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:05, ErrorId:01 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE-371379: 6. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE-371379: 5. Assert FRTRCV_30_xxx_E_FR_INVALID_TRCVIDX DET error should occur 1 times with following data 0x0047, 0x0000, 0x0005, 0x0001: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:05, ErrorId:20 (FRTRCV_E_FR_INVALID_POINTER)
+ </Element>
+<Element type="ok" time="0"> TCASE-371379: 9. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE-371379: 8. Assert FRTRCV_30_xxx_E_FR_INVALID_POINTER DET error should occur 1 times with following data 0x0047, 0x0000, 0x0005, 0x0020: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-333504" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE333504: 3. Assert that E_OK is returned: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE333504: 2. Assert that no DET is called should occur 0 times with following data 0x0047, 0x0000, 0x000C, 0x0010: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:0C, ErrorId:01 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE333504: 6. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE333504: 5. Assert FRTRCV_30_xxx_E_FR_INVALID_TRCVIDX DET error should occur 1 times with following data 0x0047, 0x0000, 0x000C, 0x0001: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-333505" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE333505: 3. Assert that E_OK is returned: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE333505: 2. Assert that no DET is called should occur 0 times with following data 0x0047, 0x0000, 0x0006, 0x0010: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:06, ErrorId:01 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE333505: 6. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE333505: 5. Assert FRTRCV_30_xxx_E_FR_INVALID_TRCVIDX DET error should occur 1 times with following data 0x0047, 0x0000, 0x0006, 0x0001: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:06, ErrorId:20 (FRTRCV_E_FR_INVALID_POINTER)
+ </Element>
+<Element type="ok" time="0"> TCASE102520: 9. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE102520: 8. Assert FRTRCV_30_xxx_E_FR_INVALID_POINTER DET error should occur 1 times with following data 0x0047, 0x0000, 0x0006, 0x0020: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-333506" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE333506: 3. Assert that E_OK is returned: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE333506: 2. Assert that no DET is called should occur 0 times with following data 0x0047, 0x0000, 0x0008, 0x0010: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:08, ErrorId:01 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE333506: 6. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE333506: 5. Assert FRTRCV_30_xxx_E_FR_INVALID_TRCVIDX DET error should occur 1 times with following data 0x0047, 0x0000, 0x0008, 0x0001: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:08, ErrorId:20 (FRTRCV_E_FR_INVALID_POINTER)
+ </Element>
+<Element type="ok" time="0"> TCASE333506: 9. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE333506: NULLPTR DET of FrTrcv_30_Tja1080_GetTransceiverError should occur 1 times with following data 0x0047, 0x0000, 0x0008, 0x0020: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-333507" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE333507: 3. Assert that E_OK is returned: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE333507: 2. Assert that no DET is called. should occur 0 times with following data 0x0047, 0x0000, 0x0001, 0x0010: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:01, ErrorId:01 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE333507: 6. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE333507: 5. Assert FRTRCV_30_xxx_E_FR_INVALID_TRCVIDX DET error should occur 1 times with following data 0x0047, 0x0000, 0x0001, 0x0001: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:01, ErrorId:15 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE333507: 9. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE333507: 8. Assert FRTRCV_30_xxx_E_FR_NO_CONTROL_TRCV DET error should occur 1 times with following data 0x0047, 0x0000, 0x0001, 0x0015: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-333508" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE333508: 2. Assert that no DET is called should occur 0 times with following data 0x0047, 0x0000, 0x000E, 0x0010: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:0E, ErrorId:01 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE333508: 4. Assert FRTRCV_30_xxx_E_FR_INVALID_TRCVIDX DET error should occur 1 times with following data 0x0047, 0x0000, 0x000E, 0x0001: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-333509" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE333509: 10. Assert that E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE333509: 2. Assert that no DET is called should occur 0 times with following data 0x0047, 0x0000, 0x000F, 0x0010: 0x0000==0x0000 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-333510" name="DET Tests"> <description>Check API -> DET</description>
+<testrun date="2016-08-05 09:55:39" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE333510: 3. Assert that E_OK is returned: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE333510: 2. Assert that no DET is called should occur 0 times with following data 0x0047, 0x0000, 0x0010, 0x0010: 0x0000==0x0000 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-21004" name="Init Tests"> <description>Init Tests</description>
+<testrun date="2016-08-05 09:55:40" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+Trcv_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE21004: 20. Assert if default mode after FrTrcv_30_xxx_Init is as configured: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE21004: 50. Assert that EcuM is called with the configured WakeupSourceRef should occur 1 times: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE21004: 60. Assert wakeup reason to be FRTRCV_WU_BY_BUS or FRTRCV_WU_NOT_SUPPORTED depending if wake up detection is enabled on channel: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-18151" name="Branch Handling"> <description>Branch Handling</description>
+<testrun date="2016-08-05 09:55:40" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE-18151: perform no action: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE-18151: perform no action: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-363434" name="Multi Channel"> <description>Multi Channel</description>
+<testrun date="2016-08-05 09:55:40" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE-363434: Mode not NORMAL: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE-363434: Mode not NORMAL: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE-363434: Mode not STANDBY: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE-363434: Mode not STANDBY: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert that FRTRCV_TRCVMODE_NORMAL: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert that EcuM is not called should occur 0 times: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert that EcuM is called should occur 1 times: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert wakeup reason to be FRTRCV_WU_RESET or FRTRCV_WU_NOT_SUPPORTED depending if wake up detection is enabled on channel: 0x0003==0x0003 </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert wakeup reason to be FRTRCV_WU_RESET or FRTRCV_WU_NOT_SUPPORTED depending if wake up detection is enabled on channel: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert that Dem_ReportErrorStatus is called with error code FRTRCV_E_FR_ERRN_TRCV with DEM_EVENT_STATUS_PREFAILED should occur 0 times with following data 0x0000, 0x0002: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:02 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert that Dem_ReportErrorStatus is called with error code FRTRCV_E_FR_ERRN_TRCV with DEM_EVENT_STATUS_PREFAILED should occur 1 times with following data 0x0001, 0x0002: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert that no error flag is set: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert that FRTRCV_30_xxx_BDE_GLOBAL is set: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE-363434: Assert that the error reason (e.g. FRTRCV_30_xxx_BDE_NOISE) is set: 0x0400==0x0400 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-18152" name="Wake Up Tests"> <description>Check Wake Up</description>
+<testrun date="2016-08-05 09:55:40" executor="visres" parameter="config=(null) Channel = 0">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE18152: 4. Assert that EcuM is not called should occur 0 times: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE18152: 6. Assert wakeup reason to be FRTRCV_WU_RESET or FRTRCV_WU_NOT_SUPPORTED depending if wake up detection is enabled on channel: 0x0003==0x0003 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE18152: 10. Assert that EcuM is called with the configured WakeupSourceRef should occur 1 times: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18152: 12. Assert wakeup reason to be FRTRCV_WU_BY_BUS or FRTRCV_WU_NOT_SUPPORTED depending if wake up detection is enabled on channel: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE18152: 16. Assert that EcuM is called with the configured WakeupSourceRef should occur 1 times: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE18152: 18. Assert wakeup reason to be FRTRCV_WU_BY_PIN or FRTRCV_WU_NOT_SUPPORTED depending if wake up detection is enabled on channel: 0x0005==0x0005 </Element>
+<Element type="ok" time="0"> TCASE18152: 21. Assert wakeup reason to be FRTRCV_WU_RESET: 0x0003==0x0003 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE18152: Assert wakeup reason to be FRTRCV_WU_INTERNALLY or FRTRCV_WU_NOT_SUPPORTED depending if wake up detection is enabled on channel: 0x0002==0x0002 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-337526" name="Wake Up Tests during Sleep"> <description>Check Wake Up during Sleep transition</description>
+<testrun date="2016-08-05 09:55:41" executor="visres" parameter="config=(null) Channel = 0">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE-337526: 20. Assert that EcuM is not called should occur 0 times: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="ok" time="0"> TCASE-337526: 50. Assert that EcuM is called with the configured WakeupSourceRef should occur 1 times: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE-337526: 70. Assert wakeup reason to be FRTRCV_WU_BY_BUS or FRTRCV_WU_NOT_SUPPORTED depending if wake up detection is enabled on channel: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-20997" name="Mode Change Tests"> <description>Mode Change Tests</description>
+<testrun date="2016-08-05 09:55:41" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> --- EcuM: 0x80 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="ok" time="0"> TCASE20997: 30. Assert if configured initial mode is set: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #1 Assert if mode is default -> FRTRCV_TRCVMODE_NORMAL: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #2 Assert if mode is FRTRCV_TRCVMODE_NORMAL -> FRTRCV_TRCVMODE_NORMAL: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #3 Assert if mode is FRTRCV_TRCVMODE_NORMAL -> FRTRCV_TRCVMODE_RECEIVEONLY: 0x0003==0x0003 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #4 Assert if mode is FRTRCV_TRCVMODE_RECEIVE_ONLY -> FRTRCV_TRCVMODE_RECEIVEONLY: 0x0003==0x0003 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #5 Assert if mode is FRTRCV_TRCVMODE_RECEIVEONLY -> FRTRCV_TRCVMODE_STANDBY: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #6 Assert if mode is FRTRCV_TRCVMODE_STANDBY -> FRTRCV_TRCVMODE_RECEIVEONLY: 0x0003==0x0003 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #7 Assert if mode is FRTRCV_TRCVMODE_RECEIVEONLY -> FRTRCV_TRCVMODE_SLEEP: 0x0002==0x0002 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #8 Assert if mode is FRTRCV_TRCVMODE_SLEEP -> FRTRCV_TRCVMODE_RECEIVEONLY: 0x0003==0x0003 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #9 Assert if mode is FRTRCV_TRCVMODE_RECEIVE_ONLY -> FRTRCV_TRCVMODE_NORMAL: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #10 Assert if mode is FRTRCV_TRCVMODE_NORMAL -> FRTRCV_TRCVMODE_STANDBY: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #11 Assert if mode is FRTRCV_TRCVMODE_STANDBY -> FRTRCV_TRCVMODE_STANDBY: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #12 Assert if mode is FRTRCV_TRCVMODE_STANDBY -> FRTRCV_TRCVMODE_SLEEP: 0x0002==0x0002 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #13 Assert if mode is FRTRCV_TRCVMODE_SLEEP -> FRTRCV_TRCVMODE_STANDBY: 0x0001==0x0001 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #14 Assert if mode is FRTRCV_TRCVMODE_STANDBY -> FRTRCV_TRCVMODE_NORMAL: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #15 Assert if mode is FRTRCV_TRCVMODE_NORMAL -> FRTRCV_TRCVMODE_SLEEP: 0x0002==0x0002 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #16 Assert if mode is FRTRCV_TRCVMODE_SLEEP -> FRTRCV_TRCVMODE_SLEEP: 0x0002==0x0002 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: #17 Assert if mode is FRTRCV_TRCVMODE_SLEEP -> FRTRCV_TRCVMODE_NORMAL: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Det_ReportError ModuleId:47, InstanceId:00, ApiId:01, ErrorId:15 (Unknown DET-Error-Code)
+ </Element>
+<Element type="ok" time="0"> TCASE20997: Assert if mode is unchanged: 0x0000==0x0000 </Element>
+<Element type="ok" time="0"> TCASE20997: Assert if E_NOT_OK is returned: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+<testcase id="TCASE-20848" name="DEM/Diagnosis Tests"> <description>DEM/Diagnosis Tests</description>
+<testrun date="2016-08-05 09:55:42" executor="visres" parameter="config=(null) ">
+<log>
+<Element type="sect" time="0"> --- PREPARE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+DrvTrans_Init called; no return value.
+<Element type="sect" time="0"> --- EXECUTE --- </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:02 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE20848: 4. Assert that Dem_ReportErrorStatus is called with error code FRTRCV_E_FR_ERRN_TRCV with DEM_EVENT_STATUS_PREFAILED should occur 1 times with following data 0x0000, 0x0002: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE20848: 6. Assert that FRTRCV_30_xxx_BDE_GLOBAL is set: 0x0001==0x0001 </Element>
+<Element type="ok" time="0"> TCASE20848: 7. Assert that the error reason (e.g. FRTRCV_30_xxx_BDE_NOISE) is set: 0x0400==0x0400 </Element>
+<Element type="ok" time="0"> TCASE20848: 8. Assert that the API returned E_OK: 0x0000==0x0000 </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:00, EventStatus:03 (Unknown DET-Error-Code)
+ </Element>
+<Element type="cmd" time="0"> Dem_ReportErrorStatus EventId:01, EventStatus:03 (FRTRCV_E_FR_INVALID_TRCVIDX)
+ </Element>
+<Element type="ok" time="0"> TCASE20848: 11. Assert that Dem_ReportErrorStatus is called with error code FRTRCV_E_FR_ERRN_TRCV with DEM_EVENT_STATUS_PREPASSED should occur 1 times with following data 0x0000, 0x0003: 0x0001==0x0001 </Element>
+<Element type="sect" time="0"> --- ANALYSIS --- </Element>
+</log>
+<result>ok</result>
+</testrun>
+</testcase>
+</testgroup>
+</testgroup>
+<testgroup name="Metrics">
+</testgroup>

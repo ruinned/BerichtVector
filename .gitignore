@@ -1,2 +1,11 @@
 ## Core latex/pdflatex auxiliary files:
 
+*.o
+*.a
+*.exe
+*.obj
+*.tlog
+*.asm
+*.htm
+*.d
+*.s

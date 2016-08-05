@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<Define-Matrix files="Msn_Cfg.h" input="D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage\ConfigMatrix.txt" root="D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage">
+  <element name="\Group1\Config1" path="D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage\Group1\Config1" weight="n.a.">
+    <obj gravity="0" name="MSN_DEV_ERROR_DETECT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_DEV_ERROR_DETECT\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_DEV_ERROR_REPORT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_DEV_ERROR_REPORT\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_PROD_ERROR_DETECT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_PROD_ERROR_DETECT\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_CONFIG_VARIANT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_CONFIG_VARIANT\s+\S+</pattern>
+      <value defined="True">0x01u</value>
+    </obj>
+    <obj gravity="0" name="MSN_CRC_CHECK" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_CRC_CHECK\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_USE_RTE" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_USE_RTE\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_PRECOMPILE_CRC" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_PRECOMPILE_CRC\s+\S+</pattern>
+      <value defined="True">0x64660D91u</value>
+    </obj>
+    <obj gravity="0" name="MSN_VERSION_INFO_API" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_VERSION_INFO_API\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_USE_EXTENDED_ASR_VERSION_CHECK" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_USE_EXTENDED_ASR_VERSION_CHECK\s*</pattern>
+      <value defined="True"/>
+    </obj>
+  </element>
+  <element name="\Group1\Config2" path="D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage\Group1\Config2" weight="n.a.">
+    <obj gravity="0" name="MSN_DEV_ERROR_DETECT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_DEV_ERROR_DETECT\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_DEV_ERROR_REPORT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_DEV_ERROR_REPORT\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_PROD_ERROR_DETECT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_PROD_ERROR_DETECT\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_CONFIG_VARIANT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_CONFIG_VARIANT\s+\S+</pattern>
+      <value defined="True">0x03u</value>
+    </obj>
+    <obj gravity="0" name="MSN_CRC_CHECK" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_CRC_CHECK\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_USE_RTE" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_USE_RTE\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_PRECOMPILE_CRC" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_PRECOMPILE_CRC\s+\S+</pattern>
+      <value defined="True">0x64660D91u</value>
+    </obj>
+    <obj gravity="0" name="MSN_VERSION_INFO_API" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_VERSION_INFO_API\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_USE_EXTENDED_ASR_VERSION_CHECK" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_USE_EXTENDED_ASR_VERSION_CHECK\s*</pattern>
+      <value defined="False"/>
+    </obj>
+  </element>
+  <element name="\Group2\Config1" path="D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage\Group2\Config1" weight="n.a.">
+    <obj gravity="0" name="MSN_DEV_ERROR_DETECT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_DEV_ERROR_DETECT\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_DEV_ERROR_REPORT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_DEV_ERROR_REPORT\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_PROD_ERROR_DETECT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_PROD_ERROR_DETECT\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_CONFIG_VARIANT" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_CONFIG_VARIANT\s+\S+</pattern>
+      <value defined="True">0x01u</value>
+    </obj>
+    <obj gravity="0" name="MSN_CRC_CHECK" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_CRC_CHECK\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_USE_RTE" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_USE_RTE\s+\S+</pattern>
+      <value defined="True">STD_OFF</value>
+    </obj>
+    <obj gravity="0" name="MSN_PRECOMPILE_CRC" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_PRECOMPILE_CRC\s+\S+</pattern>
+      <value defined="True">0x64660D91u</value>
+    </obj>
+    <obj gravity="0" name="MSN_VERSION_INFO_API" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_VERSION_INFO_API\s+\S+</pattern>
+      <value defined="True">STD_ON</value>
+    </obj>
+    <obj gravity="0" name="MSN_USE_EXTENDED_ASR_VERSION_CHECK" type="unknown">
+      <pattern type="REGEX">#\s*define\s+MSN_USE_EXTENDED_ASR_VERSION_CHECK\s*</pattern>
+      <value defined="True"/>
+    </obj>
+  </element>
+</Define-Matrix>
+

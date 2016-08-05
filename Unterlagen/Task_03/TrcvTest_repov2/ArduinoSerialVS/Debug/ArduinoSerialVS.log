@@ -1,0 +1,40 @@
+﻿Build started 2016-08-05 09:56:16.
+     1>Project "D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\ArduinoSerialVS.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\ArduinoSerialVS.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\Concurrent /ID:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\/Header /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt "Source Files\ArdTest.c" "Source Files\ArduinoCom.c" "Source Files\SCI_Driver.c"
+         SCI_Driver.c
+     1>D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\Concurrent\Std_Types.h(18): warning C4005: 'TRUE' : macro redefinition
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\windef.h(72) : see previous definition of 'TRUE'
+     1>D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\Concurrent\Std_Types.h(19): warning C4005: 'FALSE' : macro redefinition
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\windef.h(68) : see previous definition of 'FALSE'
+     1>Source Files\SCI_Driver.c(18): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         ArduinoCom.c
+         ArdTest.c
+         Generating Code...
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Debug\ArduinoSerialVS.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ArduinoSerialVS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Debug\ArduinoSerialVS.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Debug\ArduinoSerialVS.lib" /MACHINE:X86 Debug\ArduinoSerialVS.exe.embed.manifest.res
+         Debug\ArdTest.obj
+         Debug\ArduinoCom.obj
+         Debug\DIO.obj
+         Debug\example.obj
+         Debug\SCI_Driver.obj
+         Debug\SPI.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ArduinoSerialVS.exe.embed.manifest" /manifest Debug\ArduinoSerialVS.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         ArduinoSerialVS.vcxproj -> D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Debug\ArduinoSerialVS.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\ArduinoSerialVS.unsuccessfulbuild".
+         Touching "Debug\ArduinoSerialVS.lastbuildstate".
+     1>Done Building Project "D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\ArduinoSerialVS.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.57

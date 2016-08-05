@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="TestData">
+      <UniqueIdentifier>{78811c1b-d9f4-4ed2-9425-1015d22affba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestObj">
+      <UniqueIdentifier>{56e6c2a1-c0f5-4b38-ad6a-d912fa493a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestEnv_Stub">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="TestEnv_Stub\Bte">
+      <UniqueIdentifier>{bc363da2-9459-4947-9b07-44b229fb9b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..%255c..%255cImplementation">
+      <UniqueIdentifier>{8f24bc83-9093-4eaa-a608-06805b1a5f09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestEnv_Stub\TscDem.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscDet.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscEcuM.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscSchM.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscTest.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscAppl.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\BTE\BteCallContext.c">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\BTE\BteCheck.c">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\BTE\BteEvent.c">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\BTE\BteEventList.c">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\BTE\BteLog.c">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\BTE\BteReport.c">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\BTE\BteTestHandler.c">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\BTE\BteTiming.c">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Implementation\Mip.c">
+      <Filter>..%255c..%255cImplementation</Filter>
+    </ClCompile>
+    <ClCompile Include="TestData\Mip_Cfg.c">
+      <Filter>TestData</Filter>
+    </ClCompile>
+    <ClCompile Include="TestData\Mip_Lcfg.c">
+      <Filter>TestData</Filter>
+    </ClCompile>
+    <ClCompile Include="TestData\Mip_Pbcfg.c">
+      <Filter>TestData</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscMip.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestEnv_Stub\Compiler.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\ComStack_Types.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Dem.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Det.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\EcuM.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\EcuM_cbk.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\MemMap.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Platform_Types.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Rte_Type.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Std_Types.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscDem.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscDet.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscEcuM.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscSchM.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscTest.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscAppl.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Compiler_Cfg.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\Bte.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteCallContext.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteCfg.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteCheck.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteEvent.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteEventList.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteLog.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteReport.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteTestHandler.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\BTE\BteTiming.h">
+      <Filter>TestEnv_Stub\Bte</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Implementation\Mip.h">
+      <Filter>..%255c..%255cImplementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Implementation\Mip_Cbk.h">
+      <Filter>..%255c..%255cImplementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Implementation\Mip_Types.h">
+      <Filter>..%255c..%255cImplementation</Filter>
+    </ClInclude>
+    <ClInclude Include="TestData\Mip_Cfg.h">
+      <Filter>TestData</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\SchM_Mip.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscMip.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Implementation\Mip_Compiler_Cfg.inc">
+      <Filter>..%255c..%255cImplementation</Filter>
+    </None>
+    <None Include="..\..\Implementation\Mip_MemMap.inc">
+      <Filter>..%255c..%255cImplementation</Filter>
+    </None>
+  </ItemGroup>
+</Project>

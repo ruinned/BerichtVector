@@ -1,0 +1,132 @@
+REM *******************************************************************************************************************
+REM FILE DESCRIPTION
+REM -------------------------------------------------------------------------------------------------------------------
+REM File:         TestPlan.bat
+REM Description:  TestPlan for CDK-based test activities
+REM -------------------------------------------------------------------------------------------------------------------
+REM REVISION HISTORY
+REM -------------------------------------------------------------------------------------------------------------------
+REM 01.00.00  2011-07-28  vismas  new template
+REM *******************************************************************************************************************
+
+REM *******************************************************************************************************************
+REM Name:         UserInitHandler1
+REM Description:  Defines the project-specific data
+REM Parameter:    Input: TestPlan.Path            absolute path to folder of this file
+REM *******************************************************************************************************************
+:UserInitHandler1
+  set Component.Name=Msr4_Component
+  set Component.AutosarName=Mip
+  set Process=Safe
+  
+  set ECO.Used=false
+  set UseConfigSpecificOutput=true
+  
+  set ReviewHelper.AdditionalDefines=-D=__interrupt(x)
+  
+  REM --- Location of test artifacts
+  set TestReport.Path=%TestPlan.Path%\..\TestReports
+  set SilentReport.Path=%TestPlan.Path%\..\TestReports\SilentBSW
+  set CDP.Report.File=%TestReport.Path%\TestReport.vtr
+
+  REM --- Location of testobjects
+  set Description.Path=%TestPlan.Path%\..\Description
+  set Doc_SafetyMan.Path=%TestPlan.Path%\..\Doc_SafetyMan
+  set Doc_TechRef.Path=%TestPlan.Path%\..\Doc_TechRef
+  set Doc_UserMan.Path=%TestPlan.Path%\..\Doc_UserMan
+  set ElisaPlugin.Path=%TestPlan.Path%\..\ElisaPlugin
+  set GenTool_GeneratorMsr.Path=%TestPlan.Path%\..\GenTool_GeneratorMsr
+  set Implementation.Path=%TestPlan.Path%\..\Implementation
+  set Make.Path=%TestPlan.Path%\..\Make
+  set TscStandard.Path=%TestPlan.Path%
+  set TscStandard.EmbeddedSystem.Path=%TscStandard.Path%\EmbeddedSystem
+  set TscStandard.ElisaPlugin.Path=%TscStandard.Path%\ElisaPlugin
+set QAC.CopyProjectFiles=true
+  set EmbeddedSystem.VC.Project=%TscStandard.EmbeddedSystem.Path%\TestEnv_Stub.vcxproj
+  set EmbeddedSystem.Execute.OutputPath=%TscStandard.EmbeddedSystem.Path%\_Temp\VC_X_Asr4Msn
+  set EmbeddedSystem.Execute.FileExe=!EmbeddedSystem.Execute.OutputPath!\X_Asr4Msn.exe
+  set EmbeddedSystem.Execute.Report=!EmbeddedSystem.Execute.OutputPath!\BteReport.xml  
+  set EmbeddedSystem.TestData.Path=%TscStandard.EmbeddedSystem.Path%\TestData
+  set EmbeddedSystem.TestDataCollection.Path=%TscStandard.EmbeddedSystem.Path%\TestData\Storage
+  set EmbeddedSystem.TestData.RefPath=!EmbeddedSystem.TestDataCollection.Path!
+  set EmbeddedSystem.VC.Project=%TscStandard.EmbeddedSystem.Path%\X_Asr4Msn.vcxproj
+
+  REM - relative paths to (embedded) component files
+  set EmbeddedComponent.Path=..\..\Implementation
+  set EmbeddedComponent.StaticSource.List=%EmbeddedComponent.Path%\Mip.c
+  set EmbeddedComponent.StaticHeader.List=%EmbeddedComponent.Path%\Mip.h %EmbeddedComponent.Path%\Mip_Cbk.h %EmbeddedComponent.Path%\Mip_Types.h %EmbeddedComponent.Path%\Mip_Compiler_Cfg.inc %EmbeddedComponent.Path%\Mip_MemMap.inc 
+  set EmbeddedComponent.DynamicSource.List=TestData\Mip_Cfg.c TestData\Mip_Lcfg.c TestData\Mip_PBcfg.c
+  set EmbeddedComponent.DynamicHeader.List=TestData\Mip_Cfg.h
+
+
+  set EmbeddedComponent.DynamicSource2.List=Mip_Cfg.c Mip_Lcfg.c Mip_PBcfg.c
+  set EmbeddedComponent.DynamicHeader2.List=Mip_Cfg.h
+  
+  REM - lists of files for test environment (relative to current path)
+  set Bte_FileList=TestEnv_Stub\Bte\BteCallContext.c TestEnv_Stub\Bte\BteCheck.c TestEnv_Stub\Bte\BteEvent.c TestEnv_Stub\Bte\BteEventList.c TestEnv_Stub\Bte\BteLog.c TestEnv_Stub\Bte\BteReport.c TestEnv_Stub\Bte\BteTestHandler.c TestEnv_Stub\Bte\BteTiming.c
+  set EmbeddedSystem.TestEnv.FileList=%Bte_FileList% TestEnv_Stub\TscAppl.c TestEnv_Stub\TscDet.c TestEnv_Stub\TscDem.c TestEnv_Stub\TscEcuM.c TestEnv_Stub\TscSchM.c
+
+  REM - lists of include paths (relative to current path)
+  set EmbeddedSystem.IncludeList=%EmbeddedComponent.Path% TestData TestEnv_Stub\Bte TestEnv_Stub TestObj
+
+  REM - target-specific settings
+  set EmbeddedSystem.CheckPClint.UserOptions=-e537 -e451
+  set EmbeddedSystem.CheckVectorRules.UserOptions=
+  
+  set CDK.Temp.Path=%TscStandard.Path%\_Temp
+  set VtrMerge.MergePassedTests=true 
+goto :EOF
+
+REM *******************************************************************************************************************
+REM Name:         UserInitHandler2
+REM Description:  Overwrites the default settings derived from the standard settings in UserInitHandler2.
+REM Parameter:    -
+REM *******************************************************************************************************************
+:UserInitHandler2
+  set EmbeddedSystem.CheckPClint.FileList=%EmbeddedComponent.OverallSource.List% TestEnv_Stub\TscAppl.c
+goto :EOF
+
+REM *******************************************************************************************************************
+REM Name:         CDP_UserOverview
+REM Description:  This code is executed when the available testplan targets are displayed in the console.
+REM Parameter:    -
+REM *******************************************************************************************************************
+:CDP_UserOverview
+  echo   u1      MyOwnTarget
+  echo   mt      MyTool
+goto :EOF
+
+REM *******************************************************************************************************************
+REM Name:         CDP_UserSelect
+REM Description:  This code is executed when the user has selected a target in the console.
+REM ParameterIn:  SELECTION               String that was entered
+REM ParameterOut: CDP.UserSequence.Name   Name of the target that has to be called
+REM *******************************************************************************************************************
+:CDP_UserSelect
+  set CDP.UserSequence.Name=
+  if "%SELECTION%"=="u1" (
+    set CDP.UserSequence.Name=MyOwnTarget
+  )
+  if "%SELECTION%"=="mt" (
+    set CDP.UserSequence.Name=DoMyTool
+  )
+goto :EOF
+
+REM *******************************************************************************************************************
+REM Name:         MyOwnTarget
+REM Description:  
+REM Parameter:    -
+REM *******************************************************************************************************************
+:MyOwnTarget
+  echo - Your example target is now executed
+  pause
+goto :EOF
+
+:DoMyTool
+  echo - Do what you want...
+  pause
+goto :EOF
+
+REM *******************************************************************************************************************
+REM EOF
+REM *******************************************************************************************************************

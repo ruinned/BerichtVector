@@ -1,0 +1,109 @@
+<html><title>
+        Configuration Overview
+      </title><style type="text/css">
+		
+			
+        #box1 {
+        width: 500px;
+        height: 300px;
+        overflow:auto;
+        }
+        #box1 {
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        position: expression("absolute");
+        top: expression(document.body.scrollTop - this.offsetHeight + this.offsetHeight + 550);
+        }
+        #box1[id] {
+        position: fixed;
+        }
+        
+		td.border_width{
+		border-style: inset;
+		border-width: medium;
+		}
+        
+        
+        table, td
+        {
+        border-color: #000000;
+        border-style: solid;
+        }
+
+        td,th
+        {
+        border-color: #000000;
+        font-family: Verdana,Arial,Helvetica;
+        font-size:10pt;
+        vertical-align:bottom;
+        }
+
+        table
+        {
+        border-width: 1px 1px 1px 1px;
+        border-spacing: 1;
+        border-collapse: collapse;
+       
+        }
+          .vertical-text {
+          display: inline-block;
+          font-style:italic;
+          overflow: hidden;
+          width: 1.5em;
+          writing-mode: tb-rl;
+          filter: flipv fliph;
+        }
+        .vertical-text__inner {
+          display: inline-block;
+          white-space: nowrap;
+          line-height: 1.5;
+          transform: translate(0,100%) rotate(-90deg);
+          transform-origin: 0 0; 
+        }
+		
+		/* This element stretches the parent to be square
+		by using the mechanics of vertical margins  */
+		.vertical-text__inner:after {
+			content: "";
+			display: block;
+			margin: -1.5em 0 100%;
+		}
+		
+        td
+        {
+        margin: 0;
+        padding: 2px;
+        border-width: 1px 1px 0 0;
+        }
+		
+		a:link
+		{
+			color:black;
+			text-decoration:none;
+		}
+		
+		a:visited
+		{
+			color:black;
+		}
+		a:hover
+		{
+			color:#b70032;
+		}
+		
+	
+		
+        body
+        {
+        font-family: Verdana,Arial,Helvetica;
+        font-size:10pt;
+        }
+      </style><body bgcolor="#e5e5e5"><h1>
+      Config Matrix Defines
+    </h1><table border="0" width="100%"><td bgcolor="#b70032" colspan="4"><font color="#ffffff" size="4">
+		  
+          Matrix
+        </font><tr bgcolor="darkgrey"><td colspan=" 4"><b>Root:</b>D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage<br><b>Input:</b>D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage\ConfigMatrix.txt</td></tr></td><tr><td style="vertical-align:top;"></td><td><div class="vertical-text"><div class="vertical-text__inner"><b><a href="file:///D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage\Group1\Config1">\Group1\Config1</a></b></div></div></td><td><div class="vertical-text"><div class="vertical-text__inner"><b><a href="file:///D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage\Group1\Config2">\Group1\Config2</a></b></div></div></td><td><div class="vertical-text"><div class="vertical-text__inner"><b><a href="file:///D:\usr\Products\X_Asr4Msn\trunk\_doc\30_Implementation\TscStandard\EmbeddedSystem\TestData\Storage\Group2\Config1">\Group2\Config1</a></b></div></div></td></tr><tr><td bgcolor="darkgray">MSN_DEV_ERROR_DETECT</td><td align="center">STD_ON</td><td align="center">STD_OFF</td><td align="center">STD_ON</td></tr><tr><td bgcolor="darkgray">MSN_DEV_ERROR_REPORT</td><td align="center">STD_ON</td><td align="center">STD_OFF</td><td align="center">STD_ON</td></tr><tr><td bgcolor="darkgray">MSN_PROD_ERROR_DETECT</td><td align="center">STD_OFF</td><td align="center">STD_OFF</td><td align="center">STD_OFF</td></tr><tr><td bgcolor="darkgray">MSN_CONFIG_VARIANT</td><td align="center">0x01u</td><td align="center">0x03u</td><td align="center">0x01u</td></tr><tr><td bgcolor="darkgray">MSN_CRC_CHECK</td><td align="center">STD_ON</td><td align="center">STD_ON</td><td align="center">STD_ON</td></tr><tr><td bgcolor="darkgray">MSN_USE_RTE</td><td align="center">STD_OFF</td><td align="center">STD_OFF</td><td align="center">STD_OFF</td></tr><tr><td bgcolor="darkgray">MSN_PRECOMPILE_CRC</td><td align="center">0x64660D91u</td><td align="center">0x64660D91u</td><td align="center">0x64660D91u</td></tr><tr><td bgcolor="darkgray">MSN_VERSION_INFO_API</td><td align="center">STD_ON</td><td align="center">STD_OFF</td><td align="center">STD_ON</td></tr><tr><td bgcolor="darkgray">MSN_USE_EXTENDED_ASR_VERSION_CHECK</td><td align="center"></td><td align="center">
+			N/A
+		</td><td align="center"></td></tr></table></body></html>

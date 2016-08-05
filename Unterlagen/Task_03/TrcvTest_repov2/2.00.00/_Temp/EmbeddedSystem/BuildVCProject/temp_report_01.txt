@@ -1,0 +1,1468 @@
+Microsoft (R)-Buildmodul, Version 4.6.81.0
+[Microsoft .NET Framework, Version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+
+Der Buildvorgang wurde am 2016-08-03 09:11:04 gestartet.
+Projekt "D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub.vcxproj" auf Knoten "1", rebuild Ziel(e).
+_PrepareForClean:
+  Die Datei "_build/TestEnv_Stub\TestEnv_Stub.lastbuildstate" wird gel”scht.
+InitializeBuildStatus:
+  "_build/TestEnv_Stub\TestEnv_Stub.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header /IFrTrcv_30_Tja1080 /I..\..\Implementation /ITestAppl /ITestData /ITestEnv_Stub /ITestFw\zBte /I..\..\..\..\external\BSW\FrTrcv_30_Tja1080 /ITestEnv_Integration /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _TSC /D VECTOR_DEBUG /D SKIP_MAGIC_NUMBER /D TSC_USECASE_AUTOSAR_COMMENT /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"_build/TestEnv_Stub\\" /Fd"_build/TestEnv_Stub\vc80.pdb" /Gd /TC /showIncludes /analyze- /errorReport:queue "..\..\ArduinoSerialVS\Source Files\ArdTest.c" "..\..\ArduinoSerialVS\Source Files\ArduinoCom.c" "..\..\ArduinoSerialVS\Source Files\SCI_Driver.c" TestData\FrTrcv_30_Tja1080_Cfg.c TestEnv_Stub\TscDem.c TestEnv_Stub\TscDet.c TestEnv_Stub\TscDio.c TestEnv_Stub\TscEcuM_Cbk.c TestEnv_Stub\TscSchm_FrTrcv_30_Tja1080.c TestAppl\TscAppl.c TestAppl\TscTest.c TestFw\zBte\BteCallContext.c TestFw\zBte\BteCheck.c TestFw\zBte\BteEvent.c TestFw\zBte\BteEventList.c TestFw\zBte\BteLog.c TestFw\zBte\BteReport.c TestFw\zBte\BteTestHandler.c TestFw\zBte\BteTiming.c FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.c FrTrcv_30_Tja1080\FrTrcv_30_Tja1080_Phy.c
+  FrTrcv_30_Tja1080_Phy.c
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\frtrcv_30_tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Fr_GeneralTypes.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:       D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Det.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Os.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\EcuM_Cbk.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dem.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\rte_type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\frtrcv_30_tja1080\FrTrcv_30_Tja1080_Cbk.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\frtrcv_30_tja1080\FrTrcv_30_Tja1080_Phy.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dio.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dio_Cfg.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio_Types.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArdTest_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArduinoCom.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  FrTrcv_30_Tja1080.c
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\frtrcv_30_tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Fr_GeneralTypes.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:       D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Det.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Os.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\EcuM_Cbk.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dem.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\rte_type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\frtrcv_30_tja1080\FrTrcv_30_Tja1080_Cbk.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\frtrcv_30_tja1080\FrTrcv_30_Tja1080_Phy.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dio.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dio_Cfg.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio_Types.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArdTest_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArduinoCom.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Det.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  BteTiming.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTestHandler.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteReport.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  BteTestHandler.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTestHandler.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteReport.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestAppl\TscTest.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  BteReport.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file: C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\windows.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\sdkddkver.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\excpt.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdarg.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\windef.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnt.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\ctype.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\specstrings.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sal_supp.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\specstrings_supp.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\specstrings_strict.h
+  Note: including file:      C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\specstrings_undef.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\driverspecs.h
+  Note: including file:      c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sdv_driverspecs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\kernelspecs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\basetsd.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\guiddef.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack4.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack4.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack4.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack4.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack2.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack2.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack2.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack8.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ktmtypes.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winbase.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winerror.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wingdi.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack2.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack2.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack4.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack4.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winuser.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack2.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\tvout.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnls.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wincon.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winver.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\verrsrc.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winreg.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\reason.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnetwk.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wnnc.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\cderr.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\dde.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ddeml.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\dlgs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\lzexpand.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\mmsystem.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\nb30.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpc.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcdce.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcdcep.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcnsi.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcnterr.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcasync.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\shellapi.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winperf.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winsock.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\inaddr.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wincrypt.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\bcrypt.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ncrypt.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\bcrypt.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winscard.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wtypes.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcndr.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcnsip.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcsal.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\guiddef.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winioctl.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winsmcrd.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winspool.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\prsht.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack4.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ole2.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\objbase.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\limits.h
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\unknwn.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\objidl.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\guiddef.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\cguid.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\urlmon.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\oleidl.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\servprov.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\msxml.h
+  Note: including file:      c:\program files (x86)\microsoft sdks\windows\v7.0a\include\oaidl.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\propidl.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\oleauto.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\commdlg.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\prsht.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\stralign.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winsvc.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\mcx.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\imm.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ime_cmodes.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteReport.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTestHandler.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  BteLog.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteReport.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTestHandler.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  BteEventList.c
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  BteEvent.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  BteCheck.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteReport.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTestHandler.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  BteCallContext.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteReport.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  TscTest.c
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testappl\TscTest.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testappl\TscAppl.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Fr_GeneralTypes.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:       D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:        D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:       D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Det.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:          d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Os.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\EcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dem.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\rte_type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080_Cbk.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\TscDet.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080_Phy.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dio.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dio_Cfg.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio_Types.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArdTest_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArduinoCom.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dio.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\TscDem.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArdTest.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\arduinoserialvs\header\ArdTest_Cfg.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestFw\zBte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:     c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestFw\zBte\BteTestHandler.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestFw\zBte\BteReport.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\conio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  TscAppl.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testappl\TscAppl.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Fr_GeneralTypes.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:       D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:        D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:       D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Det.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:          d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Os.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\EcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dem.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\rte_type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080_Cbk.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestFw\zBte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\comstack_types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\limits.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\conio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  TscSchm_FrTrcv_30_Tja1080.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscSchm_FrTrcv_30_Tja1080.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\Schm_FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\ComStack_Cfg.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Os.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Fr_GeneralTypes.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\EcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dem.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\rte_type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestAppl\TscAppl.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080_Cbk.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestFw\zBte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\comstack_types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  TscEcuM_Cbk.c
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestFw\zBte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\comstack_types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:     c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestAppl\TscAppl.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Fr_GeneralTypes.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:          d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Os.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\EcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dem.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\rte_type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080_Cbk.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  TscDio.c
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dio_Cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDio_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArdTest_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArduinoCom.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dio_cfg.h
+d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\tscdio.c(146): warning C4101: 'swlocal' : unreferenced local variable [D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub.vcxproj]
+  TscDet.c
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:    c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestAppl\TscAppl.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\ComStack_Cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Fr_GeneralTypes.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Os.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\EcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dem.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\rte_type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080_Cbk.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestAppl\TscTest.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestFw\zBte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\comstack_types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  TscDem.c
+  Note: including file: d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dem.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\rte_type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\ComStack_Cfg.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestAppl\TscAppl.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Fr_GeneralTypes.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Os.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\EcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Dem.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080_Cbk.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestAppl\TscTest.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestFw\zBte\BteLog.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\comstack_types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEventList.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCallContext.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteTiming.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteEvent.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCheck.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestData\v_cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\v_def.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testfw\zbte\BteCfg.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:     c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  FrTrcv_30_Tja1080_Cfg.c
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\FrTrcv_30_Tja1080\FrTrcv_30_Tja1080.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\ComStack_Cfg.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Fr_GeneralTypes.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\FrTrcv_30_Tja1080_Cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\SchM_FrTrcv_30_Tja1080_Type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_Type.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:      d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_UserTypes.h
+  Note: including file:       D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\ComStack_Types.h
+  Note: including file:      D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Det.h
+  Note: including file:       d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:        d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Det.h
+  Note: including file:         d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDet.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\Rte_DataHandleType.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:     D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Os.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\ComStack_Types.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:   D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\EcuM_Cbk.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscEcuM_Cbk.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Dem.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\TscDem.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testdata\rte_type.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Std_Types.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\MemMap.h
+  SCI_Driver.c
+  Note: including file: C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\windows.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\sdkddkver.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\excpt.h
+  Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\sal.h
+  Note: including file:     c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdarg.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\windef.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnt.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\ctype.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\specstrings.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sal_supp.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\specstrings_supp.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\specstrings_strict.h
+  Note: including file:      C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\specstrings_undef.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\driverspecs.h
+  Note: including file:      c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sdv_driverspecs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\kernelspecs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\basetsd.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\guiddef.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack4.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack4.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack4.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack4.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack2.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack2.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack2.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\pshpack8.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ktmtypes.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winbase.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winerror.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wingdi.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack2.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack2.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack4.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack4.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winuser.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack2.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\tvout.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnls.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wincon.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winver.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\verrsrc.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winreg.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\reason.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnetwk.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wnnc.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\cderr.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\dde.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ddeml.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\dlgs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\lzexpand.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\mmsystem.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\nb30.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpc.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcdce.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcdcep.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcnsi.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcnterr.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcasync.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\shellapi.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winperf.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winsock.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\inaddr.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wincrypt.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\bcrypt.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ncrypt.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\bcrypt.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winscard.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\wtypes.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\rpcndr.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcnsip.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\rpcsal.h
+  Note: including file:     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    c:\program files (x86)\microsoft sdks\windows\v7.0a\include\guiddef.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winioctl.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   c:\program files (x86)\microsoft sdks\windows\v7.0a\include\winsmcrd.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winspool.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\prsht.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack4.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ole2.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\objbase.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\limits.h
+  Note: including file:      C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\unknwn.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\objidl.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\guiddef.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\cguid.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\urlmon.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\oleidl.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\servprov.h
+  Note: including file:     c:\program files (x86)\microsoft sdks\windows\v7.0a\include\msxml.h
+  Note: including file:      c:\program files (x86)\microsoft sdks\windows\v7.0a\include\oaidl.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\propidl.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\oleauto.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack8.h
+  Note: including file:    C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\commdlg.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\prsht.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\pshpack1.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\poppack.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\stralign.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winsvc.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\mcx.h
+  Note: including file:  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\imm.h
+  Note: including file:   C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\ime_cmodes.h
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\wtime.inl
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl
+  Note: including file: C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\crtdefs.h
+  Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\swprintf.inl
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\SCI_Driver.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+d:\usr\task_03\trcvtest_repov2\arduinoserialvs\source files\sci_driver.c(23): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub.vcxproj]
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+  ArduinoCom.c
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArduinoCom.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\SCI_Driver.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Generating Code...
+  Compiling...
+  ArdTest.c
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArdTest.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Platform_Types.h
+  Note: including file:   d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler.h
+  Note: including file:    d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\Compiler_Cfg.h
+  Note: including file:  d:\usr\task_03\trcvtest_repov2\arduinoserialvs\header\ArdTest_Cfg.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\ArduinoCom.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Note: including file: D:\usr\Task_03\TrcvTest_repov2\ArduinoSerialVS\Header\SCI_Driver.h
+  Note: including file:  D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub\Std_Types.h
+  Generating Code...
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"_build/TestEnv_Stub\TestEnv_Stub.exe" /INCREMENTAL /NOLOGO kernel32.lib /MANIFEST /ManifestFile:"_build/TestEnv_Stub\TestEnv_Stub.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"_build/TestEnv_Stub\TestEnv_Stub.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"_build/TestEnv_Stub\TestEnv_Stub.lib" /MACHINE:X86 _build/TestEnv_Stub\ArdTest.obj
+  _build/TestEnv_Stub\ArduinoCom.obj
+  _build/TestEnv_Stub\SCI_Driver.obj
+  _build/TestEnv_Stub\FrTrcv_30_Tja1080_Cfg.obj
+  _build/TestEnv_Stub\TscDem.obj
+  _build/TestEnv_Stub\TscDet.obj
+  _build/TestEnv_Stub\TscDio.obj
+  _build/TestEnv_Stub\TscEcuM_Cbk.obj
+  _build/TestEnv_Stub\TscSchm_FrTrcv_30_Tja1080.obj
+  _build/TestEnv_Stub\TscAppl.obj
+  _build/TestEnv_Stub\TscTest.obj
+  _build/TestEnv_Stub\BteCallContext.obj
+  _build/TestEnv_Stub\BteCheck.obj
+  _build/TestEnv_Stub\BteEvent.obj
+  _build/TestEnv_Stub\BteEventList.obj
+  _build/TestEnv_Stub\BteLog.obj
+  _build/TestEnv_Stub\BteReport.obj
+  _build/TestEnv_Stub\BteTestHandler.obj
+  _build/TestEnv_Stub\BteTiming.obj
+  _build/TestEnv_Stub\FrTrcv_30_Tja1080.obj
+  _build/TestEnv_Stub\FrTrcv_30_Tja1080_Phy.obj
+  TestEnv_Stub.vcxproj -> D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\_build/TestEnv_Stub\TestEnv_Stub.exe
+Manifest:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\_build/TestEnv_Stub\TestEnv_Stub.exe.manifest" /manifest _build/TestEnv_Stub\TestEnv_Stub.exe.intermediate.manifest
+FinalizeBuildStatus:
+  Die Datei "_build/TestEnv_Stub\TestEnv_Stub.unsuccessfulbuild" wird gel”scht.
+  Aktualisieren des Timestamps von "_build/TestEnv_Stub\TestEnv_Stub.lastbuildstate".
+Die Erstellung des Projekts "D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub.vcxproj" ist abgeschlossen, rebuild Ziel(e).
+
+Der Buildvorgang wurde erfolgreich ausgefhrt.
+
+"D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub.vcxproj" (rebuild Ziel) (1) ->
+(ClCompile Ziel) -> 
+  d:\usr\task_03\trcvtest_repov2\2.00.00\embeddedsystem\testenv_stub\tscdio.c(146): warning C4101: 'swlocal' : unreferenced local variable [D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub.vcxproj]
+  d:\usr\task_03\trcvtest_repov2\arduinoserialvs\source files\sci_driver.c(23): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\TestEnv_Stub.vcxproj]
+
+    2 Warnung(en)
+    0 Fehler
+
+Verstrichene Zeit 00:00:02.76

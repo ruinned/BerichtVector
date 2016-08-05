@@ -591,7 +591,10 @@ Compiler- und Linker-Bibliotheken zur Verfügung stellen, die das Erstellen einer
 \label{fig:BTE_func1}
 \end{figure}
 %
+
+Weitere Einstellungen des STM32F4 hier angeben.
 \newpage
+%
 \section{Siebte Woche}
 %
 \subsection{Wochenübersicht}
@@ -691,6 +694,28 @@ void BteReport_Write( char *text )
 ...
 \end{lstlisting}
 %
+Wie sieht die Datenstruktur aus:
+%
+\begin{itemize}
+\item Erste Datenstruktur
+\item Zweite Datenstruktur
+\end{itemize}
+%
+Die erste Struktur hat folgende Strukturen als Haupteigenschaft:
+%
+typedef struct stBteEventLog {
+  uint16 code;
+  uint32 data;
+} tBteEventLog;
+
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:usehardware}]
+typedef struct stBteLogList 
+{
+  uint16     size;
+  tBteEventLog   elem[kBteLogList_size];
+} tBteLogList;
+
+\end{lstlisting}
 %
 \newpage
 \section{Achte Woche}

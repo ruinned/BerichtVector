@@ -1,0 +1,37 @@
+@startuml
+title [TSEQ_Mip_GetVersionInfo.001]
+hide footbox
+participant Appl
+participant DUT
+participant Dem
+participant Det
+participant EcuM
+participant SchM
+== INIT ==
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_InitMemory ()
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_Init ()
+autonumber 0 "<b>t=0"
+DUT -> Det : Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10)
+ note right of Appl #red: Fail: DET Error
+== RUN ==
+ note left of Appl: --- invalid parameter
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_GetVersionInfo ()
+autonumber 0 "<b>t=0"
+DUT -> Det : Det_ReportError (ModuleId=0, InstanceId=0, ApiId=16, ErrorId=12)
+ note right of Appl #red: Fail: DET Error
+ note right of Appl #red: Fail: There is a DET entry: 2 == 1
+ note right of Appl #red: Fail: There is a DET entry for MIP module for API for event: 0 == 1
+ note left of Appl: --- valid parameter
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_GetVersionInfo ()
+ note right of Appl #lime: Ok: There is no DET entry: 0 == 0 
+ note right of Appl #lime: Ok: moduleID: 0 == 0 
+ note right of Appl #lime: Ok: sw_major_version: 3 == 3 
+ note right of Appl #lime: Ok: sw_minor_version: 0 == 0 
+ note right of Appl #lime: Ok: sw_patch_version: 0 == 0 
+ note right of Appl #lime: Ok: vendorID: 30 == 30 
+== END ==
+@enduml

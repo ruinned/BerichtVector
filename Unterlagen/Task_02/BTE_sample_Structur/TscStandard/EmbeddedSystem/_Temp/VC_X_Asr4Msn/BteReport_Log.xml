@@ -1,0 +1,54 @@
+<testcase id="9">
+<testrun date="Tue May 31 14:01:34 2016" executor="visres" parameter="">
+<log>
+<Element type="01" time="0000">0100</Element>
+<Element type="01" time="0000">0200</Element>
+<Element type="00" time="0000">0102 data1=0a000000 data2=00000000 data3=00000000 data4=0a000000</Element>
+<Element type="01" time="0000">0100</Element>
+<Element type="01" time="0000">0200</Element>
+<Element type="00" time="0000">0102 data1=0a000000 data2=00000000 data3=00000000 data4=0a000000</Element>
+</log>
+</testrun>
+</testcase>
+<testcase id="8">
+<testrun date="Tue May 31 14:01:34 2016" executor="visres" parameter="">
+<log>
+<Element type="01" time="0000">0100</Element>
+<Element type="01" time="0000">0200</Element>
+<Element type="00" time="0000">0102 data1=0a000000 data2=00000000 data3=00000000 data4=0a000000</Element>
+<Element type="01" time="0000">0100</Element>
+<Element type="01" time="0000">0200</Element>
+<Element type="00" time="0000">0102 data1=0a000000 data2=00000000 data3=00000000 data4=0a000000</Element>
+</log>
+</testrun>
+</testcase>
+<testcase id="7">
+<testrun date="Tue May 31 14:01:34 2016" executor="visres" parameter="">
+<log>
+<Element type="01" time="0000">0100</Element>
+<Element type="01" time="0000">0200</Element>
+<Element type="00" time="0000">0102 data1=0a000000 data2=00000000 data3=00000000 data4=0a000000</Element>
+<Element type="01" time="0000">0300</Element>
+<Element type="01" time="a000">0300</Element>
+<Element type="01" time="4100">0300</Element>
+<Element type="01" time="e100">0300</Element>
+<Element type="01" time="8200">0300</Element>
+<Element type="01" time="2300">0300</Element>
+<Element type="01" time="c300">0300</Element>
+<Element type="01" time="6400">0300</Element>
+<Element type="01" time="0500">0300</Element>
+<Element type="01" time="a500">0300</Element>
+<Element type="01" time="4600">0300</Element>
+<Element type="01" time="4600">0300</Element>
+</log>
+</testrun>
+</testcase>
+<testcase id="1">
+<testrun date="Tue May 31 14:01:34 2016" executor="visres" parameter="">
+<log>
+<Element type="01" time="0000">0100</Element>
+<Element type="01" time="0000">0200</Element>
+<Element type="00" time="0000">0102 data1=0a000000 data2=00000000 data3=00000000 data4=0a000000</Element>
+</log>
+</testrun>
+</testcase>

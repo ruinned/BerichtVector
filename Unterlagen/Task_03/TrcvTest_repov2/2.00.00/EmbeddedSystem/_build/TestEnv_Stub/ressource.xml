@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol type="Exe" id="1" name="TestEnv_Stub">
+  <symbol type="Compiland" id="2" name="D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\_build\TestEnv_Stub\FrTrcv_30_Tja1080_Phy.obj">
+    <symbol type="Data" id="623" name="FrTrcv_30_Tja1080_Channel" size="6" addressSection="3" addressOffset="16560" RVA="155824">
+    </symbol>
+    <symbol type="Data" id="624" name="FrTrcv_30_Tja1080_TrcvPinEn" size="4" addressSection="3" addressOffset="16568" RVA="155832">
+    </symbol>
+    <symbol type="Data" id="625" name="FrTrcv_30_Tja1080_TrcvPinStbn" size="4" addressSection="3" addressOffset="16572" RVA="155836">
+    </symbol>
+    <symbol type="Data" id="626" name="FrTrcv_30_Tja1080_TrcvModeTable" size="4" addressSection="3" addressOffset="16576" RVA="155840">
+    </symbol>
+    <symbol type="Function" id="627" name="FrTrcv_30_Tja1080_Phy_Init" size="37" addressSection="2" addressOffset="55216" RVA="124848">
+    </symbol>
+    <symbol type="Function" id="629" name="FrTrcv_30_Tja1080_Phy_SetMode" size="243" addressSection="2" addressOffset="55264" RVA="124896">
+    </symbol>
+    <symbol type="Function" id="633" name="FrTrcv_30_Tja1080_Phy_GetMode" size="161" addressSection="2" addressOffset="55568" RVA="125200">
+    </symbol>
+    <symbol type="Function" id="637" name="FrTrcv_30_Tja1080_Phy_ReadStatusWord" size="337" addressSection="2" addressOffset="55776" RVA="125408">
+    </symbol>
+  </symbol>
+  <symbol type="Compiland" id="3" name="D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\_build\TestEnv_Stub\FrTrcv_30_Tja1080.obj">
+    <symbol type="Function" id="644" name="FrTrcv_30_Tja1080_InitMemory" size="44" addressSection="2" addressOffset="52496" RVA="122128">
+    </symbol>
+    <symbol type="Function" id="645" name="FrTrcv_30_Tja1080_Init" size="203" addressSection="2" addressOffset="52560" RVA="122192">
+    </symbol>
+    <symbol type="Function" id="647" name="FrTrcv_30_Tja1080_CheckWakeupEvent" size="314" compInfo="D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\_build\TestEnv_Stub\FrTrcv_30_Tja1080.obj" addressSection="2" addressOffset="52816" RVA="122448" memoryInfo="Code " paddingBytes="86">
+    </symbol>
+    <symbol type="Function" id="655" name="FrTrcv_30_Tja1080_ErrorDiagnosis" size="222" compInfo="D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\_build\TestEnv_Stub\FrTrcv_30_Tja1080.obj" addressSection="2" addressOffset="53216" RVA="122848" memoryInfo="Code " paddingBytes="66">
+    </symbol>
+    <symbol type="Function" id="660" name="FrTrcv_30_Tja1080_MainFunction" size="123" addressSection="2" addressOffset="53504" RVA="123136">
+    </symbol>
+    <symbol type="Function" id="662" name="FrTrcv_30_Tja1080_GetVersionInfo" size="137" addressSection="2" addressOffset="53664" RVA="123296">
+    </symbol>
+    <symbol type="Function" id="665" name="FrTrcv_30_Tja1080_SetTransceiverMode" size="241" addressSection="2" addressOffset="53840" RVA="123472">
+    </symbol>
+    <symbol type="Function" id="670" name="FrTrcv_30_Tja1080_GetTransceiverMode" size="159" addressSection="2" addressOffset="54144" RVA="123776">
+    </symbol>
+    <symbol type="Function" id="675" name="FrTrcv_30_Tja1080_GetTransceiverWUReason" size="157" addressSection="2" addressOffset="54352" RVA="123984">
+    </symbol>
+    <symbol type="Function" id="680" name="FrTrcv_30_Tja1080_ClearTransceiverWakeup" size="141" addressSection="2" addressOffset="54560" RVA="124192">
+    </symbol>
+    <symbol type="Function" id="684" name="FrTrcv_30_Tja1080_DisableTransceiverBranch" size="39" addressSection="2" addressOffset="54736" RVA="124368">
+    </symbol>
+    <symbol type="Function" id="687" name="FrTrcv_30_Tja1080_EnableTransceiverBranch" size="39" addressSection="2" addressOffset="54784" RVA="124416">
+    </symbol>
+    <symbol type="Function" id="690" name="FrTrcv_30_Tja1080_GetTransceiverError" size="168" addressSection="2" addressOffset="54832" RVA="124464">
+    </symbol>
+    <symbol type="Function" id="696" name="FrTrcv_30_Tja1080_CheckWakeupByTransceiver" size="127" addressSection="2" addressOffset="55056" RVA="124688">
+    </symbol>
+  </symbol>
+  <symbol type="Compiland" id="19" name="D:\usr\Task_03\TrcvTest_repov2\2.00.00\EmbeddedSystem\_build\TestEnv_Stub\FrTrcv_30_Tja1080_Cfg.obj">
+  </symbol>
+</symbol>

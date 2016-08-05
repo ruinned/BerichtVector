@@ -1,0 +1,10 @@
+0001
+0001 Mip_InitMemory()
+0201 Det_ReportError Module={2..3} Miodf={1} Miodf2={4..550000} endofline
+0201 Det_ReportErrordfdgsfg ( Module={2}{3}  has reported an error with ID={4} )
+
+DataStream 0123445679ABCDEF
+
+in: Det_ReportError Module={2..3} Miodf={1} Miodf2={4..6} endofline
+out Det_ReportError Module=4456 Miodf=23 Miodf2=79ABCD endofline
+

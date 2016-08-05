@@ -1,0 +1,20 @@
+@startuml
+title BteTestHandler_BackgroundTest_Log
+hide footbox
+participant Appl
+participant DUT
+participant Dem
+participant Det
+participant EcuM
+participant SchM
+== INIT ==
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_InitMemory ()
+autonumber 0 "<b>t=0"
+Appl -> DUT : Mip_Init ()
+autonumber 0 "<b>t=0"
+DUT -> Det : Det_ReportError (ModuleId=0, InstanceId=0, ApiId=0, ErrorId=10)
+ note right of Appl #red: Fail: DET Error
+== RUN ==
+== END ==
+@enduml

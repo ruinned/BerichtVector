@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Exe_Code|Win32">
+      <Configuration>Exe_Code</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C5D34DF-466C-4BA5-9750-62395760E5F1}</ProjectGuid>
+    <RootNamespace>Test</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Exe_Code|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Exe_Code|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Exe_Code|Win32'">_Temp/VC_$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Exe_Code|Win32'">$(OutDir)</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Exe_Code|Win32'">true</LinkIncremental>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Exe_Code|Win32'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Exe_Code|Win32'">
+    <BuildLog>
+      <Path>$(IntDir)BuildLog.htm</Path>
+    </BuildLog>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\Implementation;TestObj;TestData;TestEnv_Stub;TestEnv_Stub\Bte;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_TSC;VECTOR_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <ProgramDataBaseFileName>$(IntDir)vc80.pdb</ProgramDataBaseFileName>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ShowIncludes>false</ShowIncludes>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib</AdditionalDependencies>
+      <OutputFile>$(IntDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <MapExports>false</MapExports>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Implementation\Mip.c" />
+    <ClCompile Include="TestData\Mip_Cfg.c" />
+    <ClCompile Include="TestData\Mip_Lcfg.c" />
+    <ClCompile Include="TestData\Mip_Pbcfg.c" />
+    <ClCompile Include="TestEnv_Stub\BTE\BteCallContext.c" />
+    <ClCompile Include="TestEnv_Stub\BTE\BteCheck.c" />
+    <ClCompile Include="TestEnv_Stub\BTE\BteEvent.c" />
+    <ClCompile Include="TestEnv_Stub\BTE\BteEventList.c" />
+    <ClCompile Include="TestEnv_Stub\BTE\BteLog.c" />
+    <ClCompile Include="TestEnv_Stub\BTE\BteReport.c" />
+    <ClCompile Include="TestEnv_Stub\BTE\BteTestHandler.c" />
+    <ClCompile Include="TestEnv_Stub\BTE\BteTiming.c" />
+    <ClCompile Include="TestEnv_Stub\TscAppl.c" />
+    <ClCompile Include="TestEnv_Stub\TscDem.c" />
+    <ClCompile Include="TestEnv_Stub\TscDet.c" />
+    <ClCompile Include="TestEnv_Stub\TscEcuM.c" />
+    <ClCompile Include="TestEnv_Stub\TscMip.c" />
+    <ClCompile Include="TestEnv_Stub\TscSchM.c" />
+    <ClCompile Include="TestEnv_Stub\TscTest.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Implementation\Mip.h" />
+    <ClInclude Include="..\..\Implementation\Mip_Cbk.h" />
+    <ClInclude Include="..\..\Implementation\Mip_Types.h" />
+    <ClInclude Include="TestData\Mip_Cfg.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\Bte.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteCallContext.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteCfg.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteCheck.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteEvent.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteEventList.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteLog.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteReport.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteTestHandler.h" />
+    <ClInclude Include="TestEnv_Stub\BTE\BteTiming.h" />
+    <ClInclude Include="TestEnv_Stub\Compiler.h" />
+    <ClInclude Include="TestEnv_Stub\Compiler_Cfg.h" />
+    <ClInclude Include="TestEnv_Stub\ComStack_Types.h" />
+    <ClInclude Include="TestEnv_Stub\Dem.h" />
+    <ClInclude Include="TestEnv_Stub\Det.h" />
+    <ClInclude Include="TestEnv_Stub\EcuM.h" />
+    <ClInclude Include="TestEnv_Stub\EcuM_cbk.h" />
+    <ClInclude Include="TestEnv_Stub\MemMap.h" />
+    <ClInclude Include="TestEnv_Stub\Platform_Types.h" />
+    <ClInclude Include="TestEnv_Stub\Rte_Type.h" />
+    <ClInclude Include="TestEnv_Stub\SchM_Mip.h" />
+    <ClInclude Include="TestEnv_Stub\Std_Types.h" />
+    <ClInclude Include="TestEnv_Stub\TscAppl.h" />
+    <ClInclude Include="TestEnv_Stub\TscDem.h" />
+    <ClInclude Include="TestEnv_Stub\TscDet.h" />
+    <ClInclude Include="TestEnv_Stub\TscEcuM.h" />
+    <ClInclude Include="TestEnv_Stub\TscMip.h" />
+    <ClInclude Include="TestEnv_Stub\TscSchM.h" />
+    <ClInclude Include="TestEnv_Stub\TscTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Implementation\Mip_Compiler_Cfg.inc" />
+    <None Include="..\..\Implementation\Mip_MemMap.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

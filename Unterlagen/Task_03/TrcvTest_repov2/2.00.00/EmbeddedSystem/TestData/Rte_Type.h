@@ -1,0 +1,1920 @@
+/**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *
+ *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                All other rights remain with Vector Informatik GmbH.
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  FILE DESCRIPTION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *          File:  Rte_Type.h
+ *        Config:  CanCanFr.dpa
+ *   ECU-Project:  ECU_3
+ *
+ *     Generator:  MICROSAR RTE Generator Version 4.9.0
+ *                 RTE Core Version 1.9.0
+ *       License:  Unlimited license CBD0000000 for N/A
+ *
+ *   Description:  Header file containing user defined AUTOSAR types and RTE structures
+ *********************************************************************************************************************/
+
+/* double include prevention */
+#ifndef _RTE_TYPE_H
+# define _RTE_TYPE_H
+
+# include "Rte.h"
+
+
+/**********************************************************************************************************************
+ * Data type definitions
+ *********************************************************************************************************************/
+
+# define Rte_TypeDef_It_Boolean_1bit
+typedef boolean It_Boolean_1bit;
+
+# define Rte_TypeDef_It_Sint16_15bit
+typedef sint16 It_Sint16_15bit;
+
+# define Rte_TypeDef_It_Sint16_16bit
+typedef sint16 It_Sint16_16bit;
+
+# define Rte_TypeDef_It_Sint32_32bit
+typedef sint32 It_Sint32_32bit;
+
+# define Rte_TypeDef_It_Sint8_7bit
+typedef sint8 It_Sint8_7bit;
+
+# define Rte_TypeDef_It_Sint8_8bit
+typedef sint8 It_Sint8_8bit;
+
+# define Rte_TypeDef_It_Uint16_12bit
+typedef uint16 It_Uint16_12bit;
+
+# define Rte_TypeDef_It_Uint16_13bit
+typedef uint16 It_Uint16_13bit;
+
+# define Rte_TypeDef_It_Uint16_16bit
+typedef uint16 It_Uint16_16bit;
+
+# define Rte_TypeDef_It_Uint16_9bit
+typedef uint16 It_Uint16_9bit;
+
+# define Rte_TypeDef_It_Uint32_24bit
+typedef uint32 It_Uint32_24bit;
+
+# define Rte_TypeDef_It_Uint32_32bit
+typedef uint32 It_Uint32_32bit;
+
+# define Rte_TypeDef_It_Uint8_2bit
+typedef uint8 It_Uint8_2bit;
+
+# define Rte_TypeDef_It_Uint8_3bit
+typedef uint8 It_Uint8_3bit;
+
+# define Rte_TypeDef_It_Uint8_4bit
+typedef uint8 It_Uint8_4bit;
+
+# define Rte_TypeDef_It_Uint8_5bit
+typedef uint8 It_Uint8_5bit;
+
+# define Rte_TypeDef_It_Uint8_8bit
+typedef uint8 It_Uint8_8bit;
+
+# define Rte_TypeDef_Rte_DT_It_SG_CanComGrpSig_12_5cb96bc6_0
+typedef uint8 Rte_DT_It_SG_CanComGrpSig_12_5cb96bc6_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_CanComGrpSig_12_5cb96bc6_1
+typedef uint8 Rte_DT_It_SG_CanComGrpSig_12_5cb96bc6_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_CanComGrpSig_14_b40ca185_0
+typedef uint8 Rte_DT_It_SG_CanComGrpSig_14_b40ca185_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_CanComGrpSig_14_b40ca185_1
+typedef uint8 Rte_DT_It_SG_CanComGrpSig_14_b40ca185_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_CanComGrpSig_15_75827e45_0
+typedef uint8 Rte_DT_It_SG_CanComGrpSig_15_75827e45_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_CanComGrpSig_15_75827e45_1
+typedef uint8 Rte_DT_It_SG_CanComGrpSig_15_75827e45_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_SigGrpRx_0x4C2_IL_27846a13_0
+typedef uint16 Rte_DT_It_SG_SigGrpRx_0x4C2_IL_27846a13_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_SigGrpRx_0x4C2_IL_27846a13_1
+typedef uint16 Rte_DT_It_SG_SigGrpRx_0x4C2_IL_27846a13_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_1
+typedef uint16 Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_1
+typedef uint16 Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_1
+typedef uint16 Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_1
+typedef uint16 Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_1
+typedef uint16 Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_1
+typedef uint16 Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_1
+typedef uint16 Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_1
+typedef uint16 Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_0
+typedef uint8 Rte_DT_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_1
+typedef uint8 Rte_DT_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_1
+typedef uint8 Rte_DT_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_1
+typedef uint8 Rte_DT_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_1
+typedef uint8 Rte_DT_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_1
+typedef uint8 Rte_DT_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_1
+typedef uint8 Rte_DT_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_1
+typedef uint8 Rte_DT_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_1
+typedef uint8 Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_2
+typedef uint16 Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_3
+typedef uint16 Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_3;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_1
+typedef uint32 Rte_DT_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_1
+typedef uint32 Rte_DT_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_1
+typedef uint32 Rte_DT_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_1
+typedef uint32 Rte_DT_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_0
+typedef uint8 Rte_DT_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_1
+typedef uint32 Rte_DT_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x776_0a2bb6b7_0
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x776_0a2bb6b7_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x776_0a2bb6b7_1
+typedef uint32 Rte_DT_It_SG_sigGrp00_0x776_0a2bb6b7_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x777_cba56977_0
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x777_cba56977_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x777_cba56977_1
+typedef uint32 Rte_DT_It_SG_sigGrp00_0x777_cba56977_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_0
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_1
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_2
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_0
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_1
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_2
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_0
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_1
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_2
+typedef uint8 Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_0
+typedef uint8 Rte_DT_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_1
+typedef uint8 Rte_DT_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_0
+typedef uint8 Rte_DT_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_1
+typedef uint8 Rte_DT_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x776_0a2bb6b7_0
+typedef sint8 Rte_DT_It_SG_sigGrp01_0x776_0a2bb6b7_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x776_0a2bb6b7_1
+typedef boolean Rte_DT_It_SG_sigGrp01_0x776_0a2bb6b7_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x777_cba56977_0
+typedef sint8 Rte_DT_It_SG_sigGrp01_0x777_cba56977_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x777_cba56977_1
+typedef boolean Rte_DT_It_SG_sigGrp01_0x777_cba56977_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_0
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_1
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_2
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_0
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_1
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_2
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_0
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_1
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_2
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_0
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_1
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_2
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_0
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_1
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_2
+typedef uint8 Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_0
+typedef uint8 Rte_DT_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_1
+typedef uint8 Rte_DT_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_0
+typedef uint8 Rte_DT_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_1
+typedef uint8 Rte_DT_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_0
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_1
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_2
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_0
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_1
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_2
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_0
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_1
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_2
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_0
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_1
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_2
+typedef uint8 Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_2;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_0
+typedef uint8 Rte_DT_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_1
+typedef uint8 Rte_DT_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_0
+typedef uint8 Rte_DT_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_1
+typedef uint8 Rte_DT_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_1;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrpRx_0x231_IL_3ac9523b_0
+typedef uint8 Rte_DT_It_SG_sigGrpRx_0x231_IL_3ac9523b_0;
+
+# define Rte_TypeDef_Rte_DT_It_SG_sigGrpRx_0x231_IL_3ac9523b_1
+typedef uint8 Rte_DT_It_SG_sigGrpRx_0x231_IL_3ac9523b_1;
+
+# define Rte_TypeDef_dtRef_VOID
+typedef void * dtRef_VOID;
+
+# define Rte_TypeDef_dtRef_const_VOID
+typedef const void * dtRef_const_VOID;
+
+# define Rte_TypeDef_ComM_ModeType
+typedef uint8 ComM_ModeType;
+
+# define Rte_TypeDef_DataArray_Type_1
+typedef uint8 DataArray_Type_1[1];
+
+# define Rte_TypeDef_DataArray_Type_2
+typedef uint8 DataArray_Type_2[2];
+
+# define Rte_TypeDef_Dcm_Data1ByteType
+typedef uint8 Dcm_Data1ByteType[1];
+
+# define Rte_TypeDef_Dcm_Data2ByteType
+typedef uint8 Dcm_Data2ByteType[2];
+
+# define Rte_TypeDef_Dcm_Data4ByteType
+typedef uint8 Dcm_Data4ByteType[4];
+
+# define Rte_TypeDef_Dcm_Data8ByteType
+typedef uint8 Dcm_Data8ByteType[8];
+
+# define Rte_TypeDef_Dem_MaxDataValueType
+typedef uint8 Dem_MaxDataValueType[2];
+
+# define Rte_TypeDef_It_SG_CanComGrpSig_12_5cb96bc6
+typedef struct
+{
+  Rte_DT_It_SG_CanComGrpSig_12_5cb96bc6_0 It_Re_ComCanGrpSig_12_1;
+  Rte_DT_It_SG_CanComGrpSig_12_5cb96bc6_1 It_Re_ComCanGrpSig_12_2;
+} It_SG_CanComGrpSig_12_5cb96bc6;
+
+# define Rte_TypeDef_It_SG_CanComGrpSig_14_b40ca185
+typedef struct
+{
+  Rte_DT_It_SG_CanComGrpSig_14_b40ca185_0 It_Re_ComCanGrpSig_14_1;
+  Rte_DT_It_SG_CanComGrpSig_14_b40ca185_1 It_Re_ComCanGrpSig_14_2;
+} It_SG_CanComGrpSig_14_b40ca185;
+
+# define Rte_TypeDef_It_SG_CanComGrpSig_15_75827e45
+typedef struct
+{
+  Rte_DT_It_SG_CanComGrpSig_15_75827e45_0 It_Re_ComCanGrpSig_15_1;
+  Rte_DT_It_SG_CanComGrpSig_15_75827e45_1 It_Re_ComCanGrpSig_15_2;
+} It_SG_CanComGrpSig_15_75827e45;
+
+# define Rte_TypeDef_It_SG_SigGrpRx_0x4C2_IL_27846a13
+typedef struct
+{
+  Rte_DT_It_SG_SigGrpRx_0x4C2_IL_27846a13_0 It_Re_grpSig00Rx_0x4C2_IL;
+  Rte_DT_It_SG_SigGrpRx_0x4C2_IL_27846a13_1 It_Re_grpSig01Rx_0x4C2_IL;
+} It_SG_SigGrpRx_0x4C2_IL_27846a13;
+
+# define Rte_TypeDef_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_0 It_Re_grps00_00R00108D_A_b01r04;
+  Rte_DT_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_1 It_Re_grps00_01R00108D_A_b01r04;
+} It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d;
+
+# define Rte_TypeDef_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_0 It_Re_grps00_00R00108D_A_b03r04;
+  Rte_DT_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_1 It_Re_grps00_01R00108D_A_b03r04;
+} It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86;
+
+# define Rte_TypeDef_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_0 It_Re_grps00_00R00109D_A_b01r04;
+  Rte_DT_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_1 It_Re_grps00_01R00109D_A_b01r04;
+} It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd;
+
+# define Rte_TypeDef_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_0 It_Re_grps00_00R00109D_A_b03r04;
+  Rte_DT_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_1 It_Re_grps00_01R00109D_A_b03r04;
+} It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446;
+
+# define Rte_TypeDef_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_0 It_Re_grps00_00R00110D_A_b01r04;
+  Rte_DT_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_1 It_Re_grps00_01R00110D_A_b01r04;
+} It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27;
+
+# define Rte_TypeDef_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_0 It_Re_grps00_00R00119D_A_b00r04;
+  Rte_DT_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_1 It_Re_grps00_01R00119D_A_b00r04;
+} It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_0 It_Re_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_0;
+  Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_1 It_Re_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_0;
+} It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_0 It_Re_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_1;
+  Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_1 It_Re_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_1;
+} It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_0 It_Re_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_2;
+  Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_1 It_Re_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_2;
+} It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_0 It_Re_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_3;
+  Rte_DT_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_1 It_Re_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_3;
+} It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_0 It_Re_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_0;
+  Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_1 It_Re_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_0;
+} It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_0 It_Re_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_1;
+  Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_1 It_Re_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_1;
+} It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_0 It_Re_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_2;
+  Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_1 It_Re_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_2;
+} It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_0 It_Re_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_3;
+  Rte_DT_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_1 It_Re_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_3;
+} It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_0 It_Re_grps00_00R0113D_A_b00r04;
+  Rte_DT_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_1 It_Re_grps00_01R0113D_A_b00r04;
+} It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_0 It_Re_grps00_00R0114D_A_b02r04;
+  Rte_DT_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_1 It_Re_grps00_01R0114D_A_b02r04;
+} It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_0 It_Re_grps00_00R0235D_A_b00r01;
+  Rte_DT_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_1 It_Re_grps00_01R0235D_A_b00r01;
+} It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a;
+
+# define Rte_TypeDef_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_0 It_Re_grps00_00R0236D_A_b00r01;
+  Rte_DT_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_1 It_Re_grps00_01R0236D_A_b00r01;
+} It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b;
+
+# define Rte_TypeDef_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_0 It_Re_grps00_00T00121D_A_b00r01;
+  Rte_DT_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_1 It_Re_grps00_01T00121D_A_b00r01;
+} It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919;
+
+# define Rte_TypeDef_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_0 It_Re_grps00_00T00125D_A_b00r01;
+  Rte_DT_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_1 It_Re_grps00_01T00125D_A_b00r01;
+} It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b;
+
+# define Rte_TypeDef_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_0 It_Re_grps00_00T00127D_A_b00r01;
+  Rte_DT_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_1 It_Re_grps00_01T00127D_A_b00r01;
+} It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a;
+
+# define Rte_TypeDef_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_0 It_Re_grps00_00T00131D_A_b00r01;
+  Rte_DT_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_1 It_Re_grps00_01T00131D_A_b00r01;
+} It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576;
+
+# define Rte_TypeDef_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_0 It_Re_grpSig00T0118D_A_b03r08;
+  Rte_DT_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_1 It_Re_grpSig01T0118D_A_b03r08;
+} It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4;
+
+# define Rte_TypeDef_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_0 It_Re_grpSig00T0118D_A_b04r08;
+  Rte_DT_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_1 It_Re_grpSig01T0118D_A_b04r08;
+} It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d;
+
+# define Rte_TypeDef_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_0 It_Re_grpSig00T040S_A_b03r04;
+  Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_1 It_Re_grpSig01T040S_A_b03r04;
+  Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_2 It_Re_grpSig02T040S_A_b03r04;
+  Rte_DT_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_3 It_Re_grpSig03T040S_A_b03r04;
+} It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f;
+
+# define Rte_TypeDef_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_0 It_Re_grpSig00T094D_A_b00r08;
+  Rte_DT_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_1 It_Re_grpSig01T094D_A_b00r08;
+} It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067;
+
+# define Rte_TypeDef_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_0 It_Re_grpSig00T094D_A_b01r08;
+  Rte_DT_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_1 It_Re_grpSig01T094D_A_b01r08;
+} It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702;
+
+# define Rte_TypeDef_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_0 It_Re_grpSig00T094D_A_b02r08;
+  Rte_DT_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_1 It_Re_grpSig01T094D_A_b02r08;
+} It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec;
+
+# define Rte_TypeDef_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_0 It_Re_grpSig00T094D_A_b03r08;
+  Rte_DT_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_1 It_Re_grpSig01T094D_A_b03r08;
+} It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89;
+
+# define Rte_TypeDef_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_0 It_Re_grpSig00T094D_A_b04r08;
+  Rte_DT_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_1 It_Re_grpSig01T094D_A_b04r08;
+} It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730;
+
+# define Rte_TypeDef_It_SG_sigGrp00_0x776_0a2bb6b7
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00_0x776_0a2bb6b7_0 It_Re_grpSig00_0x776;
+  Rte_DT_It_SG_sigGrp00_0x776_0a2bb6b7_1 It_Re_grpSig01_0x776;
+} It_SG_sigGrp00_0x776_0a2bb6b7;
+
+# define Rte_TypeDef_It_SG_sigGrp00_0x777_cba56977
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00_0x777_cba56977_0 It_Re_grpSig00_0x777;
+  Rte_DT_It_SG_sigGrp00_0x777_cba56977_1 It_Re_grpSig01_0x777;
+} It_SG_sigGrp00_0x777_cba56977;
+
+# define Rte_TypeDef_It_SG_sigGrp00_0x7A0_29e958e0
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_0 It_Re_grpSig00_0x7A0;
+  Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_1 It_Re_grpSig01_0x7A0;
+  Rte_DT_It_SG_sigGrp00_0x7A0_29e958e0_2 It_Re_grpSig02_0x7A0;
+} It_SG_sigGrp00_0x7A0_29e958e0;
+
+# define Rte_TypeDef_It_SG_sigGrp00_0x7A3_b00b3ee1
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_0 It_Re_grpSig00_0x7A3;
+  Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_1 It_Re_grpSig01_0x7A3;
+  Rte_DT_It_SG_sigGrp00_0x7A3_b00b3ee1_2 It_Re_grpSig02_0x7A3;
+} It_SG_sigGrp00_0x7A3_b00b3ee1;
+
+# define Rte_TypeDef_It_SG_sigGrp00_0x7A4_ee371bf4
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_0 It_Re_grpSig00_0x7A4;
+  Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_1 It_Re_grpSig01_0x7A4;
+  Rte_DT_It_SG_sigGrp00_0x7A4_ee371bf4_2 It_Re_grpSig02_0x7A4;
+} It_SG_sigGrp00_0x7A4_ee371bf4;
+
+# define Rte_TypeDef_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_0 It_Re_grpSig10T0118D_A_b03r08;
+  Rte_DT_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_1 It_Re_grpSig11T0118D_A_b03r08;
+} It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335;
+
+# define Rte_TypeDef_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_0 It_Re_grpSig10T0118D_A_b04r08;
+  Rte_DT_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_1 It_Re_grpSig11T0118D_A_b04r08;
+} It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c;
+
+# define Rte_TypeDef_It_SG_sigGrp01_0x776_0a2bb6b7
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01_0x776_0a2bb6b7_0 It_Re_grpSig02_0x776;
+  Rte_DT_It_SG_sigGrp01_0x776_0a2bb6b7_1 It_Re_grpSig03_0x776;
+} It_SG_sigGrp01_0x776_0a2bb6b7;
+
+# define Rte_TypeDef_It_SG_sigGrp01_0x777_cba56977
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01_0x777_cba56977_0 It_Re_grpSig02_0x777;
+  Rte_DT_It_SG_sigGrp01_0x777_cba56977_1 It_Re_grpSig03_0x777;
+} It_SG_sigGrp01_0x777_cba56977;
+
+# define Rte_TypeDef_It_SG_sigGrp01_0x7A0_29e958e0
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_0 It_Re_grpSig10_0x7A0;
+  Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_1 It_Re_grpSig11_0x7A0;
+  Rte_DT_It_SG_sigGrp01_0x7A0_29e958e0_2 It_Re_grpSig12_0x7A0;
+} It_SG_sigGrp01_0x7A0_29e958e0;
+
+# define Rte_TypeDef_It_SG_sigGrp01_0x7A1_e8678720
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_0 It_Re_grpSig10_0x7A1;
+  Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_1 It_Re_grpSig11_0x7A1;
+  Rte_DT_It_SG_sigGrp01_0x7A1_e8678720_2 It_Re_grpSig12_0x7A1;
+} It_SG_sigGrp01_0x7A1_e8678720;
+
+# define Rte_TypeDef_It_SG_sigGrp01_0x7A2_0682d1b7
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_0 It_Re_grpSig10_0x7A2;
+  Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_1 It_Re_grpSig11_0x7A2;
+  Rte_DT_It_SG_sigGrp01_0x7A2_0682d1b7_2 It_Re_grpSig12_0x7A2;
+} It_SG_sigGrp01_0x7A2_0682d1b7;
+
+# define Rte_TypeDef_It_SG_sigGrp01_0x7A4_ee371bf4
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_0 It_Re_grpSig10_0x7A4;
+  Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_1 It_Re_grpSig11_0x7A4;
+  Rte_DT_It_SG_sigGrp01_0x7A4_ee371bf4_2 It_Re_grpSig12_0x7A4;
+} It_SG_sigGrp01_0x7A4_ee371bf4;
+
+# define Rte_TypeDef_It_SG_sigGrp01_0x7A5_58bef4a2
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_0 It_Re_grpSig10_0x7A5;
+  Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_1 It_Re_grpSig11_0x7A5;
+  Rte_DT_It_SG_sigGrp01_0x7A5_58bef4a2_2 It_Re_grpSig12_0x7A5;
+} It_SG_sigGrp01_0x7A5_58bef4a2;
+
+# define Rte_TypeDef_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_0 It_Re_grpSig20T0118D_A_b03r08;
+  Rte_DT_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_1 It_Re_grpSig21T0118D_A_b03r08;
+} It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7;
+
+# define Rte_TypeDef_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_0 It_Re_grpSig20T0118D_A_b04r08;
+  Rte_DT_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_1 It_Re_grpSig21T0118D_A_b04r08;
+} It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e;
+
+# define Rte_TypeDef_It_SG_sigGrp02_0x7A0_29e958e0
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_0 It_Re_grpSig20_0x7A0;
+  Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_1 It_Re_grpSig21_0x7A0;
+  Rte_DT_It_SG_sigGrp02_0x7A0_29e958e0_2 It_Re_grpSig22_0x7A0;
+} It_SG_sigGrp02_0x7A0_29e958e0;
+
+# define Rte_TypeDef_It_SG_sigGrp02_0x7A3_b00b3ee1
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_0 It_Re_grpSig20_0x7A3;
+  Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_1 It_Re_grpSig21_0x7A3;
+  Rte_DT_It_SG_sigGrp02_0x7A3_b00b3ee1_2 It_Re_grpSig22_0x7A3;
+} It_SG_sigGrp02_0x7A3_b00b3ee1;
+
+# define Rte_TypeDef_It_SG_sigGrp02_0x7A4_ee371bf4
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_0 It_Re_grpSig20_0x7A4;
+  Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_1 It_Re_grpSig21_0x7A4;
+  Rte_DT_It_SG_sigGrp02_0x7A4_ee371bf4_2 It_Re_grpSig22_0x7A4;
+} It_SG_sigGrp02_0x7A4_ee371bf4;
+
+# define Rte_TypeDef_It_SG_sigGrp02_0x7A5_58bef4a2
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_0 It_Re_grpSig20_0x7A5;
+  Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_1 It_Re_grpSig21_0x7A5;
+  Rte_DT_It_SG_sigGrp02_0x7A5_58bef4a2_2 It_Re_grpSig22_0x7A5;
+} It_SG_sigGrp02_0x7A5_58bef4a2;
+
+# define Rte_TypeDef_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_0 It_Re_grpSig30T0118D_A_b03r08;
+  Rte_DT_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_1 It_Re_grpSig31T0118D_A_b03r08;
+} It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656;
+
+# define Rte_TypeDef_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef
+typedef struct
+{
+  Rte_DT_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_0 It_Re_grpSig30T0118D_A_b04r08;
+  Rte_DT_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_1 It_Re_grpSig31T0118D_A_b04r08;
+} It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef;
+
+# define Rte_TypeDef_It_SG_sigGrpRx_0x231_IL_3ac9523b
+typedef struct
+{
+  Rte_DT_It_SG_sigGrpRx_0x231_IL_3ac9523b_0 It_Re_grpSig00Rx_0x231_IL;
+  Rte_DT_It_SG_sigGrpRx_0x231_IL_3ac9523b_1 It_Re_grpSig01Rx_0x231_IL;
+} It_SG_sigGrpRx_0x231_IL_3ac9523b;
+
+# define Rte_TypeDef_SG_sigGrpRx_0x22F_IL
+typedef struct
+{
+  uint16 grpSig00Rx_0x22F_IL;
+  boolean grpSig01Rx_0x22F_IL;
+} SG_sigGrpRx_0x22F_IL;
+
+# define Rte_TypeDef_ComM_InhibitionStatusType
+typedef uint8 ComM_InhibitionStatusType;
+
+# define Rte_TypeDef_ComM_UserHandleType
+typedef uint8 ComM_UserHandleType;
+
+# define Rte_TypeDef_Dcm_CommunicationModeType
+typedef uint8 Dcm_CommunicationModeType;
+
+# define Rte_TypeDef_Dcm_ConfirmationStatusType
+typedef uint8 Dcm_ConfirmationStatusType;
+
+# define Rte_TypeDef_Dcm_ControlDtcSettingType
+typedef uint8 Dcm_ControlDtcSettingType;
+
+# define Rte_TypeDef_Dcm_DiagnosticSessionControlType
+typedef uint8 Dcm_DiagnosticSessionControlType;
+
+# define Rte_TypeDef_Dcm_EcuResetType
+typedef uint8 Dcm_EcuResetType;
+
+# define Rte_TypeDef_Dcm_NegativeResponseCodeType
+typedef uint8 Dcm_NegativeResponseCodeType;
+
+# define Rte_TypeDef_Dcm_OpStatusType
+typedef uint8 Dcm_OpStatusType;
+
+# define Rte_TypeDef_Dcm_ProtocolType
+typedef uint8 Dcm_ProtocolType;
+
+# define Rte_TypeDef_Dcm_SecLevelType
+typedef uint8 Dcm_SecLevelType;
+
+# define Rte_TypeDef_Dcm_SesCtrlType
+typedef uint8 Dcm_SesCtrlType;
+
+# define Rte_TypeDef_Dem_DTCFormatType
+typedef uint8 Dem_DTCFormatType;
+
+# define Rte_TypeDef_Dem_DTCGroupType
+typedef uint32 Dem_DTCGroupType;
+
+# define Rte_TypeDef_Dem_DTCKindType
+typedef uint8 Dem_DTCKindType;
+
+# define Rte_TypeDef_Dem_DTCOriginType
+typedef uint8 Dem_DTCOriginType;
+
+# define Rte_TypeDef_Dem_DTCStatusMaskType
+typedef uint8 Dem_DTCStatusMaskType;
+
+# define Rte_TypeDef_Dem_DebounceResetStatusType
+typedef uint8 Dem_DebounceResetStatusType;
+
+# define Rte_TypeDef_Dem_DebouncingStateType
+typedef uint8 Dem_DebouncingStateType;
+
+# define Rte_TypeDef_Dem_EventIdType
+typedef uint16 Dem_EventIdType;
+
+# define Rte_TypeDef_Dem_EventStatusExtendedType
+typedef uint8 Dem_EventStatusExtendedType;
+
+# define Rte_TypeDef_Dem_EventStatusType
+typedef uint8 Dem_EventStatusType;
+
+# define Rte_TypeDef_Dem_IndicatorStatusType
+typedef uint8 Dem_IndicatorStatusType;
+
+# define Rte_TypeDef_Dem_InitMonitorReasonType
+typedef uint8 Dem_InitMonitorReasonType;
+
+# define Rte_TypeDef_Dem_IumprDenomCondIdType
+typedef uint8 Dem_IumprDenomCondIdType;
+
+# define Rte_TypeDef_Dem_IumprDenomCondStatusType
+typedef uint8 Dem_IumprDenomCondStatusType;
+
+# define Rte_TypeDef_Dem_OperationCycleIdType
+typedef uint8 Dem_OperationCycleIdType;
+
+# define Rte_TypeDef_Dem_OperationCycleStateType
+typedef uint8 Dem_OperationCycleStateType;
+
+# define Rte_TypeDef_Dem_RatioIdType
+typedef uint16 Dem_RatioIdType;
+
+# define Rte_TypeDef_Dem_UdsStatusByteType
+typedef uint8 Dem_UdsStatusByteType;
+
+# define Rte_TypeDef_EcuM_BootTargetType
+typedef uint8 EcuM_BootTargetType;
+
+# define Rte_TypeDef_EcuM_ModeType
+typedef uint8 EcuM_ModeType;
+
+# define Rte_TypeDef_EcuM_ShutdownCauseType
+typedef uint8 EcuM_ShutdownCauseType;
+
+# define Rte_TypeDef_EcuM_StateType
+typedef uint8 EcuM_StateType;
+
+# define Rte_TypeDef_EcuM_TimeType
+typedef uint32 EcuM_TimeType;
+
+# define Rte_TypeDef_EcuM_UserType
+typedef uint8 EcuM_UserType;
+
+# define Rte_TypeDef_NvM_BlockIdType
+typedef uint16 NvM_BlockIdType;
+
+# define Rte_TypeDef_NvM_RequestResultType
+typedef uint8 NvM_RequestResultType;
+
+# define Rte_TypeDef_NvM_ServiceIdType
+typedef uint8 NvM_ServiceIdType;
+
+
+# ifndef RTE_SUPPRESS_UNUSED_DATATYPES
+/**********************************************************************************************************************
+ * Unused Data type definitions
+ *********************************************************************************************************************/
+
+#  define Rte_TypeDef_It_SG_CanComGrpSig_12_5cb96bc6_ComCanGrpSig_12_1_RecordElement
+typedef uint8 It_SG_CanComGrpSig_12_5cb96bc6_ComCanGrpSig_12_1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_CanComGrpSig_12_5cb96bc6_ComCanGrpSig_12_2_RecordElement
+typedef uint8 It_SG_CanComGrpSig_12_5cb96bc6_ComCanGrpSig_12_2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_CanComGrpSig_14_b40ca185_ComCanGrpSig_14_1_RecordElement
+typedef uint8 It_SG_CanComGrpSig_14_b40ca185_ComCanGrpSig_14_1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_CanComGrpSig_14_b40ca185_ComCanGrpSig_14_2_RecordElement
+typedef uint8 It_SG_CanComGrpSig_14_b40ca185_ComCanGrpSig_14_2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_CanComGrpSig_15_75827e45_ComCanGrpSig_15_1_RecordElement
+typedef uint8 It_SG_CanComGrpSig_15_75827e45_ComCanGrpSig_15_1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_CanComGrpSig_15_75827e45_ComCanGrpSig_15_2_RecordElement
+typedef uint8 It_SG_CanComGrpSig_15_75827e45_ComCanGrpSig_15_2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_SigGrpRx_0x4C2_IL_27846a13_grpSig00Rx_0x4C2_IL_RecordElement
+typedef uint16 It_SG_SigGrpRx_0x4C2_IL_27846a13_grpSig00Rx_0x4C2_IL_RecordElement;
+
+#  define Rte_TypeDef_It_SG_SigGrpRx_0x4C2_IL_27846a13_grpSig01Rx_0x4C2_IL_RecordElement
+typedef uint16 It_SG_SigGrpRx_0x4C2_IL_27846a13_grpSig01Rx_0x4C2_IL_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_grps00_00R00108D_A_b01r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_grps00_00R00108D_A_b01r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_grps00_01R00108D_A_b01r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_grps00_01R00108D_A_b01r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_grps00_00R00108D_A_b03r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_grps00_00R00108D_A_b03r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_grps00_01R00108D_A_b03r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_grps00_01R00108D_A_b03r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_grps00_00R00109D_A_b01r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_grps00_00R00109D_A_b01r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_grps00_01R00109D_A_b01r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_grps00_01R00109D_A_b01r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_grps00_00R00109D_A_b03r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_grps00_00R00109D_A_b03r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_grps00_01R00109D_A_b03r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_grps00_01R00109D_A_b03r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_grps00_00R00110D_A_b01r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_grps00_00R00110D_A_b01r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_grps00_01R00110D_A_b01r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_grps00_01R00110D_A_b01r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_grps00_00R00119D_A_b00r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_grps00_00R00119D_A_b00r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_grps00_01R00119D_A_b00r04_RecordElement
+typedef uint8 It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_grps00_01R00119D_A_b00r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_0_RecordElement
+typedef uint8 It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_0_RecordElement
+typedef uint16 It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_1_RecordElement
+typedef uint8 It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_1_RecordElement
+typedef uint16 It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_2_RecordElement
+typedef uint8 It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_2_RecordElement
+typedef uint16 It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_3_RecordElement
+typedef uint8 It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_grps00_00R0011S_A_b00r04_IPDUM_DynGroupSig_3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_3_RecordElement
+typedef uint16 It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_grps00_01R0011S_A_b00r04_IPDUM_DynGroupSig_3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_0_RecordElement
+typedef uint8 It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_0_RecordElement
+typedef uint16 It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_1_RecordElement
+typedef uint8 It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_1_RecordElement
+typedef uint16 It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_2_RecordElement
+typedef uint8 It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_2_RecordElement
+typedef uint16 It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_3_RecordElement
+typedef uint8 It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_grps00_00R0011S_A_b01r04_IPDUM_DynGroupSig_3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_3_RecordElement
+typedef uint16 It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_grps00_01R0011S_A_b01r04_IPDUM_DynGroupSig_3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_grps00_00R0113D_A_b00r04_RecordElement
+typedef uint8 It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_grps00_00R0113D_A_b00r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_grps00_01R0113D_A_b00r04_RecordElement
+typedef uint8 It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_grps00_01R0113D_A_b00r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_grps00_00R0114D_A_b02r04_RecordElement
+typedef uint8 It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_grps00_00R0114D_A_b02r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_grps00_01R0114D_A_b02r04_RecordElement
+typedef uint8 It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_grps00_01R0114D_A_b02r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_grps00_00R0235D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_grps00_00R0235D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_grps00_01R0235D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_grps00_01R0235D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_grps00_00R0236D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_grps00_00R0236D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_grps00_01R0236D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_grps00_01R0236D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_grps00_00T00121D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_grps00_00T00121D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_grps00_01T00121D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_grps00_01T00121D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_grps00_00T00125D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_grps00_00T00125D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_grps00_01T00125D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_grps00_01T00125D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_grps00_00T00127D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_grps00_00T00127D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_grps00_01T00127D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_grps00_01T00127D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_grps00_00T00131D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_grps00_00T00131D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_grps00_01T00131D_A_b00r01_RecordElement
+typedef uint8 It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_grps00_01T00131D_A_b00r01_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_grpSig00T0118D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_grpSig00T0118D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_grpSig01T0118D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_grpSig01T0118D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_grpSig00T0118D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_grpSig00T0118D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_grpSig01T0118D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_grpSig01T0118D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_grpSig00T040S_A_b03r04_RecordElement
+typedef uint8 It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_grpSig00T040S_A_b03r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_grpSig01T040S_A_b03r04_RecordElement
+typedef uint8 It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_grpSig01T040S_A_b03r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_grpSig02T040S_A_b03r04_RecordElement
+typedef uint16 It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_grpSig02T040S_A_b03r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_grpSig03T040S_A_b03r04_RecordElement
+typedef uint16 It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_grpSig03T040S_A_b03r04_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_grpSig00T094D_A_b00r08_RecordElement
+typedef uint8 It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_grpSig00T094D_A_b00r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_grpSig01T094D_A_b00r08_RecordElement
+typedef uint32 It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_grpSig01T094D_A_b00r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_grpSig00T094D_A_b01r08_RecordElement
+typedef uint8 It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_grpSig00T094D_A_b01r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_grpSig01T094D_A_b01r08_RecordElement
+typedef uint32 It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_grpSig01T094D_A_b01r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_grpSig00T094D_A_b02r08_RecordElement
+typedef uint8 It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_grpSig00T094D_A_b02r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_grpSig01T094D_A_b02r08_RecordElement
+typedef uint32 It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_grpSig01T094D_A_b02r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_grpSig00T094D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_grpSig00T094D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_grpSig01T094D_A_b03r08_RecordElement
+typedef uint32 It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_grpSig01T094D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_grpSig00T094D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_grpSig00T094D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_grpSig01T094D_A_b04r08_RecordElement
+typedef uint32 It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_grpSig01T094D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x776_0a2bb6b7_grpSig00_0x776_RecordElement
+typedef uint8 It_SG_sigGrp00_0x776_0a2bb6b7_grpSig00_0x776_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x776_0a2bb6b7_grpSig01_0x776_RecordElement
+typedef uint32 It_SG_sigGrp00_0x776_0a2bb6b7_grpSig01_0x776_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x777_cba56977_grpSig00_0x777_RecordElement
+typedef uint8 It_SG_sigGrp00_0x777_cba56977_grpSig00_0x777_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x777_cba56977_grpSig01_0x777_RecordElement
+typedef uint32 It_SG_sigGrp00_0x777_cba56977_grpSig01_0x777_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A0_29e958e0_grpSig00_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A0_29e958e0_grpSig00_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A0_29e958e0_grpSig01_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A0_29e958e0_grpSig01_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A0_29e958e0_grpSig02_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A0_29e958e0_grpSig02_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A3_b00b3ee1_grpSig00_0x7A3_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A3_b00b3ee1_grpSig00_0x7A3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A3_b00b3ee1_grpSig01_0x7A3_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A3_b00b3ee1_grpSig01_0x7A3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A3_b00b3ee1_grpSig02_0x7A3_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A3_b00b3ee1_grpSig02_0x7A3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A4_ee371bf4_grpSig00_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A4_ee371bf4_grpSig00_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A4_ee371bf4_grpSig01_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A4_ee371bf4_grpSig01_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp00_0x7A4_ee371bf4_grpSig02_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp00_0x7A4_ee371bf4_grpSig02_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_grpSig10T0118D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_grpSig10T0118D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_grpSig11T0118D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_grpSig11T0118D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_grpSig10T0118D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_grpSig10T0118D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_grpSig11T0118D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_grpSig11T0118D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x776_0a2bb6b7_grpSig02_0x776_RecordElement
+typedef sint8 It_SG_sigGrp01_0x776_0a2bb6b7_grpSig02_0x776_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x776_0a2bb6b7_grpSig03_0x776_RecordElement
+typedef boolean It_SG_sigGrp01_0x776_0a2bb6b7_grpSig03_0x776_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x777_cba56977_grpSig02_0x777_RecordElement
+typedef sint8 It_SG_sigGrp01_0x777_cba56977_grpSig02_0x777_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x777_cba56977_grpSig03_0x777_RecordElement
+typedef boolean It_SG_sigGrp01_0x777_cba56977_grpSig03_0x777_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A0_29e958e0_grpSig10_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A0_29e958e0_grpSig10_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A0_29e958e0_grpSig11_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A0_29e958e0_grpSig11_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A0_29e958e0_grpSig12_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A0_29e958e0_grpSig12_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A1_e8678720_grpSig10_0x7A1_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A1_e8678720_grpSig10_0x7A1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A1_e8678720_grpSig11_0x7A1_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A1_e8678720_grpSig11_0x7A1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A1_e8678720_grpSig12_0x7A1_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A1_e8678720_grpSig12_0x7A1_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A2_0682d1b7_grpSig10_0x7A2_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A2_0682d1b7_grpSig10_0x7A2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A2_0682d1b7_grpSig11_0x7A2_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A2_0682d1b7_grpSig11_0x7A2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A2_0682d1b7_grpSig12_0x7A2_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A2_0682d1b7_grpSig12_0x7A2_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A4_ee371bf4_grpSig10_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A4_ee371bf4_grpSig10_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A4_ee371bf4_grpSig11_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A4_ee371bf4_grpSig11_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A4_ee371bf4_grpSig12_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A4_ee371bf4_grpSig12_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A5_58bef4a2_grpSig10_0x7A5_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A5_58bef4a2_grpSig10_0x7A5_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A5_58bef4a2_grpSig11_0x7A5_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A5_58bef4a2_grpSig11_0x7A5_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp01_0x7A5_58bef4a2_grpSig12_0x7A5_RecordElement
+typedef uint8 It_SG_sigGrp01_0x7A5_58bef4a2_grpSig12_0x7A5_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_grpSig20T0118D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_grpSig20T0118D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_grpSig21T0118D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_grpSig21T0118D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_grpSig20T0118D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_grpSig20T0118D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_grpSig21T0118D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_grpSig21T0118D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A0_29e958e0_grpSig20_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A0_29e958e0_grpSig20_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A0_29e958e0_grpSig21_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A0_29e958e0_grpSig21_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A0_29e958e0_grpSig22_0x7A0_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A0_29e958e0_grpSig22_0x7A0_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A3_b00b3ee1_grpSig20_0x7A3_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A3_b00b3ee1_grpSig20_0x7A3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A3_b00b3ee1_grpSig21_0x7A3_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A3_b00b3ee1_grpSig21_0x7A3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A3_b00b3ee1_grpSig22_0x7A3_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A3_b00b3ee1_grpSig22_0x7A3_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A4_ee371bf4_grpSig20_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A4_ee371bf4_grpSig20_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A4_ee371bf4_grpSig21_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A4_ee371bf4_grpSig21_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A4_ee371bf4_grpSig22_0x7A4_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A4_ee371bf4_grpSig22_0x7A4_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A5_58bef4a2_grpSig20_0x7A5_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A5_58bef4a2_grpSig20_0x7A5_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A5_58bef4a2_grpSig21_0x7A5_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A5_58bef4a2_grpSig21_0x7A5_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp02_0x7A5_58bef4a2_grpSig22_0x7A5_RecordElement
+typedef uint8 It_SG_sigGrp02_0x7A5_58bef4a2_grpSig22_0x7A5_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_grpSig30T0118D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_grpSig30T0118D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_grpSig31T0118D_A_b03r08_RecordElement
+typedef uint8 It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_grpSig31T0118D_A_b03r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_grpSig30T0118D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_grpSig30T0118D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_grpSig31T0118D_A_b04r08_RecordElement
+typedef uint8 It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_grpSig31T0118D_A_b04r08_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrpRx_0x231_IL_3ac9523b_grpSig00Rx_0x231_IL_RecordElement
+typedef uint8 It_SG_sigGrpRx_0x231_IL_3ac9523b_grpSig00Rx_0x231_IL_RecordElement;
+
+#  define Rte_TypeDef_It_SG_sigGrpRx_0x231_IL_3ac9523b_grpSig01Rx_0x231_IL_RecordElement
+typedef uint8 It_SG_sigGrpRx_0x231_IL_3ac9523b_grpSig01Rx_0x231_IL_RecordElement;
+
+#  define Rte_TypeDef_uint8_n
+typedef uint32/*uint64 not supported*/ uint8_n;
+
+#  define Rte_TypeDef_uint8_nBase
+typedef uint8 uint8_nBase;
+
+#  define Rte_TypeDef_SG_SigGrpRx_0x22B_IL
+typedef uint8 SG_SigGrpRx_0x22B_IL[2];
+
+#  define Rte_TypeDef_SG_sigGrpRx_0x22E_IL
+typedef uint8 SG_sigGrpRx_0x22E_IL[2];
+
+# endif
+
+
+/**********************************************************************************************************************
+ * Constant value definitions
+ *********************************************************************************************************************/
+
+# define RTE_START_SEC_CONST_UNSPECIFIED
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+extern CONST(It_SG_CanComGrpSig_12_5cb96bc6, RTE_CONST) Rte_C_It_SG_CanComGrpSig_12_5cb96bc6_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_CanComGrpSig_14_b40ca185, RTE_CONST) Rte_C_It_SG_CanComGrpSig_14_b40ca185_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_CanComGrpSig_15_75827e45, RTE_CONST) Rte_C_It_SG_CanComGrpSig_15_75827e45_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_SigGrpRx_0x4C2_IL_27846a13, RTE_CONST) Rte_C_It_SG_SigGrpRx_0x4C2_IL_27846a13_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d, RTE_CONST) Rte_C_It_SG_sigGrp00R00108D_A_b01r04_SigGroup_3133230d_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86, RTE_CONST) Rte_C_It_SG_sigGrp00R00108D_A_b03r04_SigGroup_9b3aeb86_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd, RTE_CONST) Rte_C_It_SG_sigGrp00R00109D_A_b01r04_SigGroup_f0bdfccd_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446, RTE_CONST) Rte_C_It_SG_sigGrp00R00109D_A_b03r04_SigGroup_5ab43446_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27, RTE_CONST) Rte_C_It_SG_sigGrp00R00110D_A_b01r04_SigGroup_10558e27_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7, RTE_CONST) Rte_C_It_SG_sigGrp00R00119D_A_b00r04_SigGroup_d3a4d7c7_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7, RTE_CONST) Rte_C_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_0_872d77f7_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761, RTE_CONST) Rte_C_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_1_f02a4761_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db, RTE_CONST) Rte_C_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_2_692316db_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d, RTE_CONST) Rte_C_It_SG_sigGrp00R0011S_A_b00r04_IPDUM_DynSigGroup_3_1e24264d_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af, RTE_CONST) Rte_C_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_0_50cff7af_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739, RTE_CONST) Rte_C_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_1_27c8c739_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683, RTE_CONST) Rte_C_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_2_bec19683_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615, RTE_CONST) Rte_C_It_SG_sigGrp00R0011S_A_b01r04_IPDUM_DynSigGroup_3_c9c6a615_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7, RTE_CONST) Rte_C_It_SG_sigGrp00R0113D_A_b00r04_SigGroup_c74a02d7_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf, RTE_CONST) Rte_C_It_SG_sigGrp00R0114D_A_b02r04_SigGroup_4478dfdf_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a, RTE_CONST) Rte_C_It_SG_sigGrp00R0235D_A_b00r01_SigGroup_0e64ce4a_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b, RTE_CONST) Rte_C_It_SG_sigGrp00R0236D_A_b00r01_SigGroup_9786a84b_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919, RTE_CONST) Rte_C_It_SG_sigGrp00T00121D_A_b00r01_SigGroup_3d027919_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b, RTE_CONST) Rte_C_It_SG_sigGrp00T00125D_A_b00r01_SigGroup_8ddb0a9b_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a, RTE_CONST) Rte_C_It_SG_sigGrp00T00127D_A_b00r01_SigGroup_d5b7b35a_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576, RTE_CONST) Rte_C_It_SG_sigGrp00T00131D_A_b00r01_SigGroup_a6a73576_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4, RTE_CONST) Rte_C_It_SG_sigGrp00T0118D_A_b03r08_SigGroup_dd92b2a4_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d, RTE_CONST) Rte_C_It_SG_sigGrp00T0118D_A_b04r08_SigGroup_40458a1d_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f, RTE_CONST) Rte_C_It_SG_sigGrp00T040S_A_b03r04_SigGroup_cc337b5f_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067, RTE_CONST) Rte_C_It_SG_sigGrp00T094D_A_b00r08_SigGroup_3c347067_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702, RTE_CONST) Rte_C_It_SG_sigGrp00T094D_A_b01r08_SigGroup_84881702_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec, RTE_CONST) Rte_C_It_SG_sigGrp00T094D_A_b02r08_SigGroup_963db8ec_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89, RTE_CONST) Rte_C_It_SG_sigGrp00T094D_A_b03r08_SigGroup_2e81df89_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730, RTE_CONST) Rte_C_It_SG_sigGrp00T094D_A_b04r08_SigGroup_b356e730_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00_0x776_0a2bb6b7, RTE_CONST) Rte_C_It_SG_sigGrp00_0x776_0a2bb6b7_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00_0x777_cba56977, RTE_CONST) Rte_C_It_SG_sigGrp00_0x777_cba56977_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00_0x7A0_29e958e0, RTE_CONST) Rte_C_It_SG_sigGrp00_0x7A0_29e958e0_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00_0x7A3_b00b3ee1, RTE_CONST) Rte_C_It_SG_sigGrp00_0x7A3_b00b3ee1_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp00_0x7A4_ee371bf4, RTE_CONST) Rte_C_It_SG_sigGrp00_0x7A4_ee371bf4_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335, RTE_CONST) Rte_C_It_SG_sigGrp01T0118D_A_b03r08_SigGroup_73fa2335_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c, RTE_CONST) Rte_C_It_SG_sigGrp01T0118D_A_b04r08_SigGroup_ee2d1b8c_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01_0x776_0a2bb6b7, RTE_CONST) Rte_C_It_SG_sigGrp01_0x776_0a2bb6b7_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01_0x777_cba56977, RTE_CONST) Rte_C_It_SG_sigGrp01_0x777_cba56977_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01_0x7A0_29e958e0, RTE_CONST) Rte_C_It_SG_sigGrp01_0x7A0_29e958e0_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01_0x7A1_e8678720, RTE_CONST) Rte_C_It_SG_sigGrp01_0x7A1_e8678720_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01_0x7A2_0682d1b7, RTE_CONST) Rte_C_It_SG_sigGrp01_0x7A2_0682d1b7_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01_0x7A4_ee371bf4, RTE_CONST) Rte_C_It_SG_sigGrp01_0x7A4_ee371bf4_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp01_0x7A5_58bef4a2, RTE_CONST) Rte_C_It_SG_sigGrp01_0x7A5_58bef4a2_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7, RTE_CONST) Rte_C_It_SG_sigGrp02T0118D_A_b03r08_SigGroup_5a3297c7_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e, RTE_CONST) Rte_C_It_SG_sigGrp02T0118D_A_b04r08_SigGroup_c7e5af7e_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp02_0x7A0_29e958e0, RTE_CONST) Rte_C_It_SG_sigGrp02_0x7A0_29e958e0_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp02_0x7A3_b00b3ee1, RTE_CONST) Rte_C_It_SG_sigGrp02_0x7A3_b00b3ee1_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp02_0x7A4_ee371bf4, RTE_CONST) Rte_C_It_SG_sigGrp02_0x7A4_ee371bf4_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp02_0x7A5_58bef4a2, RTE_CONST) Rte_C_It_SG_sigGrp02_0x7A5_58bef4a2_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656, RTE_CONST) Rte_C_It_SG_sigGrp03T0118D_A_b03r08_SigGroup_f45a0656_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef, RTE_CONST) Rte_C_It_SG_sigGrp03T0118D_A_b04r08_SigGroup_698d3eef_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(It_SG_sigGrpRx_0x231_IL_3ac9523b, RTE_CONST) Rte_C_It_SG_sigGrpRx_0x231_IL_3ac9523b_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+extern CONST(SG_sigGrpRx_0x22F_IL, RTE_CONST) Rte_C_SG_sigGrpRx_0x22F_IL_0; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+# define RTE_STOP_SEC_CONST_UNSPECIFIED
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+# include "Rte_DataHandleType.h"
+
+/**********************************************************************************************************************
+ *  LOCAL DATA TYPES AND STRUCTURES
+ *********************************************************************************************************************/
+
+typedef unsigned int Rte_BitType;
+/**********************************************************************************************************************
+ * type and extern declarations of RTE internal variables
+ *********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ * Rte Init State Variable
+ *********************************************************************************************************************/
+
+# define RTE_STATE_UNINIT    (0U)
+# define RTE_STATE_SCHM_INIT (1U)
+# define RTE_STATE_INIT      (2U)
+
+# define RTE_START_SEC_VAR_ZERO_INIT_8BIT
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+extern VAR(uint8, RTE_VAR_ZERO_INIT) Rte_InitState; /* PRQA S 0850, 3408 */ /* MD_MSR_19.8, MD_Rte_3408 */
+
+# define RTE_STOP_SEC_VAR_ZERO_INIT_8BIT
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+# ifdef RTE_CORE
+
+/**********************************************************************************************************************
+ * Buffers for unqueued S/R
+ *********************************************************************************************************************/
+
+#  define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+extern VAR(SG_sigGrpRx_0x22F_IL, RTE_VAR_NOINIT) Rte_CtApFeatureValidation_SG_sigGrpRx_0x22F_IL_SWC_SG_sigGrpRx_0x22F_IL; /* PRQA S 0850, 3408, 1504 */ /* MD_MSR_19.8, MD_Rte_3408, MD_MSR_8.10 */
+
+#  define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+typedef struct
+{
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpCanRPGSig_1_DeCanRPGSig_1 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpCanRPGSig_2_DeCanRPGSig_2 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpCanRPGSig_3_DeCanRPGSig_3 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpCanRPGSig_4_DeCanRPGSig_4 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpCanRPGSig_5_DeCanRPGSig_5 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpComCanSig_16bit_1_DeComCanSig_16bit_1 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpGwCanSig_8Bit_1_DeGwCanSig_8Bit_1 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpGwCanSig_8Bit_2_DeGwCanSig_8Bit_2 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig00Tx_0x3EE_IL_DeSig00Tx_0x3EE_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig00Tx_0x756_DeSig00Tx_0x756 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_16Bit_20_DeSig_16Bit_20 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_16Bit_23_DeSig_16Bit_23 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_16bit_10_DeSig_16bit_10 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_16bit_11_DeSig_16bit_11 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_16bit_16_DeSig_16bit_16 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_16bit_9_DeSig_16bit_9 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_32Bit_3_DeSig_32Bit_3 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_8Bit_11_DeSig_8Bit_11 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_8Bit_20_DeSig_8Bit_20 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_8Bit_21_DeSig_8Bit_21 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_8Bit_22_DeSig_8Bit_22 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_8bit_10_DeSig_8bit_10 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_Bool_3_DeSig_Bool_3 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_Cdd_1_DeSig_Cdd_1 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpSig_Cdd_8Bit_2_DeSig_Cdd_8Bit_2 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps00T0118D_A_b06r08_Des00T0118D_A_b06r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps01T0118D_A_b06r08_Des01T0118D_A_b06r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps01T028S_A_b00r08_Des01T028S_A_b00r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps02T0118D_A_b06r08_Des02T0118D_A_b06r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps02T028S_A_b00r08_Des02T028S_A_b00r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps03T0118D_A_b06r08_Des03T0118D_A_b06r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps04T0118D_A_b06r08_Des04T0118D_A_b06r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps05T0118D_A_b06r08_Des05T0118D_A_b06r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps06T0118D_A_b06r08_Des06T0118D_A_b06r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps07T0118D_A_b06r08_Des07T0118D_A_b06r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0012S_A_b00r04_IPDUM_DynSig_0_Des0T0012S_A_b00r04_IPDUM_DynSig_0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0012S_A_b01r04_IPDUM_DynSig_0_Des0T0012S_A_b01r04_IPDUM_DynSig_0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0012S_A_b01r04_IPDUM_DynSig_1_Des0T0012S_A_b01r04_IPDUM_DynSig_1 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0012S_A_b01r04_IPDUM_DynSig_2_Des0T0012S_A_b01r04_IPDUM_DynSig_2 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0012S_A_b01r04_IPDUM_DynSig_3_Des0T0012S_A_b01r04_IPDUM_DynSig_3 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0013S_A_b00r04_IPDUM_DynSig_0_Des0T0013S_A_b00r04_IPDUM_DynSig_0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0013S_A_b01r04_IPDUM_DynSig_0_Des0T0013S_A_b01r04_IPDUM_DynSig_0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0013S_A_b01r04_IPDUM_DynSig_1_Des0T0013S_A_b01r04_IPDUM_DynSig_1 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0013S_A_b01r04_IPDUM_DynSig_2_Des0T0013S_A_b01r04_IPDUM_DynSig_2 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps0T0013S_A_b01r04_IPDUM_DynSig_3_Des0T0013S_A_b01r04_IPDUM_DynSig_3 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps10T030S_A_b00r08_Des10T030S_A_b00r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps11T030S_A_b00r08_Des11T030S_A_b00r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps12T030S_A_b00r08_Des12T030S_A_b00r08 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0012S_A_b00r04_IPDUM_DynSig_0_Des1T0012S_A_b00r04_IPDUM_DynSig_0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0012S_A_b01r04_IPDUM_DynSig_0_Des1T0012S_A_b01r04_IPDUM_DynSig_0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0012S_A_b01r04_IPDUM_DynSig_1_Des1T0012S_A_b01r04_IPDUM_DynSig_1 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0012S_A_b01r04_IPDUM_DynSig_2_Des1T0012S_A_b01r04_IPDUM_DynSig_2 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0012S_A_b01r04_IPDUM_DynSig_3_Des1T0012S_A_b01r04_IPDUM_DynSig_3 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0013S_A_b00r04_IPDUM_DynSig_0_Des1T0013S_A_b00r04_IPDUM_DynSig_0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0013S_A_b01r04_IPDUM_DynSig_0_Des1T0013S_A_b01r04_IPDUM_DynSig_0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0013S_A_b01r04_IPDUM_DynSig_1_Des1T0013S_A_b01r04_IPDUM_DynSig_1 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0013S_A_b01r04_IPDUM_DynSig_2_Des1T0013S_A_b01r04_IPDUM_DynSig_2 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Pps1T0013S_A_b01r04_IPDUM_DynSig_3_Des1T0013S_A_b01r04_IPDUM_DynSig_3 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpsT00120D_A_b00r01_DesT00120D_A_b00r01 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpsT00124D_A_b00r01_DesT00124D_A_b00r01 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpsT00126D_A_b00r01_DesT00126D_A_b00r01 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpsT00130D_A_b00r01_DesT00130D_A_b00r01 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpsT0137D_A_b00r02_DesT0137D_A_b00r02 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpsT0138D_A_b00r03_DesT0138D_A_b00r03 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpsT0232D_A_b00r02_DesT0232D_A_b00r02 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_PpsT0233D_A_b00r04_DesT0233D_A_b00r04 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Rx_0x21D_IL_Desig00Rx_0x21D_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Rx_0x21F_IL_Desig00Rx_0x21F_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Rx_0x221_IL_Desig00Rx_0x221_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Rx_0x223_IL_Desig00Rx_0x223_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Rx_0x225_IL_Desig00Rx_0x225_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Rx_0x227_IL_Desig00Rx_0x227_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x228_IL_Desig00Tx_0x228_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x3C3_IL_Desig00Tx_0x3C3_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x3C4_IL_Desig00Tx_0x3C4_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x3DD_IL_Desig00Tx_0x3DD_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x3DE_IL_Desig00Tx_0x3DE_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x3EA_IL_Desig00Tx_0x3EA_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x3EF_IL_Desig00Tx_0x3EF_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x754_IL_Desig00Tx_0x754_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x755_IL_Desig00Tx_0x755_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x757_IL_Desig00Tx_0x757_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x757_IL_CAN00_Desig00Tx_0x757_IL_CAN00 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x765_IL_Desig00Tx_0x765_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x767_IL_Desig00Tx_0x767_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x769_IL_Desig00Tx_0x769_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x771_IL_Desig00Tx_0x771_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x772_IL_Desig00Tx_0x772_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00Tx_0x774_IL_Desig00Tx_0x774_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00_0x7A0_Desig00_0x7A0 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00_0x7A2_Desig00_0x7A2 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00_0x7A4_Desig00_0x7A4 : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig00_Tx_0x22C_IL_Desig00_Tx_0x22C_IL : 2;
+  Rte_BitType Rte_TxAck_CpCdd_TgfTestApplication_Ppsig01Tx_0x765_IL_Desig01Tx_0x765_IL : 2;
+} Rte_AckFlagsType;
+
+#  define RTE_START_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+extern VAR(Rte_AckFlagsType, RTE_VAR_NOINIT) Rte_AckFlags; /* PRQA S 0850 */ /* MD_MSR_19.8 */
+
+#  define RTE_STOP_SEC_VAR_NOINIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+typedef struct
+{
+  Rte_BitType Rte_RxTimeout_ComCanSig_16Bit_13 : 1;
+  Rte_BitType Rte_RxTimeout_ComCanSig_16Bit_18 : 1;
+  Rte_BitType Rte_RxTimeout_ComCanSig_16bit_2 : 1;
+  Rte_BitType Rte_RxTimeout_ComFrSig_32Bit_2 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanCan_Can1Sig_32Bit1 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanCan_Can1Sig_8Bit1 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanCan_Can2Sig_16Bit1 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanCan_Can2Sig_32Bit1 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanCan_Can2Sig_8Bit2 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanFr_Can2Sig_8Bit_3 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanFr_CanSig_16Bit_1 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanFr_CanSig_32Bit_1 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanFr_CanSig_8Bit_1 : 1;
+  Rte_BitType Rte_RxTimeout_GwCanFr_CanSig_8Bit_2 : 1;
+  Rte_BitType Rte_RxTimeout_GwFrSig_16Bit_2 : 1;
+  Rte_BitType Rte_RxTimeout_GwFrSig_32Bit_6 : 1;
+  Rte_BitType Rte_RxTimeout_GwFrSig_8Bit_3 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_16Bit_17 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_16Bit_18 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_16Bit_19 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_16Bit_2 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_16Bit_4 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_32Bit_2 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_32Bit_21 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_32Bit_22 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_32Bit_4 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_32bit_26 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_8Bit_13 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_8Bit_15 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_8Bit_16 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_8Bit_17 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_8Bit_18 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_8Bit_2 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_Bool_2 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_Bool_4 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_Cdd_2 : 1;
+  Rte_BitType Rte_RxTimeout_Sig_Cdd_8Bit_1 : 1;
+  Rte_BitType Rte_RxTimeout_s00R0100D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s00R0118D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s00R142D_A_b00r08 : 1;
+  Rte_BitType Rte_RxTimeout_s00R142D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s00T044S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s00T044S_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_s00T044S_A_b03r04 : 1;
+  Rte_BitType Rte_RxTimeout_s01R0100D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s01R0118D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s01R142D_A_b00r08 : 1;
+  Rte_BitType Rte_RxTimeout_s01R142D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s01T044S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s01T044S_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_s01T044S_A_b03r04 : 1;
+  Rte_BitType Rte_RxTimeout_s02R0100D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s02R0118D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s02R142D_A_b00r08 : 1;
+  Rte_BitType Rte_RxTimeout_s02R142D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s02T044S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s02T044S_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_s02T044S_A_b03r04 : 1;
+  Rte_BitType Rte_RxTimeout_s03R0100D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s03R0118D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s03T044S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s03T044S_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_s03T044S_A_b03r04 : 1;
+  Rte_BitType Rte_RxTimeout_s04R0118D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s04T044S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s04T044S_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_s04T044S_A_b03r04 : 1;
+  Rte_BitType Rte_RxTimeout_s05R0118D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s05T044S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s05T044S_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_s05T044S_A_b03r04 : 1;
+  Rte_BitType Rte_RxTimeout_s06R0100D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s06R0118D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s07R0100D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s07R0118D_A_b01r08 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b00r04_IPDUM_DynSig_0 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b01r04_IPDUM_DynSig_0 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b01r04_IPDUM_DynSig_1 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b01r04_IPDUM_DynSig_2 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b01r04_IPDUM_DynSig_3 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b02r04_IPDUM_DynSig_0 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b03r04_IPDUM_DynSig_0 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b03r04_IPDUM_DynSig_1 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b03r04_IPDUM_DynSig_2 : 1;
+  Rte_BitType Rte_RxTimeout_s0R0010S_A_b03r04_IPDUM_DynSig_3 : 1;
+  Rte_BitType Rte_RxTimeout_s0_p00R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s0_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s0_p01R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s10_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s11_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s12_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s13_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b00r04_IPDUM_DynSig_0 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b01r04_IPDUM_DynSig_0 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b01r04_IPDUM_DynSig_1 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b01r04_IPDUM_DynSig_2 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b01r04_IPDUM_DynSig_3 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b02r04_IPDUM_DynSig_0 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b03r04_IPDUM_DynSig_0 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b03r04_IPDUM_DynSig_1 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b03r04_IPDUM_DynSig_2 : 1;
+  Rte_BitType Rte_RxTimeout_s1R0010S_A_b03r04_IPDUM_DynSig_3 : 1;
+  Rte_BitType Rte_RxTimeout_s1_p00R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s1_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s1_p01R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s2_p00R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s2_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s2_p01R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s3_p00R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s3_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s3_p01R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s4_p00R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s4_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s4_p01R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s5_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s6_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s7_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s8_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s9_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_sR00108D_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_sR00108D_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_sR00109D_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_sR00109D_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_sR00110D_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_sR00110D_A_b02r04 : 1;
+  Rte_BitType Rte_RxTimeout_sR0112D_A_b03r04 : 1;
+  Rte_BitType Rte_RxTimeout_sR0114D_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s_cnt_p00R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s_cnt_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s_cnt_p01R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s_crc_p00R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_s_crc_p00R041S_A_b01r04 : 1;
+  Rte_BitType Rte_RxTimeout_s_crc_p01R041S_A_b00r04 : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x21C_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x21E_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x220_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x222_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x224_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x226_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x229_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x230_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x3EB_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x758_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x768_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00Rx_0x770_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig00_0x776 : 1;
+  Rte_BitType Rte_RxTimeout_sig00_0x777 : 1;
+  Rte_BitType Rte_RxTimeout_sig00_0x780 : 1;
+  Rte_BitType Rte_RxTimeout_sig00_0x7A1 : 1;
+  Rte_BitType Rte_RxTimeout_sig00_0x7A3 : 1;
+  Rte_BitType Rte_RxTimeout_sig00_Rx_0x22D_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01Rx_0x229_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01Rx_0x230_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01Rx_0x4C1_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01Rx_0x758_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01Rx_0x768_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01Rx_0x770_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01Rx_0x773_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01Rx_0x775_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig01_0x776 : 1;
+  Rte_BitType Rte_RxTimeout_sig01_0x777 : 1;
+  Rte_BitType Rte_RxTimeout_sig01_0x780 : 1;
+  Rte_BitType Rte_RxTimeout_sig01_0x7A1 : 1;
+  Rte_BitType Rte_RxTimeout_sig01_0x7A3 : 1;
+  Rte_BitType Rte_RxTimeout_sig02Rx_0x229_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig02Rx_0x230_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig02Rx_0x768_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig02Rx_0x770_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig02Rx_0x773_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig02Rx_0x775_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig02_0x780 : 1;
+  Rte_BitType Rte_RxTimeout_sig02_0x7A3 : 1;
+  Rte_BitType Rte_RxTimeout_sig03Rx_0x229_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig03Rx_0x230_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig03_0x780 : 1;
+  Rte_BitType Rte_RxTimeout_sig12Rx_0x766_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig20Rx_0x766_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig21Rx_0x766_IL : 1;
+  Rte_BitType Rte_RxTimeout_sig22Rx_0x766_IL : 1;
+} Rte_RxTimeoutFlagsType;
+
+#  define RTE_START_SEC_VAR_ZERO_INIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+extern VAR(Rte_RxTimeoutFlagsType, RTE_VAR_ZERO_INIT) Rte_RxTimeoutFlags;
+
+#  define RTE_STOP_SEC_VAR_ZERO_INIT_UNSPECIFIED
+#  include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+
+
+# endif /* defined(RTE_CORE) */
+
+#endif /* _RTE_TYPE_H */
+
+/**********************************************************************************************************************
+ MISRA 2004 violations and justifications
+ *********************************************************************************************************************/
+
+/* module specific MISRA deviations:
+   MD_Rte_3408:  MISRA rule: 8.8
+     Reason:     For the purpose of monitoring during calibration or debugging it is necessary to use non-static declarations.
+                 This is covered in the MISRA C compliance section of the Rte specification.
+     Risk:       No functional risk.
+     Prevention: Not required.
+
+*/
