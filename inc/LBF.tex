@@ -441,7 +441,7 @@ Mit der QA-C9-Version ist es möglich ein Projekt über die vorhandene Benutzerobe
 %
 \paragraph*{Ergebnisse einer statischen Analyse mithilfe von QA-C9}
 %
-Um sich im Umgang mit QA-C9 vertraut zu machen, lohnt es sich, mit dem Aufstellen eines Analyseprojekts für die bereits im Unterkapitel \ref{QAC7Einf} behandelte Simplecomponent klein anzufangen.
+Um sich mit QA-C9 vertraut zu machen, lohnt es sich, mit dem Aufstellen eines Analyseprojekts für die bereits im Unterkapitel \ref{QAC7Einf} behandelte Simplecomponent klein anzufangen.
 
 Nachdem das QA-C9-Projekt über die GUI eingestellt wurde, war es möglich entsprechende Reports zu erstellen. Die Reports können als HTML-Files oder direkt aus bestimmten Stellen in der GUI abgelesen werden.
 
@@ -555,13 +555,17 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-\subsubsection{Zweite Aufgabenstellung}
+In der sechsten Woche wurde mir die 2. Aufgabestellung vorgestellt. Dabei ginge es darum, mich umfassend mit einem Basic Test Environment (BTE) zu beschäftigen, welches in der Vector GmbH entwickelt wurde. Ich musste mich mit dem Tool vertraut machen und verstehen wie es funktioniert. Ziel dabei war es, das Tool um weitere Funtionalitäten zu erweitern.
 %
-In den folgenden Tagen wurde mir die 2. Aufgabe meiner Arbeitstätigkeit bei Vector vorgestellt. 
+\subsubsection{Zweite Aufgabenstellung}
+% 
+Erstens musste ich das Tool verstehen und in der Lage sein, seine Funktionalitäten zu beschreiben. Aus diesem Grund werden im Folgenden einige seiner Eigenschaften und Besonderheiten zusammengefasst und anschliessend die zweite Aufgabe meiner Tätigkeit festgelegt.
+%
+\subsubsection*{BTE - Basic Test Environment}
+%
+Das Basic Test Environment (BTE) ist ein Component-Unit-Test-Framework, mit dessen Hilfe man in Vector hardwareunabhängige (AUTOSAR-) BSW-Komponeneten testet \cite{BTE}.
 
-Ein Basic Test Environment (BTE) ist ein in Vector entwickeltes und eingesetztes Component Unit Test Framework, mit dessen Hilfe man auf einem beliebigen Rechner hardwareunabhängige (AUTOSAR-) BSW-Komponeneten testet \cite{BTE}.
-
-Die in \figvref{fig:BTE_func1} vorgestellte BTE-Version bietet verschiedene Testsfunktionalitäten, u.a. das Emulieren einer inneren ECU-Umgebung, die Ereignisprotokollierung und das Erstellen von entsprechenden Reports \cite{BTE}.
+Die in \figvref{fig:BTE_func1} vorgestellte BTE-Version bietet verschiedene Testsfunktionalitäten, u.a. das Nachbilden (emulation) einer inneren ECU-Umgebung, die Ereignisprotokollierung und das Erstellen von entsprechenden Reports \cite{BTE}. 
 %
 \begin{figure}[!htp]
 \centering
@@ -571,31 +575,58 @@ Die in \figvref{fig:BTE_func1} vorgestellte BTE-Version bietet verschiedene Test
 \end{figure}
 %
 
-Gegenüber diesen Vorteilen gibt es jedoch auch einen Nachteil, der sich eher als eine Einschränkung des genannten Tools äußert. Mithilfe der BTE lassen sich nämlich die jeweiligen Testreports lediglich auf einem lokalen Rechner ausgeben und abspeichern, da die BTE betriebssystemabhängige Funktionen u.a. zur formatierten Ein- und Ausgabe von Strings verwendet. Diese Funktionalitäten benötigen somit viele Hardwareresourcen. 
+Im Diagram wird durch die rote Box die Nachbildung der inneren ECU-Umgebung gezeigt. Diese Box besteht aus mehreren Platzhaltern, sogenannten Stubs, die Komponenten simulieren/ersetzen. Dabei ist ersichtlich, dass der Testplan sowohl die simulierten Module als auch die Component-Under-Test steuert, damit anschliessend vom Framework einen entsprechenden Log/Report ausgegeben wird.
 
-Es wäre diesbezüglich auch vorteilhalft, diese Funktionalitäten so anzupassen, dass diese direkt auf einer beliebig eingebetteten Hardware lauffähig sind. Die Komponententests (Component Unit Test) könnten dadurch unter realen bzw. Echtzeitbedingungen durchgeführt werden.
-
-Die Aufgabestellung basiert somit auf der beschriebenen Anforderung, das BTE-Tool so zu erweitern, dass dieses auch auf der Hardware lauffähig ist, wo gleichzeitig die CUT\footnote{Component under test} laufen soll. 
-%
-\subsubsection{Durchführung der zweiten Aufgabenstellung}
-%
-Eine Hardware, die ein Beispiel eines eingebetteten System darstellt und auf der die BTE lauffähig sein soll, wurde mir zur Verfügung gestellt. Es handelte sich dabei um das STM32F4-DiscoveryBoard.
-
-Um die Hauptaufgabe zu lösen, war es notwendig das genannte Entwicklungsboard in Betrieb zu nehmen und mir dabei eine passende Entwicklungsumgebung auszusuchen. Diese sollte dementsprechend geignete 
-Compiler- und Linker-Bibliotheken zur Verfügung stellen, die das Erstellen einer Applikation für den auf dem Entwicklungsboard eingebauten Mikrocontroller unterstützen. Dabei handelt es sich um eine Cortex-M4-Hardwarearchitektur.
+Das Klassendiagram, welches in Abbildung \ref{fig:BTELogListold} gezeigt wird, gibt einen Teil der BTE-Struktur wieder. Dabei sind diejenige der Komponenten gezeigt, welche sich um die Erstellung eines Testreports kümmern. Das Teilmodul \verb+TestHandler+ steuert den Ablauf der Testdurchführung und die Erstellung des Testreports über das Modul \verb+ReportHandler+. 
 %
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.4]{./Bilder/stm32f4_discovery.jpg}
-\caption{Verwendete Test-Hardware (STM32F4), auf welcher die RT-BTE lauffähig sein soll.}
-\label{fig:BTE_func1}
+\includegraphics[scale=0.7]{./Bilder/BTELogListold.pdf}
+\caption{BTEUseCase}
+\label{fig:BTELogListold}
 \end{figure}
 %
 
-Weitere Einstellungen des STM32F4 hier angeben.
+Gegenüber den genannten Funktionalitäten gibt es bei der Verwendung des BTEs folgenden Nachteil, der sich eher als eine Einschränkung äußert: Mit dem Tool lassen sich zwar bequem Testreports auf einem lokalen Rechner ausgeben und abspeichern, betriebssystemabhängige Funktionen u.a. zum Umgang mit Strings werden jedoch dabei verwendet. Diese Funktionalitäten benötigen somit viele Hardwareresourcen. 
+
+Es wäre somit auch vorteilhalft, die BTE-Struktur so zu erweitern, dass diese ebenfalls auf einem beliebigen bzw. eingebetteten System laufen. Die Komponententests (Component Unit Test) könnten dadurch unter realen bzw. Echtzeitbedingungen durchgeführt werden.
+
+Die Aufgabestellung basiert somit auf der beschriebenen Anforderung, das BTE-Framework so zu ergänzen, dass dieses während einer beliebigen Testdurchführung gleichzeitig mit der CUT\footnote{Component Under Test} auf dem eingebetteten System läuft. 
+
+Man muss dementsprechend mit den vorhandenen Hardwareressourcen des betrachteten eingebetteten Systems sparsam umgehen und dabei auch eine Methode einsetzen, bei der beispielsweise der Test-Report direkt auf dem beschränkten RAM-Speicher abgelegt wird. Dazu ist es notwendig, eine bestimmte Codierung festzulegen, wie die Daten abzuspeichern sind.
+
+Am Ende der Testdurchführung soll der Test-Report wieder als eine XML-Datei vorliegen. Dies ist nur dann möglich, wenn die entsprechenden Stellen des RAM-Speichers aus dem eingebetteten System extrahiert und anschließend analysiert werden. Dieser RAM-Bereich, welcher als eine Binärdatei vorliegt, würde sich mithilfe einer Anwendung analysieren lassen. Diese Anwendung wird in einer ausgewählten Skriptsprache programmiert und implementiert die Dekodierung der Daten so, dass erneut ein Test-Report als eine XML-Datei erstellt werden kann.
+
+Die Umsetzung der genannten Ansätze sind in \secref{durchfAuf2} erklärt.
+%
+\subsubsection*{Test-Hardware}
+%
+Eine Test-Hardware, auf der die BTE laufen soll, wurde mir zur Verfügung gestellt. Es handelte sich dabei um das STM32F4-DiscoveryBoard, auf dem der  Mikrocontroller STM32F407VG (Cortex-M4-Hardwarearchitektur) eingebaut ist.
+
+Um die Aufgabe zu lösen, war es notwendig das STM32F4-DiscoveryBoard in Betrieb zu nehmen und dabei eine passende Entwicklungsumgebung zu verwenden. Diese sollte dementsprechend geignete Compiler- und Linker-Bibliotheken zur Verfügung stellen, die das Erstellen einer Applikation für den  Mikrocontroller unterstützen. 
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.4,angle=90]{./Bilder/stm32f4_discovery.jpg}
+\caption{Verwendete Test-Hardware (STM32F4), auf welcher die RT-BTE lauffähig sein soll.}
+\label{fig:discovery}
+\end{figure}
+%
+
+Da ich in vergangenen Projekten bereits Erfahrung bei der Programmierung des genannten Mikrocontrollers sammeln konnte, entschloss ich mich die Eclipse-IDE und das dabei zur Verfügung stehende CDT\footnote{C/C++ Development Tooling}-Plugin einzusetzen. Dieses erweitert Eclipse und bietet u.a. die Möglichkeit C/C++ Programme zu editieren, zu kompilieren und zu linken~\cite{EclipseCDT}. 
+
+In ~\cite{STM32Eclipse} bzw.~\cite{EclipseSTM32Youtube} werden weitere, notwendige Tools angegeben, die die Programmierung des Mikrocontrollers ermöglichen:
+%
+\begin{itemize}
+\item GDB Hardware Debugging: ein zusätzliches Eclipse-Plugin
+\item GDB: der GNU Debugger-Programm
+\item GDB-Server: stellt eine Verbindung mit GDB und dem JTAG-Interface her.
+\item Toolchain: make, Compiler, Linker, GDB, Bibliotheken, usw.
+\end{itemize}
+%
 \newpage
 %
-\section{Siebte Woche}
+\section{Siebte Woche}\label{siebteWoche}
 %
 \subsection{Wochenübersicht}
 %
@@ -603,21 +634,52 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
+\subsubsection{Anforderungsanalyse}\label{Anford}
+%
+Das Tool, welches auf der Erweiterung der Funktionalitäten der BTE-Umgebung und Implementierung eines PERL-Skripts zur Erstellung des Testreports aufbaut, soll folgende Anforderungen erfüllen:
+%
+\begin{itemize}
+\item Ursprüngliche BTE-Funktionalitäten, einen Testreport zu strukturieren und erzeugen, sollen durch Erweiterungen möglichst wenig modifiziert werden.
+\item Es soll auf einem Embedded-Prozessor lauffähig sein und mit vorhandenen Hardware-Ressourcen möglichst sparsam umgehen.
+\item Es soll durch eine entsprechende Kodierung Testreports auf der RAM eines beliebigen Embedded-Prozessors abspeichern können.
+\item Das Tool soll aus einer erzeugten Binärdatei, welche das Memory Mapping eines RAM-Speicherbereichs darstellt, einen Testreport erstellen können.
+\end{itemize}
+%
+In \figvref{fig:BTEUseCase} wird ein Anwendungsfalldiagramm gezeigt, um die funktionalen Anforderungen an dem vorliegenden System besser zu verstehen. 
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.9]{./Bilder/BTEUseCase.pdf}
+\caption{BTEUseCase}
+\label{fig:BTEUseCase}
+\end{figure}%
+%
+%
+\begin{landscape}
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.7]{./Bilder/BTELogList.pdf}
+\caption{BTEUseCase}
+\label{fig:BTELogList}
+\end{figure}
+\end{landscape}
+%
+%
+\subsubsection{Durchführung der zweiten Aufgabenstellung}\label{durchfAuf2}
+%
 Zwei Mögichkeiten können betrachtet werden, um mit den knappen Softwareressourcen der Embedded Platform umzugehen:
 
 \begin{itemize}
-\item Man bindet entsprechende Ersatzbibliotheken ein, bei denen der Verbrauch der Ressouercen in Grenzen gehalten wird.
-\item Man bietet dem Anwender die Möglichkeit an, durch entsprechende Routinen diejenigen Teile vom Code beim Kompiliervorgang auszublenden, die nicht einzusetzen sind.
+\item Man bindet entsprechende Ersatzbibliotheken ein, die optimiert und ressouerce-sparend arbeiten.
+\item Man bietet dem Anwender die Möglichkeit an, durch entsprechende Präprozessor-Direktiven diejenigen Teile vom vorhandenen BTE-Code beim Kompiliervorgang auszublenden, die viele Hardware-Ressourcen benötigen.
 \end{itemize}
 
-Die zweite Möglichkeit wird zur Lösung der Aufgabe umsetzt und wie folgt vorgegangen:
+Die zweite Möglichkeit wird zur Lösung der Aufgabe umsetzt. Dabei wird wie folgt vorgegangen:
 
-Mit vorhandenen und zusätzlich eingebauten Präprozessor-Direktiven (\verb+#define+) wird die Möglichkeit geboten, die Methodensaufrufe auszublenden, die zu viele Rechenressourcen benötigen, um richtig zu funktionieren. Ebenfalls sollten solche Methodensaufrufe ausfallen, die auf der eingebetteten Hardware nicht kompilierbar sind, da diese Hardwareressourcen verwenden, die nicht zur Verfügung stehen. Ein Beispiel dazu sind solche Methoden, die das lokale Abspeichern von Dateien ermöglichen.
+Mit vorhandenen und zusätzlich eingeführten Präprozessor-Direktiven (\verb+#define+) wird die Möglichkeit geboten, die BTE-Methodensaufrufe auszublenden, die zu viele Rechenressourcen benötigen, um richtig zu funktionieren. Ebenfalls sollten solche Methodensaufrufe ausfallen, die auf der eingebetteten Hardware nicht kompilierbar sind, da diese Hardwareressourcen verwenden, die dort nicht zur Verfügung stehen. Ein Beispiel dazu sind solche Methoden, die das lokale Abspeichern von Dateien ermöglichen wie fopen, fclose, sprintf, usw. 
 
-Bekannte Methodensaufrufe, die obige Eigenschaften besitzen, sind folgende: fopen, fclose, sprintf, usw. 
-
-Mithilfe der neu eingeführten Direktive \verb+#define USE_PRINTF+ werden alle Methodensaufrufe ausgeblendet, die lediglich mit Strings umgehen. Dies ermöglicht somit solche Methoden nur dann einzusetzen, wenn die Hardware genug RAM zur Verfügung stellt.
-
+Mithilfe der neu eingeführten Direktive \verb+#define USE_PRINTF+ werden alle Methodensaufrufe ausgeblendet, die lediglich mit Strings umgehen. Dies ermöglicht somit solche Methoden nur dann einzusetzen, wenn die Hardware genug RAM zur Verfügung stellt und dort die notige Funktion implementiert ist.
+%
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteTestHandler.c}, label={lst:useprintf1}]
 ...
 typedef struct stBteTestSequence
@@ -635,7 +697,7 @@ typedef struct stBteTestSequence
 } tBteTestSequence;
 ...
 \end{lstlisting}
-
+%
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteCheck.c}, label={lst:useprintf1}]
 ...
 void BteAvailableOk( char *text )
@@ -652,7 +714,7 @@ void BteAvailableOk( char *text )
 ...
 \end{lstlisting}
 
-Durch das Umdefinieren einer schon vorhandenen Direktive \verb+#define BTE_ENABLE_TESTREPORT+ wird ein Ausblenden der oben genannten Methodensaufrufe möglich, die mit dem Erstellen und der lokalen Abspeicherung von Dateiobjekten umgehen. 
+Durch das Umdefinieren einer schon vorhandenen Direktive \verb+#define BTE_ENABLE_TESTREPORT+ wird ein Ausblenden der oben genannten Methodensaufrufe möglich, die mit dem Erstellen, der Bearbeitung und lokalen Abspeicherung von Dateiobjekten umgehen. Siehe dazu den folgenden Codeabschnitt.
 
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteReport.c}, label={lst:usefprintf1}]
 ...
@@ -669,7 +731,7 @@ void BteReport_Write( char *text )
 \end{lstlisting}
 %
 
-\verb+#define NOTUSE_HARDWARE+ wurde ebenfalls eingeführt, um in dem Template-File, die hardwareabhängige Funktionsaufrufe einzublenden, wenn die BTE auf dem eingebetteten System verwendet wird.
+\verb+#define USE_HARDWARE+ wurde ebenfalls eingeführt, um bestimmte Codeabschnitte einzublenden wenn die BTE innerhalb des eingebetteten Systems verwendet wird und die hardwareabhängige bzw. ECU-eigene Funktionsaufrufe einzublenden. .
 %
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:usehardware}]
 ...
@@ -703,12 +765,14 @@ Wie sieht die Datenstruktur aus:
 %
 Die erste Struktur hat folgende Strukturen als Haupteigenschaft:
 %
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:usehardware}]
+
 typedef struct stBteEventLog {
   uint16 code;
   uint32 data;
 } tBteEventLog;
 
-\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:usehardware}]
+
 typedef struct stBteLogList 
 {
   uint16     size;

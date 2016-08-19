@@ -1,8 +1,18 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sada_tudreport.aux
 The style file: gerunsrt.bst
 Database file #1: ./bib/literatur.bib
-Warning--entry type for "QAC_Iseite" isn't style-file defined
+Warning--entry type for "EclipseCDT" isn't style-file defined
 --line 87 of file ./bib/literatur.bib
+Warning--entry type for "STM32Eclipse" isn't style-file defined
+--line 119 of file ./bib/literatur.bib
+I was expecting a `,' or a `}'---line 124 of file ./bib/literatur.bib
+ : 
+ : @Electronic{EclipseSTM32Youtube,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "EclipseSTM32Youtube" isn't style-file defined
+--line 124 of file ./bib/literatur.bib
+Warning--I didn't find a database entry for "QAC_Iseite"
 Warning--empty institution in Addendum1
 Warning--empty year in HardTime
-(There were 3 warnings)
+(There was 1 error message)

@@ -28,10 +28,6 @@
 \newblock \Btxtechreplong{}, PRQA, 2013.
 \newblock \url{http://www.programmingresearch.com}.
 
-\bibitem{QAC_Iseite}
-{\em Testwerkzeuge für statisches Testen: QA-C und QA-C++}.
-\newblock \url{http://www.qa-systems.de/produkte/qa-c.html}.
-
 \bibitem{QAC70WinUserGuide}
 {\sc QA-Systems}: {\em QAC-7.0-Win-UserGuide}.
 \newblock The Programming Research Ltda.
@@ -49,6 +45,21 @@
 {\sc P.~Kallenberg, M.~Schwarz}: {\em Basic Test Environment: User Manual
   (Component Unit Test Framework)}.
 \newblock Vector Informatik GmbH.
+
+\bibitem{EclipseCDT}
+{\sc Eclipse}: {\em Eclipse CDT (C/C++ Development Tooling)}.
+\newblock Last release September 2014.
+\newblock \url{https://eclipse.org/cdt/}.
+
+\bibitem{STM32Eclipse}
+{\sc Mikrocontroller.net}: {\em STM32 Eclipse Installation}.
+\newblock
+  \url{http://www.mikrocontroller.net/articles/STM32_Eclipse_Installation}.
+
+\bibitem{EclipseSTM32Youtube}
+{\sc scientificpages}: {\em How to prepare IDE for STM32 in eclipse?}
+\newblock video.
+\newblock \url{https://www.youtube.com/watch?v=kjvqySyNw20}.
 
 \bibitem{HardTime}
 {\sc Douglass, Bruce~Powel}: {\em Doing Hard Time}.

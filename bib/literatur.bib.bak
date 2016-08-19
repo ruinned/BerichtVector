@@ -84,11 +84,13 @@
   type   = {candthesis},
 }
 
-@Electronic{QAC_Iseite,
-  title        = {Testwerkzeuge für statisches Testen: QA-C und QA-C++},
-  organization = {QA-Systems},
-	note				 = {\url{http://www.qa-systems.de/produkte/qa-c.html}},
-  url          = {http://www.qa-systems.de/produkte/qa-c.html},
+@Electronic{EclipseCDT,
+  author       = {Eclipse},
+  month        = {September},
+  year         = {2014},
+  title        = {Eclipse CDT (C/C++ Development Tooling)},
+  howpublished = {last release September 2014},
+  note         = {\url{https://eclipse.org/cdt/}},
 }
 
 @Manual{QAC70WinUserGuide,
@@ -111,9 +113,21 @@
 }
 
 @Manual{BTE,
-  title        = {Basic Test Environment User Manual Component Unit Test Framework},
+  title        = {Basic Test Environment: User Manual (Component Unit Test Framework)},
   author       = {P. Kallenberg, M. Schwarz},
   organization = {Vector Informatik GmbH},
+}
+
+@Electronic{STM32Eclipse,
+  author = {Mikrocontroller.net},
+  title  = {STM32 Eclipse Installation},
+  note ={\url{http://www.mikrocontroller.net/articles/STM32_Eclipse_Installation}}
+
+@Electronic{EclipseSTM32Youtube,
+  author       = {scientificpages},
+  title        = {How to prepare IDE for STM32 in eclipse?},
+  howpublished = {video},
+  note			  = {\url{https://www.youtube.com/watch?v=kjvqySyNw20}}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
