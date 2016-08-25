@@ -13,7 +13,7 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Vergleich zwischen den akteullen MISRA-Versionen. In Anlehnung an~\cite {WarMISRAC}\relax }}{8}{figure.caption.13}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces QA-C-Funktionalit\"aten. In Anlehnung an~\cite {QAC70WinUserGuide}.\relax }}{9}{figure.caption.14}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Analyse einer erste BSW-Komponente mit QA-C7.\relax }}{10}{figure.caption.15}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Ergebnisse der Analyse vom betrachteten Source Code.\relax }}{10}{figure.caption.16}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Ergebnisse der Analyse vom betrachteten Source Code.\relax }}{11}{figure.caption.16}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Rule mapping MISRA C:2004 $\rightarrow $ MISRA C:2012. Entnommen aus ~\cite {Addendum1}\relax }}{13}{figure.caption.17}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces QAC\relax }}{15}{figure.caption.18}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Benutzeroberfl\"ache der QAC9-Software.\relax }}{18}{figure.caption.19}
@@ -21,11 +21,14 @@
 \contentsline {figure}{\numberline {2.13}{\ignorespaces EPICskr1\relax }}{20}{figure.caption.21}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Framework-Emulation of ECU environment on a PC. Entnommen aus \cite {BTE}.\relax }}{24}{figure.caption.22}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces BTEUseCase\relax }}{25}{figure.caption.23}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Verwendete Test-Hardware (STM32F4), auf welcher die RT-BTE lauff\"ahig sein soll.\relax }}{26}{figure.caption.24}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Verwendete Test-Hardware (STM32F4), auf welcher die RT-BTE lauff\"ahig sein soll.\relax }}{25}{figure.caption.24}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces BTEUseCase\relax }}{28}{figure.caption.25}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces BTEUseCase\relax }}{29}{figure.caption.26}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces eclipsegit\relax }}{34}{figure.caption.27}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces reports\relax }}{36}{figure.caption.28}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces BTEUseCase\relax }}{33}{figure.caption.26}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces BTEUseCase\relax }}{35}{figure.caption.28}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces BTEUseCase\relax }}{37}{figure.caption.30}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces BTEUseCase\relax }}{38}{figure.caption.31}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces eclipsegit\relax }}{40}{figure.caption.32}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces reports\relax }}{42}{figure.caption.33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

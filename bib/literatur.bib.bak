@@ -86,10 +86,8 @@
 
 @Electronic{EclipseCDT,
   author       = {Eclipse},
-  month        = {September},
-  year         = {2014},
   title        = {Eclipse CDT (C/C++ Development Tooling)},
-  howpublished = {last release September 2014},
+  howpublished = {Last release September 2014},
   note         = {\url{https://eclipse.org/cdt/}},
 }
 
@@ -118,16 +116,11 @@
   organization = {Vector Informatik GmbH},
 }
 
-@Electronic{STM32Eclipse,
-  author = {Mikrocontroller.net},
-  title  = {STM32 Eclipse Installation},
-  note ={\url{http://www.mikrocontroller.net/articles/STM32_Eclipse_Installation}}
-
 @Electronic{EclipseSTM32Youtube,
   author       = {scientificpages},
   title        = {How to prepare IDE for STM32 in eclipse?},
   howpublished = {video},
-  note			  = {\url{https://www.youtube.com/watch?v=kjvqySyNw20}}
+  note         = {\url{https://www.youtube.com/watch?v=kjvqySyNw20}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

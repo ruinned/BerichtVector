@@ -51,11 +51,6 @@
 \newblock Last release September 2014.
 \newblock \url{https://eclipse.org/cdt/}.
 
-\bibitem{STM32Eclipse}
-{\sc Mikrocontroller.net}: {\em STM32 Eclipse Installation}.
-\newblock
-  \url{http://www.mikrocontroller.net/articles/STM32_Eclipse_Installation}.
-
 \bibitem{EclipseSTM32Youtube}
 {\sc scientificpages}: {\em How to prepare IDE for STM32 in eclipse?}
 \newblock video.

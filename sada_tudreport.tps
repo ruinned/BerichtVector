@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
+NormalPos.bottom=777
 Class=LaTeXView
-Document=common\preface.tex
+Document=inc\Symbole.tex
 
 [Frame0_View0,0]
-TopLine=40
-Cursor=2492
+TopLine=71
+Cursor=4463
 
 [Frame1]
 Flags=0
@@ -30,13 +30,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
+NormalPos.bottom=777
 Class=LaTeXView
-Document=inc\Einfuehrung.tex
+Document=common\commonmacros.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=654
+TopLine=367
+Cursor=2386
 
 [Frame2]
 Flags=0
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
-Class=LaTeXView
-Document=inc\Anhang.tex
+NormalPos.bottom=777
+Class=BibTeXView
+Document=bib\literatur.bib
 
 [Frame2_View0,0]
-TopLine=10
-Cursor=481
+TopLine=0
+Cursor=0
 
 [Frame3]
 Flags=0
@@ -66,13 +66,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
+NormalPos.bottom=777
 Class=LaTeXView
-Document=inc\LBF.tex
+Document=sada_tudreport.tex
 
 [Frame3_View0,0]
-TopLine=853
-Cursor=36513
+TopLine=128
+Cursor=4314
 
 [Frame4]
 Flags=0
@@ -84,13 +84,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
+NormalPos.bottom=777
 Class=LaTeXView
-Document=common\commonmacros.tex
+Document=inc\LBF.tex
 
 [Frame4_View0,0]
-TopLine=359
-Cursor=10864
+TopLine=1302
+Cursor=22670
 
 [Frame5]
 Flags=0
@@ -102,13 +102,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
+NormalPos.bottom=777
 Class=LaTeXView
-Document=sada_tudreport.tex
+Document=inc\Einfuehrung.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=1030
+Cursor=654
 
 [Frame6]
 Flags=0
@@ -120,13 +120,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
+NormalPos.bottom=777
 Class=LaTeXView
-Document=common\includes.tex
+Document=inc\Anhang.tex
 
 [Frame6_View0,0]
-TopLine=26
-Cursor=2733
+TopLine=10
+Cursor=481
 
 [Frame7]
 Flags=0
@@ -138,13 +138,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
+NormalPos.bottom=777
 Class=LaTeXView
-Document=inc\Symbole.tex
+Document=common\preface.tex
 
 [Frame7_View0,0]
-TopLine=71
-Cursor=4463
+TopLine=15
+Cursor=2492
 
 [Frame8]
 Flags=0
@@ -156,15 +156,15 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=769
-NormalPos.bottom=828
-Class=BibTeXView
-Document=bib\literatur.bib
+NormalPos.bottom=777
+Class=LaTeXView
+Document=inc\Zusammenfassung.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=0
+Cursor=3
 
 [SessionInfo]
 FrameCount=9
-ActiveFrame=3
+ActiveFrame=4
 

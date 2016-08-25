@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="MISRA2004.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="372.04724"
+     inkscape:cy="421.95905"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4445"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1148"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4445"
+       transform="matrix(0.76753262,0,0,0.73039613,94.382406,60.688928)">
+      <g
+         id="g4476"
+         transform="matrix(0.91646658,0,0,0.97591314,-15.933842,-24.40758)">
+        <text
+           transform="matrix(1.3028762,0,0,1.3691201,-122.96859,-83.090429)"
+           sodipodi:linespacing="125%"
+           id="text4356"
+           y="180.93364"
+           x="241.42856"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="180.93364"
+             x="241.42856"
+             id="tspan4358"
+             sodipodi:role="line">MISRA C:2004</tspan></text>
+        <g
+           id="g4438">
+          <path
+             inkscape:connector-curvature="0"
+             id="rect4333"
+             d="M 410.29548,202.99972 664.92156,384.7158 c 17.35297,12.38409 17.35297,32.32383 0,44.70793 L 429.49349,597.43898 c -17.35296,12.38409 -45.29312,12.38409 -62.64609,0 L 112.22132,415.72289 c -17.352966,-12.38409 -17.352966,-32.32383 0,-44.70791 L 347.64938,202.99972 c 17.35297,-12.3841 45.29313,-12.3841 62.6461,0 z"
+             style="opacity:0.52899996;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.8450076;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path4338"
+             d="m 470.41582,336.04191 a 121.46083,86.681562 0 0 0 -82.16913,-25.2906 l 0,82.43672 99.72855,-41.09118 a 121.46083,86.681562 0 0 0 -17.55942,-16.05494 z"
+             style="opacity:0.79124582;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.8450076;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path4142"
+             d="m 490.89145,355.60754 -104.69342,43.13588 -1.22258,-1.51134 -2.44513,0 0,-86.47288 a 121.46083,86.681562 0 0 0 -83.88625,25.28172 121.46083,86.681562 0 0 0 0,122.58738 121.46083,86.681562 0 0 0 171.77175,-7.2e-4 121.46083,86.681562 0 0 0 20.47563,-103.01977 z"
+             style="opacity:0.79124582;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.8450076;stroke-opacity:1" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text4360"
+             y="298.07648"
+             x="281.42859"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="298.07648"
+               x="281.42859"
+               id="tspan4362"
+               sodipodi:role="line">142 Rules</tspan></text>
+        </g>
+        <g
+           id="g4394"
+           transform="translate(55.714286,-21.428571)">
+          <rect
+             ry="0"
+             y="599.1217"
+             x="102.47375"
+             height="17.909639"
+             width="19.338221"
+             id="rect4367"
+             style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.23322354;stroke-opacity:1" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text4373"
+             y="615.21936"
+             x="140"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-size:20px"
+               y="615.21936"
+               x="140"
+               id="tspan4375"
+               sodipodi:role="line">Advisory</tspan></text>
+        </g>
+        <g
+           id="g4389"
+           transform="translate(385.19942,-55.186971)">
+          <rect
+             style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.23322354;stroke-opacity:1"
+             id="rect4371"
+             width="19.338221"
+             height="17.909639"
+             x="102.47375"
+             y="636.26459"
+             ry="0" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text4377"
+             y="650.93359"
+             x="138.57143"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-size:20px"
+               y="650.93359"
+               x="138.57143"
+               id="tspan4379"
+               sodipodi:role="line">Required</tspan></text>
+        </g>
+        <g
+           id="g4407"
+           transform="translate(-7.1428571,10)">
+          <g
+             id="g4432">
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               x="180"
+               y="638.07648"
+               id="text4401"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan4403"
+                 x="180"
+                 y="638.07648"
+                 style="font-size:17.5px">Compliance optional.</tspan><tspan
+                 sodipodi:role="line"
+                 x="180"
+                 y="659.95148"
+                 style="font-size:17.5px"
+                 id="tspan4405">Deviations optional.</tspan></text>
+            <rect
+               style="opacity:0.25600011;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1.15912104;stroke-opacity:1"
+               id="rect4399"
+               width="214.1266"
+               height="56.983738"
+               x="165.79384"
+               y="618.15607" />
+          </g>
+        </g>
+        <g
+           transform="translate(285.93426,17.142857)"
+           id="g4413">
+          <g
+             id="g4425"
+             transform="translate(1.4285714,-17.142857)">
+            <text
+               sodipodi:linespacing="125%"
+               id="text4415"
+               y="638.07648"
+               x="180"
+               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               xml:space="preserve"><tspan
+                 style="font-size:17.5px"
+                 y="638.07648"
+                 x="180"
+                 id="tspan4417"
+                 sodipodi:role="line">Compliance required</tspan><tspan
+                 id="tspan4419"
+                 style="font-size:17.5px"
+                 y="659.95148"
+                 x="180"
+                 sodipodi:role="line">unless justified by </tspan><tspan
+                 id="tspan4423"
+                 style="font-size:17.5px"
+                 y="681.82648"
+                 x="180"
+                 sodipodi:role="line">deviation</tspan></text>
+            <rect
+               y="616.80804"
+               x="163.0172"
+               height="73.965622"
+               width="213.96562"
+               id="rect4421"
+               style="opacity:0.25600011;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.32009435;stroke-opacity:1" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

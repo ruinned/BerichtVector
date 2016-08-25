@@ -45,8 +45,12 @@ Diese sind unter anderem TortoiseSVN: Hier bitte eine kurze Beschreibung von Tor
 \subsubsection{Erste Aufgabenstellung}
 %\paragraph{Erste Aufgabenstellung}
 %
-In den folgenden Tagen wurde mir die 1. Aufgabe meiner Arbeitstätigkeit bei Vector vorgestellt. Diese bestand darin, mich erstens mit den Konzepten des MISRA-C-Kodierungsstandards vertraut zu machen. Anschließend sollte ich mögliche Rückschlüsse ziehen, wie umfangreich ein Umstieg von dem aktuell in der Firma geprüften Kodierungsstandard MISRA C:2004 in den neuen Standard MISRA C:2012 ist.
-%\subsection{MISRA C}
+In den folgenden Tagen wurde mir die 1. Aufgabe meiner Arbeitstätigkeit bei Vector vorgestellt:
+%
+\begin{Aufgabenstellung}
+Sich erstens mit den Konzepten des MISRA-C-Kodierungsstandards vertraut machen. Anschließend sollten mögliche Rückschlüsse gezogen werden, wie umfangreich ein Umstieg von dem aktuell in der Firma geprüften Kodierungsstandard MISRA C:2004 in den neuen Standard MISRA C:2012 ist.
+\end{Aufgabenstellung}
+%
 \paragraph*{\uppercase{MISRA-C-Standard und Gründe für seine Einführung}}\label{MISRAC}
 %
 Die Programmiersprache C wurde im Jahr 1972 von Dennis Ritchie und Brian W. Kernighan entwickelt~\cite{CLang}. 
@@ -555,15 +559,15 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-In der sechsten Woche wurde mir die 2. Aufgabestellung vorgestellt. Dabei ginge es darum, mich umfassend mit einem Basic Test Environment (BTE) zu beschäftigen, welches in der Vector GmbH entwickelt wurde. Ich musste mich mit dem Tool vertraut machen und verstehen wie es funktioniert. Ziel dabei war es, das Tool um weitere Funtionalitäten zu erweitern.
+In der sechsten Woche wurde mir die 2. Aufgabestellung vorgestellt. Dabei ginge es darum, mich umfassend mit einem Basic Test Environment (BTE) zu beschäftigen, welches in der PES Abteilung entwickelt wurde. Ich musste mich mit dem Tool vertraut machen und seine Funktionsweise verstehen, um es anschliessend um weitere Funtionalitäten zu erweitern.
 %
 \subsubsection{Zweite Aufgabenstellung}
 % 
-Erstens musste ich das Tool verstehen und in der Lage sein, seine Funktionalitäten zu beschreiben. Aus diesem Grund werden im Folgenden einige seiner Eigenschaften und Besonderheiten zusammengefasst und anschliessend die zweite Aufgabe meiner Tätigkeit festgelegt.
+Wie oben erwähnt war es notwendig die Tool-Eigenschaften und seine Besonderheiten zusammenzufassen und zu kennen. Anhand dieser Analyse wird es klarer, an welcher Stelle die BTE-Funktionalitäten zu ergänzen sind.
 %
 \subsubsection*{BTE - Basic Test Environment}
 %
-Das Basic Test Environment (BTE) ist ein Component-Unit-Test-Framework, mit dessen Hilfe man in Vector hardwareunabhängige (AUTOSAR-) BSW-Komponeneten testet \cite{BTE}.
+Das Basic Test Environment (BTE) ist ein in \verb|C| implementiertes Component-Unit-Test-Framework, mit dessen Hilfe man in der Abteilung hardwareunabhängige (AUTOSAR-) BSW-Komponeneten testet \cite{BTE}.
 
 Die in \figvref{fig:BTE_func1} vorgestellte BTE-Version bietet verschiedene Testsfunktionalitäten, u.a. das Nachbilden (emulation) einer inneren ECU-Umgebung, die Ereignisprotokollierung und das Erstellen von entsprechenden Reports \cite{BTE}. 
 %
@@ -575,29 +579,24 @@ Die in \figvref{fig:BTE_func1} vorgestellte BTE-Version bietet verschiedene Test
 \end{figure}
 %
 
-Im Diagram wird durch die rote Box die Nachbildung der inneren ECU-Umgebung gezeigt. Diese Box besteht aus mehreren Platzhaltern, sogenannten Stubs, die Komponenten simulieren/ersetzen. Dabei ist ersichtlich, dass der Testplan sowohl die simulierten Module als auch die Component-Under-Test steuert, damit anschliessend vom Framework einen entsprechenden Log/Report ausgegeben wird.
+Im Diagram wird durch die rote Box die Nachbildung der inneren ECU-Umgebung gezeigt. Diese Box besteht aus mehreren Platzhaltern, sogenannten Stubs, die Komponenten simulieren/ersetzen. Dabei ist ersichtlich, dass der Testplan sowohl die simulierten Stubs als auch die Component-Under-Test (CUT) steuert, damit vom Framework einen entsprechenden Log/Report ausgegeben wird.
 
-Das Klassendiagram, welches in Abbildung \ref{fig:BTELogListold} gezeigt wird, gibt einen Teil der BTE-Struktur wieder. Dabei sind diejenige der Komponenten gezeigt, welche sich um die Erstellung eines Testreports kümmern. Das Teilmodul \verb+TestHandler+ steuert den Ablauf der Testdurchführung und die Erstellung des Testreports über das Modul \verb+ReportHandler+. 
+Das Klassendiagram, welches in Abbildung \ref{fig:BTELogListold} gezeigt wird, gibt einen Teil der BTE-Struktur wieder. Dabei befinden sich diejenige Komponenten, welche sich um die Erstellung eines Testreports kümmern. Das Teilmodul \verb+TestHandler+ steuert den Ablauf der Testdurchführung, wobei nur über das Modul \verb+ReportHandler+ auf die Testreport-Datei zugegriffen wird, um diese zu bearbeiten. Die Funktionalitäten \verb+X+ und\verb+Y+ bezeichnen bestimmmte Komponenten der BTE, die wie der \verb+ReportHandler+ direkt auf die den VTR-Report zugreifen bzw. ihn bearbeiten können. Im Gegensatz dazu existieren weitere Funktionalitäten wie \verb+BTE Functionality_Z+, die den Testreport nicht bearbeiten können, sondern andere Services zur Verfügung stellen.
 %
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.7]{./Bilder/BTELogListold.pdf}
+\includegraphics[scale=0.75]{./Bilder/BTELogListold_cropped.pdf}
 \caption{BTEUseCase}
 \label{fig:BTELogListold}
 \end{figure}
 %
 
-Gegenüber den genannten Funktionalitäten gibt es bei der Verwendung des BTEs folgenden Nachteil, der sich eher als eine Einschränkung äußert: Mit dem Tool lassen sich zwar bequem Testreports auf einem lokalen Rechner ausgeben und abspeichern, betriebssystemabhängige Funktionen u.a. zum Umgang mit Strings werden jedoch dabei verwendet. Diese Funktionalitäten benötigen somit viele Hardwareresourcen. 
+Gegenüber den genannten Funktionalitäten gibt es bei der Verwendung des BTEs folgenden Nachteil, der sich eher als eine Einschränkung äußert: Mit dem Tool lassen sich bequem Testreports auf einem lokalen Rechner ausgeben und abspeichern. Dabei werden jedoch betriebssystemabhängige Funktionen zum Umgang mit Strings benötigt, die in der Regel viele Hardwareresourcen verbrauchen. Die BTE lässt sich somit nur auf Rechnern sinnvoll einsetzen, die einen hohen Arbeitsspeicher und genug Speicherplatz zur Verfügung stellen.
 
-Es wäre somit auch vorteilhalft, die BTE-Struktur so zu erweitern, dass diese ebenfalls auf einem beliebigen bzw. eingebetteten System laufen. Die Komponententests (Component Unit Test) könnten dadurch unter realen bzw. Echtzeitbedingungen durchgeführt werden.
+\begin{Aufgabenstellung}
+Die Aufgabestellung basiert auf folgender Anforderung: Es wäre auch vorteilhalft, die BTE-Struktur so zu erweitern, dass das Tool ebenfalls auf einem eingebetteten System läuft. Der Grund dafür ist, dass es dadurch möglich wäre, entsprechende Testreports unter realen Bedingungen erstellen zu können. 
+\end{Aufgabenstellung}
 
-Die Aufgabestellung basiert somit auf der beschriebenen Anforderung, das BTE-Framework so zu ergänzen, dass dieses während einer beliebigen Testdurchführung gleichzeitig mit der CUT\footnote{Component Under Test} auf dem eingebetteten System läuft. 
-
-Man muss dementsprechend mit den vorhandenen Hardwareressourcen des betrachteten eingebetteten Systems sparsam umgehen und dabei auch eine Methode einsetzen, bei der beispielsweise der Test-Report direkt auf dem beschränkten RAM-Speicher abgelegt wird. Dazu ist es notwendig, eine bestimmte Codierung festzulegen, wie die Daten abzuspeichern sind.
-
-Am Ende der Testdurchführung soll der Test-Report wieder als eine XML-Datei vorliegen. Dies ist nur dann möglich, wenn die entsprechenden Stellen des RAM-Speichers aus dem eingebetteten System extrahiert und anschließend analysiert werden. Dieser RAM-Bereich, welcher als eine Binärdatei vorliegt, würde sich mithilfe einer Anwendung analysieren lassen. Diese Anwendung wird in einer ausgewählten Skriptsprache programmiert und implementiert die Dekodierung der Daten so, dass erneut ein Test-Report als eine XML-Datei erstellt werden kann.
-
-Die Umsetzung der genannten Ansätze sind in \secref{durchfAuf2} erklärt.
 %
 \subsubsection*{Test-Hardware}
 %
@@ -615,7 +614,7 @@ Um die Aufgabe zu lösen, war es notwendig das STM32F4-DiscoveryBoard in Betrieb 
 
 Da ich in vergangenen Projekten bereits Erfahrung bei der Programmierung des genannten Mikrocontrollers sammeln konnte, entschloss ich mich die Eclipse-IDE und das dabei zur Verfügung stehende CDT\footnote{C/C++ Development Tooling}-Plugin einzusetzen. Dieses erweitert Eclipse und bietet u.a. die Möglichkeit C/C++ Programme zu editieren, zu kompilieren und zu linken~\cite{EclipseCDT}. 
 
-In ~\cite{STM32Eclipse} bzw.~\cite{EclipseSTM32Youtube} werden weitere, notwendige Tools angegeben, die die Programmierung des Mikrocontrollers ermöglichen:
+In ~\cite{EclipseSTM32Youtube} werden weitere, notwendige Tools angegeben, die die Programmierung des Mikrocontrollers ermöglichen:
 %
 \begin{itemize}
 \item GDB Hardware Debugging: ein zusätzliches Eclipse-Plugin
@@ -634,18 +633,28 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-\subsubsection{Anforderungsanalyse}\label{Anford}
+\subsubsection{Durchführung der zweiten Aufgabenstellung}\label{durchfAuf2}
 %
-Das Tool, welches auf der Erweiterung der Funktionalitäten der BTE-Umgebung und Implementierung eines PERL-Skripts zur Erstellung des Testreports aufbaut, soll folgende Anforderungen erfüllen:
+Jedes Software-Projekt basiert auf einer grundlegenden Anforderungsanalyse. Bei der vorliegenden Aufgabe wurde ebenfalls eine durchgeführt, die im folgenden vorgestellt wird.
 %
-\begin{itemize}
-\item Ursprüngliche BTE-Funktionalitäten, einen Testreport zu strukturieren und erzeugen, sollen durch Erweiterungen möglichst wenig modifiziert werden.
+\subsubsection*{Anforderungsanalyse}\label{Anforderungen}
+%
+Die Erweiterung des BTE-Tools soll folgende Anforderungen erfüllen:
+%
+\begin{enumerate}
+\item Ursprüngliche Implementierungen der BTE-Funktionalitäten, sollen durch Erweiterungen möglichst wenig modifiziert werden.
 \item Es soll auf einem Embedded-Prozessor lauffähig sein und mit vorhandenen Hardware-Ressourcen möglichst sparsam umgehen.
-\item Es soll durch eine entsprechende Kodierung Testreports auf der RAM eines beliebigen Embedded-Prozessors abspeichern können.
-\item Das Tool soll aus einer erzeugten Binärdatei, welche das Memory Mapping eines RAM-Speicherbereichs darstellt, einen Testreport erstellen können.
-\end{itemize}
+\item Die ursprüngliche BTE-Funktionalitäten, einen Test einer Software-Komponente auf einem lokalen Rechner durchzuführen und dabei einen passenden Report zu erstellen, sollen immerhin vorhanden sein.
+\item Ein Testreport soll bei Verwendung der BTE auf einem eingebetteten System durch eine entsprechende Kodierung auf der RAM des betrachteten Systems abgespeichert werden können.
+\item Eine Funktionalität soll vorhanden sein, um aus einer vorgegebenen Binärdatei, wo der RAM-Speicherbereich bzw. der binär kodierte Testreport sich befindet, einen Testreport erstellen zu können.
+\item Der aus der Binärdatei erstellte Testreport soll soweit wie möglich dieselbe Struktur haben, wie ein Testreport, der über die BTE auf einem lokalen Arbeitsrechner erstellt wird.
+\end{enumerate}
 %
 In \figvref{fig:BTEUseCase} wird ein Anwendungsfalldiagramm gezeigt, um die funktionalen Anforderungen an dem vorliegenden System besser zu verstehen. 
+
+Dabei ist ersichtlich, dass allein der Anwendungsfall \textsf{\textbf{excecute test on embedded device}} die ursprüngliche BTE-Funktionalitäten erweitert. Der Anwender hat deshalb dadurch die Möglichkeit, über das erweiterte Tool Tests sowohl auf einem lokalen Arbeitsrechner als auch auf einem eingebettenen Prozessor durchzuführen. Ein Report kann ebenfalls mithilfe des erweiterten Tools erstellt werden. Im gezeigten Anwendungsfalldiagram ist somit nicht relevant, über welchen Weg der entsprechende Testreport erzeugt wird.
+
+Eine genaue Beschreibung der Umsetzung des genannten Anwendungsfall ist weiter unten in Abbildung \ref{fig:BTELogList} als Klassendiagramm zu sehen.
 %
 \begin{figure}[!htp]
 \centering
@@ -654,31 +663,26 @@ In \figvref{fig:BTEUseCase} wird ein Anwendungsfalldiagramm gezeigt, um die funk
 \label{fig:BTEUseCase}
 \end{figure}%
 %
+
+\subsubsection*{Verwendeter Lösungsansatz}\label{Ansaetze}
 %
-\begin{landscape}
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=0.7]{./Bilder/BTELogList.pdf}
-\caption{BTEUseCase}
-\label{fig:BTELogList}
-\end{figure}
-\end{landscape}
-%
-%
-\subsubsection{Durchführung der zweiten Aufgabenstellung}\label{durchfAuf2}
-%
+Man muss mit den vorhandenen Hardwareressourcen des eingebetteten Systems, wo die BTE eingebunden werden soll, sparsam umgehen und dabei auch eine Methode einsetzen, bei der beispielsweise der Test-Report direkt auf dem beschränkten RAM-Speicher abgelegt wird. Dazu ist es notwendig, eine bestimmte Codierung festzulegen, wie die Daten abzuspeichern sind.
+
+Am Ende der Testdurchführung soll der Test-Report wieder als eine XML-Datei vorliegen. Dies ist nur dann möglich, wenn die entsprechenden Stellen des RAM-Speichers aus dem eingebetteten System extrahiert und anschließend analysiert werden. Dieser RAM-Bereich, welcher als eine Binärdatei vorliegt, würde sich mithilfe einer Anwendung analysieren lassen. Diese Anwendung wird in einer ausgewählten Skriptsprache programmiert und implementiert die Dekodierung der Daten so, dass ein Test-Report erneut als eine XML-Datei erstellt werden kann.
+
 Zwei Mögichkeiten können betrachtet werden, um mit den knappen Softwareressourcen der Embedded Platform umzugehen:
 
-\begin{itemize}
-\item Man bindet entsprechende Ersatzbibliotheken ein, die optimiert und ressouerce-sparend arbeiten.
+\begin{enumerate}
+\item Man bindet entsprechende Ersatzbibliotheken ein, die optimiert und Hardwareressouercen-sparend arbeiten.
 \item Man bietet dem Anwender die Möglichkeit an, durch entsprechende Präprozessor-Direktiven diejenigen Teile vom vorhandenen BTE-Code beim Kompiliervorgang auszublenden, die viele Hardware-Ressourcen benötigen.
-\end{itemize}
+\end{enumerate}
 
-Die zweite Möglichkeit wird zur Lösung der Aufgabe umsetzt. Dabei wird wie folgt vorgegangen:
+Aus zeitlichen Gründen kann keine eigene Bibliothek erstellt werden, um den ersten Lösungsansatz umzusetzen. Die zweite Möglichkeit wird deshalb zur Lösung der Aufgabe gewählt. Dabei wird wie folgt vorgegangen:
 
-Mit vorhandenen und zusätzlich eingeführten Präprozessor-Direktiven (\verb+#define+) wird die Möglichkeit geboten, die BTE-Methodensaufrufe auszublenden, die zu viele Rechenressourcen benötigen, um richtig zu funktionieren. Ebenfalls sollten solche Methodensaufrufe ausfallen, die auf der eingebetteten Hardware nicht kompilierbar sind, da diese Hardwareressourcen verwenden, die dort nicht zur Verfügung stehen. Ein Beispiel dazu sind solche Methoden, die das lokale Abspeichern von Dateien ermöglichen wie fopen, fclose, sprintf, usw. 
+Mit vorhandenen und zusätzlich eingeführten Präprozessor-Direktiven (\verb+#define+) wird die Möglichkeit geboten, die BTE-Methodensaufrufe auszublenden, die zu viele Rechenressourcen benötigen. Ebenfalls sollten solche Methodensaufrufe ausfallen, die von der eingebetteten Hardware nicht unterstützt werden. Ein Beispiel dazu sind solche Methoden, die das lokale Abspeichern von Dateien ermöglichen wie fopen, fclose, sprintf, usw. 
 
-Mithilfe der neu eingeführten Direktive \verb+#define USE_PRINTF+ werden alle Methodensaufrufe ausgeblendet, die lediglich mit Strings umgehen. Dies ermöglicht somit solche Methoden nur dann einzusetzen, wenn die Hardware genug RAM zur Verfügung stellt und dort die notige Funktion implementiert ist.
+\begin{description}
+	\item[\textbf{\texttt{\#define USE\_PRINTF}}]: Mithilfe dieser neu eingeführten Direktive wird der 2. Anforderung Rechnung getragen (siehe \secref{Anforderungen}). Dabei sollen bei Abwesenheit dieser Direktive alle Codeabschnitte ausgeblendet werden, bei denen Strings und deren Verarbeitung vorkommen. Diese können nur dann eingesetzt werden, wenn die Hardware genug RAM zur Verfügung stellt und die Methoden implementiert sind. Siehe dazu den folgenden Codeabschnitt.
 %
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteTestHandler.c}, label={lst:useprintf1}]
 ...
@@ -713,25 +717,29 @@ void BteAvailableOk( char *text )
 }
 ...
 \end{lstlisting}
-
-Durch das Umdefinieren einer schon vorhandenen Direktive \verb+#define BTE_ENABLE_TESTREPORT+ wird ein Ausblenden der oben genannten Methodensaufrufe möglich, die mit dem Erstellen, der Bearbeitung und lokalen Abspeicherung von Dateiobjekten umgehen. Siehe dazu den folgenden Codeabschnitt.
-
-\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteReport.c}, label={lst:usefprintf1}]
+%
+\item[\textbf{\texttt{\#define USE\_INTERNAL\_LOG}}]: Mithilfe dieser neu eingeführten Direktive wird den Anforderung 1, 2, 3 und 4 Rechnung getragen (siehe \secref{Anforderungen}). Dabei werden diejenigen Stellen vom Code eingeblendet, wo die von mir implementierten Module vorkommen. Unter anderem wird dabei die Funktionalität eingeschaltet, den Testreport in den RAM-Speicher abzulegen, wie im folgenden Codeabschnitt zu sehen. 
+%
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:useinternal}]
 ...
-void BteReport_Write( char *text )
-{
-#if defined ( BTE_ENABLE_TESTREPORT )
-  if( pBteTestReport != 0 ) 
-  {
-    fprintf( pBteTestReport, "%s\n",text );
-  }
+#if defined (USE_INTERNAL_LOG)
+  BteTestSequence_BeginID(6); // Der Anwender soll diese Methode verwenden
+#else
+  BteTestSequence_Begin("[TSEQ_Mip_GetVersionInfo.001]");
 #endif
-}
 ...
 \end{lstlisting}
 %
-
-\verb+#define USE_HARDWARE+ wurde ebenfalls eingeführt, um bestimmte Codeabschnitte einzublenden wenn die BTE innerhalb des eingebetteten Systems verwendet wird und die hardwareabhängige bzw. ECU-eigene Funktionsaufrufe einzublenden. .
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteLog.c}, label={lst:useinternal}]
+...
+#if defined USE_INTERNAL_LOG
+    // Event entry in the internal array list
+    BteLogList_AddEvent( pEvent );
+#endif
+...
+\end{lstlisting}
+%
+\item[\textbf{\texttt{\#define USE\_HARDWARE}}]: Diese Präprozessor-Direktive wurde ebenfalls eingeführt, um den Anforderungen 1 und 2 Rechnung zu tragen (siehe \secref{Anforderungen}). Bestimmte Codeabschnitte werden dabei eingeblendet, wenn die BTE in einem eingebetteten System verwendet wird. Dadurch werden die hardwareabhängige bzw. ECU-eigene Funktionsaufrufe eingeblendet. Siehe dazu folgenden Codeabschnitt.
 %
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:usehardware}]
 ...
@@ -756,30 +764,45 @@ void BteReport_Write( char *text )
 ...
 \end{lstlisting}
 %
-Wie sieht die Datenstruktur aus:
-%
-\begin{itemize}
-\item Erste Datenstruktur
-\item Zweite Datenstruktur
-\end{itemize}
-%
-Die erste Struktur hat folgende Strukturen als Haupteigenschaft:
-%
-\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:usehardware}]
+	\item[\textbf{\texttt{\#define BTE\_ENABLE\_TESTREPORT}}]: Durch das Umdefinieren dieser schon vorhandenen Direktive wird ein Ausblenden derjenigen Methodensaufrufe möglich, die mit dem Erstellen, der Bearbeitung und lokalen Abspeicherung von Dateiobjekten umgehen. Dadurch kann den Anforderungen 1, 2 und 3 Rechnung getragen werden (siehe \secref{Anforderungen}). Siehe dazu den folgenden Codeabschnitt.
 
-typedef struct stBteEventLog {
-  uint16 code;
-  uint32 data;
-} tBteEventLog;
-
-
-typedef struct stBteLogList 
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteLog.c}, label={lst:usetestrep1}]
+...
+#if defined (BTE_ENABLE_TESTREPORT)
+    uint8 tempText[150];
+    sprintf(tempText,"%s %s",pEvent->text_name,pEvent->text_param);
+    if( pEvent->type == kBteEventType_Command )
+    {
+      BteReport_WriteElement( "cmd", pEvent->time, tempText );
+    }
+    else if ( pEvent->type == kBteEventType_Error )
+    {
+      BteReport_WriteElement( "fail", pEvent->time, tempText );
+    }
+    else
+    {
+      BteReport_WriteElement( "", pEvent->time, tempText );
+    }
+    BteTraceReport_WriteElement( pEvent );
+#endif
+...
+\end{lstlisting}	
+%
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteReport.c}, label={lst:usetestrep2}]
+...
+void BteReport_Write( char *text )
 {
-  uint16     size;
-  tBteEventLog   elem[kBteLogList_size];
-} tBteLogList;
-
+#if defined ( BTE_ENABLE_TESTREPORT )
+  if( pBteTestReport != 0 ) 
+  {
+    fprintf( pBteTestReport, "%s\n",text );
+  }
+#endif
+}
+...
 \end{lstlisting}
+%
+\end{description}
 %
 \newpage
 \section{Achte Woche}
@@ -790,7 +813,216 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
+%
+Bei jeder Testdurchführung können je nach Voreinstellung die Ergebnisse der Methodensaufrufe in Form eines XML-Reports ausgegeben werden, was in Abbildung \ref{fig:ReportXML} gezeigt wird. Nach jedem dieser Methodensaufrufe besteht die Möglichkeit, die dabei übergebenen Parameter auch im Testreport auszugeben. Deshalb werden diese Parameter bei jedem Methodensaufruf vom BTE-Tool ebenfalls gelagert und anschliessend im Report ausgegeben. Dadurch ist es im Report ersichtlich, dass bei einer bestimmten Konstellation von Übergabeparametern der Methodensaufruf nicht gelungen ist.  
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.4]{./Bilder/ReportXML.pdf}
+\caption{BTEUseCase}
+\label{fig:ReportXML}
+\end{figure}
+%
 
+Zur Implementierung der Speicherung des Testreports auf dem RAM werden zwei unterschiedliche Ansätze berücksichtigt. Der der erste Ansatz weist bestimmte Nachteile auf, deshalb wird auf diese nur kurz eingegangen. Die zweite Möglichkeit wird dahingegen ausführlicher behandelt, denn auf ihr basieren die Lösungsergebnisse der vorliegenden Aufgabe. 
+
+Bei jedem der erwähnten Lösungsansätze ist eine geignete Kodierung der Daten in Form eines geigneten Protokolls notwendig, welches die Datenspeicherung auf der RAM verwaltet.
+%
+\textbf{Report in Form einer Struktur (\texttt{stBteLogList}}):  
+
+Der erste Ansatz, die Liste anhand einer Struktur abzuspeichern, wird durch \lstref{lst:structList} beschrieben. Dabei ist ersichtlich, dass der Datentyp \texttt{stBteLogList} aus einem 16-bit langen Eintrag (\textit{size}) und einer weiteren Struktur vom Typ \text{stBteEventLog} besteht. Letztere enthält zwei weitere Datentypen (\textit{code} und \textit{data}). 
+%
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:structList}]
+typedef struct stBteEventLog 
+{
+  uint16 code;
+  uint32 data;
+} tBteEventLog;
+
+typedef struct stBteLogList 
+{
+  uint16     size;
+  tBteEventLog   elem[kBteLogList_size];
+} tBteLogList;
+\end{lstlisting}
+%
+
+Der Testreport wird auf Basis dieser beiden Strukturen im RAM des eingebetteten Prozessors abgelegt. Diese Struktur muss unterschiedliche Kennungen enthalten, welche zusammen das genannte Protokoll definieren. Damit ist eine hierachiche Trennung der gespeicherten Daten und deren Unterscheidung gewährleistet. Tabelle \ref{tab:Protokoll1} zeigt die Auswahl der verwendeten Kennungen.
+%
+%\begin{longtable}{|l|l|}
+%\hline
+%\textbf{Kennung} & \textbf{Beschreibung} \\
+%\endhead
+%\hline
+%0xFF & Kennung eines Testcases\\
+%\hline
+%0x21 & Kennung für 1. Datenelement\\
+%\hline
+%0x22 & Kennung für 2. Datenelement\\
+%\hline
+%0x23 & Kennung für 3. Datenelement\\
+%\hline
+%0x24 & Kennung für 4. Datenelement\\
+%\hline
+%0x25 & Kennung für 5. Datenelement\\
+%\hline
+%0x5C & Kennung für \textit{End of file}\\
+%\hline
+%0x6E & Kennung für \textit{End of file}\\
+%\hline
+%\caption{Relevante Zusammenhänge aus Menge der geprüften QA-C-Regeln.}
+%\label{tab:Protokoll1}
+%\end{longtable}
+%
+%
+\begin{table}[ht]
+\caption{Nonlinear Model Results}
+% title of Table
+\centering 
+% used for centering table
+\begin{tabular}{c c c c}
+% centered columns (4 columns)
+\hline
+\hline                        %inserts double horizontal lines
+Case & Method \#1 & Method \#2 & Method \#3 \\ [0.5ex]% inserts table 
+%heading
+\hline
+                  % inserts single horizontal line
+1 & 50 & 837 & 970  \\
+% inserting body of the table
+2 & 47 & 877 & 230  \\
+3 & 31 & 25  & 415  \\
+4 & 35 & 144 & 2356 \\
+5 & 45 & 300 & 556 \\ [1ex]      % [1ex] adds vertical space
+\hline
+%inserts single line
+\end{tabular}
+\label{table:nonlin}
+% is used to refer this table in the text
+\end{table}
+%
+
+Wird ein neuer Testreport erstellt, dann wird am Anfang die Länge(\textit{size}) von \texttt{tBteLogList} auf Null gesetzt. Dadurch werden alle alten Einträge der Liste überschrieben und gelöscht. Im nächsten Schritt werden in Abhängigkeit der vorgegebenen Testcases die definierten Kennungen innerhalb der vorhandenen Elementen der Liste \texttt{elem} abgespeichert. 
+
+Abbildung \ref{fig:Protocol1} zeigt beispielshaft, wie das Protokoll zur Abspeicherung des Testreports auf der RAM umgesetzt wird. 
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.9]{./Bilder/Protocol1.pdf}
+\caption{BTEUseCase}
+\label{fig:Protocol1}
+\end{figure}
+%
+
+Nachteilig bei dieser Art der Abspeicherung ist, dass der Compiler die größe des Bereiches so groß wie die größte in der Liste vorkommende Variable festlegt. Dabei wird somit jede Variable als eine 32-Bit große Variable behandelt, was im Falle eines 8-bit großen Eintrags zu Speicherplatz-Verschwendung führt. Damit der Compiler diese Optimierungen nicht selbst vornimmt, muss man weitere Einstellungen bei den Compiler-Optionen durchführen, was aber noch mehr Zeit in Anspruch nimmt.
+%
+\newpage
+%
+\section{Neunte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+Während dieser Woche galt meine Arbeit weiterhin der Lösung der 2. Aufgabe. 
+
+\textbf{Report in Form eines Byte-Arrays \texttt{BteLogArray}}: 
+
+Report wird in Form eines normalen Arrays vom Typ \verb|uint8| im RAM des betrachteten Prozessors abgespeichert. 
+Die verarbeiteten Informationen bei den Methodensaufrufen werden ebenfalls sequenziell innerhalb des Arrays abgelegt. Dabei richtet sich die Abspeicherung nach dem folgenden, vordefinierten Protokoll:
+%
+%\begin{longtable}{|l|l|}
+%\hline
+%\textbf{Kennung} & Beschreibung \\
+%\endhead
+%\hline
+%0xFF & Kennung eines Testcases\\
+%\hline
+%0x5C & Kennung für End of file\\
+%\hline
+%0x6E & Kennung für End of file\\
+%\hline
+%\caption{Relevante Zusammenhänge aus Menge der geprüften QA-C-Regeln.}
+%\label{tab:Protokoll1}
+%\end{longtable}
+%
+
+%
+\begin{table}[ht]
+\caption{Nonlinear Model Results}
+% title of Table
+\centering 
+% used for centering table
+\begin{tabular}{c c c c}
+% centered columns (4 columns)
+\hline
+\hline                        %inserts double horizontal lines
+Case & Method \#1 & Method \#2 & Method \#3 \\ [0.5ex]% inserts table 
+%heading
+\hline
+                  % inserts single horizontal line
+1 & 50 & 837 & 970  \\
+% inserting body of the table
+2 & 47 & 877 & 230  \\
+3 & 31 & 25  & 415  \\
+4 & 35 & 144 & 2356 \\
+5 & 45 & 300 & 556 \\ [1ex]      % [1ex] adds vertical space
+\hline
+%inserts single line
+\end{tabular}
+\label{table:nonlin}
+% is used to refer this table in the text
+\end{table}
+%
+
+
+Wie man merkt, ist bei dieser Art der Datenspeicherung nicht notwendig, weitere Kennungen einzuführen als den Anfang eines neuen Testcases und das Ende des gesammten Testreports. Der Grund dafür ist, dass über die Angabe der Anzahl der an die Funktion übergebenen Parameter direkt festgelegt wird\footnote{Dies geschieht beim Dekodieren des Testreports anhand des PERL-Skripts, dessen Umsetzung noch beschrieben wird.}, festgelegt wird, wie viele relevanten Daten in den Testreport abzuspeichern sind.
+
+Da in der Regel die übergebenen Parameter und manche Daten, die auf dem Testreport vorkommen müssen, nicht unbedingt vom Typ \texttt{uint8} sind sondern größer (\texttt{uint16} bzw. \texttt{uint32}), kann deren Inhalt nicht direkt in die einzelnen Einträge des Byte-Arrays passen. Vor der Abspeicherung müssen diese Informationen deshalb so zerlegt und angepasst werden, dass sie immer in den 8-Bit großen Einträgen des genannten Arrays hinein passen. 
+
+Diese Datenanpassung wird mithilfe der in \lstref{lst:ArrayList} gezeigten Methoden durchgeführt. Dabei werden die benötigten Daten nicht nur zerlegt, sondern auch direkt in dem Array gespeichert. 
+
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:ArrayList}]
+
+void BteLogList_Serialize32(uint32 data)
+{
+  BteLogArray[kBteLogArray_position++] = (uint8)(data>>24);
+  BteLogArray[kBteLogArray_position++] = (uint8)((data>>16) & 0xFF);
+  BteLogArray[kBteLogArray_position++] = (uint8)((data>>8) & 0xFF);
+  BteLogArray[kBteLogArray_position++] = (uint8)(data & 0xFF);
+}
+
+void BteLogList_Serialize16(uint16 data)
+{
+  BteLogArray[kBteLogArray_position++] = (uint8)((data>>8) & 0xFF);
+  BteLogArray[kBteLogArray_position++] = (uint8)(data & 0xFF);
+}
+\end{lstlisting}
+
+In Abbildung \ref{fig:Protocol2} ist gezeigt, wie die Daten im \verb|BteLogArray| abgespeichert werden und das Protokoll dazu definiert ist. Dabei ist bei den Stellen zu erkennen, wo die Variablen \verb|testcaseID| und \verb|time| gespeichert sind, wie das Program die Daten in kleineren 8-bit große Datenfelder zerlegt. Dabei wird beispielsweise die in \lstref{lst:ArrayList} gezeigte Funktion \verb|BteLogList_Serialize32| verwendet, um die 32-bit große Variable \verb|time| zu zerlegen.
+
+Auf diese Art und Weise wird der Anforderung, mit Hardwareressourcen möglichst sparsam umzugehen, ebenfalls Rechnung getragen. Jedes Feld des Arrays ist nämlich mit relevanten Daten vom Testreport befüllt.
+
+Eine beispielshafte 
+%
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.9]{./Bilder/Protocol2.pdf}
+\caption{BTEUseCase}
+\label{fig:Protocol2}
+\end{figure}
+%
+\begin{landscape}
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.8]{./Bilder/BTELogList_cropped.pdf}
+\caption{BTEUseCase}
+\label{fig:BTELogList1}
+\end{figure}
+\end{landscape}
+%
 XXX Bild zur Architektur des Reports, welches auf der RAM gespeichert wird. 
 
 Die Stellen vom Speicher, wo die zu interessierenden Daten der durchgeführten Tests zum Erstellen eines Reports abgelegt wurden, lassen sich mit Hilfe eines memory mapping des entsprechenden Prozessors analysieren. Dies ist mit einem Debugger möglich und kann bestenfalls als binary file ausgegeben werden. Das ist die Beschreibung des Ansatzs, welcher von Markus und Timo erklärt worden ist.
