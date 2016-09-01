@@ -28,6 +28,10 @@
 \newblock \Btxtechreplong{}, PRQA, 2013.
 \newblock \url{http://www.programmingresearch.com}.
 
+\bibitem{QAC_Iseite}
+{\sc QA-Systems}: {\em Testwerkzeuge für statisches Testen: QA-C und QA-C++}.
+\newblock \url{http://www.qa-systems.de/produkte/qa-c.html}.
+
 \bibitem{QAC70WinUserGuide}
 {\sc QA-Systems}: {\em QAC-7.0-Win-UserGuide}.
 \newblock The Programming Research Ltda.
@@ -36,6 +40,10 @@
 {\sc Association, The Motor Industry Sofrware~Reliability}: {\em MISRA C 2012
   Addendum 1 - Rule Mapping}.
 \newblock \Btxtechreplong{}, 2013.
+
+\bibitem{EPICIDE}
+{\sc Ploski, Jan}: {\em Eclipse Perl Integration}.
+\newblock \url{http://www.epic-ide.org/}.
 
 \bibitem{PRQA9}
 {\sc PRQA Programming Research}: {\em Component Manual PRQA-Framework 2.0.1},

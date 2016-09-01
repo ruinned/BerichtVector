@@ -5,7 +5,10 @@ Warning--entry type for "EclipseCDT" isn't style-file defined
 --line 87 of file ./bib/literatur.bib
 Warning--entry type for "EclipseSTM32Youtube" isn't style-file defined
 --line 119 of file ./bib/literatur.bib
-Warning--I didn't find a database entry for "QAC_Iseite"
+Warning--entry type for "QAC_Iseite" isn't style-file defined
+--line 126 of file ./bib/literatur.bib
+Warning--entry type for "EPICIDE" isn't style-file defined
+--line 133 of file ./bib/literatur.bib
 Warning--empty institution in Addendum1
 Warning--empty year in HardTime
-(There were 5 warnings)
+(There were 6 warnings)

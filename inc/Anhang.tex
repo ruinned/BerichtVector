@@ -1,4 +1,4 @@
-\chapter{Softwaredokumentation}\label{cha:tools}
+\chapter{ Auschnitt der Softwaredokumentation}\label{cha:tools}
 %
 Im Rahmen dieser Arbeit sind folgende Software-Tools entwickelt worden:
 \begin{itemize}
@@ -189,6 +189,137 @@ foreach(@zeilen_xml){
 }
 
 close(SCHREIBEN) or die "Fehler beim Schliessen von 'prqaproject.xml': $! \n";
+\end{lstlisting}
+%
+\newpage
+\section{Erstellung eines XML-Testreports aus Binärdatei}
+%
+\begin{lstlisting}[style=PERL_st, caption = {Auschnitt vom File BteBin2Vtr.pl},label={lst:PERL_XML_Binary}]
+#!/perl/bin/perl.exe -w
+
+use strict;
+use warnings;
+use Time::Piece;
+
+my @binFile_content;
+my $binFile_length = 0;
+my $binFile_index = 0;
+my %event_map;
+my $testcaseIsOpen = 0;
+
+ConvertBin2Vtr();
+
+#--------------------------------------------------------------
+# Main function
+sub ConvertBin2Vtr
+{
+  my $binFile_path = $ARGV[0];
+  my $vtrFile_path = $ARGV[1];
+  
+  # read the transformation rules from the configuration file
+  LoadEventConfig($ARGV[2]);
+
+  # get the relevant data
+  GetBinaryContent($binFile_path);
+
+  # process the binary data and write to vtr
+  OpenVtr($vtrFile_path);
+  ProcessBinaryData();
+  CloseVtr();
+}
+
+#--------------------------------------------------------------
+# read the config file and store its content in event map
+sub LoadEventConfig($)
+{
+  my $configFile_path = $_[0];
+  
+  # open config file
+  open(configFile,$configFile_path) or die "Error while opening config file\n";  
+  my @configFile_content = <configFile>;
+  close(configFile);
+
+  # store content of each line in event map
+  # line layout: id(4 chars) text(x chars)
+  # Example: 0105 This is my text
+  foreach my $cfgFile_line (@configFile_content)
+  {
+    chomp($cfgFile_line);
+    if (length($cfgFile_line) > 4)
+    {
+      my $event_id = substr($cfgFile_line,0,4);
+      my $event_text = "";
+      $event_text = substr($cfgFile_line,5);
+      $event_map{$event_id} = $event_text; 
+    }
+  }
+}
+
+#--------------------------------------------------------------
+sub GetBinaryContent($)
+{
+  my $binFile_path = $_[0];
+
+  # open binary file for reading
+  $binFile_length = -s "$binFile_path";
+  open(binFile,"$binFile_path") or die "Error: opening binary file: $binFile_path\n";
+  binmode(binFile);
+
+  # read content
+  my $binFile_string;
+  read(binFile, $binFile_string, $binFile_length);
+  close(binFile);
+  
+  # short the content (until EOF marker)
+  @binFile_content = split("", $binFile_string);
+  $binFile_length = GetIndexOfEOF($binFile_string);
+  if ($binFile_length == -1) 
+  {
+    print "Warning: EOF-symbol not found\n";
+  }
+  else
+  {
+    @binFile_content = @binFile_content[0..$binFile_length];
+  }
+}
+
+#--------------------------------------------------------------
+sub ProcessBinaryData($)
+{
+  # iterate over binary data
+  # data layout: kind(1 byte) data(x byte)
+  do
+  {
+    my $data_kind = (BinFile_Read(1))[0];
+
+    # detect what kind of data is present. Process data accordingly.
+    if( $data_kind eq chr(hex 'FF'))
+    {
+      # TCASE
+      # layout: kind (1 byte) id(2 byte)
+      Process_TCASE(BinFile_Read(2));
+    }
+    elsif($data_kind eq chr(hex('FD')) || $data_kind eq chr(hex('FE')))
+    {
+      # message
+      # type is coded in "kind"
+      # layout: kind(1 byte) time(4 byte)
+      my $message_kind=GetMessageType($data_kind);
+      Process_Message($message_kind, BinFile_Read(4));
+    }
+    else
+    {
+      # event
+      # type and size are coded in "kind"
+      # layout: kind(1 byte) id(2 byte) time(4 byte) data(4*dlc byte)
+      my $event_type = GetEventType($data_kind);
+      my $event_size = GetEventSize($data_kind);
+      my @event_data = BinFile_Read(6 + 4*$event_size);
+      Process_Event($event_type, @event_data);
+    }
+  } while($binFile_index < $binFile_length);
+}
+...
 \end{lstlisting}
 %
 \chapter{Prüfstandsmessdaten}\label{cha:PruefMess}

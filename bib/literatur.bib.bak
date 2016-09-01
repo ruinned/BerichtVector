@@ -123,4 +123,15 @@
   note         = {\url{https://www.youtube.com/watch?v=kjvqySyNw20}},
 }
 
+@Electronic{QAC_Iseite,
+  author       = {QA-Systems},
+  title        = {Testwerkzeuge für statisches Testen: QA-C und QA-C++},
+  organization = {QA-Systems},
+  note         = {\url{http://www.qa-systems.de/produkte/qa-c.html}},
+}
+
+@Electronic{EPICIDE,
+  url = {http://www.epic-ide.org/},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

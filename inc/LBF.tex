@@ -78,6 +78,7 @@ Die OEMs fordern seit der Einführung von MISRA C:2012, dass die in ihren Produkt
 
 Vektor und somit die Abteilung PES sind aus diesem Grund darauf angewiesen, in naher Zukunft einen Umstieg in die neue Version zu ermöglichen. Da dies sich nicht ohne Weiteres umsetzen lässt, muss dazu eine detaillierte Analyse vor allem über die Kompatibilität zwischen den beiden Versionen (2004 und 2012) durchgeführt werden, deren Ergebnisse in den Kapitel \ref{sec:DritteWoche} bzw. \ref{sec:VierteWoche} ausführlich beschrieben werden.
 %
+\newpage
 \section{Zweite Woche}
 %
 \subsection{Wochenübersicht}
@@ -136,6 +137,7 @@ Abbildung \ref{fig:MISRA2004} gibt die obigen Zusammenhänge zwischen den relevan
 
 Um den Nachweis liefern zu können, wie konform ein spezifisches Software-Projekt mit dem gesamten MISRA-C-Regelwerk geht, wird in der Regel ein ausgewähltes statisches Analysewerkzeug eingesetzt. Eine ausführliche Beschreibung über dieses Thema wird im Folgenden gegeben.
 %
+\newpage
 \section{Dritte Woche}\label{sec:DritteWoche}
 %
 \subsection{Wochenübersicht}
@@ -462,21 +464,29 @@ Auf der linken Seite der Abbildung sind die analysierten Files dargestellt. Die 
 %
 
 Drauf aufbauend sollte ein umfangreicheres QA-C9-Projekt zur statischen Codeanalyse einer relativ größeren Anzahl an BSW-Modulen eingestellt werden. In diesem Fall würde sich die Einstellung eines solchen Projekts als sehr umständlich erweisen. Dies liegt daran, dass die Quelldateien sich normalerweise in mehreren Unterordner organisiert befinden und die jeweiligen Pfade angegeben werden müssen. Letzteres betrifft sowohl die Eingabe der Einstellungsfiles über die GUI als auch die manuelle Bearbeitung der Einstellungsfiles ACF, RCF, CCT sowie der XML-Project-Definition-Datei. 
-
+%
+\newpage
+\section{Sechste Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
 Bei so einer großen Anzahl an zu analysierenden Files, die in der Regel sehr oft bei einem Entwicklungsprojekt vorkommen, sollte trotzdem eine automatisierte Generierung von Analysereports möglich sein. Hierbei schafft die Verwendung einer Skriptsprache wie PERL oder Phyton Abhilfe. Letztere erleichtern u.a. den automatisierten Umgang mit Textdateien und Verzeichnissen.
 
 Die durchgeführte Analyse erwies sich als umständlich und erforderte starke Konzentration, um aus den genannten Dokumenten die benötigten Informationen herauszufinden. 
 
-Da bisher in der Abteilung einige Mitarbeiter bei der Programmierung mit PERL große Erfahrung gesammelt haben, entschloss ich mich diese Programmiersprache zur Bearbeitung der Konfigurationsdateien einzusetzen. Eine geeignete IDE, mit der es möglich ist, PERL-Skripte zu erstellen, kompilieren und Debuggen ist nicht leicht zu finden. Eine gute alternative bietet die als Eclipse-Plugin kostenlos zur Verfügung stehende EPIC-IDE. Diese stellt nicht nur die Möglichkeit dar, PERL-Skripte zu bearbeiten, sondern auch diese zu kompilieren und zu debuggen.
+Da bisher in der Abteilung einige Mitarbeiter bei der Programmierung mit PERL große Erfahrung gesammelt haben, entschloss ich mich diese Programmiersprache zur Bearbeitung der Konfigurationsdateien einzusetzen. Eine geeignete IDE, mit der es möglich ist, PERL-Skripte zu erstellen, kompilieren und Debuggen ist nicht leicht zu finden. Eine gute alternative bietet die in Abbildung \ref{fig:EPICskr1} gezeigte EPIC-IDE \cite{EPICIDE}. Diese stehet als Eclipse-Plugin kostenlos zur Verfügung und stellt nicht nur die Möglichkeit dar, PERL-Skripte zu bearbeiten, sondern auch diese zu kompilieren und mit einem integrierten Tool zu debuggen.  
 
-In \figvref{fig:EPICskr1} werden sowohl ein kleiner Teil des ersten erstellten PERL-Skripts als auch die genannte EPIC-IDE gezeigt.
+Es ist nicht leicht, diese IDE so einzustellen, dass es einwandfrei funktioniert. Bei der Installation und Inbetriebnahme derselben muss man auf bestimmte Fehlermeldungen achten, die sich meistens auf die Version des verwendeten \verb|PERL|-Kompilers beziehen. Um diese zu beheben, ist man auf Internetrecherche angewiesen.
 
 Bei dieser Aufgabe  Mithilfe des erstellten Skripts war es möglich, die oben beschriebene Aufgabe zu lösen. Der vollständige Skript befindet sich in \lstref{lst:PERL_Dateiueb}.
-
 %
-\begin{figure}[!htp]
+\begin{figure}[!ht]
 \centering
-\includegraphics[scale=0.55]{./Bilder/EPIC_skr1.pdf}
+\includegraphics[scale=0.7]{./Bilder/EPIC_skr1.pdf}
 \caption{EPICskr1}
 \label{fig:EPICskr1}
 \end{figure}
@@ -493,22 +503,6 @@ Mit dem Ziel ein QA-C-Projekt automatisiert über den genannten Compiler auszufüh
 
 \begin{lstlisting}[language=XML, caption = {Compiler personality file QA-C.p\_c}, label={lst:QAC9_xml}]
 ...
-  <language target="C++">
-   <extension ext=".cxx"/>
-  </language>
-  <language target="C++">
-   <extension ext=".cc"/>
-  </language>
-  <language target="C++">
-   <extension ext=".CPP"/>
-  </language>
-  <language target="C++">
-   <extension ext=".CXX"/>
-  </language>
-  <language target="C++">
-   <extension ext=".CC"/>
-  </language>
- </file_extensions>
  <!-- Files in project... -->
  <files>
   <!-- Explicit files... -->
@@ -551,7 +545,7 @@ Mit dem Ziel ein QA-C-Projekt automatisiert über den genannten Compiler auszufüh
 \end{lstlisting}
 %
 \newpage
-\section{Sechste Woche}
+\section{Siebte Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -581,7 +575,7 @@ Die in \figvref{fig:BTE_func1} vorgestellte BTE-Version bietet verschiedene Test
 
 Im Diagram wird durch die rote Box die Nachbildung der inneren ECU-Umgebung gezeigt. Diese Box besteht aus mehreren Platzhaltern, sogenannten Stubs, die Komponenten simulieren/ersetzen. Dabei ist ersichtlich, dass der Testplan sowohl die simulierten Stubs als auch die Component-Under-Test (CUT) steuert, damit vom Framework einen entsprechenden Log/Report ausgegeben wird.
 
-Das Klassendiagram, welches in Abbildung \ref{fig:BTELogListold} gezeigt wird, gibt einen Teil der BTE-Struktur wieder. Dabei befinden sich diejenige Komponenten, welche sich um die Erstellung eines Testreports kümmern. Das Teilmodul \verb+TestHandler+ steuert den Ablauf der Testdurchführung, wobei nur über das Modul \verb+ReportHandler+ auf die Testreport-Datei zugegriffen wird, um diese zu bearbeiten. Die Funktionalitäten \verb+X+ und\verb+Y+ bezeichnen bestimmmte Komponenten der BTE, die wie der \verb+ReportHandler+ direkt auf die den VTR-Report zugreifen bzw. ihn bearbeiten können. Im Gegensatz dazu existieren weitere Funktionalitäten wie \verb+BTE Functionality_Z+, die den Testreport nicht bearbeiten können, sondern andere Services zur Verfügung stellen.
+Das Klassendiagram, welches in Abbildung \ref{fig:BTELogListold} gezeigt wird, gibt einen Teil der existierenden BTE-Struktur wieder. Das Teilmodul \verb+TestHandler+ steuert den Ablauf der Testdurchführung, wobei nur über das Modul \verb+ReportHandler+ auf die Testreport-Datei zugegriffen wird, um diese zu bearbeiten. Die Funktionalitäten \verb+X+ und\verb+Y+ bezeichnen bestimmmte Komponenten der BTE, die wie der \verb+ReportHandler+ direkt auf die den VTR-Report zugreifen bzw. ihn bearbeiten können. Im Gegensatz dazu existieren weitere Funktionalitäten wie \verb+BTE Functionality_Z+, die den Testreport nicht bearbeiten können, sondern andere Services zur Verfügung stellen. Letztere Komponenten dienen lediglich der besseren Übersicht und geben die Existenz von entsprechenden BTE-Komponenten an, die aber zum Lösen der vorliegenden Aufgabe nicht genauer zu betrachten sind. 
 %
 \begin{figure}[!htp]
 \centering
@@ -594,7 +588,7 @@ Das Klassendiagram, welches in Abbildung \ref{fig:BTELogListold} gezeigt wird, g
 Gegenüber den genannten Funktionalitäten gibt es bei der Verwendung des BTEs folgenden Nachteil, der sich eher als eine Einschränkung äußert: Mit dem Tool lassen sich bequem Testreports auf einem lokalen Rechner ausgeben und abspeichern. Dabei werden jedoch betriebssystemabhängige Funktionen zum Umgang mit Strings benötigt, die in der Regel viele Hardwareresourcen verbrauchen. Die BTE lässt sich somit nur auf Rechnern sinnvoll einsetzen, die einen hohen Arbeitsspeicher und genug Speicherplatz zur Verfügung stellen.
 
 \begin{Aufgabenstellung}
-Die Aufgabestellung basiert auf folgender Anforderung: Es wäre auch vorteilhalft, die BTE-Struktur so zu erweitern, dass das Tool ebenfalls auf einem eingebetteten System läuft. Der Grund dafür ist, dass es dadurch möglich wäre, entsprechende Testreports unter realen Bedingungen erstellen zu können. 
+Die Aufgabestellung basiert auf folgender Anforderung: Es wäre auch vorteilhalft, die BTE-Struktur (siehe Abbildung \ref{fig:BTELogListold}) so zu erweitern, dass das Tool ebenfalls auf einem eingebetteten System läuft. Der Grund dafür ist, dass es dadurch möglich wäre, entsprechende Testreports unter realen Bedingungen erstellen zu können. 
 \end{Aufgabenstellung}
 
 %
@@ -625,7 +619,7 @@ In ~\cite{EclipseSTM32Youtube} werden weitere, notwendige Tools angegeben, die d
 %
 \newpage
 %
-\section{Siebte Woche}\label{siebteWoche}
+\section{Achte Woche}\label{siebteWoche}
 %
 \subsection{Wochenübersicht}
 %
@@ -652,9 +646,7 @@ Die Erweiterung des BTE-Tools soll folgende Anforderungen erfüllen:
 %
 In \figvref{fig:BTEUseCase} wird ein Anwendungsfalldiagramm gezeigt, um die funktionalen Anforderungen an dem vorliegenden System besser zu verstehen. 
 
-Dabei ist ersichtlich, dass allein der Anwendungsfall \textsf{\textbf{excecute test on embedded device}} die ursprüngliche BTE-Funktionalitäten erweitert. Der Anwender hat deshalb dadurch die Möglichkeit, über das erweiterte Tool Tests sowohl auf einem lokalen Arbeitsrechner als auch auf einem eingebettenen Prozessor durchzuführen. Ein Report kann ebenfalls mithilfe des erweiterten Tools erstellt werden. Im gezeigten Anwendungsfalldiagram ist somit nicht relevant, über welchen Weg der entsprechende Testreport erzeugt wird.
-
-Eine genaue Beschreibung der Umsetzung des genannten Anwendungsfall ist weiter unten in Abbildung \ref{fig:BTELogList} als Klassendiagramm zu sehen.
+Dabei ist ersichtlich, dass lediglich der Anwendungsfall \textsf{\textbf{excecute test on embedded device}} die ursprüngliche BTE-Funktionalitäten erweitert. Dieser Anwendungsfall beschreibt somit die zu implementierenden Anpassungen und Erweiterungen. Nachdem die Implementierungen dieser Aufgabe und die oben genannten Anforderungen erfüllt sind, hat der Anwender die Möglichkeit, über das erweiterte Tool Tests sowohl auf einem lokalen Arbeitsrechner als auch auf einem eingebettenen Prozessor durchzuführen. Ein Report kann ebenfalls mithilfe des erweiterten Tools erstellt werden. Im gezeigten Anwendungsfalldiagram ist somit nicht relevant, über welchen Weg der entsprechende Testreport erzeugt wird, sondern zusammengefasst dargestellt, dass das Tool ebenfalls Reports auf einem eingebetteten System erstellen kann.
 %
 \begin{figure}[!htp]
 \centering
@@ -663,7 +655,6 @@ Eine genaue Beschreibung der Umsetzung des genannten Anwendungsfall ist weiter u
 \label{fig:BTEUseCase}
 \end{figure}%
 %
-
 \subsubsection*{Verwendeter Lösungsansatz}\label{Ansaetze}
 %
 Man muss mit den vorhandenen Hardwareressourcen des eingebetteten Systems, wo die BTE eingebunden werden soll, sparsam umgehen und dabei auch eine Methode einsetzen, bei der beispielsweise der Test-Report direkt auf dem beschränkten RAM-Speicher abgelegt wird. Dazu ist es notwendig, eine bestimmte Codierung festzulegen, wie die Daten abzuspeichern sind.
@@ -805,16 +796,9 @@ void BteReport_Write( char *text )
 \end{description}
 %
 \newpage
-\section{Achte Woche}
+\section{Nuente Woche}
 %
-\subsection{Wochenübersicht}
-%
-Tabelle
-%
-\subsection{Arbeitsbericht}
-%
-%
-Bei jeder Testdurchführung können je nach Voreinstellung die Ergebnisse der Methodensaufrufe in Form eines XML-Reports ausgegeben werden, was in Abbildung \ref{fig:ReportXML} gezeigt wird. Nach jedem dieser Methodensaufrufe besteht die Möglichkeit, die dabei übergebenen Parameter auch im Testreport auszugeben. Deshalb werden diese Parameter bei jedem Methodensaufruf vom BTE-Tool ebenfalls gelagert und anschliessend im Report ausgegeben. Dadurch ist es im Report ersichtlich, dass bei einer bestimmten Konstellation von Übergabeparametern der Methodensaufruf nicht gelungen ist.  
+Bei jeder Testdurchführung können je nach Voreinstellung die Ergebnisse der Methodensaufrufe in Form eines XML-Reports ausgegeben werden, was in Abbildung \ref{fig:ReportXML} gezeigt wird. Nach jedem dieser Methodensaufrufe besteht die Möglichkeit, die dabei übergebenen Parameter auch im Testreport auszugeben. Deshalb werden diese Parameter bei jedem Methodensaufruf vom BTE-Tool ebenfalls gespeichert und anschliessend im Report ausgegeben. Dadurch ist es im Report ersichtlich, dass bei einer bestimmten Konstellation von Übergabeparametern der Methodensaufruf nicht gelungen ist.  
 %
 \begin{figure}[!htp]
 \centering
@@ -824,10 +808,47 @@ Bei jeder Testdurchführung können je nach Voreinstellung die Ergebnisse der Meth
 \end{figure}
 %
 
+Bei der Verwendung des BTE-Tools auf einer beliebigen eingebetteten Hardware können bestimmte existierende Funktionalitäten nicht wie gewohnt verwendet werden, um beispielsweise die Testcases mit einer entsprechenden ID-Nummer gestartet und gekennzeichnet werden. Dies muss vor jeder Testcase-Durchführung geschehen.
+
+Die alte Methode \verb|BteTestCase_SetData( uint8 type, char *text )| soll durch eine verwandte Methode ersetzt werden, bei der lediglich die Testcase-ID-Nummer \texttt{testcaseID} bzw. kein String übergeben werden soll. Der User ist deswegen angewiesen, stattdessen diese Methode aufzurufen.
+%
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteTestHandler.c}, label={lst:BteTestCase_SetData_ID}]
+...
+void BteTestCase_SetData_ID( uint16 id_num )
+{
+  bteTestSequence.id_num = id_num;
+}
+...
+\end{lstlisting}
+%
+
+Ein Aufruf der eingeführten Methode bei der Main-Datei, wo die gesamte Test-Durchführung implementiert ist, wird in \lstref{lst:useTestcaseId} vorgestellt. Der User kann die alten BTE-Funktionalitäten durch das Umdefinieren von \verb|USE_INTERNAL_LOG| wieder einschalten . 
+%
+\begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:useTestcaseId}]
+...
+void TC_Samir()
+{
+  Std_VersionInfoType ptr;
+
+  BteTestCase_SetState( BTETESTCASE_INIT );
+#if defined (USE_INTERNAL_LOG)
+  BteTestCase_SetData_ID( 1 );  // Der Anwender soll diese Methode verwenden
+#else
+  BteTestCase_SetData( TC_ID, "TCASE-1");
+#endif
+  BteTestCase_SetState( BTETESTCASE_STARTTESTCASE );
+...
+\end{lstlisting}
+%
+
+Weitere Anpassungen wurden im internen Funktionsbereich der BTE-Tools durchgeführt. Nur so sind die erwähnten Anforderungen erfüllbar. Diese Änderungen sind für den Anwender nicht relevant und brauchen deswegen nicht weiter behandelt zu werden.
+%
+\subsection*{Implementierung der Datenspeicherung}
+%
 Zur Implementierung der Speicherung des Testreports auf dem RAM werden zwei unterschiedliche Ansätze berücksichtigt. Der der erste Ansatz weist bestimmte Nachteile auf, deshalb wird auf diese nur kurz eingegangen. Die zweite Möglichkeit wird dahingegen ausführlicher behandelt, denn auf ihr basieren die Lösungsergebnisse der vorliegenden Aufgabe. 
 
 Bei jedem der erwähnten Lösungsansätze ist eine geignete Kodierung der Daten in Form eines geigneten Protokolls notwendig, welches die Datenspeicherung auf der RAM verwaltet.
-%
+
 \textbf{Report in Form einer Struktur (\texttt{stBteLogList}}):  
 
 Der erste Ansatz, die Liste anhand einer Struktur abzuspeichern, wird durch \lstref{lst:structList} beschrieben. Dabei ist ersichtlich, dass der Datentyp \texttt{stBteLogList} aus einem 16-bit langen Eintrag (\textit{size}) und einer weiteren Struktur vom Typ \text{stBteEventLog} besteht. Letztere enthält zwei weitere Datentypen (\textit{code} und \textit{data}). 
@@ -849,32 +870,6 @@ typedef struct stBteLogList
 
 Der Testreport wird auf Basis dieser beiden Strukturen im RAM des eingebetteten Prozessors abgelegt. Diese Struktur muss unterschiedliche Kennungen enthalten, welche zusammen das genannte Protokoll definieren. Damit ist eine hierachiche Trennung der gespeicherten Daten und deren Unterscheidung gewährleistet. Tabelle \ref{tab:Protokoll1} zeigt die Auswahl der verwendeten Kennungen.
 %
-%\begin{longtable}{|l|l|}
-%\hline
-%\textbf{Kennung} & \textbf{Beschreibung} \\
-%\endhead
-%\hline
-%0xFF & Kennung eines Testcases\\
-%\hline
-%0x21 & Kennung für 1. Datenelement\\
-%\hline
-%0x22 & Kennung für 2. Datenelement\\
-%\hline
-%0x23 & Kennung für 3. Datenelement\\
-%\hline
-%0x24 & Kennung für 4. Datenelement\\
-%\hline
-%0x25 & Kennung für 5. Datenelement\\
-%\hline
-%0x5C & Kennung für \textit{End of file}\\
-%\hline
-%0x6E & Kennung für \textit{End of file}\\
-%\hline
-%\caption{Relevante Zusammenhänge aus Menge der geprüften QA-C-Regeln.}
-%\label{tab:Protokoll1}
-%\end{longtable}
-%
-%
 \begin{table}[ht]
 \caption{Nonlinear Model Results}
 % title of Table
@@ -884,41 +879,50 @@ Der Testreport wird auf Basis dieser beiden Strukturen im RAM des eingebetteten 
 % centered columns (4 columns)
 \hline
 \hline                        %inserts double horizontal lines
-Case & Method \#1 & Method \#2 & Method \#3 \\ [0.5ex]% inserts table 
+Kodierung & Beschreibung \\ [0.5ex]% inserts table 
 %heading
 \hline
-                  % inserts single horizontal line
-1 & 50 & 837 & 970  \\
-% inserting body of the table
-2 & 47 & 877 & 230  \\
-3 & 31 & 25  & 415  \\
-4 & 35 & 144 & 2356 \\
-5 & 45 & 300 & 556 \\ [1ex]      % [1ex] adds vertical space
+0xFF & Kennung eines Testcases\\
+\hline
+0x21 & Kennung für 1. Datenelement\\
+\hline
+0x22 & Kennung für 2. Datenelement\\
+\hline
+0x23 & Kennung für 3. Datenelement\\
+\hline
+0x24 & Kennung für 4. Datenelement\\
+\hline
+0x25 & Kennung für 5. Datenelement\\
+\hline
+0x5C & Kennung für \textit{End of file}\\
+\hline
+0x6E & Kennung für \textit{End of file}\\ [1ex]      % [1ex] adds vertical space
 \hline
 %inserts single line
 \end{tabular}
-\label{table:nonlin}
+\label{tab:Protokoll1}
 % is used to refer this table in the text
 \end{table}
 %
 
 Wird ein neuer Testreport erstellt, dann wird am Anfang die Länge(\textit{size}) von \texttt{tBteLogList} auf Null gesetzt. Dadurch werden alle alten Einträge der Liste überschrieben und gelöscht. Im nächsten Schritt werden in Abhängigkeit der vorgegebenen Testcases die definierten Kennungen innerhalb der vorhandenen Elementen der Liste \texttt{elem} abgespeichert. 
 
-Abbildung \ref{fig:Protocol1} zeigt beispielshaft, wie das Protokoll zur Abspeicherung des Testreports auf der RAM umgesetzt wird. 
+Abbildung \ref{fig:Protocol1} zeigt, wie das Protokoll bei dieser Art der Abspeicherung des Testreports aussieht. 
 %
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.9]{./Bilder/Protocol1.pdf}
+\includegraphics[scale=0.8]{./Bilder/Protocol1.pdf}
 \caption{BTEUseCase}
 \label{fig:Protocol1}
 \end{figure}
 %
 
-Nachteilig bei dieser Art der Abspeicherung ist, dass der Compiler die größe des Bereiches so groß wie die größte in der Liste vorkommende Variable festlegt. Dabei wird somit jede Variable als eine 32-Bit große Variable behandelt, was im Falle eines 8-bit großen Eintrags zu Speicherplatz-Verschwendung führt. Damit der Compiler diese Optimierungen nicht selbst vornimmt, muss man weitere Einstellungen bei den Compiler-Optionen durchführen, was aber noch mehr Zeit in Anspruch nimmt.
-%
+Nachteilig dabei ist, dass der Compiler die größe des Bereichs so groß wie die größte in der Liste vorkommende Variable festlegt. Jede Variable wird somit wie eine 32-Bit große Variable behandelt und es wird immer für dieselben einen entsprechenden großen Speicherplatz reserviert. Dies führt zu Speicherplatz-Verschwendung, wenn es sich bei den abzuspeichernden Daten lediglich um 8-Bit große Variablen handelt. 
+
+Dies lässt sich dadurch vermeiden, dass spezielle Compiler-Einstellungen durchgeführt werden, was aber noch mehr Zeit in Anspruch nimmt.
 \newpage
 %
-\section{Neunte Woche}
+\section{Zehnte Woche}
 %
 \subsection{Wochenübersicht}
 %
@@ -926,59 +930,38 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-Während dieser Woche galt meine Arbeit weiterhin der Lösung der 2. Aufgabe. 
+Während dieser Woche galt meine Arbeit weiterhin der Lösung der 2. Aufgabe. Eine neue Art der Kodierung und Abspeicherung des Reports wird hierbei eingeführt und beschrieben. 
 
 \textbf{Report in Form eines Byte-Arrays \texttt{BteLogArray}}: 
 
 Report wird in Form eines normalen Arrays vom Typ \verb|uint8| im RAM des betrachteten Prozessors abgespeichert. 
-Die verarbeiteten Informationen bei den Methodensaufrufen werden ebenfalls sequenziell innerhalb des Arrays abgelegt. Dabei richtet sich die Abspeicherung nach dem folgenden, vordefinierten Protokoll:
-%
-%\begin{longtable}{|l|l|}
-%\hline
-%\textbf{Kennung} & Beschreibung \\
-%\endhead
-%\hline
-%0xFF & Kennung eines Testcases\\
-%\hline
-%0x5C & Kennung für End of file\\
-%\hline
-%0x6E & Kennung für End of file\\
-%\hline
-%\caption{Relevante Zusammenhänge aus Menge der geprüften QA-C-Regeln.}
-%\label{tab:Protokoll1}
-%\end{longtable}
-%
-
+Die verarbeiteten Informationen bei den Methodensaufrufen werden ebenfalls sequenziell innerhalb des Arrays abgelegt. Dabei richtet sich die Abspeicherung der Daten nach den in folgender Tabelle festgelegten Kennungen.
 %
 \begin{table}[ht]
-\caption{Nonlinear Model Results}
+\caption{Relevante Zusammenhänge aus Menge der geprüften QA-C-Regeln.}
 % title of Table
 \centering 
 % used for centering table
-\begin{tabular}{c c c c}
+\begin{tabular}{c c}
 % centered columns (4 columns)
 \hline
 \hline                        %inserts double horizontal lines
-Case & Method \#1 & Method \#2 & Method \#3 \\ [0.5ex]% inserts table 
+Kodierung & Beschreibung \\ [0.5ex]% inserts table 
 %heading
-\hline
-                  % inserts single horizontal line
-1 & 50 & 837 & 970  \\
+\hline                  % inserts single horizontal line
+0xFF & Kennung eines neuen Testcases \\
 % inserting body of the table
-2 & 47 & 877 & 230  \\
-3 & 31 & 25  & 415  \\
-4 & 35 & 144 & 2356 \\
-5 & 45 & 300 & 556 \\ [1ex]      % [1ex] adds vertical space
+0x5C & Kennung für End of file \\
+0x6E & Kennung für End of file  \\ [1ex]      % [1ex] adds vertical space
 \hline
 %inserts single line
 \end{tabular}
-\label{table:nonlin}
+\label{tab:Protokoll2}
 % is used to refer this table in the text
 \end{table}
 %
 
-
-Wie man merkt, ist bei dieser Art der Datenspeicherung nicht notwendig, weitere Kennungen einzuführen als den Anfang eines neuen Testcases und das Ende des gesammten Testreports. Der Grund dafür ist, dass über die Angabe der Anzahl der an die Funktion übergebenen Parameter direkt festgelegt wird\footnote{Dies geschieht beim Dekodieren des Testreports anhand des PERL-Skripts, dessen Umsetzung noch beschrieben wird.}, festgelegt wird, wie viele relevanten Daten in den Testreport abzuspeichern sind.
+Offensichtlich werden nur der Anfang und das Ende des Report dabei gekennzeichnet. Die Daten, die bei den einzelnen Methodensaufrufe ebenfalls im Report abzuspeichern sind, lassen sich allein durch die Kenntnis der Anzahl an übergebenen Paratemern wieder rekonstruieren \footnote{Dies geschieht beim Dekodieren des Testreports anhand des PERL-Skripts, dessen Umsetzung noch beschrieben wird.}. Außerdem weiß man darüber Bescheid, dass bei jedem neuen Testcase folgende Variablen auf dem Report auszugeben sind: die Testcase-ID-Nummer \texttt{testcaseID}, die Anzahl an übergebenen Parameter \texttt{numParam}, der Event-Typ \texttt{type}, die Component-ID-Nummer \texttt{comp}, das Event-Code \texttt{code}, der Zeitstempel \texttt{time} und die entsprechenden aufgerufenen Parametern \texttt{datax}.
 
 Da in der Regel die übergebenen Parameter und manche Daten, die auf dem Testreport vorkommen müssen, nicht unbedingt vom Typ \texttt{uint8} sind sondern größer (\texttt{uint16} bzw. \texttt{uint32}), kann deren Inhalt nicht direkt in die einzelnen Einträge des Byte-Arrays passen. Vor der Abspeicherung müssen diese Informationen deshalb so zerlegt und angepasst werden, dass sie immer in den 8-Bit großen Einträgen des genannten Arrays hinein passen. 
 
@@ -1001,64 +984,28 @@ void BteLogList_Serialize16(uint16 data)
 }
 \end{lstlisting}
 
-In Abbildung \ref{fig:Protocol2} ist gezeigt, wie die Daten im \verb|BteLogArray| abgespeichert werden und das Protokoll dazu definiert ist. Dabei ist bei den Stellen zu erkennen, wo die Variablen \verb|testcaseID| und \verb|time| gespeichert sind, wie das Program die Daten in kleineren 8-bit große Datenfelder zerlegt. Dabei wird beispielsweise die in \lstref{lst:ArrayList} gezeigte Funktion \verb|BteLogList_Serialize32| verwendet, um die 32-bit große Variable \verb|time| zu zerlegen.
+In Abbildung \ref{fig:Protocol2} wird eine Anordnung der gespeicherten Daten im RAM beispielshaft gezeigt. Variablen, die in kleineren 8-bit Datenfeldern zerlegt wurden, sind \verb|testcaseID|, \verb|time| und \verb|datax|. Der Inhalt der betrachteten Variable \verb|BteLogArray|, wo der Testreport sich befindet, wird dabei desto größer, je mehr Testfälle, Methodensaufrufe und übergebenen Parametern bei den zu testenden Funktionen vorkommen. 
 
-Auf diese Art und Weise wird der Anforderung, mit Hardwareressourcen möglichst sparsam umzugehen, ebenfalls Rechnung getragen. Jedes Feld des Arrays ist nämlich mit relevanten Daten vom Testreport befüllt.
-
-Eine beispielshafte 
+Auf dieser Art und Weise wird mit den knappen, zur Verfügung stehenden Hardwareressourcen möglichst sparsam umgegangen. Jedes Feld des Arrays ist nämlich mit relevanten Daten vom Testreport befüllt, was dazu führt, dass möglichst wenig Speicherplatz verschwendet wird.
 %
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.9]{./Bilder/Protocol2.pdf}
+\includegraphics[scale=0.8]{./Bilder/Protocol2.pdf}
 \caption{BTEUseCase}
 \label{fig:Protocol2}
 \end{figure}
 %
-\begin{landscape}
+
+Nach einer erfolgreichen Speicherung der Daten in den RAM des eingebetteten Systems, sieht der Speicherbereich wie im Bild \ref{fig:EclipseHardwareMem} aus. Mithilfe des GDB-Debuggers ist es dann möglich, den relevanten Speicherbereich direkt als Binärdatei auf den lokalen PC zu exportieren. Dazu ist es deswegen notwendig, dass ein Hardware-Debugger zur Versfügung steht. Auf Basis dieser Datei und einer \verb|PERL|-Anwendung wird die Rekonstruktion des entsprechenden Reports angesetzt. Dieser Ansatz wird im nächsten Kapitel näher erklärt.
+%
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.8]{./Bilder/BTELogList_cropped.pdf}
+\includegraphics[scale=0.7]{./Bilder/EclipseHardwareMem.pdf}
 \caption{BTEUseCase}
-\label{fig:BTELogList1}
+\label{fig:EclipseHardwareMem}
 \end{figure}
-\end{landscape}
 %
-XXX Bild zur Architektur des Reports, welches auf der RAM gespeichert wird. 
-
-Die Stellen vom Speicher, wo die zu interessierenden Daten der durchgeführten Tests zum Erstellen eines Reports abgelegt wurden, lassen sich mit Hilfe eines memory mapping des entsprechenden Prozessors analysieren. Dies ist mit einem Debugger möglich und kann bestenfalls als binary file ausgegeben werden. Das ist die Beschreibung des Ansatzs, welcher von Markus und Timo erklärt worden ist.
-
-Ein Ansatz, um aus den binary files ein Report zu erstellen, ist, das binary File mit Hilfe einer Skriptsprache zu analysieren, damit das ursprungliche von der BTE auf dem PC erzeugte Report erneut ausgegeben werden kann. Die genaue Darstellung des Perl-Scripts (Perl-Listing) kann im Anhang \ref{cha:tools} gefunden werden. 
-
-Die erzielten Lerneffekte sind vor allem der Umgang mit einer Skriptsprache, das Speicherplatz sparend Codieren in C.
-%
-\section{Zehnte Woche}
-%
-\subsection{Wochenübersicht}
-%
-Tabelle
-%
-\subsection{Arbeitsbericht}
-%
-Da die Reports auf einer beliebigen Hardware zu implementieren sind, sollte eine bestimmte Hardware ausgesucht werden. Die Hardware die mir vorgestellt wurde, war das STM32F4-Entwicklungsboard. Mit dieser Hardware habe ich in der Vergangenheit schon zu tun gehabt, deswegen konnte ich ohne große Mühe die Einstellungen vornehmen, um ein Projekt zu starten.
-
-Das genannte Board lässt sich über ST-Link-Treiber flaschen , welcher vom Hersteller zur Verfügung gestellt wird.
-%
-\begin{landscape}
-\begin{figure}[!htp]
-%\fbox{\begin{minipage}{21.8cm}% 
-\centering
-\includegraphics[scale=0.5]{./Bilder/eclipsegit.pdf}
-%\end{minipage}}%
-\caption{eclipsegit}
-\label{fig:eclipsegit}
-\end{figure}
-\end{landscape}
-%
-Der auf dem Mikrocontroller erzeugte Report sollte auf einer Speicher sparenden Art und Weise erstellt werden. Man hat sich 2 Möglichkeiten überlegt, wie dies geschehen soll. Letzteres wird im Folgenden Bild wiedergeben:
-
-%Bild hier angeben%
-
-Zu der Erkenntnis konnte man gelagen, dass die zweite Möglichkeit besser geeinet ist und auf einer seriellen Übertragung der Daten basiert.
+\newpage
 %
 \section{Elfte Woche}
 %
@@ -1068,22 +1015,101 @@ Tabelle
 %
 \subsection{Arbeitsbericht}
 %
-In der vorliegenden Woche war meine Aufgabe das Perl Programm zu pflegen und ein wenig besser zu strukturieren. Außerdem wurde mir erklärt, dass die Messages, die über die BTE durchgeschaltet, jedoch nicht in die LogListe registriert werden, auch in dem Report vorkommen sollten. Dies geschieht auch bei einem normalen Report, welcher bei einem Test auf dem Computer erzeugt wird. Dies musste ebenfalls im Programm implementiert werden. 
+\subsubsection*{Dekodierung und Rekonstruktion eines XML-Testreports}
+%
+Ein Ansatz, um aus der Binärdatei ein Report zu erstellen, ist, diese mithilfe einer Skriptsprache zu analysieren und verarbeiten. Entsprechende Algorithmen kümmern sich um die Dekodierung und Ausgabe der Daten als ein XML-File. Das auf dieser Art und Weise erstellte Report soll letztendlich bis auf kleine Details im Text genauso aussehen, wie ein Testreport, welcher mithilfe des BTE-Frameworks auf dem PC erstellt würde. 
+
+Die Main-Methode \verb|ConvertBin2Vtr| des erstellten \verb|PERL|-Skripts wird in \lstref{lst:PERL_XMLRepMain} gezeigt. Die Struktur dieser Methode zeigt explizit die Struktur der gesammten programmierten Anwendung. 
+
+In Zeile 6 wird die Binärdatei erstmal eingelesen, wobei eine entsprechende Vorvearbeitung derselbe stattfinden muss. Dies wird in Zeile 14 ausgeführt und deswegen notwendig, weil die relevanten Daten des Testreports nicht im gesammten \texttt{BteLogArray} enthalten sind sondern nur ein Teil davon belegen. Die restlichen Daten können deshalb entfernt werden.
+
+Die in Zeile 18 gezeigte Methode \texttt{ProcessBinaryData()} beinhaltet die eigentliche Dekodierung der Daten und Erstellung des Testreports. Im Anschluss der Dekodierung der Daten wird die Testreport-Datei auf die Festplatte gesichert.
+%
+\begin{lstlisting}[style=PERL_st, caption = {PERL XML},label={lst:PERL_XMLRepMain}]
+# Main function
+sub ConvertBin2Vtr
+{
+  # read the binary file containing the data of the data of
+  # the test report
+  my $binFile_path = $ARGV[0];
+	# read the path where the report file has to be stored
+  my $vtrFile_path = $ARGV[1];
+  
+  # read the transformation rules from the configuration file
+  LoadEventConfig($ARGV[2]);
+
+  # get the relevant data
+  GetBinaryContent($binFile_path);
+
+  # process the binary data and write to vtr
+  OpenVtr($vtrFile_path);
+  ProcessBinaryData();
+  CloseVtr();
+}
+\end{lstlisting}
+%
+Die oben genannten Schritten, die in der Main-Methode der \verb|PERL|-Anwendung durchgeführt werden, sind in Form einer State-Maschine in Abbildung \ref{fig:StateMaschPERL} dargestellt. In dem Zustand \textit{AnalyseReadByte} überprüft der Suchalgorithmus die Natur des eingelesenen Bytes. In Anbhängigkeit derselben gibt es Transitionen in den benachbarten Zuständen, wo die Daten dekodiert werden und der Testreport gleichzeitig aktualisiert wird.
+
+%\begin{landscape}
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{./Bilder/StateMaschPERL_cropped.pdf}
+\caption{BTEUseCase}
+\label{fig:StateMaschPERL}
+\end{figure}
+%\end{landscape}
+
+Ausschnitt vom erstellten \verb|PERL|-Skript befindet sich im Anhang \ref{cha:tools}. Das oben gezeigte Diagramm ergänzt das Tool und ist ein Teil der Software-Spezifikation.
+%
+\newpage
+%
+\section{Zwolfte Woche}
+%
+\subsection{Wochenübersicht}
+%
+Tabelle
+%
+\subsection{Arbeitsbericht}
+%
+In der vorliegenden Woche war meine Aufgabe das \verb|PERL|-Programm zu dokumentieren und besser zu strukturieren. Nur so ist es möglich, das erstellte bzw. modifizierte Tool zu pflegen und warten. 
+%
+\subsubsection*{Gesamte Struktur des erweiterten Anwendungfalls}
+%
+Der in \figvref{fig:BTEUseCase} gezeigte Anwendungsfall \textit{execute test on embedded device} konnte durch die Anpassungen an die vorhandene Struktur des BTE-Tools und die Erstellung eines \verb|PERL|-Skripts realisiert werden. Seine gesammte Funktionalität wird in Abbildung \ref{fig:BTELogListStruktur} in Form eines Klassendiagramms dargestellt.
+
+Die gelb markierten Klassen stellen die bereits vorhandenen Funktionalitäten dar, die gegebenenfalls modifiziert werden mussten. Diese sind ebenfalls in \figvref{fig:BTELogListold} dargestellt.
+
+Die weißen Klassen erweitern den Funktionsumfang. Diese ermöglichen die Lauffähigkeit des BTE-Tools auf einem beliebigen eingegebetteten System und die Erstellung eines entsprechenden Testreports.
+
+Dabei ist zu erkennen, dass das das gesammte BTE-Tool auf dem eingebetteten Echtzeitsystem (ES) läuft und dabei über das erstellte \verb|LogList|-Modul die relevanten Informationen vom Testreport auf den LogList-Array speichert. Das Debugger-Modul kümmert sich um das Extrahieren der Binärdatei vom RAM des betrachteten Systems, wobei es anzumerken ist, dass dies manuell erfolgen muss. 
+
+Auf der PC-Seite befindet sich neben der extrahierten Binärdatei die programmierten \verb|PERL|-Anwendung, welche sich zusätzlich eines vom User vorgegebenen Konfigurationsfiles bedient, um der gewünschte Testreport zu erstellen.
+%
+%\begin{landscape}
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.7]{./Bilder/BTELogList_cropped.pdf}
+\caption{BTEUseCase}
+\label{fig:BTELogListStruktur}
+\end{figure}
+%\end{landscape}
+%
+\subsubsection*{Validierung des erweiterten BTE-Tools}
+%
+Um die Gültigkeit der programmierten Anwendungen zu überprüfen, werden zwei Testreports einer beliebigen Software-Komponente durchgeführt.
+
+Die Tests werden jeweils auf dem PC und der in Abbildung \figvref{fig:discovery} gezeigten Hardware durchgeführt. Am Ende jeden Tests entstehen zwei unabhängige Binärdateien, die die Testreports enthalten. Auf dem PC werden die zwei Dateien mithilfe der \verb|PERL|-Anwendung analysiert und in ein entsprechendes XML-File konvertiert. Beide Dateien werden in \ref{fig:reports} miteinander vergliechen. Dabei stellt man fest, dass beide Reports die gleiche Eigenschaften aufweisen, was auf die Korrektheit der implementierten Anwendung hinweist.
 
 Die aktuelle Version meiner Anwendung erzeugt das auf dem linken Teil gezeigtem File im xml-Format. Das rechts davon gezeigte File ist das Report, welcher wie bereits oben erwähnt bei einem Test auf dem Computer erzeugt wird. Die Unterschiede lassen sich dadurch erklären, dass manche Features, die im auf dem Computer erstellten Report in dem auf der RAM gespeicherten Report nicht relevant sind und somit nicht darzustellen sind. 
 %
 \begin{landscape}
 \begin{figure}[!htp]
 \centering
-\includegraphics[width=\linewidth,height=150mm]{./Bilder/reports.pdf}
+\includegraphics[width=200mm,height=150mm]{./Bilder/reports.pdf}
 \caption{reports}
 \label{fig:reports}
 \end{figure}
 \end{landscape}
-%
-Das Bild zum UML Statechart sollte ich mal einfügen und von Markus checken lassen und endgültig hier einfügen.
-
-Am Ende erfogte eine Abgabe der letzten Version meiner programmierten PERL-Anwendung abgegeben werden. Markus hat manche Korrekturen und Verbesserungen durcgeführt und mir dann diesbezüglich Rückmeldung gegeben.
 %
 \section{Zwolfte Woche}
 %
