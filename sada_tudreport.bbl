@@ -17,6 +17,10 @@
 {\sc The Motor Industry Software Reliability Association}: {\em MISRA C:2012
   Guidlines for the use of the C language in critical systems}, March 2013.
 
+\bibitem{HIS_Standard}
+{\sc Kuder, Helmar}: {\em Gemeinsames Subset der MISRA C Guidelines}, Februar
+  2006.
+
 \bibitem{MISRACodeMetric}
 {\sc H.~Hörner, A.~Raisch}: {\em MISRA and Code Metrics Product Development
   PES}.
@@ -63,9 +67,5 @@
 {\sc scientificpages}: {\em How to prepare IDE for STM32 in eclipse?}
 \newblock video.
 \newblock \url{https://www.youtube.com/watch?v=kjvqySyNw20}.
-
-\bibitem{HardTime}
-{\sc Douglass, Bruce~Powel}: {\em Doing Hard Time}.
-\newblock Addison-Wesley.
 
 \end{thebibliography}

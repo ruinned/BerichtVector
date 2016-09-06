@@ -1,26 +1,11 @@
 %
 \chapter{Zusammenfassung und Ausblick}
 %
-Moderne Dieselmotoren werden bei der Applikation hinsichtlich verschiedenster Kriterien optimiert. Neben den Schadstoff-Emissionen zählen hierzu sowohl das Motordrehmoment, der Wirkungsgrad als auch die Geräuschemissionen. Häufig stehen diese Anforderungen zueinander im Widerspruch und eine Reduzierung der Geräuschemissionen zieht in der Regel eine Drehmomentsenkung nach sich, weshalb geeignete Kompromisse gefunden werden müssen.
+Im Rahmen des Praktikums bei Vector bekam ich die Gelegenheit, in der PES Abteilung mitzuarbeiten. Dabei sammelte ich wertvolle Einblicke und Erfahrungen sowohl in die Firmenabteilungen und als auch in einzelne Projekte. 
 
-Bei der vorliegenden Arbeit wird eine stationäre, modellbasierte Optimierung durchgeführt. Die Optimierung hat als Ziel, die Motorstellgrößen $u_{VTG}$, $u_{HDAGR}$, $u_{NDAGR}$, $\phi_{HE}$ und $\phi_{VE}$ in einem vorgegebenen Betriebspunkt so zu wählen, dass sowohl das innermotorische Drehmoment $M_Z$, der Motorwirkungsgrad\footnote{vgl. \ref{sec:Wirk}} $\eta_A$ und die Geräuschemissionen\footnote{Die Geräuschemissionen werden in dieser Arbeit durch eine ausführliche Untersuchung des Zylinderdruckgradienten berücksichtigt. Eine detallierte Ausführung wird in \charef{sec:Geräuschemission} gegeben} optimal werden. 
+Das Ziel meiner Arbeit bestand vorwiegend darin, den Umgang mit unterschiedlichen Softwaretools zu erlernen, die während der Entwicklung von verschiedenen Software-Produkten in der Abteilung eingesetzt werden.
 
-Die stationäre Optimierung wird mit Hilfe von zwei am Institut für Automatisierungstechnik (IAT) der TU-Darmstadt entwickelten Simulationsmodellen eines Z19DTH (4V) - Dieselmotors\footnote{Eine detaillierte Ausführung der Motorkenndaten erfolgt im Anhang \ref{cha:verbrennungsmotorDaten}} durchgeführt. Mit den genannten Modellen können sowohl die Zustandsgrößen vom Luftpfad als auch von der Verbrennung\footnote{Für nähere Informationen wird auf \charef{cha:BeschrModell} hingewiesen.} berechnet werden. Zunächst werden zwecks des Aufbaus eines gesamten Motormodells und somit der modellbasierten Optimierung beide zur Verfügung gestellten Simulationsmodelle zusammengefügt.
-
-Weiterhin wird im Rahmen dieser Arbeit auf Basis einer Literaturrecherche untersucht, wie aus dem Zylinderdruckverlauf Kenngrößen generiert werden können, die es ermöglichen, sowohl das Drehmoment, den Wirkungsgrad als auch die Geräuschemissionen am Beispiel des Dieselmotors zu quantifizieren.
-
-Daran anschließend wird zur Analyse übergegangen, inwieweit sich die oben genannten Stellgrößen auf die zu optimierenden Zielgrößen auswirken.
-
-Die stationäre Grundoptimierung wurde bisher meist von Prüfstandsingenieuren anhand der Erfahrung mit ähnlichen Motoren online am Prozess durchgeführt. Diese Vorgehensweise ist sehr zeit- und kostenaufwändig, da zur Optimierung der oben genannten Zielgrößen immer mehr Stellmöglichkeiten berücksichtigt werden müssen. In dem in dieser Arbeit gewählten Ansatz wird das Prozessverhalten, wie oben erwähnt, durch ein Simulationsmodell approximiert, so dass eine Offline-Optimierung im Rechner durchgeführt werden kann. 
-
-Um die Offline-Optimierung durchführen zu können, war es zweckmäßig, den Begriff der mono- bzw. multikriteriellen Optimierung einzuführen.
-
-Eine monokriterielle Optimierung wird zunächst hinsichtlich der Erhöhung des Durchschnittsdrehmoments $\overline{M}_Z$ durchgeführt. Dabei stellt man fest, dass eine Verbesserung der genannten Kenngröße durch den Einsatz der VTG-Aufladung erfolgt, die weiteren Stellgrößen, im Speziellen $u_{HDAGR}$ und $u_{NDAGR}$, können demgegenüber keine wesentliche Erhöhung von $\overline{M}_Z$ erzielen. Letzteres widerspricht den im Kapitel \ref{sec:agr} gewonnenen Erkenntnissen, denn bei der dort durchgeführten Analyse konnte eine Verbesserung von $\overline{M}_Z$ durch den Einsatz einer AGR-Rate festgestellt werden.
-
-Ein multikriterielles Optimierungsverfahren wird verwendet, um die Motorstellgrößen $u_{VTG}$, $u_{HDAGR}$, $u_{NDAGR}$, $\phi_{HE}$ und $\phi_{VE}$ in einem vorgegebenen Betriebspunkt so zu wählen, dass sowohl das innermotorische Drehmoment $M_Z$, der Motorwirkungsgrad\footnote{vgl. \ref{sec:Wirk}} $\eta_A$ und die Geräuschemissionen\footnote{Die Geräuschemissionen werden in dieser Arbeit durch eine ausführliche Untersuchung des Zylinderdruckgradienten berücksichtigt. Eine detallierte Ausführung wird in \charef{sec:Geräuschemission} gegeben} optimal werden. Es ist dabei zu erkennen, dass die Verwendung von rückgeführtem Abgas in bestimmten Arbeitspunkten zu einer Entschärfung des Zielkonfliktes zwischen $\overline{M}_Z$ und $\frac{dp_{Z,max}}{d\phi}$ führt.
-
-Aus der im \charef{cha:Validierung} dargestellten Druckverlaufsanalyse der Prüfstandsmessdaten wurden die oben beschriebenen Ergebnisse bestätigt. Eine Erhöhung des Motordrehmoments und somit des innermotorischen Wirkungsgrades wird nämlich festgestellt, nachdem eine bestimmte, nicht zu vernachlässigende AGR-Rate stattgefunden hat. Das Potential, den innermototischen Wirkungsgrad durch den Einsatz einer AGR-Rate $x_{AGR}$ zu erhöhen, kann demzufolge durch die genannte Anlayse der gemessenen Druckverläufe begründet werden. 
-
+Gleichzeitig war es mir möglich, während meines Aufenthalts wertvolle Kontakte zu knöpfen und Gespräche zu führen, die für mein weiteres berüfliches und persönliches Leben ein großer Gewinn sind.
 
 
 

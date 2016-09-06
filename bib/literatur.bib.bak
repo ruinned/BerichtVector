@@ -131,7 +131,9 @@
 }
 
 @Electronic{EPICIDE,
-  url = {http://www.epic-ide.org/},
+  author = {Jan Ploski},
+  title  = {Eclipse Perl Integration},
+  note   = {\url{http://www.epic-ide.org/}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
