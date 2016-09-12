@@ -2,7 +2,7 @@
 %
 \section{Erste Woche}
 %
-\subsection{Beschreibung}\label{Be1Woche}
+
 %
 Am ersten Tag meiner Tätigkeit bei Vector bekam ich die Gelegenheit die Firma und ihre unterschiedlichen Abteilungen näher kennen zu lernen. Es war erforderlich, an einer ausführlichen Präsentation über die Firma und die unterschiedlichen Abteilungen teilzunehmen. Dabei konnte ich ebenfalls Mitarbeiter kennen lernen, die genauso wie ich, an diesem Tag mit ihrer Arbeitstätigkeit bei Vector angefangen haben.
 
@@ -40,7 +40,7 @@ In Abbildung \ref{fig:Tortoisegit} wird ein Ausschnitt von TortoiseSVN-Versionsk
 \label{fig:Tortoisegit}
 \end{figure}
 %
-\subsubsection{Erste Aufgabenstellung}
+\subsection{Erste Aufgabenstellung}
 %\paragraph{Erste Aufgabenstellung}
 %
 Innerhalb der ersten Woche wurde mir die 1. Aufgabe meiner Arbeitstätigkeit bei Vector vorgestellt. Dabei handelt es sich um den MISRA-C-Programmierstandard, über den ich mich ausführlich informieren musste. Deshalb wird im Folgenden eine Einleitung in das Thema gegeben.
@@ -90,14 +90,14 @@ Eine detaillierte Analyse vor allem über die Kompatibilität zwischen den beiden 
 \clearpage
 \section{Zweite Woche}
 %
-\subsection{Beschreibung}
+
 %
 %\subsubsection{Durchführung der ersten Aufgabenstellung}
 %%\paragraph{Durchführung der ersten Aufgabenstellung}
 %%
 %Eine genaue Rechnerche über die oben erwähnten Standards war notwendig, um nicht nur einen Einblick in das Thema zu gewinnen sondern auch die technischen Zusammenhänge zu verstehen.
 %
-\subsubsection{Durchführung der ersten Aufgabenstellung}
+\subsection{Durchführung der ersten Aufgabenstellung}
 %
 Eine genaue Rechnerche über die oben erwähnten Standards war notwendig, um nicht nur einen Einblick in das Thema zu gewinnen sondern auch die technischen Zusammenhänge zu verstehen.
 %
@@ -144,7 +144,7 @@ Abbildung \ref{fig:MISRA2004} gibt die wichtigsten Eigenschaften und Unterschied
 \clearpage
 \section{Dritte Woche}\label{sec:DritteWoche}
 %
-\subsection{Beschreibung}
+
 %
 Um den Nachweis liefern zu können, wie konform ein spezifisches Software-Projekt mit dem gesamten MISRA-C-Regelwerk geht, wird in der Regel ein ausgewähltes statisches Analysewerkzeug eingesetzt. 
 %
@@ -287,7 +287,7 @@ Um eine erste Analyse durchzuführen, sollten erstens die Unterschiede der beiden
 %
 \section{Vierte Woche}\label{sec:VierteWoche}
 %
-\subsection{Beschreibung}
+
 %
 Im Gegensatz zu den von QA-C verwendeten Richtlinien zur Prüfung von MISRA-Regeln braucht man kein direkter Vergleich der MISRA-Versionen durchzuführen. Ein entsprechender Ansatz wurde bereits von der britischen \glqq The Motor Industry Sofrware Reliability Association\grqq~veröffentlicht~\cite{Addendum1}. Eine Registrierung auf der Internetseite der MISRA-Institution ist erforderlich gewesen, um Zugang zum Dokument zu erlangen.
 
@@ -405,7 +405,7 @@ In erster Linie sind im Laufe der Versionen eine hohe Anzahl an neuen geprüften 
 %
 \section{Fünfte Woche}\label{sec:VierteWoche}
 %
-\subsection{Beschreibung}
+
 %
 Beim letzten Teil der ersten Aufgabestellung ginge es darum eine Vielzahl von Basissoftware-Modulen sowohl mit QA-C 7.0 als auch QA-C 9.0 zu analysieren. Ziel dieser Teilaufgabe ist es, eine Voruntersuchung zur Integration von QA-C9\footnote{QA-C9 weist auf die Version 9.0 des betrachteten Analysewerkzeugs hin} in die bestehende Entwicklungsinfrastruktur durchzuführen.
 
@@ -464,7 +464,7 @@ Drauf aufbauend sollte ein umfangreicheres QA-C9-Projekt zur statischen Codeanal
 \newpage
 \section{Sechste Woche}
 %
-\subsection{Beschreibung}
+
 %
 Bei einer solchen großen Anzahl an zu analysierenden Files, die in der Regel sehr oft bei einem Entwicklungsprojekt vorkommen, sollte eine automatisierte Generierung von Analysereports möglich sein. Hierbei könnte die Verwendung einer Skriptsprache wie PERL oder Phyton Abhilfe schaffen. Letztere erleichtern u.a. den automatisierten Umgang mit Textdateien und Verzeichnissen.
 
@@ -488,7 +488,7 @@ Dazu wird ein von QA-Systems zur Verfügung gestellte Compiler (QA-CLI) mit den r
 
 Da die Version QA-C9 einen ähnlichen Kompiler zur automatischen Ansteuerung einer statischen Codeanalyse bietet, ist es hilfreich, sich die dazu nötigen Kompiler-Optionen anzuschauen und auszusuchen. Eine genaue Beschreibung der Kompilerbefehle (QA-CLI) bezüglich der QA-C9-Version können in \cite{PRQA9}~nachgelesen werden.
 
-Mit dem Ziel ein QA-C-Projekt automatisiert über den genannten Compiler auszuführen, habe ich ebenfalls einen PERL-Skript programmiert. Dieser bearbeitet einen vorhandenen Template-File eines QA-C9-Projekts, welches nur wenige Einträge enthält und fügt die relevanten, zu analysierende Files und deren Pfadenamen hinzu. Das Ergebnis nach der Ausführung des in \lstref{lst:PERL_XML} angegebenen \verb|PERL|-Skripts kann im folgenden Listing betrachtet werden:
+Mit dem Ziel ein QA-C-Projekt automatisiert über den genannten Compiler auszuführen, habe ich ebenfalls einen PERL-Skript programmiert. Dieser bearbeitet einen vorhandenen Template-File eines QA-C9-Projekts, welches nur wenige Einträge enthält und fügt die relevanten, zu analysierenden Files und deren Pfadenamen hinzu. Das Ergebnis nach der Ausführung des in \lstref{lst:PERL_XML} angegebenen \verb|PERL|-Skripts kann im folgenden Listing betrachtet werden:
 %
 \definecolor{forestgreen}{RGB}{34,139,34}%definition fuer xml Comment style 
 
@@ -535,14 +535,15 @@ Mit dem Ziel ein QA-C-Projekt automatisiert über den genannten Compiler auszufüh
 ...
 \end{lstlisting}
 %
+Dabei ist ersichtlich, wie die Namen der zu analysierenden Files und die Pfade anzugeben sind, wo sich dieselben befinden. Dies händisch einzutragen wäre sehr mühsam, was auf die Notwendigkeit der automatisierten Handhabung dieser Einstellungen hinweist.
 \newpage
 \section{Siebte Woche}
 %
-\subsection{Beschreibung}
+
 %
 In der siebten Woche wurde mir die 2. Aufgabestellung vorgestellt. Dabei ginge es darum, mich umfassend mit einem Basic-Test-Environment (BTE) zu beschäftigen, welches in der PES Abteilung entwickelt wurde. Ich musste mich mit dem Tool vertraut machen und seine Funktionsweise verstehen, um es anschliessend um weitere Funtionalitäten zu erweitern.
 %
-\subsubsection{Zweite Aufgabenstellung}
+\subsection{Zweite Aufgabenstellung}
 % 
 Wie oben erwähnt war es notwendig die wichtigsten Eigenschaften und Besonderheiten vom BTE-Tool zusammenzufassen und kennenzulernen. Anhand dieser Analyse wird es klarer, an welcher Stelle die Funktionalitäten zu ergänzen sind.
 %
@@ -567,7 +568,7 @@ Das Klassendiagram, welches in Abbildung \ref{fig:BTELogListold} gezeigt wird, g
 \begin{figure}[!htp]
 \centering
 \includegraphics[scale=0.75]{./Bilder/BTELogListold_cropped.pdf}
-\caption{BTEUseCase}
+\caption{Klassendiagramm zur Ergänzung der Softwarespezifikation des erweiterten BTE-Tools. Dabei können die funktionalen Zusammenhänge zwischen den ursprunglichen Modulen erkannt werden.}
 \label{fig:BTELogListold}
 \end{figure}
 %
@@ -607,13 +608,13 @@ In ~\cite{EclipseSTM32Youtube} werden weitere, notwendige Tools angegeben, die d
 %
 \section{Achte Woche}\label{siebteWoche}
 %
-\subsection{Beschreibung}
+
 %
-\subsubsection{Durchführung der zweiten Aufgabenstellung}\label{durchfAuf2}
+\subsection{Durchführung der zweiten Aufgabenstellung}\label{durchfAuf2}
 %
 Jedes Software-Projekt basiert auf einer grundlegenden Anforderungsanalyse. Bei der vorliegenden Aufgabe wurde ebenfalls eine durchgeführt, welche im folgenden vorgestellt wird.
 %
-\subsubsection*{Anforderungsanalyse}\label{Anforderungen}
+\subsection*{Anforderungsanalyse}\label{Anforderungen}
 %
 Die Erweiterung des BTE-Tools soll folgende Anforderungen erfüllen:
 %
@@ -633,7 +634,7 @@ Dabei ist ersichtlich, dass lediglich der Anwendungsfall \textsf{\textbf{excecut
 \begin{figure}[!htp]
 \centering
 \includegraphics[scale=0.9]{./Bilder/BTEUseCase.pdf}
-\caption{BTEUseCase}
+\caption{Anwendungsfalldiagramm zur Ergänzung der Softwarespezifikation des erweiterten BTE-Tools.}
 \label{fig:BTEUseCase}
 \end{figure}%
 %
@@ -675,6 +676,7 @@ typedef struct stBteTestSequence
 ...
 \end{lstlisting}
 %
+\clearpage
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus BteCheck.c}, label={lst:useprintf1}]
 ...
 void BteAvailableOk( char *text )
@@ -712,6 +714,7 @@ void BteAvailableOk( char *text )
 ...
 \end{lstlisting}
 %
+\clearpage
 \item[\textbf{\texttt{\#define USE\_HARDWARE}}]: Diese Präprozessor-Direktive wurde ebenfalls eingeführt, um den Anforderungen 1 und 2 Rechnung zu tragen. Dadurch werden die hardwareabhängige bzw. ECU-eigene Funktionsaufrufe eingeblendet. Siehe dazu folgenden Codeabschnitt.
 %
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:usehardware}]
@@ -853,7 +856,7 @@ typedef struct stBteLogList
 Der Testreport wird auf Basis dieser beiden Strukturen im RAM des eingebetteten Prozessors abgelegt. Diese Struktur muss unterschiedliche Kennungen enthalten, welche zusammen das genannte Protokoll definieren. Damit ist eine hierachiche Trennung der gespeicherten Daten und deren Unterscheidung für eine geeignete Dekodierung gewährleistet. Tabelle \ref{tab:Protokoll1} zeigt eine beispielshafte Auswahl der verwendeten Kennungen.
 %
 \begin{table}[ht]
-\caption{Nonlinear Model Results}
+\caption{Verwendeten Kennungen zur Unterscheidung der RAM-Bereiche, wo der Testreport gespeichert ist.}
 % title of Table
 \centering 
 % used for centering table
@@ -906,7 +909,7 @@ Dies lässt sich dadurch vermeiden, dass spezielle Compiler-Einstellungen durchge
 %
 \section{Zehnte Woche}
 %
-\subsection{Beschreibung}
+
 %
 Während dieser Woche galt meine Arbeit weiterhin der Lösung der 2. Aufgabe. Die zweite Möglichkeit der Kodierung und Abspeicherung des Reports wird hierbei eingeführt und beschrieben. 
 
@@ -916,7 +919,7 @@ Der Report wird in Form eines normalen Arrays \texttt{BteLogArray} vom Typ \verb
 Die verarbeiteten Informationen bei den Methodensaufrufen werden ebenfalls sequenziell innerhalb des Arrays abgelegt. Dabei richtet sich die Abspeicherung der Daten nach den in folgender Tabelle festgelegten Kennungen.
 %
 \begin{table}[ht]
-\caption{Relevante Zusammenhänge aus Menge der geprüften QA-C-Regeln.}
+\caption{Verwendeten Kennungen zur Unterscheidung der RAM-Bereiche, wo der Testreport gespeichert ist.}
 % title of Table
 \centering 
 % used for centering table
@@ -944,7 +947,7 @@ Offensichtlich werden dabei nur der Anfang und das Ende des Report gekennzeichne
 Da in der Regel die übergebenen Parameter und manche Daten, die auf dem Testreport vorkommen, nicht vom kleinsten Typ \texttt{uint8} sind sondern größer (\texttt{uint16} bzw. \texttt{uint32}), kann deren Inhalt nicht direkt in die einzelnen Einträge des Byte-Arrays passen. Vor der Abspeicherung müssen diese Informationen deshalb so zerlegt und angepasst werden, dass sie immer in den 8-Bit großen Einträgen des genannten Arrays hinein passen. 
 
 Diese Datenanpassung wird mithilfe der in \lstref{lst:ArrayList} gezeigten Methoden durchgeführt. Dabei werden die benötigten Daten nicht nur zerlegt, sondern auch direkt in dem Array gespeichert. 
-
+\clearpage
 \begin{lstlisting}[style=C_colored_smallfont, caption = {Ausschnitt aus TscTest.c}, label={lst:ArrayList}]
 
 void BteLogList_Serialize32(uint32 data)
@@ -987,7 +990,7 @@ Nach einer erfolgreichen Speicherung der Daten in den RAM des eingebetteten Syst
 %
 \section{Elfte Woche}
 %
-\subsection{Beschreibung}
+
 %
 \subsubsection*{Dekodierung und Rekonstruktion eines XML-Testreports}
 %
@@ -999,12 +1002,11 @@ In Zeile 6 wird die Binärdatei erstmal eingelesen, wobei eine entsprechende Vorv
 
 Die in Zeile 18 gezeigte Methode \texttt{ProcessBinaryData()} beinhaltet die eigentliche Dekodierung der Daten und Erstellung des Testreports. Im Anschluss der Dekodierung der Daten wird die Testreport-Datei auf die Festplatte gesichert.
 %
-\begin{lstlisting}[style=PERL_st, caption = {PERL XML},label={lst:PERL_XMLRepMain}]
+\begin{lstlisting}[style=PERL_st, caption = {PERL-Skript zum Einlesen bzw. zur Verarbeiten einer Binärdatei. Anschließend wird ein Testreport aus den gewonnenen Daten erstellt.},label={lst:PERL_XMLRepMain}]
 # Main function
 sub ConvertBin2Vtr
 {
-  # read the binary file containing the data of the data of
-  # the test report
+  # read the binary file containing the data of the data of the test report
   my $binFile_path = $ARGV[0];
 	# read the path where the report file has to be stored
   my $vtrFile_path = $ARGV[1];
@@ -1028,18 +1030,18 @@ Die oben genannten Schritten, die in der Main-Methode der \verb|PERL|-Anwendung 
 \begin{figure}[!htp]
 \centering
 \includegraphics[scale=1]{./Bilder/StateMaschPERL_cropped.pdf}
-\caption{BTEUseCase}
+\caption{State-Chart-Diagramm, welches die Funktionsweise der erstellte PERL-Anwendung näher beschreibt.}
 \label{fig:StateMaschPERL}
 \end{figure}
 %\end{landscape}
 
-Ein Ausschnitt vom erstellten \verb|PERL|-Skript befindet sich im Anhang \ref{cha:tools}. Das oben gezeigte Diagramm ergänzt das Tool und kann als ein Teil der Software-Spezifikation dienen.
+Ein Ausschnitt vom erstellten \verb|PERL|-Skript befindet kann in \lstref{lst:PERL_XML_Binary} gefunden werden. Das oben gezeigte Diagramm ergänzt die Software-Spezifikation dienen.
 %
 \newpage
 %
 \section{Zwolfte Woche}
 %
-\subsection{Beschreibung}
+
 %
 In der vorliegenden Woche war meine Aufgabe das \verb|PERL|-Programm zu dokumentieren und besser zu strukturieren. Nur so ist es möglich, in der Zukunft das erstellte bzw. modifizierte Tool zu pflegen und warten. 
 %
@@ -1059,7 +1061,7 @@ Auf der PC-Seite befindet sich neben der extrahierten Binärdatei die programmier
 \begin{figure}[!htp]
 \centering
 \includegraphics[scale=0.7]{./Bilder/BTELogList_cropped.pdf}
-\caption{BTEUseCase}
+\caption{Klassendiagramm zur Ergänzung der Softwarespezifikation des erweiterten BTE-Tools. Dabei können die funktionalen Zusammenhänge zwischen den alten und neuen Modulen erkannt werden.}
 \label{fig:BTELogListStruktur}
 \end{figure}
 %\end{landscape}

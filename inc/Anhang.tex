@@ -1,14 +1,6 @@
 \chapter{ Auschnitt der Softwaredokumentation}\label{cha:tools}
 %
 Im Rahmen dieser Arbeit sind folgende Software-Tools entwickelt worden:
-\begin{itemize}
-\item \textbf{Schwerpunktlage der Verbrennung} \\
-\verb+SPL = function_SPL(phi_mod,QB,abtastzeit_s,nMot)+ berechnet.
-\item \textbf{Zylinderdruckgradient} \\
- \verb+[dp_dphi,ddp_ddphi]  = Grad_dGrad_pZMax(phi,pZ)+
-\end{itemize}
-%
-Die oben genannten Tools werden im Folgenden näher erläutert.
 %
 \section{Dateiübertragung }
 %
@@ -83,9 +75,6 @@ for(my $t = $h1+1;$t <= $h3; $t ++ )	{ #wird ueber Datei iteriert
 \newpage
 \section{Bearbeitung einer XML-Datei}
 %
-Für die Echtzeitbestimmung der Kenngrößen Druckgradientenverlauf $\frac{dp}{d\phi}$ und deren zeitlichen Ableitung $\frac{d^2p}{d\phi^2}$ sind die momentanen Werte des simulierten Zylinderdrucks $p_Z$ und des Kurbelwinkels $\phi$ nötig. Diese Kenngrößen werden vom Verbrennungsmodell ermittelt und können dementsprechend verarbeitet werden. In Abbildung \ref{fig:DruckgradSimulink} ist die entsprechende Embendded MATLAB Function zu erkennen. Der jeweilige Quellcode wird im Listing \ref{lst:Druckgrad} aufgezeigt.
-%
-
 \begin{lstlisting}[style=PERL_st, caption = {PERL XML},label={lst:PERL_XML}]
 #!/Dwimperl/perl/bin/perl.exe -w
 use strict;
@@ -193,6 +182,8 @@ close(SCHREIBEN) or die "Fehler beim Schliessen von 'prqaproject.xml': $! \n";
 %
 \newpage
 \section{Erstellung eines XML-Testreports aus Binärdatei}
+%
+In dem folgenden Codeabschnitt wird ein PERL-Skript zum Einlesen bzw. zur Verarbeiten einer Binärdatei angegeben. Dabei wird aus den gewonnenen Daten anschließend ein Testreport erstellt.
 %
 \begin{lstlisting}[style=PERL_st, caption = {Auschnitt vom File BteBin2Vtr.pl},label={lst:PERL_XML_Binary}]
 #!/perl/bin/perl.exe -w
