@@ -6,10 +6,10 @@
 \contentsline {chapter}{Symbole und Abk\"urzungen}{vii}{section*.7}
 \contentsline {chapter}{\numberline {1}Einf\"uhrung}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Firmenprofil}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Hauptthemen der T\"atigkeit}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Im Bericht behandelte Themen der T\"atigkeit}{1}{section.1.2}
 \contentsline {chapter}{\numberline {2}Beschreibung}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Erste Woche}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Erste Aufgabenstellung}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}Erste Aufgabenstellung}{5}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}Zweite Woche}{8}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Durchf\"uhrung der ersten Aufgabenstellung}{8}{subsection.2.2.1}
 \contentsline {section}{\numberline {2.3}Dritte Woche}{10}{section.2.3}
@@ -29,6 +29,6 @@
 \contentsline {section}{\numberline {A.1}Datei\"ubertragung }{51}{section.A.1}
 \contentsline {section}{\numberline {A.2}Bearbeitung einer XML-Datei}{53}{section.A.2}
 \contentsline {section}{\numberline {A.3}Erstellung eines XML-Testreports aus Bin\"ardatei}{56}{section.A.3}
-\contentsline {chapter}{Abbildungsverzeichnis}{59}{section*.34}
-\contentsline {chapter}{Tabellenverzeichnis}{61}{section*.38}
-\contentsline {chapter}{Literaturverzeichnis}{63}{section*.42}
+\contentsline {chapter}{Abbildungsverzeichnis}{59}{section*.33}
+\contentsline {chapter}{Tabellenverzeichnis}{61}{section*.37}
+\contentsline {chapter}{Literaturverzeichnis}{63}{section*.41}
