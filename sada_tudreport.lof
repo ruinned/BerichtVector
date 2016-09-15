@@ -16,17 +16,17 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Diese Tabelle beschreibt die erste Analyse \"uber die \"Anderungen bei den vom QA-C-Analysetool gepr\"uften Regeln, welche sich auf die MISRA-Standards beziehen.\relax }}{17}{figure.caption.16}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Benutzeroberfl\"ache der QAC9-Software.\relax }}{21}{figure.caption.17}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Benutzeroberfl\"ache der QAC9-Software.\relax }}{22}{figure.caption.18}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces EPICskr1\relax }}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces EPICskr1\relax }}{23}{figure.caption.19}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Framework-Emulation of ECU environment on a PC. Entnommen aus \cite {BTE}.\relax }}{26}{figure.caption.20}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Klassendiagramm zur Erg\"anzung der Softwarespezifikation des erweiterten BTE-Tools. Dabei k\"onnen die funktionalen Zusammenh\"ange zwischen den ursprunglichen Modulen erkannt werden.\relax }}{28}{figure.caption.21}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Klassendiagramm zur Erg\"anzung der Softwarespezifikation des erweiterten BTE-Tools. Dabei k\"onnen die funktionalen Zusammenh\"ange zwischen den ursprunglichen Modulen erkannt werden.\relax }}{27}{figure.caption.21}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Verwendete Test-Hardware (STM32F4), auf welcher die RT-BTE lauff\"ahig sein soll.\relax }}{28}{figure.caption.22}
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Anwendungsfalldiagramm zur Erg\"anzung der Softwarespezifikation des erweiterten BTE-Tools.\relax }}{31}{figure.caption.23}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces BTEUseCase\relax }}{36}{figure.caption.24}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces BTEUseCase\relax }}{38}{figure.caption.26}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces BTEUseCase\relax }}{41}{figure.caption.28}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces BTEUseCase\relax }}{42}{figure.caption.29}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces State-Chart-Diagramm, welches die Funktionsweise der erstellte PERL-Anwendung n\"aher beschreibt.\relax }}{44}{figure.caption.30}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Klassendiagramm zur Erg\"anzung der Softwarespezifikation des erweiterten BTE-Tools. Dabei k\"onnen die funktionalen Zusammenh\"ange zwischen den alten und neuen Modulen erkannt werden.\relax }}{46}{figure.caption.31}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces reports\relax }}{47}{figure.caption.32}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces BTEUseCase\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces BTEUseCase\relax }}{37}{figure.caption.27}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces BTEUseCase\relax }}{40}{figure.caption.29}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces BTEUseCase\relax }}{41}{figure.caption.30}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces State-Chart-Diagramm, welches die Funktionsweise der erstellte PERL-Anwendung n\"aher beschreibt.\relax }}{43}{figure.caption.31}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Klassendiagramm zur Erg\"anzung der Softwarespezifikation des erweiterten BTE-Tools. Dabei k\"onnen die funktionalen Zusammenh\"ange zwischen den alten und neuen Modulen erkannt werden.\relax }}{45}{figure.caption.32}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces reports\relax }}{46}{figure.caption.33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
