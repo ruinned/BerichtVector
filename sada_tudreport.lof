@@ -14,19 +14,19 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Ergebnisse der Analyse vom betrachteten Source Code.\relax }}{12}{figure.caption.14}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Rule mapping MISRA C:2004 $\rightarrow $ MISRA C:2012. In der vorliegenden Abbildung werden die relevanten \"Anderungen und Zusammenh\"ange zwischen den alten und den neuen MISRA-C-Regeln. Entnommen aus ~\cite {Addendum1}.\relax }}{15}{figure.caption.15}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Diese Tabelle beschreibt die erste Analyse \"uber die \"Anderungen bei den vom QA-C-Analysetool gepr\"uften Regeln, welche sich auf die MISRA-Standards beziehen.\relax }}{17}{figure.caption.16}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Benutzeroberfl\"ache der QAC9-Software.\relax }}{21}{figure.caption.17}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Benutzeroberfl\"ache der QAC9-Software.\relax }}{22}{figure.caption.18}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces EPICskr1\relax }}{23}{figure.caption.19}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Benutzeroberfl\"ache der QA-C9-Software. Diese GUI ist im Vergleich zu der QA-C7-Version benutzerfreundlicher gestaltet.\relax }}{21}{figure.caption.17}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Ergebnisse einer statischen Codeanalyse, die bez\"uglich einer \textit {simple component} mithilfe der QA-C7- und QA-C9-Versionen durchgef\"uhrt wurde. Auf der linken Seite der Abbildung sind die analysierten Files dargestellt. Die Ergebnisse sind nach den verwendeten Versionen sortiert.\relax }}{22}{figure.caption.18}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Eclipse-Benutzeroberfl\"ache bei Anwendung der \texttt {PERL}-IDE.\relax }}{23}{figure.caption.19}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Framework-Emulation of ECU environment on a PC. Entnommen aus \cite {BTE}.\relax }}{26}{figure.caption.20}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Klassendiagramm zur Erg\"anzung der Softwarespezifikation des erweiterten BTE-Tools. Dabei k\"onnen die funktionalen Zusammenh\"ange zwischen den ursprunglichen Modulen erkannt werden.\relax }}{27}{figure.caption.21}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Verwendete Test-Hardware (STM32F4), auf welcher die RT-BTE lauff\"ahig sein soll.\relax }}{28}{figure.caption.22}
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Anwendungsfalldiagramm zur Erg\"anzung der Softwarespezifikation des erweiterten BTE-Tools.\relax }}{31}{figure.caption.23}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces BTEUseCase\relax }}{35}{figure.caption.24}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces BTEUseCase\relax }}{37}{figure.caption.27}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces BTEUseCase\relax }}{40}{figure.caption.29}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces BTEUseCase\relax }}{41}{figure.caption.30}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces State-Chart-Diagramm, welches die Funktionsweise der erstellte PERL-Anwendung n\"aher beschreibt.\relax }}{43}{figure.caption.31}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces XML-Format eines VTR-Files, welches in Vector als Grundlage weiterer Testreviews verwendet wird.\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Struktur des RAM-Speichers bei Implementierung des Testreports in Form eines \texttt {struct}-Datentyps.\relax }}{37}{figure.caption.27}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Struktur des RAM-Speichers bei Implementierung des Testreports in Form eines \texttt {uint8}-Array-Datentyps.\relax }}{40}{figure.caption.29}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Eclipse-Funkitonalit\"at zur Verwendung vom GDB-Debugger. Dabei l\"asst sich ein bestimmter Speicherbereich vom eingebetteten Prozessor entnehmen und als Bin\"ardatei auf dem lokalen Rechner abspeichern.\relax }}{41}{figure.caption.30}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces State-Chart-Diagramm, welches die Funktionsweise der erstellte PERL-Anwendung n\"aher beschreibt.\relax }}{44}{figure.caption.31}
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Klassendiagramm zur Erg\"anzung der Softwarespezifikation des erweiterten BTE-Tools. Dabei k\"onnen die funktionalen Zusammenh\"ange zwischen den alten und neuen Modulen erkannt werden.\relax }}{45}{figure.caption.32}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces reports\relax }}{46}{figure.caption.33}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Testreports, die aus zwei unterschiedlichen Bin\"ardateien erstellt worden sind. Die eine Bin\"ardatei wird nach Testdurchf\"uhrung auf PC und die zweite auf dem eingebetteten Prozessor erstellt.\relax }}{46}{figure.caption.33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

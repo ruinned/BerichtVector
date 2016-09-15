@@ -1,12 +1,27 @@
 \chapter{ Auschnitt der Softwaredokumentation}\label{cha:tools}
 %
-Im Rahmen dieser Arbeit sind folgende Software-Tools entwickelt worden:
+Im Rahmen der Praktikumstätigkeit sind u.a. folgende Software-Tools entwickelt worden:
+
 %
-\section{Dateiübertragung }
+\begin{enumerate}
+\item \verb|PERL|-Skript zum Einlesen und Übertragen von Files.
+\item \verb|PERL|-Skript zum Einlesen und Verarbeiten von Text-Files.
+\item \verb|PERL|-Skript zum Einlesen und Verarbeiten einer Binärdatei. Dabei wird ein Testreport in Form einer XML-Datei erstellt.
+\end{enumerate}
 %
 
-\begin{lstlisting}[style=PERL_st, caption = {PERL Dateiübertragung},label={lst:PERL_Dateiueb}]
+Die Programmiersprache \verb|PERL| wurde gewählt, da in der PES-Abteilung sehr viele Anwendungen in \verb|PERL| erstellt worden sind und ich großes Interesse daran hatte, mich dabei einzuarbeiten. 
 
+Die beiden ersten Skripte wurden am Anfang der ersten Aufgabe erstellt. Diese waren ein guter Einstieg in die PERL-Programmierung.
+
+Die Dritte Anwendung wurde nach Rücksprache mit meinem Betreuer und seiner Unterstützung erstellt.
+%
+\section{Dateiübertragung}
+%
+Skript zum Einlesen und Übertragen von Dateien zwischen unterschiedlichen Verzeichnissen.
+%
+
+\begin{lstlisting}[style=PERL_st, caption = {Einlesen und Dateiübertragung zwischen unterschiedlichen Verzeichnissen.},label={lst:PERL_Dateiueb}]
 #!/Dwimperl/perl/bin/perl.exe -w
 use strict;
 use File::Copy;
@@ -25,14 +40,11 @@ my @var_arr;
 my $var_str;
 # hilfsvariablen
 my $h1 = 0;	# wird der Anfangpunkt der Source-Pfade
-my $h2 = 0;	
+my $h2 = 0;	# ursprunglicher Pfad der Source-Files
 my $h3 = 0;	# wird der Endpunkt der Source-Pfade
 
 # es muss ermoeglicht werden, den Punkt zu finden, ab dem die Source-Pfade ausgelesen werden koennen
-
 foreach(@zeilen){	# iteriere ueber die Einstellungsdatei
-	
-	my $hola = 4;
 	
 	if($_ =~ /CompPers/){	# suche nach dem patern
 		$h3 = $h1;	# wurde der Patern gefunden, dann halte die Zeilenummer -h1- fest und fange eine neue Suche ab dem Ort an
@@ -55,7 +67,7 @@ for(my $t = $h1+1;$t <= $h3; $t ++ )	{ #wird ueber Datei iteriert
 	
 	
 	$h2 = $zeilen[$t];
-	$h2 =~ tr/\\/\//;
+	$h2 =~ tr/\\/\//;	# aendere \->/
 		
 	$target_loc = $target_loc."/$var_str";
 	
@@ -67,7 +79,7 @@ for(my $t = $h1+1;$t <= $h3; $t ++ )	{ #wird ueber Datei iteriert
 
 	copy($h2, $target_loc) or die "File cannot be copied.";
 	
-	$target_loc = "$workingdir/Relevant";
+	$target_loc = "$workingdir/Relevant";	# aktualisiere den Pfadnamen zum Anhaengen eines neuen Sourcefile-Namens
 	
 }
 \end{lstlisting}
@@ -75,6 +87,9 @@ for(my $t = $h1+1;$t <= $h3; $t ++ )	{ #wird ueber Datei iteriert
 \newpage
 \section{Bearbeitung einer XML-Datei}
 %
+In dieser Anwendung kann ein vorhandenes XML-Template-File, welches nur wenige Einträge enthält bearbeitet. Ein Text-File wird erst eingelesen, die relevanten Stellen ausgesucht und in das Template-File übertragen.
+%
+
 \begin{lstlisting}[style=PERL_st, caption = {PERL XML},label={lst:PERL_XML}]
 #!/Dwimperl/perl/bin/perl.exe -w
 use strict;

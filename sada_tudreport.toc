@@ -8,26 +8,15 @@
 \contentsline {section}{\numberline {1.1}Firmenprofil}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Im Bericht behandelte Themen der T\"atigkeit}{1}{section.1.2}
 \contentsline {chapter}{\numberline {2}Beschreibung}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Erste Woche}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Erste Aufgabenstellung}{5}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Zweite Woche}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Durchf\"uhrung der ersten Aufgabenstellung}{8}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Dritte Woche}{10}{section.2.3}
-\contentsline {section}{\numberline {2.4}Vierte Woche}{15}{section.2.4}
-\contentsline {section}{\numberline {2.5}F\"unfte Woche}{20}{section.2.5}
-\contentsline {section}{\numberline {2.6}Sechste Woche}{23}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Ergebnisse der 1. Aufgabenstellung}{25}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}Siebte Woche}{26}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Zweite Aufgabenstellung}{26}{subsection.2.7.1}
-\contentsline {section}{\numberline {2.8}Achte Woche}{30}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Durchf\"uhrung der zweiten Aufgabenstellung}{30}{subsection.2.8.1}
-\contentsline {section}{\numberline {2.9}Neunte Woche}{35}{section.2.9}
-\contentsline {section}{\numberline {2.10}Zehnte Woche}{39}{section.2.10}
-\contentsline {section}{\numberline {2.11}Elfte Woche}{42}{section.2.11}
-\contentsline {section}{\numberline {2.12}Zwolfte Woche}{44}{section.2.12}
+\contentsline {section}{\numberline {2.1}Erste Aufgabenstellung}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Durchf\"uhrung der ersten Aufgabenstellung}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}Ergebnisse der 1. Aufgabenstellung}{25}{section.2.3}
+\contentsline {section}{\numberline {2.4}Zweite Aufgabenstellung}{26}{section.2.4}
+\contentsline {section}{\numberline {2.5}Durchf\"uhrung der zweiten Aufgabenstellung}{30}{section.2.5}
+\contentsline {section}{\numberline {2.6}Validierung und Ergebnisse der 2. Aufgabenstellung}{45}{section.2.6}
 \contentsline {chapter}{\numberline {3}Zusammenfassung und Ausblick}{47}{chapter.3}
 \contentsline {chapter}{\numberline {A}Auschnitt der Softwaredokumentation}{49}{appendix.A}
-\contentsline {section}{\numberline {A.1}Datei\"ubertragung }{49}{section.A.1}
+\contentsline {section}{\numberline {A.1}Datei\"ubertragung}{49}{section.A.1}
 \contentsline {section}{\numberline {A.2}Bearbeitung einer XML-Datei}{51}{section.A.2}
 \contentsline {section}{\numberline {A.3}Erstellung eines XML-Testreports aus Bin\"ardatei}{54}{section.A.3}
 \contentsline {chapter}{Abbildungsverzeichnis}{57}{section*.34}
