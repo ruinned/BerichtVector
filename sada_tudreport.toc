@@ -7,18 +7,31 @@
 \contentsline {chapter}{\numberline {1}Einf\"uhrung}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Firmenprofil}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Im Bericht behandelte Themen der T\"atigkeit}{1}{section.1.2}
-\contentsline {chapter}{\numberline {2}Beschreibung}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Erste Aufgabenstellung}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Durchf\"uhrung der ersten Aufgabenstellung}{8}{section.2.2}
-\contentsline {section}{\numberline {2.3}Ergebnisse der 1. Aufgabenstellung}{25}{section.2.3}
-\contentsline {section}{\numberline {2.4}Zweite Aufgabenstellung}{26}{section.2.4}
-\contentsline {section}{\numberline {2.5}Durchf\"uhrung der zweiten Aufgabenstellung}{30}{section.2.5}
-\contentsline {section}{\numberline {2.6}Validierung und Ergebnisse der 2. Aufgabenstellung}{45}{section.2.6}
-\contentsline {chapter}{\numberline {3}Zusammenfassung und Ausblick}{47}{chapter.3}
-\contentsline {chapter}{\numberline {A}Auschnitt der Softwaredokumentation}{49}{appendix.A}
-\contentsline {section}{\numberline {A.1}Datei\"ubertragung}{49}{section.A.1}
-\contentsline {section}{\numberline {A.2}Bearbeitung einer XML-Datei}{51}{section.A.2}
-\contentsline {section}{\numberline {A.3}Erstellung eines XML-Testreports aus Bin\"ardatei}{54}{section.A.3}
-\contentsline {chapter}{Abbildungsverzeichnis}{57}{section*.34}
-\contentsline {chapter}{Tabellenverzeichnis}{59}{section*.38}
-\contentsline {chapter}{Literaturverzeichnis}{61}{section*.42}
+\contentsline {chapter}{\numberline {2}Erste Aufgabe: MISRA- und QA-C-Analyse zum Umstieg auf neue Versionen}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Erste Woche}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Erste Aufgabenstellung}{5}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Zweite Woche}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Durchf\"uhrung der ersten Aufgabenstellung}{8}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Dritte Woche}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}Vierte Woche}{15}{section.2.4}
+\contentsline {section}{\numberline {2.5}F\"unfte Woche}{20}{section.2.5}
+\contentsline {section}{\numberline {2.6}Sechste Woche}{23}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Ergebnisse der 1. Aufgabenstellung}{25}{subsection.2.6.1}
+\contentsline {chapter}{\numberline {3}Zweite Aufgabe: BTE auf Hardware}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Siebte Woche}{27}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Zweite Aufgabenstellung}{27}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Achte Woche}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Durchf\"uhrung der zweiten Aufgabenstellung}{31}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Neunte Woche}{36}{section.3.3}
+\contentsline {section}{\numberline {3.4}Zehnte Woche}{40}{section.3.4}
+\contentsline {section}{\numberline {3.5}Elfte Woche}{43}{section.3.5}
+\contentsline {section}{\numberline {3.6}Zw\"olfte Woche}{45}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Validierung und Ergebnisse der 2. Aufgabenstellung}{45}{subsection.3.6.1}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{49}{chapter.4}
+\contentsline {chapter}{\numberline {A}Auschnitt der Softwaredokumentation}{51}{appendix.A}
+\contentsline {section}{\numberline {A.1}Datei\"ubertragung}{51}{section.A.1}
+\contentsline {section}{\numberline {A.2}Bearbeitung einer XML-Datei}{53}{section.A.2}
+\contentsline {section}{\numberline {A.3}Erstellung eines XML-Testreports aus Bin\"ardatei}{56}{section.A.3}
+\contentsline {chapter}{Abbildungsverzeichnis}{59}{section*.34}
+\contentsline {chapter}{Tabellenverzeichnis}{61}{section*.38}
+\contentsline {chapter}{Literaturverzeichnis}{63}{section*.42}
