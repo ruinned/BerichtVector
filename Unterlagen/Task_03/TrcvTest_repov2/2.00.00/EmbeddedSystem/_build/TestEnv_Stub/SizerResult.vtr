@@ -1,8 +1,0 @@
-<testenv>                                          
-<version>Sizer</version>                        
-<option>none</option>                           
-</testenv>                                        
-<log_MemoryResources compiler="VisualStudio">    
-report not created                                 
-</log_MemoryResources>                          
-<result>processError</result>                 

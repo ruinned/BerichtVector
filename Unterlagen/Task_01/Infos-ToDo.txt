@@ -1,0 +1,18 @@
+Infos
+
+- Es ist nötig, dass die Datei Folder.prj bzw. das File, welches die Lage der zu analysierenden Dateien
+sich im Workspace der aufzurufenden Perl-Datei befindet. Die Form, welche diese Datei haben soll, muss 
+ich noch mit Markus besprechen.
+
+- Eine default Datei für die QAC9-Projekte muss auch sich im Workspace-Ordner befinden. 
+Dies wird über QACLI erledigt, mit PERL wird diese Datei mit den aus der oben genannten Datei dadurch 
+angepasst, dass die Pfade angepasst bzw. hinzugefügt werden.
+
+ToDo
+
+- Die Include Pfade müssen ebenfalls in der acf-Datei hinzugefügt werden.
+- Die acf-Datei muss lediglich so verändert werden, dass die
+Vector eigenen "defines" hinzugefügt werden, denn die Compiler eigenen
+Defines werden schon von QAC9 mit Hilfe der cct-Datei hinzugefügt. Das Hinzufügen
+dieser Dateien sollte über QACLI ermöglicht werden, damit ich nichts über
+Perl oder ähnliches umsonst machen muss.

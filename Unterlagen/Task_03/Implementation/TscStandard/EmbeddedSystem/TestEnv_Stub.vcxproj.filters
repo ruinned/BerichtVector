@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="TestData">
+      <UniqueIdentifier>{bc771bd1-19ce-4ed0-9f85-4d9ef7d475a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestEnv_Stub">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="TestAppl">
+      <UniqueIdentifier>{2ff5359e-2b73-478a-8a6a-523544313e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFw">
+      <UniqueIdentifier>{3af22e74-1f82-4443-a1fa-49d4925904cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFw\zBte">
+      <UniqueIdentifier>{0bea2ff1-d15a-4248-b258-7c64ef2d9d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestObj">
+      <UniqueIdentifier>{7e7a7af9-4a37-4bd1-bb91-b873e2f97719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestEnv_Arduino">
+      <UniqueIdentifier>{9a42ab7d-29bf-41f3-8c04-73167ce7aa2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestData\ComStack_Cfg.h">
+      <Filter>TestData</Filter>
+    </ClInclude>
+    <ClInclude Include="TestData\FrTrcv_30_Tja1080_Cfg.h">
+      <Filter>TestData</Filter>
+    </ClInclude>
+    <ClInclude Include="TestData\SchM_FrTrcv_30_Tja1080.h">
+      <Filter>TestData</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Compiler.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Compiler_Cfg.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\ComStack_Types.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Dem.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Det.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Dio.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Dio_Cfg.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\EcuM_Cbk.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Fr_GeneralTypes.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\MemMap.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\os.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Platform_Types.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\Std_Types.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscDem.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscDet.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscDio.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscEcuM_Cbk.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\TscSchm_FrTrcv_30_Tja1080.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\v_cfg.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Stub\v_def.h">
+      <Filter>TestEnv_Stub</Filter>
+    </ClInclude>
+    <ClInclude Include="TestAppl\history.h">
+      <Filter>TestAppl</Filter>
+    </ClInclude>
+    <ClInclude Include="TestAppl\TscAppl.h">
+      <Filter>TestAppl</Filter>
+    </ClInclude>
+    <ClInclude Include="TestAppl\TscTest.h">
+      <Filter>TestAppl</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteCallContext.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteCfg.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteCheck.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteEvent.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteEventList.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteLog.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteReport.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteTestHandler.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFw\zBte\BteTiming.h">
+      <Filter>TestFw\zBte</Filter>
+    </ClInclude>
+    <ClInclude Include="TestObj\FrTrcv_30_Tja1080.h">
+      <Filter>TestObj</Filter>
+    </ClInclude>
+    <ClInclude Include="TestObj\FrTrcv_30_Tja1080_Cbk.h">
+      <Filter>TestObj</Filter>
+    </ClInclude>
+    <ClInclude Include="TestObj\FrTrcv_30_Tja1080_Phy.h">
+      <Filter>TestObj</Filter>
+    </ClInclude>
+    <ClInclude Include="TestEnv_Arduino\TscArd.h" />
+    <ClInclude Include="TestEnv_Arduino\TscArd_Cfg.h" />
+    <ClInclude Include="testenv_arduino\sci.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestData\FrTrcv_30_Tja1080_Cfg.c">
+      <Filter>TestData</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscDem.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscDet.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscDio.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscEcuM_Cbk.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Stub\TscSchm_FrTrcv_30_Tja1080.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAppl\TscAppl.c">
+      <Filter>TestAppl</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAppl\TscTest.c">
+      <Filter>TestAppl</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFw\zBte\BteCallContext.c">
+      <Filter>TestFw\zBte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFw\zBte\BteCheck.c">
+      <Filter>TestFw\zBte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFw\zBte\BteEvent.c">
+      <Filter>TestFw\zBte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFw\zBte\BteEventList.c">
+      <Filter>TestFw\zBte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFw\zBte\BteLog.c">
+      <Filter>TestFw\zBte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFw\zBte\BteReport.c">
+      <Filter>TestFw\zBte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFw\zBte\BteTestHandler.c">
+      <Filter>TestFw\zBte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFw\zBte\BteTiming.c">
+      <Filter>TestFw\zBte</Filter>
+    </ClCompile>
+    <ClCompile Include="TestObj\FrTrcv_30_Tja1080.c">
+      <Filter>TestObj</Filter>
+    </ClCompile>
+    <ClCompile Include="TestObj\FrTrcv_30_Tja1080_Phy.c">
+      <Filter>TestObj</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Arduino\Sci.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Arduino\TscArd_Trcv.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnv_Arduino\TscArd.c">
+      <Filter>TestEnv_Stub</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestObj\FrTrcv_30_Tja1080_Compiler_Cfg.inc">
+      <Filter>TestObj</Filter>
+    </None>
+    <None Include="TestObj\FrTrcv_30_Tja1080_MemMap.inc">
+      <Filter>TestObj</Filter>
+    </None>
+  </ItemGroup>
+</Project>
