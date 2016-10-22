@@ -5,9 +5,9 @@
 \select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Relevante Zusammenh\"ange aus Rule-Mapping MISRA-C-2004 $\rightarrow $ MISRA-C-2012.\relax }}{16}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Relevante Zusammenh\"ange aus Rule mapping MISRA-C-2012 $\rightarrow $ MISRA-C-2004. Das Ziel der erstellten Tabellen ist, wichtige Eingenschaften bei den durchgef\"uhrten \"Anderungen zwischen den betrachteten MIRSA-C-Versionen zu erkennen. Diese beiden Analysen wurde h\"andisch durchgef\"uhrt.\relax }}{16}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Diese Tabelle beschreibt die Zusammenfassung der gefundenen Unterschiede bzw. \"Anderungen bei den vom QA-C-Analysetool gepr\"uften Regeln, welche sich auf die MISRA-Standards beziehen.\relax }}{18}{table.2.3}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Relevante Zusammenh\"ange aus Rule-Mapping MISRA-C-2004 $\rightarrow $ MISRA-C-2012.}}{16}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Relevante Zusammenh\"ange aus Rule mapping MISRA-C-2012 $\rightarrow $ MISRA-C-2004. Das Ziel der erstellten Tabellen ist, wichtige Eingenschaften bei den durchgef\"uhrten \"Anderungen zwischen den betrachteten MIRSA-C-Versionen zu erkennen. Diese beiden Analysen wurde h\"andisch durchgef\"uhrt.}}{16}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Diese Tabelle beschreibt die Zusammenfassung der gefundenen Unterschiede bzw. \"Anderungen bei den vom QA-C-Analysetool gepr\"uften Regeln, welche sich auf die MISRA-Standards beziehen.}}{18}{table.2.3}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Verwendete Kennungen zur Unterscheidung der RAM-Bereiche, wo der Testreport gespeichert ist.\relax }}{38}{table.caption.25}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Relevanten Daten eines Events bei einem beliebigen Testcase.\relax }}{38}{table.caption.26}
